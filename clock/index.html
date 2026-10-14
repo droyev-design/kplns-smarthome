@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#5B3FD6" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="/clock/icons/logo.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/clock/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/clock/manifest.webmanifest" />
+    <title>שעון נוכחות</title>
+    <!--
+      Appearance, stamped BEFORE the first paint.
+
+      The stylesheet keys every dark token off :root[data-theme='dark'], so
+      without this the app would paint one light frame on a cold start in dark
+      mode. A module script cannot do it — it is deferred until after the
+      document is parsed. Mirrors src/ui/theme.ts; keep the key in sync.
+    -->
+    <script>
+      (function () {
+        var p;
+        try { p = localStorage.getItem('shaon.theme'); } catch (e) { p = null; }
+        if (p !== 'light' && p !== 'dark') {
+          p = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', p);
+      })();
+    </script>
+    <script type="module" crossorigin src="/clock/assets/index-BzIQUOLJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/clock/assets/index-BueFp50w.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

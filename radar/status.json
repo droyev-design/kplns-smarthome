@@ -1,0 +1,2653 @@
+{
+ "generated": "2026-10-14T12:42:19+00:00",
+ "history": [
+  {
+   "t": 1791376951,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791378752,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791380544,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791382362,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791384141,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791385976,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791387762,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791389573,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791391382,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791393157,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791394955,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791396756,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791398551,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791400366,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791402149,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791403939,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791405752,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791407547,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791409336,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791411153,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791412946,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791414756,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791416555,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791418352,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791420153,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791421936,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791423756,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791425545,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791427371,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791429150,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791430952,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791432765,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791434554,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791436374,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791438140,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791439955,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791441747,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791443584,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1791445340,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791447147,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791448947,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791450762,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791452562,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791454353,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791456154,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791458007,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1791459772,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791461569,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791463377,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791465160,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791466938,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791468767,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791470563,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791472358,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791474150,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791475978,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791477741,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791479553,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791481337,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791483179,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791484945,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791486801,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1791488554,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791490344,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791492147,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791493947,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791495757,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791497556,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791499362,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791501168,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791502956,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791504735,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791506536,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791508338,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791510134,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791511934,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791513735,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791515541,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791517341,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791519139,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791520942,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791522735,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791524535,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791526354,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791528135,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791529950,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791531753,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791533541,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791535346,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791537135,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791538936,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791540743,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791542550,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791544334,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791546143,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791547954,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791549736,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791551544,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791553351,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791555166,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791556943,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791558738,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791560543,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791562338,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791564145,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791565949,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791567752,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791569543,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791571351,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791573162,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791574936,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791576754,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791578548,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791580339,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1791582137,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791583940,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791585735,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791587535,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791589335,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791591140,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791592943,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791594737,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791596534,
+   "il": 1,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791598340,
+   "il": 1,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791600134,
+   "il": 1,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791601933,
+   "il": 1,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791603735,
+   "il": 1,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1791605535,
+   "il": 1,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791607340,
+   "il": 1,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791609141,
+   "il": 1,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791610956,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791612734,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791614551,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791616364,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791618156,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791619951,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791621744,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791623536,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791625335,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791627152,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791628940,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791630747,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791632542,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791634341,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791636164,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791637981,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1791639762,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791641541,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791643353,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791645151,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791646961,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791648764,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791650558,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791652367,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791654144,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791655968,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791657735,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791659535,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791661357,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791663155,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791664953,
+   "il": 1,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791666759,
+   "il": 1,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791668541,
+   "il": 1,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791670336,
+   "il": 1,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791672145,
+   "il": 1,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791673942,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791675742,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791677557,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791679355,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791681147,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791682961,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791684740,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791686539,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791688334,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791690156,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791691965,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791693739,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791695546,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791697355,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791699145,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791700940,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791702746,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791704545,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791706348,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791708141,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791709973,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791711738,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791713551,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791715354,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791717178,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1791718951,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791720743,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791722561,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791724366,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791726163,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791727976,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791729743,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791731547,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791733349,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791735159,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791736971,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791738761,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791740557,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791742354,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791744160,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791745963,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791747752,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791749554,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791751373,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791753162,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791754965,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791756765,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791758550,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791760346,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791762156,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791763943,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791765741,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791767541,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791769336,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791771135,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791772946,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791774741,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791776535,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791778335,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791780140,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791781936,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791783739,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791785552,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1791787370,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1791789165,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791790941,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791792756,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791794552,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791796353,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791798156,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791799961,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791801735,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791803596,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1791805347,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791807143,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791808952,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791810748,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791812547,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791814477,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791816142,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791817937,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791819757,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791821575,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791823370,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791825224,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791826951,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791828743,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791830558,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791832366,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791834162,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791835937,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791837754,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791839537,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791841342,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791843143,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791844942,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791846747,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791848547,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791850352,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791852161,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791853963,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791855740,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791857534,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791859362,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791861146,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791862941,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791864770,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791866555,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791868335,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791870152,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791871936,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791873740,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791875535,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791877351,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791879135,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791880946,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791882736,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791884552,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791886336,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791888135,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791889936,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791891747,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791893535,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791895351,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791897136,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791898964,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791900779,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1791902535,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791904366,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791906147,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791907960,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1791909742,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791911546,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791913351,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791915142,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791916956,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791918737,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791920539,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791922336,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791924163,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791925957,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791927741,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791929535,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791931400,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791933136,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791934938,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791936736,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791938546,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791940336,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791942135,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791943934,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791945745,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791947545,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791949345,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791951149,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791952947,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791954740,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791956551,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791958333,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791960145,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791961935,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791963733,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791965534,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791967346,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791969141,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791970935,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791972734,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791974543,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791976355,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791978140,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791979936,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1791981739,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  }
+ ],
+ "indices": [
+  {
+   "key": "il",
+   "flag": "🇮🇱",
+   "name": "ישראל",
+   "name_en": "Israel",
+   "level": 0,
+   "guard": {
+    "families": 0,
+    "votes": 0,
+    "providers": [],
+    "single_provider_clamp": false,
+    "l3_provider_clamp": false,
+    "hfc_override": false,
+    "action_lit": false,
+    "belief_cap": false
+   },
+   "tripwires": [
+    {
+     "key": "hfc_policy",
+     "name": "מדיניות התגוננות (פיקוד העורף)",
+     "name_en": "Home Front Command defence policy",
+     "provider": "oref",
+     "type": "action",
+     "shared": false,
+     "context": false,
+     "daily": false,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "אין הגבלות בכל הארץ",
+     "value_en": "No restrictions nationwide",
+     "range": "",
+     "threshold_now": "",
+     "threshold_now_en": "",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "",
+     "anchor_en": ""
+    },
+    {
+     "key": "il_airspace",
+     "name": "מרחב אווירי ישראל",
+     "name_en": "Israeli airspace",
+     "provider": "adsb.lol",
+     "type": "action",
+     "shared": false,
+     "context": false,
+     "daily": false,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "98 מטוסים אזרחיים באזור",
+     "value_en": "98 civil aircraft in the area",
+     "range": "31–77",
+     "threshold_now": "<18 מטוסים",
+     "threshold_now_en": "<18 aircraft",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "📈 מצב: 4 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (40), 2 מהם ברצף. אינו מצביע. העוגן נמדד בתוך המלחמה.",
+     "anchor_en": "📈 State: 4 of the last 14 days at or below the declared anchor (40), the last 2 of them consecutively. Casts no vote. The anchor was measured inside the war."
+    },
+    {
+     "key": "jo_airspace",
+     "name": "מרחב אווירי ירדן",
+     "name_en": "Jordanian airspace",
+     "provider": "adsb.lol",
+     "type": "action",
+     "shared": false,
+     "context": true,
+     "daily": false,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "7 מטוסים מעל ירדן",
+     "value_en": "7 aircraft over Jordan",
+     "range": "2–8",
+     "threshold_now": "",
+     "threshold_now_en": "",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "📈 מצב: 7 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (3), אך לא ביום האחרון שנשמר. אינו מצביע. העוגן נמדד בתוך המלחמה.",
+     "anchor_en": "📈 State: 7 of the last 14 days at or below the declared anchor (3), but not on the most recent stored day. Casts no vote. The anchor was measured inside the war."
+    },
+    {
+     "key": "advisories_il",
+     "name": "אזהרות מסע — ישראל והסביבה",
+     "name_en": "Travel advisories — Israel and neighbours",
+     "provider": "state_dept",
+     "type": "belief",
+     "shared": false,
+     "context": true,
+     "daily": false,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "4 מדינות במעקב — ללא שינוי ברמות",
+     "value_en": "4 countries monitored — no level changes",
+     "range": "",
+     "threshold_now": "",
+     "threshold_now_en": "",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "",
+     "anchor_en": ""
+    },
+    {
+     "key": "embassy_alerts",
+     "name": "שגרירויות ארה\"ב באזור — הוראות מבצעיות",
+     "name_en": "US embassies in the region — operational orders",
+     "provider": "state_dept",
+     "type": "action",
+     "shared": false,
+     "context": false,
+     "daily": false,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "הפיד במעקב — אין הוראה מבצעית פעילה",
+     "value_en": "feed monitored — no operational order active",
+     "range": "",
+     "threshold_now": "",
+     "threshold_now_en": "",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "",
+     "anchor_en": ""
+    },
+    {
+     "key": "il_gps",
+     "name": "שיבוש GPS — מרחב ישראל",
+     "name_en": "GPS interference — Israeli airspace",
+     "provider": "gpsjam",
+     "type": "action",
+     "shared": false,
+     "context": false,
+     "daily": true,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "7.2% מהמטוסים דיווחו על שיבוש GPS ב-2026-10-13 (נגזר מתעופה)",
+     "value_en": "7.2% of aircraft reported degraded GPS on 2026-10-13 (aviation-derived)",
+     "range": "3.0%–11.0%",
+     "threshold_now": "≥12.8%",
+     "threshold_now_en": "≥12.8%",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "",
+     "anchor_en": ""
+    },
+    {
+     "key": "il_notam",
+     "name": "הודעות NOTAM — מרחב ישראל (הקשר בלבד)",
+     "name_en": "Israeli NOTAMs — airspace closures (context only)",
+     "provider": "iaa_brin",
+     "type": "action",
+     "shared": false,
+     "context": true,
+     "daily": false,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "108 הודעות · 49 עם סגירה · 19 בהיקף רחב (2 נתיבי ATS, 8 שדות) (+0/-1 מהקריאה הקודמת) · נקרא לפני 30 דק' — אין עדיין קו בסיס, אינו מצביע",
+     "value_en": "108 NOTAMs · 49 carry a closure · 19 wide-scope (2 ATS routes, 8 aerodromes) (+0/-1 since the previous read) · read 30 min ago — no baseline yet, casts no vote",
+     "range": "",
+     "threshold_now": "",
+     "threshold_now_en": "",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "",
+     "anchor_en": ""
+    },
+    {
+     "key": "us_mil_air",
+     "name": "תעופה צבאית באזור",
+     "name_en": "Military aviation in the region",
+     "provider": "adsb.lol",
+     "type": "action",
+     "shared": true,
+     "context": true,
+     "daily": false,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "5 מטוסים צבאיים באזור",
+     "value_en": "5 military aircraft in the area",
+     "range": "1–11",
+     "threshold_now": ">15 מטוסים",
+     "threshold_now_en": ">15 aircraft",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "",
+     "anchor_en": ""
+    },
+    {
+     "key": "markets",
+     "name": "שווקים — נפט ברנט ושער השקל",
+     "name_en": "Markets — Brent crude and the shekel",
+     "provider": "tgju",
+     "type": "belief",
+     "shared": true,
+     "context": true,
+     "daily": false,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "ברנט $105.8 · דולר 3.08 ₪",
+     "value_en": "Brent $105.8 · USD 3.08 ILS",
+     "range": "",
+     "threshold_now": "ברנט ≥$114.6 · דולר ≥3.17 ₪",
+     "threshold_now_en": "Brent ≥$114.6 · USD/ILS ≥3.17",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "",
+     "anchor_en": ""
+    },
+    {
+     "key": "polymarket",
+     "name": "שוק ניבוי — הפסקת האש (Polymarket)",
+     "name_en": "Prediction market — the ceasefire (Polymarket)",
+     "provider": "polymarket",
+     "type": "belief",
+     "shared": true,
+     "context": true,
+     "daily": true,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "סיכון גלום לתקיפה 0.90% ליום (חוזה עד 2026-11-16, מנורמל לאופק); קו הבסיס משלב כרגע יותר מחוזה אחד (אחרי גלגול)",
+     "value_en": "0.90%/day implied strike risk (contract to 2026-11-16, horizon-normalized); baseline currently spans more than one contract (post-roll)",
+     "range": "0.45%–0.87%",
+     "threshold_now": "≥2.00% ליום",
+     "threshold_now_en": "≥2.00%/day",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "",
+     "anchor_en": ""
+    },
+    {
+     "key": "strikeradar",
+     "name": "StrikeRadar (הקשר בלבד — נגזר חדשות)",
+     "name_en": "StrikeRadar (context only — news-derived)",
+     "provider": "strikeradar",
+     "type": "belief",
+     "shared": false,
+     "context": true,
+     "daily": false,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "65/100",
+     "value_en": "65/100",
+     "range": "",
+     "threshold_now": "",
+     "threshold_now_en": "",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "",
+     "anchor_en": ""
+    }
+   ],
+   "measurable_total": 4,
+   "lit_count": 0,
+   "max_level": 3,
+   "context_lit": 0,
+   "context_lit_names": [],
+   "context_lit_names_en": [],
+   "ratchets": [],
+   "standing": "📈 מצב עומד (אינו רמה): 4 משפחות מעוגנות במדד הזה צברו מספיק ימים כדי לדווח, ואחת מהן חוצה את העוגן המוצהר שלה ביום האחרון שנשמר. הספירה הגבוהה ביותר באוגר: מרחב אווירי ירדן · 7 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (3), אך לא ביום האחרון שנשמר. אינו מצביע; כל העוגנים נמדדו בתוך המלחמה.",
+   "standing_en": "📈 Standing state (not a level): 4 anchored families on this index have enough stored days to report, and one of them is past its declared anchor on the most recent stored day. Highest count in the register: Jordanian airspace · 7 of the last 14 days at or below the declared anchor (3), but not on the most recent stored day. Casts no vote; every anchor was measured inside the war.",
+   "standing_risk": "🎲 סיכון יומי עומד: 0.90% ליום. זו הסתברות גלומה מהשוק — כסף אמיתי ב-Polymarket — ולא תחזית של הדף הזה ולא מדידת חיישן. היא נגזרת מחוזה פתוח אחד, ⁦\"Israel x Iran ceasefire continues through November 15?\"⁩, שנסגר לפי תקיפה אווירית או טילית של אחד הצדדים במשנהו: מחירו מגלם 26% לתקיפה כזו עד 2026-11-16, ונותרו לו 33 ימים. המספר המתפרסם הוא הקצב היומי ולא מחיר החוזה: מחיר חוזה יורד מעצמו ככל שמועד הפקיעה מתקרב, גם כשדבר לא השתנה, ולכן רק הקצב היומי בר-השוואה משבוע לשבוע. אינו מצביע.",
+   "standing_risk_en": "🎲 Standing daily risk: 0.90%/day. This is a MARKET-IMPLIED probability — real money on Polymarket — not a forecast by this page and not a sensor reading. It comes from one open contract, \"Israel x Iran ceasefire continues through November 15?\", which resolves on an air or missile strike by either side against the other: its price implies a 26% chance of such a strike before 2026-11-16, with 33 days left to run. The figure published is the PER-DAY rate, not the contract price: a contract price falls on its own as expiry approaches even when nothing has changed, so only the daily rate is comparable from one week to the next. Casts no vote."
+  },
+  {
+   "key": "ir",
+   "flag": "🇮🇷",
+   "name": "איראן",
+   "name_en": "Iran",
+   "level": 0,
+   "guard": {
+    "families": 0,
+    "votes": 0,
+    "providers": [],
+    "single_provider_clamp": false,
+    "l3_provider_clamp": false,
+    "hfc_override": false,
+    "action_lit": false,
+    "belief_cap": false
+   },
+   "tripwires": [
+    {
+     "key": "ir_internet",
+     "name": "אינטרנט באיראן (ארצי)",
+     "name_en": "Iranian internet (national)",
+     "provider": "ioda",
+     "type": "action",
+     "shared": false,
+     "context": false,
+     "daily": false,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "קישוריות תקינה (41,649 מסלולי BGP)",
+     "value_en": "Connectivity normal (41,649 BGP routes)",
+     "range": "41,609–41,646",
+     "threshold_now": "merit-nt <25",
+     "threshold_now_en": "merit-nt <25",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "",
+     "anchor_en": ""
+    },
+    {
+     "key": "firms",
+     "name": "חריגות תרמיות מלוויין (NASA FIRMS)",
+     "name_en": "Satellite thermal anomalies (NASA FIRMS)",
+     "provider": "nasa_firms",
+     "type": "action",
+     "shared": false,
+     "context": true,
+     "daily": true,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "0 מוקדים תרמיים חדשים ב-2026-10-13 (מתוך 2,737 זיהויים גולמיים מ-3 לוויינים, כולל שרפות ותעשייה)",
+     "value_en": "0 new thermal hotspots on 2026-10-13 (out of 2,737 raw detections from 3 satellites, incl. wildfires and industry)",
+     "range": "0–4",
+     "threshold_now": ">6 מוקדים",
+     "threshold_now_en": ">6 hotspots",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "",
+     "anchor_en": ""
+    },
+    {
+     "key": "hormuz_gps",
+     "name": "שיבוש GPS — מצר הורמוז",
+     "name_en": "GPS interference — Strait of Hormuz",
+     "provider": "gpsjam",
+     "type": "action",
+     "shared": false,
+     "context": true,
+     "daily": true,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "3.4% מהמטוסים דיווחו על שיבוש GPS ב-2026-10-13 (נגזר מתעופה)",
+     "value_en": "3.4% of aircraft reported degraded GPS on 2026-10-13 (aviation-derived)",
+     "range": "1.1%–6.0%",
+     "threshold_now": "≥13.0%",
+     "threshold_now_en": "≥13.0%",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "",
+     "anchor_en": ""
+    },
+    {
+     "key": "us_mil_air",
+     "name": "תעופה צבאית באזור",
+     "name_en": "Military aviation in the region",
+     "provider": "adsb.lol",
+     "type": "action",
+     "shared": true,
+     "context": true,
+     "daily": false,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "5 מטוסים צבאיים באזור",
+     "value_en": "5 military aircraft in the area",
+     "range": "1–11",
+     "threshold_now": ">15 מטוסים",
+     "threshold_now_en": ">15 aircraft",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "",
+     "anchor_en": ""
+    },
+    {
+     "key": "markets",
+     "name": "שווקים — נפט ברנט ושער השקל",
+     "name_en": "Markets — Brent crude and the shekel",
+     "provider": "tgju",
+     "type": "belief",
+     "shared": true,
+     "context": true,
+     "daily": false,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "ברנט $105.8 · דולר 3.08 ₪",
+     "value_en": "Brent $105.8 · USD 3.08 ILS",
+     "range": "",
+     "threshold_now": "ברנט ≥$114.6 · דולר ≥3.17 ₪",
+     "threshold_now_en": "Brent ≥$114.6 · USD/ILS ≥3.17",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "",
+     "anchor_en": ""
+    },
+    {
+     "key": "polymarket",
+     "name": "שוק ניבוי — הפסקת האש (Polymarket)",
+     "name_en": "Prediction market — the ceasefire (Polymarket)",
+     "provider": "polymarket",
+     "type": "belief",
+     "shared": true,
+     "context": true,
+     "daily": true,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "סיכון גלום לתקיפה 0.90% ליום (חוזה עד 2026-11-16, מנורמל לאופק); קו הבסיס משלב כרגע יותר מחוזה אחד (אחרי גלגול)",
+     "value_en": "0.90%/day implied strike risk (contract to 2026-11-16, horizon-normalized); baseline currently spans more than one contract (post-roll)",
+     "range": "0.45%–0.87%",
+     "threshold_now": "≥2.00% ליום",
+     "threshold_now_en": "≥2.00%/day",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "",
+     "anchor_en": ""
+    },
+    {
+     "key": "strikeradar",
+     "name": "StrikeRadar (הקשר בלבד — נגזר חדשות)",
+     "name_en": "StrikeRadar (context only — news-derived)",
+     "provider": "strikeradar",
+     "type": "belief",
+     "shared": false,
+     "context": true,
+     "daily": false,
+     "lit": false,
+     "frozen": false,
+     "frozen_hours": 0,
+     "frozen_expired": false,
+     "ok": true,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
+     "reason": "",
+     "reason_en": "",
+     "value": "65/100",
+     "value_en": "65/100",
+     "range": "",
+     "threshold_now": "",
+     "threshold_now_en": "",
+     "watch": "",
+     "watch_en": "",
+     "anchor": "",
+     "anchor_en": ""
+    }
+   ],
+   "measurable_total": 1,
+   "lit_count": 0,
+   "max_level": 1,
+   "context_lit": 0,
+   "context_lit_names": [],
+   "context_lit_names_en": [],
+   "ratchets": [],
+   "standing": "📈 מצב עומד (אינו רמה): 4 משפחות מעוגנות במדד הזה צברו מספיק ימים כדי לדווח, ואף אחת מהן אינה חוצה את העוגן המוצהר שלה ביום האחרון שנשמר. הספירה הגבוהה ביותר באוגר: שיבוש GPS — מצר הורמוז · 4 מתוך 14 הימים האחרונים מעל העוגן המוצהר (5.0%), אך לא ביום האחרון שנשמר. אינו מצביע; כל העוגנים נמדדו בתוך המלחמה.",
+   "standing_en": "📈 Standing state (not a level): 4 anchored families on this index have enough stored days to report, and none of them is past its declared anchor on the most recent stored day. Highest count in the register: GPS interference — Strait of Hormuz · 4 of the last 14 days at or above the declared anchor (5.0%), but not on the most recent stored day. Casts no vote; every anchor was measured inside the war.",
+   "standing_risk": "🎲 סיכון יומי עומד: 0.90% ליום. זו הסתברות גלומה מהשוק — כסף אמיתי ב-Polymarket — ולא תחזית של הדף הזה ולא מדידת חיישן. היא נגזרת מחוזה פתוח אחד, ⁦\"Israel x Iran ceasefire continues through November 15?\"⁩, שנסגר לפי תקיפה אווירית או טילית של אחד הצדדים במשנהו: מחירו מגלם 26% לתקיפה כזו עד 2026-11-16, ונותרו לו 33 ימים. המספר המתפרסם הוא הקצב היומי ולא מחיר החוזה: מחיר חוזה יורד מעצמו ככל שמועד הפקיעה מתקרב, גם כשדבר לא השתנה, ולכן רק הקצב היומי בר-השוואה משבוע לשבוע. אינו מצביע.",
+   "standing_risk_en": "🎲 Standing daily risk: 0.90%/day. This is a MARKET-IMPLIED probability — real money on Polymarket — not a forecast by this page and not a sensor reading. It comes from one open contract, \"Israel x Iran ceasefire continues through November 15?\", which resolves on an air or missile strike by either side against the other: its price implies a 26% chance of such a strike before 2026-11-16, with 33 days left to run. The figure published is the PER-DAY rate, not the contract price: a contract price falls on its own as expiry approaches even when nothing has changed, so only the daily rate is comparable from one week to the next. Casts no vote.",
+   "unavailable": [
+    "אין כיסוי מקלטי ADS-B מעל איראן — לא ניתן למדוד",
+    "הודעות NOTAM לאיראן, לירדן ולאזור — כל הערוצים החינמיים שנבדקו חסומים מהשרת, ושרתי ה-AIS של ירדן (carc.jo) אינם נפתרים ב-DNS — לא ניתן למדוד. (NOTAM ישראליים כן נקראים מ-1.9.2026 — מוצגים כהקשר בלבד)",
+    "תנועת ספינות במצר הורמוז (AIS) — אין מקור חופשי נגיש (UKMTO חסום, פיד NGA קפוא מ-2024) — לא ניתן למדוד"
+   ],
+   "unavailable_en": [
+    "No ADS-B receiver coverage over Iran — this cannot be measured",
+    "NOTAMs for Iran, Jordan and the wider region — every free channel tested is blocked from this server, and Jordan's AIS hosts (carc.jo) do not resolve in DNS — this cannot be measured. (Israeli NOTAMs ARE read since 2026-09-01 — displayed as context only)",
+    "Ship traffic through Hormuz (AIS) — no accessible free source (UKMTO blocked, the NGA feed frozen since 2024) — this cannot be measured"
+   ]
+  }
+ ],
+ "sources_ok": 14,
+ "sources_total": 14,
+ "families_total": 14,
+ "context_total": 9,
+ "measurable_total": 5,
+ "unmeasurable_total": 3,
+ "lit_count": 0,
+ "context_lit": 0,
+ "ratchets": [],
+ "anchor_summary": {
+  "families_reported": 7,
+  "families_on_anchor": 1,
+  "longest_streak_days": 2,
+  "window_days": 14,
+  "families_anchored": 7,
+  "min_days": 5,
+  "top_family": "jo_airspace",
+  "top_days": 7,
+  "top_window": 14,
+  "top_streak": 0
+ },
+ "degraded": [],
+ "degraded_en": [],
+ "manual_override": {
+  "phase": "ceasefire_degrading",
+  "phase_he": "רגיעה שברירית",
+  "phase_en": "Fragile lull",
+  "phase_note_he": "מלחמת 2026 בין ישראל/ארה\"ב לאיראן נפתחה ב-28.2.2026 ולא הסתיימה רשמית. בשבועות האחרונים לא דווחו חילופי אש ישירים בין ישראל לאיראן, אך המשא ומתן תקוע, ספינות נפגעות במצר הורמוז וארה\"ב מאיימת בהסלמה.",
+  "phase_note_en": "The 2026 Israel/US–Iran war began on 2026-02-28 and has not formally ended. No direct Israel–Iran exchange of fire has been reported in recent weeks, but talks are stalled, ships are being hit in the Strait of Hormuz and the US is threatening escalation.",
+  "set_by": "claude (on kaplan's instruction, 2026-10-08)",
+  "updated": "2026-10-08T14:01:37Z"
+ }
+}
