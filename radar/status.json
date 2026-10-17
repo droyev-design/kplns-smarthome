@@ -1,12 +1,6 @@
 {
- "generated": "2026-10-17T20:13:29+00:00",
+ "generated": "2026-10-17T20:42:51+00:00",
  "history": [
-  {
-   "t": 1791664953,
-   "il": 1,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1791666759,
    "il": 1,
@@ -2016,6 +2010,12 @@
    "il": 0,
    "ir": 1,
    "deg": 3
+  },
+  {
+   "t": 1792269771,
+   "il": 0,
+   "ir": 1,
+   "deg": 2
   }
  ],
  "indices": [
@@ -2107,14 +2107,14 @@
      "frozen": false,
      "frozen_hours": 0,
      "frozen_expired": false,
-     "ok": false,
+     "ok": true,
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "",
-     "value_en": "",
+     "value": "3 מטוסים מעל ירדן",
+     "value_en": "3 aircraft over Jordan",
      "range": "1–8",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2258,9 +2258,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "מטוס צבאי אחד באזור",
-     "value_en": "1 military aircraft in the area",
-     "range": "1–7",
+     "value": "0 מטוסים צבאיים באזור",
+     "value_en": "0 military aircraft in the area",
+     "range": "1–6",
      "threshold_now": ">14 מטוסים",
      "threshold_now_en": ">14 aircraft",
      "watch": "",
@@ -2398,7 +2398,7 @@
      "daily": false,
      "lit": true,
      "frozen": true,
-     "frozen_hours": 1.5,
+     "frozen_hours": 2.0,
      "frozen_expired": false,
      "ok": true,
      "partial": false,
@@ -2493,9 +2493,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "מטוס צבאי אחד באזור",
-     "value_en": "1 military aircraft in the area",
-     "range": "1–7",
+     "value": "0 מטוסים צבאיים באזור",
+     "value_en": "0 military aircraft in the area",
+     "range": "1–6",
      "threshold_now": ">14 מטוסים",
      "threshold_now_en": ">14 aircraft",
      "watch": "",
@@ -2614,7 +2614,7 @@
    ]
   }
  ],
- "sources_ok": 11,
+ "sources_ok": 12,
  "sources_total": 14,
  "families_total": 14,
  "context_total": 9,
@@ -2637,12 +2637,10 @@
  },
  "degraded": [
   "מרחב אווירי ישראל",
-  "מרחב אווירי ירדן",
   "הודעות NOTAM — מרחב ישראל (הקשר בלבד)"
  ],
  "degraded_en": [
   "Israeli airspace",
-  "Jordanian airspace",
   "Israeli NOTAMs — airspace closures (context only)"
  ],
  "manual_override": {
