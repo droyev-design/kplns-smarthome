@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T15:43:30+00:00",
+ "generated": "2026-10-17T16:12:24+00:00",
  "history": [
   {
    "t": 1791648764,
@@ -2016,6 +2016,12 @@
    "il": 0,
    "ir": 0,
    "deg": 3
+  },
+  {
+   "t": 1792253544,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
   }
  ],
  "indices": [
@@ -2078,15 +2084,15 @@
      "frozen": false,
      "frozen_hours": 0,
      "frozen_expired": false,
-     "ok": false,
+     "ok": true,
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "",
-     "value_en": "",
-     "range": "30–65",
+     "value": "44 מטוסים אזרחיים באזור",
+     "value_en": "44 civil aircraft in the area",
+     "range": "30–64",
      "threshold_now": "<16 מטוסים",
      "threshold_now_en": "<16 aircraft",
      "watch": "",
@@ -2113,9 +2119,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "6 מטוסים מעל ירדן",
-     "value_en": "6 aircraft over Jordan",
-     "range": "2–8",
+     "value": "0 מטוסים מעל ירדן",
+     "value_en": "0 aircraft over Jordan",
+     "range": "1–8",
      "threshold_now": "",
      "threshold_now_en": "",
      "watch": "",
@@ -2252,14 +2258,14 @@
      "frozen": false,
      "frozen_hours": 0,
      "frozen_expired": false,
-     "ok": false,
+     "ok": true,
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "",
-     "value_en": "",
+     "value": "4 מטוסים צבאיים באזור",
+     "value_en": "4 military aircraft in the area",
      "range": "1–7",
      "threshold_now": ">14 מטוסים",
      "threshold_now_en": ">14 aircraft",
@@ -2345,8 +2351,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "62/100",
-     "value_en": "62/100",
+     "value": "61/100",
+     "value_en": "61/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2356,7 +2362,7 @@
      "anchor_en": ""
     }
    ],
-   "measurable_total": 3,
+   "measurable_total": 4,
    "lit_count": 0,
    "max_level": 3,
    "context_lit": 0,
@@ -2406,7 +2412,7 @@
      "reason_en": "",
      "value": "קישוריות תקינה (41,625 מסלולי BGP)",
      "value_en": "Connectivity normal (41,625 BGP routes)",
-     "range": "41,629–41,645",
+     "range": "41,628–41,645",
      "threshold_now": "merit-nt <20",
      "threshold_now_en": "merit-nt <20",
      "watch": "",
@@ -2485,14 +2491,14 @@
      "frozen": false,
      "frozen_hours": 0,
      "frozen_expired": false,
-     "ok": false,
+     "ok": true,
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "",
-     "value_en": "",
+     "value": "4 מטוסים צבאיים באזור",
+     "value_en": "4 military aircraft in the area",
      "range": "1–7",
      "threshold_now": ">14 מטוסים",
      "threshold_now_en": ">14 aircraft",
@@ -2578,8 +2584,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "62/100",
-     "value_en": "62/100",
+     "value": "61/100",
+     "value_en": "61/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2612,11 +2618,11 @@
    ]
   }
  ],
- "sources_ok": 11,
+ "sources_ok": 13,
  "sources_total": 14,
  "families_total": 14,
  "context_total": 9,
- "measurable_total": 4,
+ "measurable_total": 5,
  "unmeasurable_total": 3,
  "lit_count": 0,
  "context_lit": 0,
@@ -2634,14 +2640,10 @@
   "top_streak": 3
  },
  "degraded": [
-  "מרחב אווירי ישראל",
-  "הודעות NOTAM — מרחב ישראל (הקשר בלבד)",
-  "תעופה צבאית באזור"
+  "הודעות NOTAM — מרחב ישראל (הקשר בלבד)"
  ],
  "degraded_en": [
-  "Israeli airspace",
-  "Israeli NOTAMs — airspace closures (context only)",
-  "Military aviation in the region"
+  "Israeli NOTAMs — airspace closures (context only)"
  ],
  "manual_override": {
   "phase": "ceasefire_degrading",
