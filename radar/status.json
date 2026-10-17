@@ -1,24 +1,6 @@
 {
- "generated": "2026-10-17T07:42:16+00:00",
+ "generated": "2026-10-17T08:42:28+00:00",
  "history": [
-  {
-   "t": 1791618156,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1791619951,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1791621744,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1791623536,
    "il": 0,
@@ -2022,6 +2004,18 @@
    "il": 0,
    "ir": 0,
    "deg": 1
+  },
+  {
+   "t": 1792224735,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1792226548,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
   }
  ],
  "indices": [
@@ -2090,8 +2084,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "33 מטוסים אזרחיים באזור",
-     "value_en": "33 civil aircraft in the area",
+     "value": "54 מטוסים אזרחיים באזור",
+     "value_en": "54 civil aircraft in the area",
      "range": "30–71",
      "threshold_now": "<16 מטוסים",
      "threshold_now_en": "<16 aircraft",
@@ -2121,7 +2115,7 @@
      "reason_en": "",
      "value": "3 מטוסים מעל ירדן",
      "value_en": "3 aircraft over Jordan",
-     "range": "2–6",
+     "range": "2–7",
      "threshold_now": "",
      "threshold_now_en": "",
      "watch": "",
@@ -2410,8 +2404,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה (41,644 מסלולי BGP)",
-     "value_en": "Connectivity normal (41,644 BGP routes)",
+     "value": "קישוריות תקינה (41,637 מסלולי BGP)",
+     "value_en": "Connectivity normal (41,637 BGP routes)",
      "range": "41,629–41,648",
      "threshold_now": "merit-nt <20",
      "threshold_now_en": "merit-nt <20",
