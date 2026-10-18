@@ -1,24 +1,6 @@
 {
- "generated": "2026-10-18T07:12:21+00:00",
+ "generated": "2026-10-18T08:12:47+00:00",
  "history": [
-  {
-   "t": 1791702746,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1791704545,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1791706348,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1791708141,
    "il": 0,
@@ -2022,6 +2004,18 @@
    "il": 0,
    "ir": 0,
    "deg": 1
+  },
+  {
+   "t": 1792309341,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1792311167,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
   }
  ],
  "indices": [
@@ -2090,9 +2084,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "46 מטוסים אזרחיים באזור",
-     "value_en": "46 civil aircraft in the area",
-     "range": "30–61",
+     "value": "58 מטוסים אזרחיים באזור",
+     "value_en": "58 civil aircraft in the area",
+     "range": "30–63",
      "threshold_now": "<16 מטוסים",
      "threshold_now_en": "<16 aircraft",
      "watch": "",
@@ -2119,8 +2113,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "6 מטוסים מעל ירדן",
-     "value_en": "6 aircraft over Jordan",
+     "value": "9 מטוסים מעל ירדן",
+     "value_en": "9 aircraft over Jordan",
      "range": "1–7",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2264,9 +2258,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "6 מטוסים צבאיים באזור",
-     "value_en": "6 military aircraft in the area",
-     "range": "1–6",
+     "value": "14 מטוסים צבאיים באזור",
+     "value_en": "14 military aircraft in the area",
+     "range": "1–7",
      "threshold_now": ">14 מטוסים",
      "threshold_now_en": ">14 aircraft",
      "watch": "",
@@ -2410,8 +2404,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה (41,636 מסלולי BGP)",
-     "value_en": "Connectivity normal (41,636 BGP routes)",
+     "value": "קישוריות תקינה (41,637 מסלולי BGP)",
+     "value_en": "Connectivity normal (41,637 BGP routes)",
      "range": "41,625–41,642",
      "threshold_now": "merit-nt <20",
      "threshold_now_en": "merit-nt <20",
@@ -2497,9 +2491,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "6 מטוסים צבאיים באזור",
-     "value_en": "6 military aircraft in the area",
-     "range": "1–6",
+     "value": "14 מטוסים צבאיים באזור",
+     "value_en": "14 military aircraft in the area",
+     "range": "1–7",
      "threshold_now": ">14 מטוסים",
      "threshold_now_en": ">14 aircraft",
      "watch": "",
