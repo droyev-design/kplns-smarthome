@@ -1,18 +1,6 @@
 {
- "generated": "2026-10-18T21:12:35+00:00",
+ "generated": "2026-10-18T22:12:25+00:00",
  "history": [
-  {
-   "t": 1791753162,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1791754965,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1791756765,
    "il": 0,
@@ -2022,6 +2010,18 @@
    "il": 0,
    "ir": 1,
    "deg": 0
+  },
+  {
+   "t": 1792359751,
+   "il": 0,
+   "ir": 1,
+   "deg": 0
+  },
+  {
+   "t": 1792361545,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
   }
  ],
  "indices": [
@@ -2090,8 +2090,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "34 מטוסים אזרחיים באזור",
-     "value_en": "34 civil aircraft in the area",
+     "value": "37 מטוסים אזרחיים באזור",
+     "value_en": "37 civil aircraft in the area",
      "range": "30–69",
      "threshold_now": "<16 מטוסים",
      "threshold_now_en": "<16 aircraft",
@@ -2119,9 +2119,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "3 מטוסים מעל ירדן",
-     "value_en": "3 aircraft over Jordan",
-     "range": "2–8",
+     "value": "2 מטוסים מעל ירדן",
+     "value_en": "2 aircraft over Jordan",
+     "range": "2–7",
      "threshold_now": "",
      "threshold_now_en": "",
      "watch": "",
@@ -2235,8 +2235,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "114 הודעות · 53 עם סגירה · 20 בהיקף רחב (2 נתיבי ATS, 8 שדות) (+0/-0 מהקריאה הקודמת) · נקרא לפני 59 דק' — אין עדיין קו בסיס, אינו מצביע",
-     "value_en": "114 NOTAMs · 53 carry a closure · 20 wide-scope (2 ATS routes, 8 aerodromes) (+0/-0 since the previous read) · read 59 min ago — no baseline yet, casts no vote",
+     "value": "113 הודעות · 52 עם סגירה · 20 בהיקף רחב (2 נתיבי ATS, 8 שדות) (+0/-1 מהקריאה הקודמת) · נקרא לפני 29 דק' — אין עדיין קו בסיס, אינו מצביע",
+     "value_en": "113 NOTAMs · 52 carry a closure · 20 wide-scope (2 ATS routes, 8 aerodromes) (+0/-1 since the previous read) · read 29 min ago — no baseline yet, casts no vote",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2351,8 +2351,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "47/100",
-     "value_en": "47/100",
+     "value": "46/100",
+     "value_en": "46/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2379,17 +2379,15 @@
    "flag": "🇮🇷",
    "name": "איראן",
    "name_en": "Iran",
-   "level": 1,
+   "level": 0,
    "guard": {
-    "families": 1,
-    "votes": 1,
-    "providers": [
-     "ioda"
-    ],
+    "families": 0,
+    "votes": 0,
+    "providers": [],
     "single_provider_clamp": false,
     "l3_provider_clamp": false,
     "hfc_override": false,
-    "action_lit": true,
+    "action_lit": false,
     "belief_cap": false
    },
    "tripwires": [
@@ -2402,18 +2400,18 @@
      "shared": false,
      "context": false,
      "daily": false,
-     "lit": true,
-     "frozen": false,
-     "frozen_hours": 0,
+     "lit": false,
+     "frozen": true,
+     "frozen_hours": 0.5,
      "frozen_expired": false,
      "ok": true,
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
-     "reason": "ירידה חדה בקישוריות (merit-nt): 17 מול חציון 38",
-     "reason_en": "Sharp connectivity drop (merit-nt): 17 vs a median of 38",
-     "value": "קישוריות תקינה (41,626 מסלולי BGP)",
-     "value_en": "Connectivity normal (41,626 BGP routes)",
+     "reason": "",
+     "reason_en": "",
+     "value": "קישוריות תקינה (41,621 מסלולי BGP)",
+     "value_en": "Connectivity normal (41,621 BGP routes)",
      "range": "41,625–41,640",
      "threshold_now": "merit-nt <19",
      "threshold_now_en": "merit-nt <19",
@@ -2586,8 +2584,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "47/100",
-     "value_en": "47/100",
+     "value": "46/100",
+     "value_en": "46/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2598,7 +2596,7 @@
     }
    ],
    "measurable_total": 1,
-   "lit_count": 1,
+   "lit_count": 0,
    "max_level": 1,
    "context_lit": 0,
    "context_lit_names": [],
@@ -2626,7 +2624,7 @@
  "context_total": 9,
  "measurable_total": 5,
  "unmeasurable_total": 3,
- "lit_count": 1,
+ "lit_count": 0,
  "context_lit": 0,
  "ratchets": [],
  "anchor_summary": {
