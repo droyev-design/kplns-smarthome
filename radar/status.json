@@ -1,12 +1,6 @@
 {
- "generated": "2026-10-18T10:13:05+00:00",
+ "generated": "2026-10-18T10:43:07+00:00",
  "history": [
-  {
-   "t": 1791715354,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1791717178,
    "il": 0,
@@ -2016,6 +2010,12 @@
    "il": 0,
    "ir": 0,
    "deg": 2
+  },
+  {
+   "t": 1792320187,
+   "il": 0,
+   "ir": 0,
+   "deg": 2
   }
  ],
  "indices": [
@@ -2078,14 +2078,14 @@
      "frozen": false,
      "frozen_hours": 0,
      "frozen_expired": false,
-     "ok": true,
+     "ok": false,
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "65 מטוסים אזרחיים באזור",
-     "value_en": "65 civil aircraft in the area",
+     "value": "",
+     "value_en": "",
      "range": "30–65",
      "threshold_now": "<16 מטוסים",
      "threshold_now_en": "<16 aircraft",
@@ -2107,14 +2107,14 @@
      "frozen": false,
      "frozen_hours": 0,
      "frozen_expired": false,
-     "ok": false,
+     "ok": true,
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "",
-     "value_en": "",
+     "value": "מטוס אחד מעל ירדן",
+     "value_en": "1 aircraft over Jordan",
      "range": "1–7",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2356,7 +2356,7 @@
      "anchor_en": ""
     }
    ],
-   "measurable_total": 4,
+   "measurable_total": 3,
    "lit_count": 0,
    "max_level": 3,
    "context_lit": 0,
@@ -2616,7 +2616,7 @@
  "sources_total": 14,
  "families_total": 14,
  "context_total": 9,
- "measurable_total": 5,
+ "measurable_total": 4,
  "unmeasurable_total": 3,
  "lit_count": 0,
  "context_lit": 0,
@@ -2634,11 +2634,11 @@
   "top_streak": 0
  },
  "degraded": [
-  "מרחב אווירי ירדן",
+  "מרחב אווירי ישראל",
   "הודעות NOTAM — מרחב ישראל (הקשר בלבד)"
  ],
  "degraded_en": [
-  "Jordanian airspace",
+  "Israeli airspace",
   "Israeli NOTAMs — airspace closures (context only)"
  ],
  "manual_override": {
