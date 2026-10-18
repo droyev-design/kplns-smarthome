@@ -1,18 +1,6 @@
 {
- "generated": "2026-10-18T14:12:15+00:00",
+ "generated": "2026-10-18T15:12:20+00:00",
  "history": [
-  {
-   "t": 1791727976,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1791729743,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1791731547,
    "il": 0,
@@ -2022,6 +2010,18 @@
    "il": 0,
    "ir": 0,
    "deg": 1
+  },
+  {
+   "t": 1792334550,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1792336340,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
   }
  ],
  "indices": [
@@ -2090,8 +2090,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "80 מטוסים אזרחיים באזור",
-     "value_en": "80 civil aircraft in the area",
+     "value": "66 מטוסים אזרחיים באזור",
+     "value_en": "66 civil aircraft in the area",
      "range": "30–67",
      "threshold_now": "<16 מטוסים",
      "threshold_now_en": "<16 aircraft",
@@ -2264,8 +2264,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "5 מטוסים צבאיים באזור",
-     "value_en": "5 military aircraft in the area",
+     "value": "10 מטוסים צבאיים באזור",
+     "value_en": "10 military aircraft in the area",
      "range": "1–7",
      "threshold_now": ">14 מטוסים",
      "threshold_now_en": ">14 aircraft",
@@ -2351,8 +2351,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "51/100",
-     "value_en": "51/100",
+     "value": "50/100",
+     "value_en": "50/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2410,8 +2410,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה (41,639 מסלולי BGP)",
-     "value_en": "Connectivity normal (41,639 BGP routes)",
+     "value": "קישוריות תקינה (41,631 מסלולי BGP)",
+     "value_en": "Connectivity normal (41,631 BGP routes)",
      "range": "41,625–41,641",
      "threshold_now": "merit-nt <19",
      "threshold_now_en": "merit-nt <19",
@@ -2497,8 +2497,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "5 מטוסים צבאיים באזור",
-     "value_en": "5 military aircraft in the area",
+     "value": "10 מטוסים צבאיים באזור",
+     "value_en": "10 military aircraft in the area",
      "range": "1–7",
      "threshold_now": ">14 מטוסים",
      "threshold_now_en": ">14 aircraft",
@@ -2584,8 +2584,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "51/100",
-     "value_en": "51/100",
+     "value": "50/100",
+     "value_en": "50/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
