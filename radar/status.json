@@ -1,12 +1,6 @@
 {
- "generated": "2026-10-18T11:13:39+00:00",
+ "generated": "2026-10-18T12:12:21+00:00",
  "history": [
-  {
-   "t": 1791718951,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1791720743,
    "il": 0,
@@ -2016,6 +2010,18 @@
    "il": 0,
    "ir": 0,
    "deg": 4
+  },
+  {
+   "t": 1792323734,
+   "il": 0,
+   "ir": 0,
+   "deg": 4
+  },
+  {
+   "t": 1792325541,
+   "il": 0,
+   "ir": 0,
+   "deg": 4
   }
  ],
  "indices": [
@@ -2404,8 +2410,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה (41,636 מסלולי BGP)",
-     "value_en": "Connectivity normal (41,636 BGP routes)",
+     "value": "קישוריות תקינה (41,638 מסלולי BGP)",
+     "value_en": "Connectivity normal (41,638 BGP routes)",
      "range": "41,625–41,642",
      "threshold_now": "merit-nt <19",
      "threshold_now_en": "merit-nt <19",
