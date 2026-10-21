@@ -1,24 +1,6 @@
 {
- "generated": "2026-10-21T06:42:14+00:00",
+ "generated": "2026-10-21T07:42:25+00:00",
  "history": [
-  {
-   "t": 1791960145,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1791961935,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1791963733,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1791965534,
    "il": 0,
@@ -2028,6 +2010,18 @@
    "il": 0,
    "ir": 0,
    "deg": 1
+  },
+  {
+   "t": 1792566757,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1792568545,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
   }
  ],
  "indices": [
@@ -2096,11 +2090,11 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "54 מטוסים אזרחיים באזור",
-     "value_en": "54 civil aircraft in the area",
+     "value": "35 מטוסים אזרחיים באזור",
+     "value_en": "35 civil aircraft in the area",
      "range": "31–67",
-     "threshold_now": "<16 מטוסים",
-     "threshold_now_en": "<16 aircraft",
+     "threshold_now": "<15 מטוסים",
+     "threshold_now_en": "<15 aircraft",
      "watch": "",
      "watch_en": "",
      "anchor": "📈 מצב: 7 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (40), 2 מהם ברצף. אינו מצביע. העוגן נמדד בתוך המלחמה.",
@@ -2125,9 +2119,9 @@
      "partial_why_en": "traffic too thin to judge — median 4 below 5",
      "reason": "",
      "reason_en": "",
-     "value": "6 מטוסים מעל ירדן",
-     "value_en": "6 aircraft over Jordan",
-     "range": "1–7",
+     "value": "3 מטוסים מעל ירדן",
+     "value_en": "3 aircraft over Jordan",
+     "range": "1–6",
      "threshold_now": "",
      "threshold_now_en": "",
      "watch": "",
@@ -2270,8 +2264,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "7 מטוסים צבאיים באזור",
-     "value_en": "7 military aircraft in the area",
+     "value": "11 מטוסים צבאיים באזור",
+     "value_en": "11 military aircraft in the area",
      "range": "0–14",
      "threshold_now": ">14 מטוסים",
      "threshold_now_en": ">14 aircraft",
@@ -2299,8 +2293,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $110.3 · דולר 3.11 ₪",
-     "value_en": "Brent $110.3 · USD 3.11 ILS",
+     "value": "ברנט $109.6 · דולר 3.11 ₪",
+     "value_en": "Brent $109.6 · USD 3.11 ILS",
      "range": "",
      "threshold_now": "ברנט ≥$118.1 · דולר ≥3.20 ₪",
      "threshold_now_en": "Brent ≥$118.1 · USD/ILS ≥3.20",
@@ -2503,8 +2497,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "7 מטוסים צבאיים באזור",
-     "value_en": "7 military aircraft in the area",
+     "value": "11 מטוסים צבאיים באזור",
+     "value_en": "11 military aircraft in the area",
      "range": "0–14",
      "threshold_now": ">14 מטוסים",
      "threshold_now_en": ">14 aircraft",
@@ -2532,8 +2526,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $110.3 · דולר 3.11 ₪",
-     "value_en": "Brent $110.3 · USD 3.11 ILS",
+     "value": "ברנט $109.6 · דולר 3.11 ₪",
+     "value_en": "Brent $109.6 · USD 3.11 ILS",
      "range": "",
      "threshold_now": "ברנט ≥$118.1 · דולר ≥3.20 ₪",
      "threshold_now_en": "Brent ≥$118.1 · USD/ILS ≥3.20",
