@@ -1,24 +1,6 @@
 {
- "generated": "2026-10-24T05:12:42+00:00",
+ "generated": "2026-10-24T06:12:46+00:00",
  "history": [
-  {
-   "t": 1792213966,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
-  {
-   "t": 1792215734,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
-  {
-   "t": 1792217536,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
   {
    "t": 1792219335,
    "il": 0,
@@ -2040,6 +2022,18 @@
    "il": 0,
    "ir": 0,
    "deg": 0
+  },
+  {
+   "t": 1792820541,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1792822366,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
   }
  ],
  "indices": [
@@ -2111,9 +2105,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "46 מטוסים אזרחיים באזור",
-     "value_en": "46 civil aircraft in the area",
-     "range": "28–64",
+     "value": "38 מטוסים אזרחיים באזור",
+     "value_en": "38 civil aircraft in the area",
+     "range": "30–64",
      "threshold_now": "<16 מטוסים",
      "threshold_now_en": "<16 aircraft",
      "watch": "",
@@ -2141,8 +2135,8 @@
      "partial_why_en": "traffic too thin to judge — median 3 below 5",
      "reason": "",
      "reason_en": "",
-     "value": "3 מטוסים מעל ירדן",
-     "value_en": "3 aircraft over Jordan",
+     "value": "2 מטוסים מעל ירדן",
+     "value_en": "2 aircraft over Jordan",
      "range": "1–7",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2291,8 +2285,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "2 מטוסים צבאיים באזור",
-     "value_en": "2 military aircraft in the area",
+     "value": "7 מטוסים צבאיים באזור",
+     "value_en": "7 military aircraft in the area",
      "range": "1–10",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2381,8 +2375,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "70/100",
-     "value_en": "70/100",
+     "value": "69/100",
+     "value_en": "69/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2552,9 +2546,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה: merit-nt 87 מול חציון 36 (×2.41) · 41,621 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity normal: merit-nt 87 vs a median of 36 (2.41x) · 41,621 BGP routes (display only)",
-     "range": "31–46",
+     "value": "קישוריות תקינה: merit-nt 73 מול חציון 36 (×2.02) · 41,621 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity normal: merit-nt 73 vs a median of 36 (2.02x) · 41,621 BGP routes (display only)",
+     "range": "31–47",
      "threshold_now": "merit-nt <18",
      "threshold_now_en": "merit-nt <18",
      "watch": "",
@@ -2642,8 +2636,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "2 מטוסים צבאיים באזור",
-     "value_en": "2 military aircraft in the area",
+     "value": "7 מטוסים צבאיים באזור",
+     "value_en": "7 military aircraft in the area",
      "range": "1–10",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2732,8 +2726,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "70/100",
-     "value_en": "70/100",
+     "value": "69/100",
+     "value_en": "69/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
