@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com https://hits.sh; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests;">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://kplns.com/radar/methodology.html">
 <meta name="theme-color" content="#0a1628">
@@ -45,6 +46,9 @@
   transition:top .25s;text-decoration:none
 }
 .skip:focus{top:0}
+/* 2026-10-25 verify: a:link out-specified .skip (cyan on cyan, 1.0:1). */
+a.skip,a.skip:link,a.skip:visited{background:#0a1628;color:#fff;border:2px solid var(--cyan)}
+.skip:focus{outline:3px solid var(--cyan);outline-offset:0}
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
@@ -57,6 +61,16 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 .container{max-width:880px;margin:0 auto;padding:0 20px}
+/* Phones: a card inside a padded container left a ~300px text column
+   (2026-10-25 verify). Thinner gutters and card padding on narrow screens. */
+@media(max-width:480px){
+  .container{padding:0 16px}
+  .container section.blk{padding:18px 14px 16px}
+  .container .call{padding:12px 13px}
+  .container .ep{padding:13px 13px}
+  .container .tocbar{margin-inline:-16px;padding-inline:16px}
+  .container .tocbar .panel{inset-inline:-16px}
+}
 
 /* ── header ─────────────────────────────────────────── */
 .topbar{
@@ -114,7 +128,7 @@ h1{
   margin:28px 0 0;background:var(--bg-card);border:1px solid var(--border);
   border-radius:var(--radius-md);padding:18px 22px
 }
-.toc h2{
+.toc .toc-h{
   font-size:.74rem;font-family:var(--font-en);letter-spacing:.18em;text-transform:uppercase;
   color:var(--text-muted);font-weight:600;margin-bottom:11px
 }
@@ -236,10 +250,121 @@ footer a{color:var(--text-secondary);text-decoration:none}
 footer a:hover{color:var(--cyan)}
 .legal{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center;margin-bottom:10px}
 .stamp{text-align:center;color:var(--text-muted);font-size:.8rem;margin-top:22px;font-family:var(--font-en)}
+
+/* ══ redesign 2026-10 ═══════════════════════════════════════════════ */
+:root{color-scheme:dark;--visited:#c4b5fd;--text-muted:rgba(232,237,245,.74)}
+html{font-size:100%;-webkit-text-size-adjust:100%}
+body{font-size:1rem}
+.sr{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+a:link{color:var(--cyan)} a:visited{color:var(--visited)}
+.backlink:link,.backlink:visited{color:var(--text-secondary)}
+.topbar{position:static}
+.backlink,.langsw button{min-height:44px;display:inline-flex;align-items:center}
+.langsw button{min-width:44px;justify-content:center;font-size:.85rem}
+.backlink{font-size:.95rem;padding:0 4px}
+.alertstrip{font-size:1rem}
+.alertstrip a{display:inline-flex;align-items:center;min-height:44px}
+.section-label{font-size:.8rem}
+.hero p{font-size:1.05rem}
+section.blk p{font-size:1rem}
+section.blk ul li{font-size:1rem}
+section.blk h2{font-size:1.3rem;line-height:1.4;scroll-margin-top:72px}
+section.blk{scroll-margin-top:72px}
+section.blk h3[id]{scroll-margin-top:72px}
+section.blk a{padding-block:.12em}
+.lead{font-size:1.06rem!important}
+.call{font-size:1rem}
+.num{font-size:.9rem}
+.src{font-size:.875rem}
+.tag{font-size:.75rem}
+.fx{font-size:.9rem}
+.ep h3{font-size:1.02rem;font-weight:700;margin:0 0 3px}
+.ep .when{font-size:.8rem}
+.ep .lead-badge{font-size:.9rem}
+p.fine{font-size:.9rem!important;color:var(--text-muted)!important}
+.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.92em}
+.toc .toc-h{font-size:.85rem}
+.toc li{font-size:1rem}
+.toc a{display:inline-block;padding:6px 0;min-height:32px}
+.backbar a{min-height:44px;line-height:1.4;font-size:1rem}
+footer{font-size:.9rem}
+footer a{display:inline-block;padding:10px 4px}
+.stamp{font-size:.9rem}
+
+/* sticky contents bar */
+.tocbar{position:sticky;top:0;z-index:60;margin:18px -20px 0;padding:0 20px;
+  background:rgba(17,24,39,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.tocbar>details{position:relative}
+.tocbar summary{list-style:none;cursor:pointer;min-height:48px;display:flex;align-items:center;gap:10px;color:var(--text-primary);font-weight:600}
+.tocbar summary::-webkit-details-marker{display:none}
+.tocbar summary .ico{color:var(--cyan);font-size:1.1rem}
+.tocbar summary .now{color:var(--text-secondary);font-weight:500;font-size:.95rem;margin-inline-start:auto;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:58%}
+.tocbar .panel{position:absolute;inset-inline:-20px;top:100%;max-height:calc(100vh - 70px);overflow:auto;
+  background:#151d31;border:1px solid var(--border-hover);border-top:0;padding:8px 20px 14px;
+  box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.tocbar .panel ol{list-style:none;counter-reset:t;display:grid;gap:0}
+.tocbar .panel li{counter-increment:t}
+.tocbar .panel li::before{content:counter(t) ".";color:var(--cyan);font-family:var(--font-en);font-weight:600;margin-inline-end:8px}
+.tocbar .panel a{display:inline-flex;align-items:center;min-height:44px;color:var(--text-primary);text-decoration:none;font-size:1rem}
+.tocbar .panel a:hover{color:var(--cyan)}
+.tocbar .tools{display:flex;gap:10px;flex-wrap:wrap;padding-top:8px;border-top:1px solid var(--border);margin-top:6px}
+.tocbar .tools button{min-height:44px;padding:0 14px;border-radius:10px;border:1px solid var(--border-hover);
+  background:none;color:var(--text-secondary);font:inherit;font-size:.92rem;cursor:pointer}
+.tocbar .tools button:hover{color:var(--cyan)}
+@media(min-width:900px){
+  .tocbar{position:fixed;top:8px;inset-inline:0;margin:0 auto;width:min(840px,calc(100% - 40px));padding:0 20px;
+    border-radius:12px;border:1px solid var(--border-hover);transform:translateY(-140%);transition:transform .2s}
+  .tocbar:not(.on){visibility:hidden}
+  .tocbar.on{transform:none}
+  .tocbar .panel{inset-inline:-1px}
+  .toc{display:block}
+}
+@media(max-width:899px){.toc{display:none}}
+
+/* collapsible technical subsections */
+details.dd{border-top:1px solid var(--border);margin-top:16px}
+details.dd>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;min-height:48px;padding:6px 0}
+details.dd>summary::-webkit-details-marker{display:none}
+details.dd>summary::before{content:"+";flex:none;width:26px;height:26px;border-radius:50%;border:1px solid var(--border-hover);
+  display:inline-flex;align-items:center;justify-content:center;color:var(--cyan);font-family:var(--font-en);font-weight:600}
+details.dd[open]>summary::before{content:"\2212"}
+details.dd>summary h3{margin:0!important;font-size:1.02rem!important;line-height:1.5}
+details.dd>summary:hover h3{color:var(--cyan)}
+details.dd>.dd-body{padding-bottom:6px}
+details.dd>.dd-body>:first-child{margin-top:4px}
+
+/* tables */
+.m-wrap{margin-top:14px}
+.m-tbl{font-size:.92rem}
+.m-tbl caption{caption-side:top;text-align:start;color:var(--text-muted);font-size:.85rem;padding:0 9px 8px}
+.m-tbl td.num-cell{white-space:normal}
+.m-tbl th{white-space:normal}
+.m-tbl.kv{min-width:0}
+@media(max-width:600px){
+  .m-wrap{overflow-x:visible}
+  .m-tbl:not(.kv){min-width:0;display:block}
+  .m-tbl:not(.kv) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+  .m-tbl:not(.kv) tbody,.m-tbl:not(.kv) tr,.m-tbl:not(.kv) td{display:block;width:100%}
+  .m-tbl:not(.kv) caption{display:block}
+  .m-tbl:not(.kv) tr{border:1px solid var(--border-hover);border-radius:12px;background:rgba(17,24,39,.4);
+    margin:0 0 12px;padding:10px 12px}
+  .m-tbl:not(.kv) td{border:0;padding:6px 0}
+  .m-tbl:not(.kv) td:first-child{font-size:1.02rem;font-weight:700;color:var(--text-primary);padding-top:2px}
+  .m-tbl:not(.kv) td[data-label]:not([data-label=""])::before{content:attr(data-label);display:block;
+    font-size:.8rem;font-weight:600;letter-spacing:.04em;color:var(--cyan);margin-bottom:1px}
+}
+
+/* back to top */
+.totop{position:fixed;inset-inline-end:16px;bottom:16px;width:48px;height:48px;border-radius:50%;z-index:70;
+  border:1px solid var(--border-hover);background:rgba(17,24,39,.94);color:var(--cyan);font-size:1.3rem;cursor:pointer;
+  display:none;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.4)}
+.totop.show{display:flex}
+@media print{.tocbar,.totop{display:none}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-  {"@type":"WebPage","@id":"https://kplns.com/radar/methodology.html#webpage","url":"https://kplns.com/radar/methodology.html","dateModified":"2026-10-23","name":"מתודולוגיה — ראדאר הסלמה ישראל ואיראן","description":"איך נקבעת הרמה, מה מדליק כל מדד, על מה מבוססים הספים, ומה המערכת לא יכולה לעשות.","inLanguage":["he-IL","en"],"breadcrumb":{"@id":"https://kplns.com/radar/methodology.html#breadcrumb"}},
+  {"@type":"WebPage","@id":"https://kplns.com/radar/methodology.html#webpage","url":"https://kplns.com/radar/methodology.html","dateModified":"2026-10-25","name":"מתודולוגיה — ראדאר הסלמה ישראל ואיראן","description":"איך נקבעת הרמה, מה מדליק כל מדד, על מה מבוססים הספים, ומה המערכת לא יכולה לעשות.","inLanguage":["he-IL","en"],"breadcrumb":{"@id":"https://kplns.com/radar/methodology.html#breadcrumb"}},
   {"@type":"BreadcrumbList","@id":"https://kplns.com/radar/methodology.html#breadcrumb","itemListElement":[
     {"@type":"ListItem","position":1,"name":"ראדאר הסלמה","item":"https://kplns.com/radar/"},
     {"@type":"ListItem","position":2,"name":"מתודולוגיה","item":"https://kplns.com/radar/methodology.html"}
@@ -251,7 +376,7 @@ footer a:hover{color:var(--cyan)}
 
 <a class="skip" href="#main"><span data-lang="he">דלג לתוכן</span><span data-lang="en">Skip to content</span></a>
 
-<div class="topbar">
+<header class="topbar">
   <div class="topbar-inner">
     <div class="brand"><span>KPLNS</span></div>
     <div class="topnav">
@@ -263,7 +388,7 @@ footer a:hover{color:var(--cyan)}
          ><span data-lang="he">← חזרה לראדאר</span><span data-lang="en">← Back to the radar</span></a>
     </div>
   </div>
-</div>
+</header>
 
 <main class="container" id="main">
 
@@ -285,12 +410,30 @@ footer a:hover{color:var(--cyan)}
     </div>
   </div>
 
-  <nav class="toc" aria-label="תוכן העניינים / Contents">
+  <div class="tocbar" id="tocbar">
+    <details id="tocdd">
+      <summary aria-label="תוכן העניינים" data-label-he="תוכן העניינים" data-label-en="Contents"><span class="ico" aria-hidden="true">☰</span>
+        <span data-lang="he">תוכן העניינים</span><span data-lang="en">Contents</span>
+        <span class="now" id="tocnow" aria-live="off"></span></summary>
+      <div class="panel">
+        <nav aria-label="ניווט בעמוד" data-label-he="ניווט בעמוד" data-label-en="Page navigation">
+          <div data-lang="he"><ol><li><a href="#q">השאלה שהמערכת עונה עליה</a></li><li><a href="#design">למה סמנים בוליאניים ולא ציון משוקלל</a></li><li><a href="#weights">איפה כן הוטה המשקל</a></li><li><a href="#stats">הבסיס הסטטיסטי</a></li><li><a href="#thresholds">ספי ההדלקה המדויקים</a></li><li><a href="#history">הבסיס ההיסטורי</a></li><li><a href="#rejected">מה נבדק ונפסל</a></li><li><a href="#honesty">כללי היושרה של הדף</a></li><li><a href="#ai">גילוי נאות: פיתוח בעזרת AI</a></li><li><a href="#changes">מה השתנה</a></li></ol></div>
+          <div data-lang="en"><ol><li><a href="#q">The question the system answers</a></li><li><a href="#design">Why on/off indicators and not a weighted score</a></li><li><a href="#weights">Where weight was applied after all</a></li><li><a href="#stats">The statistical basis</a></li><li><a href="#thresholds">The exact thresholds</a></li><li><a href="#history">The historical basis</a></li><li><a href="#rejected">What was tested and rejected</a></li><li><a href="#honesty">The page's honesty rules</a></li><li><a href="#ai">Disclosure: developed with AI tools</a></li><li><a href="#changes">What changed</a></li></ol></div>
+        </nav>
+        <div class="tools">
+          <button type="button" id="openall"><span data-lang="he">פתיחת כל הפרטים</span><span data-lang="en">Expand all details</span></button>
+          <button type="button" id="closeall"><span data-lang="he">סגירת כל הפרטים</span><span data-lang="en">Collapse all details</span></button>
+        </div>
+      </div>
+    </details>
+  </div>
+
+  <nav class="toc" aria-label="תוכן העניינים" data-label-he="תוכן העניינים" data-label-en="Contents">
     <div data-lang="he">
-    <h2>בעמוד הזה</h2>
+    <p class="toc-h">בעמוד הזה</p>
     <ol>
       <li><a href="#q">השאלה שהמערכת עונה עליה</a></li>
-      <li><a href="#design">למה טריפ-ווייר ולא ציון משוקלל</a></li>
+      <li><a href="#design">למה סמנים בוליאניים ולא ציון משוקלל</a></li>
       <li><a href="#weights">איפה כן הוטה המשקל</a></li>
       <li><a href="#stats">הבסיס הסטטיסטי</a></li>
       <li><a href="#thresholds">ספי ההדלקה המדויקים</a></li>
@@ -298,13 +441,14 @@ footer a:hover{color:var(--cyan)}
       <li><a href="#rejected">מה נבדק ונפסל</a></li>
       <li><a href="#honesty">כללי היושרה של הדף</a></li>
       <li><a href="#ai">גילוי נאות: פיתוח בעזרת AI</a></li>
+      <li><a href="#changes">מה השתנה</a></li>
     </ol>
     </div>
     <div data-lang="en">
-    <h2>On this page</h2>
+    <p class="toc-h">On this page</p>
     <ol>
       <li><a href="#q">The question the system answers</a></li>
-      <li><a href="#design">Why tripwires and not a weighted score</a></li>
+      <li><a href="#design">Why on/off indicators and not a weighted score</a></li>
       <li><a href="#weights">Where weight was applied after all</a></li>
       <li><a href="#stats">The statistical basis</a></li>
       <li><a href="#thresholds">The exact thresholds</a></li>
@@ -312,6 +456,7 @@ footer a:hover{color:var(--cyan)}
       <li><a href="#rejected">What was tested and rejected</a></li>
       <li><a href="#honesty">The page's honesty rules</a></li>
       <li><a href="#ai">Disclosure: developed with AI tools</a></li>
+      <li><a href="#changes">What changed</a></li>
     </ol>
     </div>
   </nav>
@@ -319,30 +464,12 @@ footer a:hover{color:var(--cyan)}
   <!-- ─────────────────────────────────────────────── -->
   <section class="blk" id="q">
     <div data-lang="he">
-    <div class="callout" style="border:1px solid rgba(148,163,184,.35);border-radius:10px;padding:14px 16px;margin:0 0 22px">
-      <b>מצטטים את הדף?</b> ציינו: <i>מדד ניסיוני פרטי המבוסס על נתונים ציבוריים —
-      לא גורם רשמי ולא מערכת התרעה.</i> המקור המחייב היחיד להנחיות התגוננות הוא
-      פיקוד העורף.
-    </div>
-
-    <div class="call red"><b>עדכון 8.10.2026 — מה השתנה מאז שרוב הסעיפים כאן נכתבו.</b>
-    הסעיפים שלמטה נכתבו לאורך אוגוסט–ספטמבר 2026 ושומרים את ההיסטוריה של הכיולים
-    בתאריכיהם; כשהם סותרים את הרשימה הזו — הרשימה הזו נכונה. (1) <b>תעופה צבאית
-    באזור</b> עברה להקשר בלבד ב-8.10.2026: 13 הדלקות שווא ב-30 יום, כולן בין 07:42
-    ל-12:42, והרצפה (14) נחצתה בתוך שבוע; המקסימום ברשומה המפורסמת הוא 26.
-    (2) <b>מרחב אווירי ירדן</b> הקשר בלבד מ-5.9.2026. (3) מרחב אווירי ישראל: תנאי
-    האחוזון ה-10 הוסר ב-1.9.2026. (4) המדד האיראני נשען מ-21.10.2026 על שלוש משפחות מצביעות (אינטרנט באיראן, בדיקות RIPE Atlas, עניין ציבורי בוויקיפדיה); הישראלי על ארבע. (5) קווי הבסיס הם <b>נעים</b> (48 שעות או
-    30 יום) ולא "אוגוסט 2026". (6) הרמות 0–3 אינן מוצגות עוד כמסר ציבורי; מה שמוצג
-    הוא ספירת חיישנים. (7) לוח התוצאות בסעיף 04 הוא תצלום היסטורי מ-1.9.2026; מאז
-    נרשמו עוד 17 הדלקות, אף אחת לא אושרה כאירוע. (8) הטבלה בסעיף 06 היא
-    <b>השערה</b> מתיעוד חדשותי על שלושה אירועים, לא זמן התרעה שהלוח הדגים.</div>
     <h2><span class="num">01</span> השאלה שהמערכת עונה עליה</h2>
-
-    <p class="lead">"האם מצטברים סימנים לכך שמתקרבת הסלמה בין ישראל לאיראן, ברמת
+<p class="lead">"האם מצטברים סימנים לכך שמתקרבת הסלמה בין ישראל לאיראן, ברמת
     ימים — כזו שמצדיקה להתארגן?"</p>
 
     <p>זו לא אותה שאלה שמדדים אחרים ברשת עונים עליה. usstrikeradar.com, למשל, שואל
-    "האם ארה"ב תתקוף באיראן" — שאלה קרובה, אבל לא זהה, ובוודאי לא זהה בהשלכות על
+    "האם ארה"ב תתקוף את איראן" — שאלה קרובה, אבל לא זהה, ובוודאי לא זהה בהשלכות על
     מישהו שגר בישראל. הראדאר הזה מציג <b>שני מדדים נפרדים</b>, אחד לכל צד, מפני
     שהסימנים משני הצדדים שונים לגמרי באופיים: בישראל נמדדת התנהגות של מערכות אזרחיות
     וביטחוניות, ובאיראן נמדדת התנהגות של המשטר ושל התשתית.</p>
@@ -356,7 +483,7 @@ footer a:hover{color:var(--cyan)}
     </div>
 
     <div class="call red">
-      <b>מה המכשיר הזה אינו רואה — במפורש (נוסף 31.8.2026):</b> המדדים קוראים
+      <b>מה המכשיר הזה אינו רואה — במפורש :</b> המדדים קוראים
       שיבוש סביבתי ברמת חברה שלמה — מרחב אווירי, אינטרנט, מטבע, חריגות
       תרמיות — על חלון בסיס של כ-48 שעות. לכן המערכת <b>אינה מסוגלת
       מבנית</b> לראות:
@@ -374,11 +501,10 @@ footer a:hover{color:var(--cyan)}
         נפרדת ("מגמות איטיות") — כהקשר בלבד, לא כשינוי רמה.</li>
       </ul>
       לכן <b>0 בראדאר אינו "הכול בסדר"</b> — הוא אומר רק שהחיישנים לא ראו
-      שיבוש סביבתי בחלון המדידה. ובדיוק בגלל הגבול הזה, בראש עמוד הראדאר
-      מוצג באנר "מצב הלחימה": שלב הלחימה המוצהר נקבע <b>בידי אדם</b>. זו
-      הצהרת מצב עמידה — לא הזנת חדשות — והיא נפרדת ובמפורש מפלט החיישנים
-      האוטומטי של המחוון שמתחת.
-      <p><b>מה שאין כאן, בכוונה (1.9.2026):</b> העמוד <b>אינו עוקב אחר
+      שיבוש סביבתי בחלון המדידה. ובדיוק בגלל הגבול הזה מוצג בעמוד הראדאר
+      כרטיס "מצב הלחימה": שלב הלחימה המוצהר נקבע <b>בידי אדם</b>. זו הצהרה על המצב הקבוע, שמעדכן אדם — לא עדכון חדשות — והיא נפרדת במפורש מפלט החיישנים
+      האוטומטי של המחוונים.
+      <p><b>מה שאין כאן, בכוונה:</b> העמוד <b>אינו עוקב אחר
       תקיפות בודדות ואינו מציג רשימת אירועים</b>. רשימת אירועים קינטיים
       הוצגה כאן עד 1.9.2026 והוסרה: רשימה סטטית של אירועים בעמוד סטטוס חי
       נקראת כעדכנית גם כשהיא בת ימים, וזה בדיוק ההיפך ממה שהעמוד הזה אמור
@@ -390,34 +516,13 @@ footer a:hover{color:var(--cyan)}
     </div>
     </div>
     <div data-lang="en">
-    <div class="callout" style="border:1px solid rgba(148,163,184,.35);border-radius:10px;padding:14px 16px;margin:0 0 22px">
-      <b>Quoting this page?</b> Please state: <i>a private, experimental index
-      built from public data — not an official body and not a warning system.</i>
-      The only binding source for civil-defence instructions is the Home Front Command.
-    </div>
-
-    <div class="call red"><b>Update 2026-10-08 — what has changed since most sections here were written.</b>
-    The sections below were written across August–September 2026 and keep the history
-    of each calibration under its own date; where they contradict this list, this list
-    is correct. (1) <b>Regional military aviation</b> became context-only on 2026-10-08:
-    13 false episodes in 30 days, all between 07:42 and 12:42, and its floor (14) was
-    exceeded within a week; the maximum in the published record is 26.
-    (2) <b>Jordanian airspace</b> has been context-only since 2026-09-05. (3) Israeli
-    airspace: the 10th-percentile arm was removed on 2026-09-01. (4) Since 2026-10-21 the Iran index rests on three voting families (Iranian internet, RIPE Atlas probes, Wikipedia attention to Hormuz); the Israel index on four.
-    (5) Baselines are <b>rolling</b> (48 hours or 30 days), not "August 2026".
-    (6) The 0–3 levels are no longer a public message; what is shown is a sensor
-    count. (7) The scoreboard in section 04 is a historical snapshot from 2026-09-01;
-    since then 17 further lit episodes were logged, none confirmed as an event.
-    (8) The table in section 06 is a <b>hypothesis</b> from news records of three
-    events, not a warning time this board has demonstrated.</div>
     <h2><span class="num">01</span> The question the system answers</h2>
-
-    <p class="lead">"Are signs accumulating that an escalation between Israel and
+<p class="lead">"Are signs accumulating that an escalation between Israel and
     Iran is approaching, on a scale of days — the kind that justifies getting
     prepared?"</p>
 
     <p>That is not the question other indices online answer. usstrikeradar.com,
-    for example, asks "will the US strike Iran" — a nearby question, but not the
+    for example, asks "will the US strike Iran" — a related question, but not the
     same one, and certainly not the same in its consequences for someone living
     in Israel. This radar shows <b>two separate indices</b>, one per side,
     because the signs on the two sides differ completely in kind: on the Israeli
@@ -435,8 +540,7 @@ footer a:hover{color:var(--cyan)}
     </div>
 
     <div class="call red">
-      <b>What this instrument cannot see — stated plainly (added
-      2026-08-31):</b> the indicators read society-scale ambient disruption —
+      <b>What this instrument cannot see — stated plainly:</b> the indicators read society-scale ambient disruption —
       airspace, internet, currency, thermal anomalies — over a baseline window
       of roughly 48 hours. The system is therefore <b>structurally unable</b>
       to see:
@@ -445,7 +549,7 @@ footer a:hover{color:var(--cyan)}
         30–31 Aug 2026 the US struck Larak Island in the Strait of Hormuz and
         Iran fired 8 ballistic missiles at bases in Jordan (all intercepted by
         Jordan's army; Petra, CENTCOM) — and this radar showed level 0
-        throughout, with all 16 sources healthy. That is not a plumbing fault
+        throughout, with all 16 sources healthy (as of 2026-08-31). That is not a plumbing fault
         but a limit of the instrument: a discrete event that does not disrupt
         civil aviation, internet or currency at a societal scale is invisible
         to it.</li>
@@ -459,11 +563,11 @@ footer a:hover{color:var(--cyan)}
       </ul>
       So <b>0 on the radar is not an all-clear</b> — it says only that the
       sensors saw no ambient disruption in the measurement window. And
-      precisely because of that limit, the top of the radar page carries a
-      war-phase banner: the declared war phase is set <b>by a person</b>. It
-      is a durable state statement, not a news feed, and it is deliberately
-      kept separate from the automated sensor output of the dial below.
-      <p><b>What is deliberately NOT here (2026-09-01):</b> this page
+      precisely because of that limit, the radar page carries a war-phase
+      card: the declared war phase is set <b>by a person</b>. It is a durable
+      state statement, not a news feed, and it is deliberately kept separate
+      from the automated sensor output of the gauges.
+      <p><b>What is deliberately NOT here:</b> this page
       <b>does not track individual strikes and carries no event list</b>. A
       list of kinetic events stood here until 2026-09-01 and was removed: a
       static list of events on a live-status page reads as current even when
@@ -474,19 +578,30 @@ footer a:hover{color:var(--cyan)}
       events, rely on news sources; the only binding source for civil-defence
       instructions is the Home Front Command.</p>
     </div>
+    <p class="fine">הסעיפים כאן מתארים את המערכת כפי שהיא היום. מה שהשתנה ומתי — בסעיף <a href="#changes">10, מה השתנה</a>.</p>
+    <div class="callout" style="border:1px solid rgba(148,163,184,.35);border-radius:10px;padding:14px 16px;margin:0 0 22px">
+      <b>מצטטים את הדף?</b> ציינו: <i>מדד ניסיוני פרטי המבוסס על נתונים ציבוריים —
+      לא גורם רשמי ולא מערכת התרעה.</i> המקור המחייב היחיד להנחיות התגוננות הוא
+      פיקוד העורף.
+    </div>
+    <p class="fine">The sections here describe the system as it is today. What changed, and when, is in <a href="#changes">section 10, What changed</a>.</p>
+    <div class="callout" style="border:1px solid rgba(148,163,184,.35);border-radius:10px;padding:14px 16px;margin:0 0 22px">
+      <b>Quoting this page?</b> Please describe it as: <i>&quot;a private, experimental index built from public data — not an official body and not a warning system.&quot;</i>
+      The only binding source for civil-defence instructions is the Home Front Command.
+    </div>
     </div>
   </section>
 
   <!-- ─────────────────────────────────────────────── -->
   <section class="blk" id="design">
     <div data-lang="he">
-    <h2><span class="num">02</span> למה טריפ-ווייר ולא ציון משוקלל</h2>
+    <h2><span class="num">02</span> למה סמנים בוליאניים ולא ציון משוקלל</h2>
 
     <p>הדרך המקובלת לבנות מדד כזה היא ממוצע משוקלל: לוקחים 6–8 סיגנלים, נותנים לכל
     אחד משקל, ומקבלים מספר בין 0 ל-100. הדף הזה <b>לא</b> עושה את זה — בכוונה,
     ואחרי שנמדד מה קורה כשכן.</p>
 
-    <h3>מה שנמדד על מערכת משוקללת שרצה כאן בפועל</h3>
+    <details class="dd"><summary><h3>מה שנמדד על מערכת משוקללת שרצה כאן בפועל</h3></summary><div class="dd-body">
     <p>לפני בניית הראדאר הזה רץ במשך חודשיים מוניטור שהתבסס על מדד משוקלל חיצוני.
     זו הייתה ההתנהגות שלו ביומן שלו עצמו, 9.6.2026–16.8.2026:</p>
     <ul>
@@ -509,7 +624,8 @@ footer a:hover{color:var(--cyan)}
       להתעלם ממנה. זה גרוע יותר משום התרעה, בדיוק עבור ההתרעה האחת שחשובה.
     </div>
 
-    <h3>מה נבנה במקום</h3>
+    </div></details>
+    <details class="dd"><summary><h3>מה נבנה במקום</h3></summary><div class="dd-body">
     <p>כל מדד כאן הוא <b>בוליאני</b> — דולק או כבוי — ולא ציון. הרמה היא פשוט
     <b>ספירה של כמה משפחות מדדים דולקות בו-זמנית</b>, אחרי מסנן גיוון-ספקים:</p>
     <div class="fx">
@@ -522,7 +638,8 @@ footer a:hover{color:var(--cyan)}
     <p>"משפחה" היא מקור-התנהגות אחד, ולה <b>קול אחד</b> בלבד — לא משנה כמה פריטים
     בתוכה זזו. ארבע שגרירויות ארה"ב שמפרסמות הוראה באותו יום הן עדיין קול אחד, לא ארבעה.</p>
 
-    <h3>פעולה מול דעה — "יקר" מתחלק לשניים (20.8.2026)</h3>
+    </div></details>
+    <details class="dd"><summary><h3>פעולה מול דעה — "יקר" מתחלק לשניים (20.8.2026)</h3></summary><div class="dd-body">
     <p>העיקרון המקורי — אותות יקרים ולא דיבור זול — התברר כלא מדויק מספיק:
     "יקר" מתחלק לשני סוגים שונים מהותית, ורק אחד מהם שווה קול אזהרה.</p>
     <ul>
@@ -530,30 +647,28 @@ footer a:hover{color:var(--cyan)}
       העורף שמשנה הנחיות התגוננות; מדינה שמנתקת לעצמה את האינטרנט; ארה"ב
       שמפנה אנשי שגרירות; מרחב אווירי שנסגר; צבא שמשבש GPS מעל השטח של
       עצמו. המחיר ששולם הוא הראיה שמאחורי הצעד עומדת ידיעה.</li>
-      <li><b>דעה</b> — יקרה <b>למהמר</b> שאין לו מידע פרטי. Polymarket, נפט,
-      נפט, שער השקל, רמות אזהרת מסע. תשלום הכסף מוכיח שהסוחר רציני — לא
+      <li><b>דעה</b> — יקרה <b>למהמר</b> שאין לו מידע פרטי. Polymarket, נפט, שער השקל, רמות אזהרת מסע. תשלום הכסף מוכיח שהסוחר רציני — לא
       שהוא יודע משהו. הוא קורא את אותן כותרות שהאספנים האחרים קוראים.</li>
     </ul>
     <p>הכלל שנאכף בקוד: <b>רמה 2 ומעלה מחייבת לפחות משפחת פעולה אחת דולקת.</b>
     דעות לבדן — לא משנה כמה מהן נדלקות יחד — עוצרות את המדד ברמה 1. דעות
     מאשרות ומוסיפות ביטחון; הן לעולם אינן מייצרות אזהרה בעצמן. הכלל הזה יכול
-    רק להוריד רמה, לעולם לא להעלות — נבדק ממצה על כל תת-הקבוצות האפשריות של
+    רק להוריד רמה, לעולם לא להעלות — נבדק באופן ממצה על כל תת-הקבוצות האפשריות של
     משפחות. הבדיקה הזו מוכיחה תכונה מכנית אחת בלבד — שהכלל אינו מעלה רמה;
     היא אינה ראיה לכך שהכלל מדייק, ואין לקרוא אותה ככזו. הכלל אינו נוגע בחריגת פיקוד העורף — שהיא משפחת
     פעולה. הערת יושר על אזהרות המסע: פינוי שגרירות בפועל היה פעולה, אבל מה
     שהאספן קורא הוא רק <b>רמת האזהרה מכותרת ה-RSS</b> — הכרזה, לא פעולה
     נצפית — ולכן הן סווגו דעה.</p>
-    <p><b>מ-1.9.2026 עד 21.10.2026 הכלל הזה היה רדום, והוא נשמר בכוונה.</b> שלוש משפחות הדעה
-    (שווקים, שוק הניבוי, אזהרות מסע) עברו באותו יום ל<b>הקשר בלבד</b>, ולכן
-    כל משפחה שיכלה להיספר סווגה פעולה. <b>מ-21.10.2026 הכלל חי שוב</b>: משפחת דעה אחת —
-    העניין הציבורי בוויקיפדיה במצר הורמוז, במדד האיראני בלבד — קיבלה קול, ולבדה
-    (או עם עוד דעה) היא נעצרת ברמה 1. הסיווג מוצג בכל שורה.</p>
+    
 
 
-    <h3 id="iran-ceiling-method">המדד האיראני: שלוש משפחות מצביעות (מעודכן 21.10.2026; נכתב 1.9.2026 כתקרה של 2)</h3>
-    <p>מ-1.9.2026 עד 8.10.2026 המדד האיראני נשען על שתי משפחות מצביעות, בין 8.10.2026 ל-21.10.2026 על אחת, ומ-21.10.2026 על <b>שלוש משפחות מצביעות משלושה ספקים נפרדים</b>: קישוריות האינטרנט הארצית של איראן (IODA), בדיקות RIPE Atlas הפעילות בתוך איראן, והעניין הציבורי בוויקיפדיה במצר הורמוז. רמה 2 ומעלה מחייבת שני ספקים נפרדים לפחות ורמה 3 שלושה. <b>מ-23.10.2026 אינטרנט באיראן (IODA) ובדיקות RIPE Atlas נספרים כתופעה אחת וקול אחד</b>, כי שניהם מודדים את אותו ניתוק פיזי (RIPE קרס בשלושת הניתוקים האמיתיים בדיוק יחד עם IODA). לכן במדד האיראני שתי תופעות מצביעות, <b>רמה 2 היא המקסימום</b>, והמחוון כותב "מתוך 2". אותו כלל חל על פוסט "סימנים פיזיים במקביל" בערוץ. התקרה נגזרת בקוד מרשימת המשפחות המצביעות ומתפרסמת בשדה
+    <p>כיום משפחת דעה אחת — העניין הציבורי בוויקיפדיה במצר הורמוז, במדד האיראני בלבד — מצביעה; לבדה (או עם עוד דעה) היא נעצרת ברמה 1. הסיווג מוצג בכל שורה.</p>
+
+    </div></details>
+    <details class="dd"><summary><h3 id="iran-ceiling-method">המדד האיראני: שלוש משפחות, שתי תופעות מצביעות</h3></summary><div class="dd-body">
+    <p>המדד האיראני נשען על <b>שלוש משפחות מצביעות משלושה ספקים נפרדים</b>: קישוריות האינטרנט הארצית של איראן (IODA), חיישני RIPE Atlas הפעילים בתוך איראן, והעניין הציבורי בוויקיפדיה במצר הורמוז. רמה 2 ומעלה מחייבת שני ספקים נפרדים לפחות ורמה 3 שלושה. <b>מ-23.10.2026 אינטרנט באיראן (IODA) וחיישני RIPE Atlas נספרים כתופעה אחת וקול אחד</b>, כי שניהם מודדים את אותו ניתוק פיזי (RIPE קרס בשלושת הניתוקים האמיתיים בדיוק יחד עם IODA). לכן במדד האיראני יש שתי תופעות מצביעות בלבד, ו<b>רמה 2 היא המקסימום</b>. אותו כלל חל על הודעת "סימנים פיזיים במקביל" בערוץ. התקרה נגזרת בקוד מרשימת המשפחות המצביעות ומתפרסמת בשדה
     <code>max_level</code>, ולא נכתבת ידנית — כך היא אינה יכולה לסטות מהקוד.</p>
-    <p><b>מה כל אחת מהחדשות יכולה ולא יכולה.</b> בדיקות RIPE Atlas: מספר הבדיקות המחוברות באיראן מתחת ל-50% מחציון 14 הימים, בשתי בדיקות רצופות. בשחזור על ארכיון הבדיקות היומי: 73–104 בימים רגילים, וב-18.6.2025, 8.1.2026 ו-28.2.2026 צניחה ל-5–7 — <b>במקביל</b> לניתוק, לא לפניו. זה עד שני עצמאי (רשת מדידה אחרת, שיטה אחרת), לא אות מקדים. בקרה: אם גם מספר הבדיקות בישראל קורס, התקלה ב-RIPE ולא באיראן — המדד מוצג כ"לא נמדד כרגע" ואינו נדלק; כשל קריאה הוא תמיד "לא נמדד". ויקיפדיה: הצפיות ביום האחרון שפורסם בערך Strait of Hormuz, פי 3 ומעלה מחציון 14 הימים שלפניו. בשחזור: פי 8.4 / 7.7 / 6.6 ב-17–19.2.2026 (11 ימים לפני 28.2), פי 3.2–3.9 ב-29.1–1.2.2026 ופי 3.35 ב-12.6.2025 (ערב התקיפות); בינואר 2026 לא עבר פי 2.5, ובחודש האחרון אף יום לא עבר פי 2. הסף נקבע על פי 3 כי הוא שומר על כל פגיעה מוקדמת בשחזור ויושב מעל הערך הגבוה ביותר שלא היה קשור לאירוע (פי 2.43). זה אות מקדים ב-0–11 ימים אבל רועש, ומבוסס על שלושה אירועים בלבד; והוא <b>עניין ציבורי</b> — קורא שמחפש ערך לא משלם דבר — ולכן מסווג דעה ולבדו נעצר ברמה 1.</p>
+    <p><b>מה כל אחת משתי המשפחות החדשות יכולה, ומה לא.</b> חיישני RIPE Atlas: מספר החיישנים המחוברים באיראן מתחת ל-50% מחציון 14 הימים, בשתי בדיקות רצופות. בשחזור על ארכיון הבדיקות היומי: 73–104 בימים רגילים, וב-18.6.2025, 8.1.2026 ו-28.2.2026 צניחה ל-5–7 — <b>במקביל</b> לניתוק, לא לפניו. זה עד שני עצמאי (רשת מדידה אחרת, שיטה אחרת), לא אות מקדים. בקרה: אם גם מספר החיישנים בישראל קורס, התקלה ב-RIPE ולא באיראן — המדד מוצג כ"לא נמדד כרגע" ואינו נדלק; כשל קריאה הוא תמיד "לא נמדד". ויקיפדיה: הצפיות ביום האחרון שפורסם בערך Strait of Hormuz, פי 3 ומעלה מחציון 14 הימים שלפניו. בשחזור: פי 8.4 / 7.7 / 6.6 ב-17–19.2.2026 (11 ימים לפני 28.2), פי 3.2–3.9 ב-29.1–1.2.2026 ופי 3.35 ב-12.6.2025 (ערב התקיפות); בינואר 2026 לא עבר פי 2.5, ובחודש האחרון אף יום לא עבר פי 2. הסף נקבע על פי 3 כי הוא שומר על כל פגיעה מוקדמת בשחזור ויושב מעל הערך הגבוה ביותר שלא היה קשור לאירוע (פי 2.43). זה אות מקדים ב-0–11 ימים אבל רועש, ומבוסס על שלושה אירועים בלבד; והוא <b>עניין ציבורי</b> — קורא שמחפש ערך לא משלם דבר — ולכן מסווג דעה ולבדו נעצר ברמה 1.</p>
     <p>שאר השורות בפאנל האיראני — תעופה צבאית, חריגות תרמיות מלוויין, שיבוש GPS בהורמוז,
     השווקים ושוק הניבוי — ממשיכות להימדד, להישמר ולהופיע עם הסף החי שלהן,
     אבל <b>אינן מצביעות</b>. הסיבה היא מה שניתן למדוד מעל איראן בערוצים
@@ -561,9 +676,10 @@ footer a:hover{color:var(--cyan)}
     שיבוש GPS במפרץ הוא אות ימי, מחוץ לשאלה שהדף הזה שואל; ושווקים והימורים
     הם דעה שנבנית מאותן חדשות שכל שאר האספנים קוראים.</p>
     <p><b>ארבע שורות "נמדד, עוד לא מצביע" (21.10.2026).</b> סולם אזהרות המסע של ארבע ממשלות, לינות צוותי אוויר זרים בנתב"ג, ביטולי טיסות אסטנבול–טהרן, ומטוסי תדלוק ומודיעין באזור. כל אחת נמדדת בכל ריצה, מוצגת בדף, ונרשמת לקובץ בסיס. אף אחת מהן אינה נכנסת לרמה, לספירה, להתרעה או לפוסט. בדיקת קידום לא לפני 28.10.2026, אחרי 7 ימי בסיס, ורק באישור הבעלים. לוח הטיסות החורפי של IATA מתחיל ב-25.10.2026 ולכן ספירות הנתב"ג לפני ואחרי המעבר אינן ברות השוואה.</p>
-    <p>גם הסף של merit-nt (IODA) אינו במצב טוב יותר בפועל, וזה נאמר כאן ולא מוסתר: הוא עומד היום על מתחת ל-24, והערך הנמוך ביותר שנשמר אי פעם ב-14 קבצי המצב שעל הדיסק הוא 26.4, כלומר הוא יושב מחוץ למעטפת שנמדדה עד היום. <b>זו אמירה על הכלים שיש לנו, לא על איראן.</b></p>
+    <p>גם למשפחה המצביעה העיקרית יש בעיה, וזה נאמר כאן ולא מוסתר: הסף של merit-nt (IODA) נמוך מהערך הנמוך ביותר שנשמר אי פעם ב-14 התצלומים היומיים השמורים (26.4), כלומר הוא יושב מחוץ למעטפת שנמדדה עד היום. הסף החי מוצג בשורת המדד בדף הראשי. <b>זו אמירה על הכלים שיש לנו, לא על איראן.</b></p>
 
-    <h3>למה לא כתוב כאן "משפחות בלתי תלויות"</h3>
+    </div></details>
+    <details class="dd"><summary><h3>למה לא כתוב כאן "משפחות בלתי תלויות"</h3></summary><div class="dd-body">
     <p>עד 18.8.2026 הדף הזה טען שהרמה סופרת משפחות <b>בלתי תלויות</b>. הטענה
     הזו לא הייתה מדויקת, והיא תוקנה. המשפחות מודדות <b>התנהגויות שונות</b> —
     צבא, מרחב אווירי, מטבע, לוויין — אבל הן אינן <b>תצפיות</b> בלתי-תלויות:
@@ -577,7 +693,7 @@ footer a:hover{color:var(--cyan)}
       <li><b>gpsjam.org</b>, קובץ יומי אחד: שיבוש ה-GPS במצר הורמוז ושיבוש
       ה-GPS מעל מרחב ישראל — אותה הורדה בדיוק משרתת את שתיהן.</li>
     </ul>
-    <p>המשמעות: תקלה אחת אצל ספק אחד יכולה הייתה לייצר 🔴 קריטי שנראה כמו
+    <p>המשמעות: תקלה אחת אצל ספק אחד הייתה יכולה לייצר רמה 3 שנראית כמו
     שלושה אישושים נפרדים ובלתי-תלויים. זו בדיוק הטעות שהדף הזה נבנה כדי לא
     לעשות. מאז נאכף בקוד <b>מסנן גיוון-ספקים</b>, ולכל משפחה יש תגית ספק
     מפורשת בקוד (לא ניחוש מתוך כתובת):</p>
@@ -587,28 +703,24 @@ footer a:hover{color:var(--cyan)}
       העורף לבדו, ראו סעיף 3 להלן);</li>
       <li>המסנן יכול רק <b>להוריד</b> רמה — לעולם לא להעלות אותה.</li>
     </ul>
-    <p><b>סעיף שהוסר, 1.9.2026.</b> עד אז נכתב כאן גם ש"משפחות שחולקות ספק
-    תורמות יחד לכל היותר שני קולות". התקרה ההיא נמחקה מהקוד באותו יום, אחרי
-    שנבדקו כל 131,072 המצבים האפשריים (2<sup>16</sup> תת-קבוצות של משפחות
-    דולקות × שני מדדים) עם התקרה ובלעדיה, ולא נמצא <b>אף</b> הבדל בתוצאה. היא
-    לא שינתה רמה מעולם: הדרישה לשלושה ספקים ברמה 3 כבר חוסמת בדיוק את אותו
-    מצב. ההערה נשארת כאן כדי שקורא שזוכר את הכלל הישן ידע שהוא הוסר בכוונה
-    ומדוע.</p>
+    
+    <p>משפחות שחולקות ספק אינן מוגבלות בתקרת קולות נפרדת; הדרישה לשלושה ספקים ברמה 3 היא שחוסמת רמה 3 שכל קולותיה מספק אחד או שניים.</p>
     <p>יוצא דופן אחד, ומוצהר: שינוי במדיניות ההתגוננות של פיקוד העורף מספיק
     לבדו לרמה 3. הכלל הזה אינו טענה על אישוש מצטבר משלושה מקורות, אלא פעולה
     רשמית אחת של מדינת ישראל שמתפרסמת ב-API הרשמי שלה. המסנן נועד למנוע
     מתקלה אחת להתחזות לשלוש תצפיות — ואין לו מה לומר על כלל שמעולם לא טען
     להיות שלוש.</p>
+    </div></details>
     </div>
     <div data-lang="en">
-    <h2><span class="num">02</span> Why tripwires and not a weighted score</h2>
+    <h2><span class="num">02</span> Why on/off indicators and not a weighted score</h2>
 
     <p>The usual way to build an index like this is a weighted average: take 6–8
     signals, give each a weight, and get a number between 0 and 100. This page
     <b>does not</b> do that — deliberately, and after measuring what happens
     when you do.</p>
 
-    <h3>What was measured on a weighted system that actually ran here</h3>
+    <details class="dd"><summary><h3>What was measured on a weighted system that actually ran here</h3></summary><div class="dd-body">
     <p>Before this radar was built, a monitor based on an external weighted
     index ran for two months. This was its behaviour, from its own log,
     9.6.2026–16.8.2026:</p>
@@ -635,7 +747,8 @@ footer a:hover{color:var(--cyan)}
       precisely for the one alert that matters.
     </div>
 
-    <h3>What was built instead</h3>
+    </div></details>
+    <details class="dd"><summary><h3>What was built instead</h3></summary><div class="dd-body">
     <p>Every indicator here is <b>boolean</b> — lit or unlit — not a score. The
     level is simply <b>a count of how many indicator families are lit at
     once</b>, passed through a provider-diversity guard:</p>
@@ -650,7 +763,8 @@ footer a:hover{color:var(--cyan)}
     vote</b> — no matter how many items inside it moved. Four U.S. embassies
     issuing an order on the same day are still one vote, not four.</p>
 
-    <h3>Action vs belief — "costly" splits in two (20 Aug 2026)</h3>
+    </div></details>
+    <details class="dd"><summary><h3>Action vs belief — "costly" splits in two (20 Aug 2026)</h3></summary><div class="dd-body">
     <p>The original principle — costly signals, not cheap talk — turned out to
     be not precise enough: "costly" divides into two fundamentally different
     kinds, and only one of them is worth a warning vote.</p>
@@ -677,27 +791,25 @@ footer a:hover{color:var(--cyan)}
     which is an action family. An honesty note on the travel advisories: an
     actual embassy evacuation would be an action, but what the collector
     reads is only the <b>advisory level from the RSS title</b> — an
-    announcement, not an observed costly act — so they are typed belief.</p>
-    <p><b>The rule was dormant from 2026-09-01 to 2026-10-21, and kept on purpose.</b>
-    All three belief families (markets, the prediction market, travel
-    advisories) moved to <b>context only</b> on the first date, so every family
-    that could be counted was typed action. <b>Since 2026-10-21 it is live again:</b>
-    one belief family — public attention to the Strait of Hormuz on Wikipedia,
-    on the Iran index only — was given a vote, and on its own (or with another
-    belief) it stops at level 1. The type is shown on every row.</p>
+    announcement, not an observed costly act — so they are classified as belief.</p>
+    
 
 
-    <h3 id="iran-ceiling-method-en">The Iran index: three voting families (updated 2026-10-21; written 2026-09-01 as a ceiling of 2)</h3>
-    <p>From 2026-09-01 to 2026-10-08 the Iran index rested on two voting families, between 2026-10-08 and 2026-10-21 on one, and since 2026-10-21 on <b>three voting families from three separate providers</b>: Iran&#39;s national internet connectivity (IODA), the RIPE Atlas probes active inside Iran, and public attention to the Strait of Hormuz on Wikipedia. Level 2 and up requires at least two separate providers and level 3 requires three. <b>Since 2026-10-23 Iranian internet (IODA) and RIPE Atlas count as one phenomenon and one vote</b>, because both measure the same physical cut (RIPE collapsed in all three real shutdowns exactly when IODA did). So the Iran index has two voting phenomena, <b>level 2 is the maximum</b>, and the gauge says &quot;of 2&quot;. The same rule applies to the channel&#39;s "parallel physical signals" post. The
+    <p>Today one belief family — public attention to the Strait of Hormuz on Wikipedia, on the Iran index only — votes; on its own (or with another belief) it stops at level 1. The classification is shown on every row.</p>
+
+    </div></details>
+    <details class="dd"><summary><h3 id="iran-ceiling-method-en">The Iran index: three families, two voting phenomena</h3></summary><div class="dd-body">
+    <p>The Iran index rests on <b>three voting families from three separate providers</b>: Iran&#39;s national internet connectivity (IODA), the RIPE Atlas probes active inside Iran, and public attention to the Strait of Hormuz on Wikipedia. Level 2 and up requires at least two separate providers and level 3 requires three. <b>Since 2026-10-23 Iranian internet (IODA) and RIPE Atlas count as one phenomenon and one vote</b>, because both measure the same physical cut (RIPE collapsed in all three real shutdowns exactly when IODA did). So the Iran index has two voting phenomena and <b>level 2 is the maximum</b>. The same rule applies to the channel&#39;s "parallel physical signals" message. The
     ceiling is derived in code from the voting roster and published in a
     <code>max_level</code> field rather than written by hand, so it cannot
     drift from the code.</p>
-    <p><b>What each new one can and cannot do.</b> RIPE Atlas probes: connected probes in Iran below 50% of the 14-day median, on two consecutive checks. Backtested on the daily probe archive: 73–104 on ordinary days, and 5–7 on 18 Jun 2025, 8 Jan 2026 and 28 Feb 2026 — <b>simultaneous</b> with the cut, not ahead of it. It is a second, independent witness (a different network, a different method), not an early warning. Control: if the Israel probe count collapses too, the fault is RIPE and not Iran — the indicator is shown as &quot;not measured right now&quot; and does not light; a failed read is always &quot;not measured&quot;. Wikipedia: views on the newest published day of the Strait of Hormuz article, 3x or more the median of the 14 days before it. Backtested: 8.4x / 7.7x / 6.6x on 17–19 Feb 2026 (11 days before 28 Feb), 3.2–3.9x on 29 Jan–1 Feb 2026 and 3.35x on 12 Jun 2025 (the eve of the strikes); in January 2026 it never passed 2.5x, and in the last month no day passed 2x. The bar is 3x because it keeps every early hit in the backtest and sits above the highest unrelated value (2.43x). It leads by 0–11 days but is noisy and rests on three events; and it is <b>public attention</b> — a reader looking an article up pays nothing — so it is typed belief and on its own stops at level 1.</p>
+    <p><b>What each new one can and cannot do.</b> RIPE Atlas probes: connected probes in Iran below 50% of the 14-day median, on two consecutive checks. Backtested on the daily probe archive: 73–104 on ordinary days, and 5–7 on 18 Jun 2025, 8 Jan 2026 and 28 Feb 2026 — <b>simultaneous</b> with the cut, not ahead of it. It is a second, independent witness (a different network, a different method), not an early warning. Control: if the Israel probe count collapses too, the fault is RIPE and not Iran — the indicator is shown as &quot;not measured right now&quot; and does not light; a failed read is always &quot;not measured&quot;. Wikipedia: views on the newest published day of the Strait of Hormuz article, 3x or more the median of the 14 days before it. Backtested: 8.4x / 7.7x / 6.6x on 17–19 Feb 2026 (11 days before 28 Feb), 3.2–3.9x on 29 Jan–1 Feb 2026 and 3.35x on 12 Jun 2025 (the eve of the strikes); in January 2026 it never passed 2.5x, and in the last month no day passed 2x. The bar is 3x because it keeps every early hit in the backtest and sits above the highest unrelated value (2.43x). It leads by 0–11 days but is noisy and rests on three events; and it is <b>public attention</b> — a reader looking an article up pays nothing — so it is classified as belief and on its own stops at level 1.</p>
     <p>The other rows on the Iran panel — military aviation, satellite thermal anomalies, Hormuz GPS interference, the markets and the prediction market — are still measured, still stored, and still shown with their live thresholds, but they <b>cast no vote</b>: thermal detection is damage assessment <b>after</b> a strike, not before; Gulf GPS jamming is a maritime signal, outside the question this page asks; and markets and betting odds are opinion formed from the same news every other collector reads.</p>
     <p><b>Four &quot;measured, not yet voting&quot; rows (2026-10-21).</b> The travel-advisory ladder of four governments, foreign air-crew night-stops at Ben Gurion, Istanbul–Tehran flight cancellations, and Western tanker and ISR aircraft in the region. Each is measured every run, shown on the page and written to a baseline file. None of them enters a level, a count, an alert or a post. Promotion is reviewed no earlier than 2026-10-28, after 7 baseline days, and only with the owner&#39;s approval. The IATA winter schedule starts on 2026-10-25, so Ben Gurion counts before and after it are not comparable.</p>
-    <p>The merit-nt bar (IODA) is not in better shape in practice either, and that is stated here rather than hidden: it is below 24 today, and the lowest value ever retained across the 14 state files on disk is 26.4, i.e. it sits outside the envelope that has actually been observed. <b>This is a statement about the instruments we have, not about Iran.</b></p>
+    <p>One voting family has a problem of its own, and that is stated here rather than hidden: the merit-nt bar (IODA) is below the lowest value ever retained across the 14 stored daily snapshots (26.4), i.e. it sits outside the envelope that has actually been observed. The live bar is shown on the indicator&#39;s row on the main page. <b>This is a statement about the instruments we have, not about Iran.</b></p>
 
-    <h3>Why this page no longer says "independent families"</h3>
+    </div></details>
+    <details class="dd"><summary><h3>Why this page no longer says "independent families"</h3></summary><div class="dd-body">
     <p>Until 18 Aug 2026 this page claimed the level counted
     <b>independent</b> families. That claim was not accurate, and it has been
     corrected. The families measure <b>different behaviours</b> — an army, an
@@ -719,7 +831,7 @@ footer a:hover{color:var(--cyan)}
       download serves both.</li>
     </ul>
     <p>What that meant: one glitch at one provider could have manufactured a
-    🔴 CRITICAL that looked like three separate, independent corroborations —
+    level 3 that looked like three separate, independent corroborations —
     exactly the mistake this page was built to avoid. A
     <b>provider-diversity guard</b> is now enforced in code, and every family
     carries an explicit provider tag in the source (not a guess parsed out of
@@ -731,21 +843,15 @@ footer a:hover{color:var(--cyan)}
       (exception: Home Front Command alone, see section 3 below);</li>
       <li>the guard can only ever <b>lower</b> a level — never raise one.</li>
     </ul>
-    <p><b>A clause removed on 2026-09-01.</b> Until then this list also said
-    that "families sharing a provider contribute at most two votes between
-    them". That cap was deleted from the code the same day, after all 131,072
-    possible states (2<sup>16</sup> subsets of lit families × two indices)
-    were evaluated with and without it and produced <b>zero</b> differing
-    outcomes. It never once changed a level: the three-provider requirement
-    for level 3 already blocks exactly the same case. The note stays here so
-    a reader who remembers the old rule knows it was removed deliberately,
-    and why.</p>
+    
+    <p>Families that share a provider are not subject to a separate vote cap; the three-provider requirement for level 3 already blocks a level 3 whose votes come from only one or two providers.</p>
     <p>One exception, stated openly: a Home Front Command defence-policy change
     is still sufficient alone for level 3. That rule is not a claim of
     corroboration across three sources; it is a single authoritative act of the
     Israeli government, published on its own official API. The guard exists to
     stop one glitch impersonating three observations, and it has nothing to say
     about a rule that never claimed to be three.</p>
+    </div></details>
     </div>
   </section>
 
@@ -757,35 +863,39 @@ footer a:hover{color:var(--cyan)}
     <p>אין בקוד טבלת משקלות, ואין ניקוד סובייקטיבי. אבל יש חמש הטיות מוצהרות,
     וכל אחת מהן היא החלטת תכנון שאפשר להתווכח איתה:</p>
 
-    <h3>1. אותות יקרים מנצחים דיבור זול</h3>
+    <details class="dd"><summary><h3>1. אותות יקרים מנצחים דיבור זול</h3></summary><div class="dd-body">
     <p>מדד נדלק רק כשמישהו <b>שילם מחיר</b> על פעולה: צבא ששינה הנחיות התגוננות
     לאזרחים, חברות תעופה שמפסידות הכנסה, מדינה שמנתקת לעצמה את האינטרנט,
-    ממשלה שמפנה אנשי שגרירות, מטבע שקורס. הצהרות, כותרות וטוויטים
+    ממשלה שמפנה אנשי שגרירות. (מטבע ואזהרות מסע מוצגים כהקשר בלבד.) הצהרות, כותרות וטוויטים
     <b>אינם מדליקים כאן שום דבר</b>, גם לא הצהרות דרמטיות.</p>
 
-    <h3>2. דעות מאשרות — פעולות מזהירות (20.8.2026)</h3>
+    </div></details>
+    <details class="dd"><summary><h3>2. דעות מאשרות — פעולות מזהירות (20.8.2026)</h3></summary><div class="dd-body">
     <p>גם בתוך "יקר" יש מדרג: פעולה יקרה למבצע שלה וחושפת ידיעה; דעה יקרה
     למהמר ומוכיחה רק רצינות (ההגדרות המלאות בסעיף 2). לכן <b>רמה 2 ומעלה
-    מחייבת לפחות משפחת פעולה אחת דולקת</b> — משפחות דעה (שווקים, שוק הניבוי,
-    אזהרות מסע) לבדן עוצרות ברמה 1, לא משנה כמה מהן נדלקו. הכלל יכול רק
-    להוריד רמה, לעולם לא להעלות. <b>מ-1.9.2026 שלוש משפחות הדעה עברו להקשר ואינן מצביעות כלל</b>; מ-21.10.2026 משפחת דעה אחת מצביעה שוב (ויקיפדיה, מצר הורמוז — במדד האיראני), והכלל חל עליה (סעיף 2).</p>
+    מחייבת לפחות משפחת פעולה אחת דולקת</b> — משפחות דעה (כיום: ויקיפדיה, מצר
+    הורמוז) לבדן עוצרות ברמה 1, לא משנה כמה מהן נדלקו. הכלל יכול רק
+    להוריד רמה, לעולם לא להעלות. <b>שלוש משפחות הדעה הוותיקות (שווקים, שוק הניבוי, אזהרות מסע) מוצגות להקשר בלבד ואינן מצביעות</b>; משפחת דעה אחת מצביעה (ויקיפדיה, מצר הורמוז — במדד האיראני), והכלל חל עליה (סעיף 2).</p>
 
-    <h3>3. פיקוד העורף לבדו מספיק ל"קריטי"</h3>
+    </div></details>
+    <details class="dd"><summary><h3>3. פיקוד העורף לבדו מספיק לרמה 3</h3></summary><div class="dd-body">
     <p>זו החריגה היחידה מכלל הספירה. שינוי במדיניות ההתגוננות הוא הפעולה היקרה
     ביותר והספציפית ביותר לישראל בכל הסט — מדינה לא משנה הנחיות התגוננות לאזרחים
     בגלל כותרת. לכן הוא מקפיץ את המדד הישראלי ל-3 גם לבדו.</p>
 
-    <h3>4. StrikeRadar קיבל משקל אפס</h3>
+    </div></details>
+    <details class="dd"><summary><h3>4. StrikeRadar קיבל משקל אפס</h3></summary><div class="dd-body">
     <p>המדד החיצוני מוצג בדף <span class="tag">הקשר</span> — אבל
     <b>אינו יכול להעלות רמה, אף פעם</b>. הסיבה: רכיביו (חדשות, הצהרות, שוקי הימורים)
     הם בדיוק סוג הסיגנל שהתכנון הזה נועד להוציא. מפעילו משווק את אותו מנוע גם
-    כ-"LayoffRadar — same engine, fresh signals", כלומר אגרגציית חדשות גנרית.
+    כ-"LayoffRadar — same engine, fresh signals", כלומר, ככל הנראה, אגרגציית חדשות גנרית.
     הוא נשאר בדף כדי שאפשר יהיה להשוות, ולא יותר.</p>
 
-    <h3>5. הסף אינו סימטרי בין הדלקה לכיבוי</h3>
+    </div></details>
+    <details class="dd"><summary><h3>5. הסף אינו סימטרי בין הדלקה לכיבוי</h3></summary><div class="dd-body">
     <p>מדד שכבר דולק אינו מתריע שוב, ולכל משפחה יש <b>קירור של 6 שעות</b>, כדי
-    שפיד מהבהב לא יוכל להציף. מנגד — כל שינוי מדווח, בכל שעה, גם ב-3 לפנות בוקר.
-    ההנחה היא שמי שנרשם למערכת כזו מעדיף להתעורר על שינוי אמיתי.</p>
+    שפיד מהבהב לא יוכל להציף. ההתרעות בערוץ תוכננו לדווח על כל שינוי, בכל שעה, גם ב-3 לפנות בוקר, מתוך הנחה שמי שנרשם למערכת כזו מעדיף להתעורר על שינוי אמיתי. מ-5.9.2026 שינויי רמה אינם מתפרסמים בערוץ.</p>
+    </div></details>
     </div>
     <div data-lang="en">
     <h2><span class="num">03</span> Where weight was applied after all</h2>
@@ -794,42 +904,44 @@ footer a:hover{color:var(--cyan)}
     there are five declared biases, and each of them is a design decision that
     can be argued with:</p>
 
-    <h3>1. Costly signals beat cheap talk</h3>
+    <details class="dd"><summary><h3>1. Costly signals beat cheap talk</h3></summary><div class="dd-body">
     <p>An indicator lights only when someone has <b>paid a price</b> for an
     action: an army changing civil-defence instructions for its population,
     airlines forgoing revenue, a state cutting its own internet, a government
     evacuating embassy staff, a currency collapsing. Statements, headlines and
     tweets <b>light nothing here</b>, dramatic ones included.</p>
 
-    <h3>2. Beliefs confirm — actions warn (20 Aug 2026)</h3>
+    </div></details>
+    <details class="dd"><summary><h3>2. Beliefs confirm — actions warn (20 Aug 2026)</h3></summary><div class="dd-body">
     <p>Even within "costly" there is a hierarchy: an action is costly to its
     actor and reveals knowledge; a belief is costly to a bettor and proves
     only seriousness (full definitions in section 2). So <b>a level of 2 or
     higher requires at least one lit action family</b> — belief families
-    (markets, the prediction market, travel advisories) alone stop at level 1,
+    (today: Wikipedia, Strait of Hormuz) alone stop at level 1,
     no matter how many light. The rule can only lower a level, never raise
-    one. <b>Since 2026-09-01 all three older belief families moved to context and cast no vote</b>; since 2026-10-21 one belief family votes again (Wikipedia, Strait of Hormuz — Iran index), and the rule applies to it (section 2).</p>
+    one. <b>The three older belief families (markets, the prediction market, travel advisories) are shown as context and cast no vote</b>; one belief family votes (Wikipedia, Strait of Hormuz — Iran index), and the rule applies to it (section 2).</p>
 
-    <h3>3. The Home Front Command alone is enough for "critical"</h3>
+    </div></details>
+    <details class="dd"><summary><h3>3. The Home Front Command alone is enough for level 3</h3></summary><div class="dd-body">
     <p>This is the single exception to the counting rule. A defence-policy
     change is the most expensive and most Israel-specific action in the whole
     set — a state does not change civil-defence instructions over a headline.
     So it takes the Israeli index to 3 even on its own.</p>
 
-    <h3>4. StrikeRadar got a weight of zero</h3>
+    </div></details>
+    <details class="dd"><summary><h3>4. StrikeRadar got a weight of zero</h3></summary><div class="dd-body">
     <p>The external index is shown on the page tagged <span class="tag">context</span> — but it
     <b>can never raise a level</b>. The reason: its components (news,
     statements, betting markets) are exactly the class of signal this design
     exists to exclude. Its operator markets the same engine as
-    "LayoffRadar — same engine, fresh signals", i.e. generic news aggregation.
+    "LayoffRadar — same engine, fresh signals", i.e. what appears to be generic news aggregation.
     It stays on the page so it can be compared against, and no more.</p>
 
-    <h3>5. The threshold is not symmetric between lighting and clearing</h3>
+    </div></details>
+    <details class="dd"><summary><h3>5. The threshold is not symmetric between lighting and clearing</h3></summary><div class="dd-body">
     <p>An indicator that is already lit does not alert again, and every family
-    has a <b>6-hour cooldown</b>, so a flapping feed cannot flood. On the other
-    hand — every change is reported, at any hour, 3 a.m. included. The
-    assumption is that whoever signs up for a system like this prefers to be
-    woken by a real change.</p>
+    has a <b>6-hour cooldown</b>, so a flapping feed cannot flood. Alerts were designed to be sent at any hour, 3 a.m. included, on the assumption that a subscriber prefers to be woken by a real change. Since 2026-09-05 level changes are no longer posted to the channel.</p>
+    </div></details>
     </div>
   </section>
 
@@ -841,39 +953,39 @@ footer a:hover{color:var(--cyan)}
     <p class="lead">כמעט כל מדד כאן שואל שאלה אחת: <b>האם הערך הנוכחי חורג ממה
     שנורמלי עבור המדד הזה בימים האחרונים?</b> — ולא "האם הערך גבוה".</p>
 
-    <h3 id="scoreboard">לוח התוצאות: מה המערכת הזאת השיגה בפועל — תצלום היסטורי נכון ל-1.9.2026 (לא הרקורד העדכני; ראו עדכון 8.10.2026 בראש הדף)</h3>
+    <details class="dd"><summary><h3 id="scoreboard">לוח התוצאות: מה המערכת הזאת השיגה בפועל — תצלום היסטורי נכון ל-1.9.2026 (לא הרקורד העדכני; ראו עדכון 8.10.2026 בסעיף 10, "מה השתנה")</h3></summary><div class="dd-body">
     <p>הסעיף הזה קיים כי דף שמפרסם ספים חייב לפרסם גם את הביצועים שלו מולם.
     למיטב ידיעתנו אף מעקב ציבורי בתחום הזה לא עושה את זה על עצמו.
-    <b>נכון ל-1.9.2026 21:30 UTC — כל המספרים בטבלה נגזרו ברגע הזה, ואינם מתעדכנים מעצמם.</b> "הרצות שהושלמו" נספר מיומן ההרצות ומונה את שלוש צורות הרשומה יחד (<span class="mono">ok</span>, <span class="mono">ALERT</span>, <span class="mono">GOLIVE</span>) — 793, 18 ו-4 בהתאמה. כל שאר השורות נגזרות מ-443 התצלומים שפורסמו בהיסטוריית ה-git של <span class="mono">status.json</span>. "18" הוא מספר המשפחות שהופיעו אי פעם בתצלום — הרוסטר השתנה עם הזמן, ולכן הוא גדול מהמספר של היום. ספירת רמה 1 היא <b>תצלומים</b> ולא תאי-מדד: ב-7 תצלומים שני המדדים היו ברמה 1 בו-זמנית, כלומר 28 תצפיות-מדד מתוך 886 אך 21 תצלומים מתוך 443. <b>גרסה קודמת של הטבלה ערבבה חתכי זמן</b> — מספר המשפחות נלקח מרגע אחד ומספר התצלומים מרגע אחר. תוקן ב-2.9.2026 אחרי ביקורת חיצונית.</p>
+    <b>נכון ל-1.9.2026 21:30 UTC — כל המספרים בטבלה נגזרו ברגע הזה, ואינם מתעדכנים מעצמם.</b> "הרצות שהושלמו" נספר מיומן ההרצות ומונה את שלוש צורות הרשומה יחד (<span class="mono">ok</span>, <span class="mono">ALERT</span>, <span class="mono">GOLIVE</span>) — 793, 18 ו-4 בהתאמה. כל שאר השורות נגזרות מ-443 התצלומים שפורסמו בהיסטוריית ה-git של <span class="mono">status.json</span>. "18" הוא מספר המשפחות שהופיעו אי פעם בתצלום — רשימת המשפחות השתנתה עם הזמן, ולכן הוא גדול מהמספר של היום. ספירת רמה 1 היא <b>תצלומים</b> ולא תאי-מדד: ב-7 תצלומים שני המדדים היו ברמה 1 בו-זמנית, כלומר 28 תצפיות-מדד מתוך 886 אך 21 תצלומים מתוך 443.</p>
 
-    <div class="m-wrap"><table class="m-tbl">
+    <div class="m-wrap" role="region" aria-label="לוח התוצאות — תצלום היסטורי נכון ל-1.9.2026" tabindex="0"><table class="m-tbl kv">
+      <caption>לוח התוצאות — תצלום היסטורי נכון ל-1.9.2026</caption>
+      <thead class="sr"><tr><th scope="col">מדד</th><th scope="col">ערך</th></tr></thead>
       <tbody>
-        <tr><td>חיי המערכת</td><td class="num-cell">16.8.2026 → 1.9.2026 · 15.9 ימים</td></tr>
-        <tr><td>הרצות שהושלמו</td><td class="num-cell">815</td></tr>
-        <tr><td>תצלומים שפורסמו</td><td class="num-cell">443</td></tr>
-        <tr><td>משפחות שנדלקו אי פעם</td><td class="num-cell">5 מתוך 18</td></tr>
-        <tr><td>‎— firms</td><td class="num-cell">11 תצלומים</td></tr>
-        <tr><td>‎— us_mil_air</td><td class="num-cell">7 תצלומים</td></tr>
-        <tr><td>‎— jo_airspace</td><td class="num-cell">2 תצלומים</td></tr>
-        <tr><td>‎— il_airspace</td><td class="num-cell">1 תצלום</td></tr>
-        <tr><td>‎— embassy_alerts</td><td class="num-cell">1 תצלום</td></tr>
-        <tr><td>משפחות שמעולם לא נדלקו</td><td class="num-cell">13 מתוך 18</td></tr>
-        <tr><td>גילויים של אירוע אמיתי</td><td class="num-cell">0</td></tr>
-        <tr><td>התרעות שווא מתועדות</td><td class="num-cell">6</td></tr>
-        <tr><td>תצלומים שבהם מדד כלשהו ברמה 1</td><td class="num-cell">21 מתוך 443</td></tr>
-        <tr><td>רמה 2 או 3</td><td class="num-cell">מעולם לא</td></tr>
+        <tr><td data-label="">חיי המערכת</td><td class="num-cell" data-label="ערך">16.8.2026 → 1.9.2026 · 15.9 ימים</td></tr>
+        <tr><td data-label="">הרצות שהושלמו</td><td class="num-cell" data-label="ערך">815</td></tr>
+        <tr><td data-label="">תצלומים שפורסמו</td><td class="num-cell" data-label="ערך">443</td></tr>
+        <tr><td data-label="">משפחות שנדלקו אי פעם</td><td class="num-cell" data-label="ערך">5 מתוך 18</td></tr>
+        <tr><td data-label="">‎— firms</td><td class="num-cell" data-label="ערך">11 תצלומים</td></tr>
+        <tr><td data-label="">‎— us_mil_air</td><td class="num-cell" data-label="ערך">7 תצלומים</td></tr>
+        <tr><td data-label="">‎— jo_airspace</td><td class="num-cell" data-label="ערך">2 תצלומים</td></tr>
+        <tr><td data-label="">‎— il_airspace</td><td class="num-cell" data-label="ערך">1 תצלום</td></tr>
+        <tr><td data-label="">‎— embassy_alerts</td><td class="num-cell" data-label="ערך">1 תצלום</td></tr>
+        <tr><td data-label="">משפחות שמעולם לא נדלקו</td><td class="num-cell" data-label="ערך">13 מתוך 18</td></tr>
+        <tr><td data-label="">גילויים של אירוע אמיתי</td><td class="num-cell" data-label="ערך">0</td></tr>
+        <tr><td data-label="">התרעות שווא מתועדות</td><td class="num-cell" data-label="ערך">6</td></tr>
+        <tr><td data-label="">תצלומים שבהם מדד כלשהו ברמה 1</td><td class="num-cell" data-label="ערך">21 מתוך 443</td></tr>
+        <tr><td data-label="">רמה 2 או 3</td><td class="num-cell" data-label="ערך">מעולם לא</td></tr>
       </tbody>
     </table></div>
 
     <p><b>אפס גילויים פירושו אפס.</b> כל עליית אות בכל חיי המערכת מיוחסת ללא-אירוע —
     תקלת מכשיר או פרק שלא הצלחנו לאשש ממקור חיצוני. המבחן החד ביותר שהיה עד היום:
-    ב-30.8.2026 תקפו כוחות אמריקאיים משגרים באי לארק, ובשחר 31.8 שיגר משמרות המהפכה
+    ב-30.8.2026 תקפו כוחות אמריקאיים משגרים באי לארק, ובשחר 31.8 שיגרו משמרות המהפכה
     מטח לעבר שני בסיסי חיל אוויר בירדן, שיורט במרחב האווירי הירדני.
-    <b>המדד "מרחב אווירי ירדן" לא נדלק באף אחת מ-104 ההרצות סביב האירוע</b> — הוא כן נדלק פעמיים באותו חודש, בשני מועדים שאין להם אירוע מתאים — ואותה
-    משפחה עצמה כן נדלקה פעמיים באותו חודש כשלא קרה דבר.</p>
+    <b>המדד "מרחב אווירי ירדן" לא נדלק באף אחת מ-104 ההרצות סביב האירוע</b> — אף שבאותו חודש הוא נדלק פעמיים בלי שקרה דבר.</p>
 
-    <p><b>מה שהמספרים האלה אומרים, ומה שהם לא.</b> הם אומרים שהמכשירים כאן טרם הוכיחו
-    טווח דינמי: הבעיה אינה כיול הספים אלא שהמדדים כמעט אינם זזים. הם <b>אינם</b> אומרים
+    <p><b>מה שהמספרים האלה אומרים, ומה שהם לא.</b> הם אומרים שהמכשירים כאן עוד לא הראו שהם זזים מספיק כדי להבחין בין שקט לאירוע: הבעיה אינה כיול הספים אלא שהמדדים כמעט אינם זזים. הם <b>אינם</b> אומרים
     שהמערכת שגויה בתכן שלה — 16 יום הם מדגם זעיר, ורוב החלון היה שקט יחסית.
     <b>ולכן ההבטחה של "1-3 ימים" בראש הדף היא כוונת תכנון ולא מדידה:</b> אין מאחוריה
     ולו גילוי מאומת אחד, וכל עוד זה המצב היא מוצגת כאן ככוונה.</p>
@@ -884,7 +996,8 @@ footer a:hover{color:var(--cyan)}
     למבחן הטוב ביותר בפנקס כשתצטבר עוד רשומה. הפנקס והמנוע נמצאים במאגר הפרויקט תחת
     <span class="mono">groundtruth/</span>.</p>
 
-    <h3>למה חציון ולא ממוצע</h3>
+    </div></details>
+    <details class="dd"><summary><h3>למה חציון ולא ממוצע</h3></summary><div class="dd-body">
     <p>קו הבסיס של כל מדד הוא ה<b>חציון</b> (median) של הדגימות האחרונות, לא הממוצע.
     שתי סיבות:</p>
     <ul>
@@ -897,37 +1010,39 @@ footer a:hover{color:var(--cyan)}
       ומקסימום 153.8. ממוצע על התפלגות כזו הוא מספר שלא מתאר כמעט שום תצפית.</li>
     </ul>
 
-    <h3>חלון הזמן והדגימה</h3>
-    <div class="m-wrap"><table class="m-tbl">
+    </div></details>
+    <details class="dd"><summary><h3>חלון הזמן והדגימה</h3></summary><div class="dd-body">
+    <div class="m-wrap" role="region" aria-label="חלון הזמן והדגימה" tabindex="0"><table class="m-tbl">
+      <caption>חלון הזמן והדגימה</caption>
+      <thead class="sr"><tr><th scope="col">פרמטר</th><th scope="col">ערך</th><th scope="col">הסבר</th></tr></thead>
       <tbody>
-        <tr><td>תדירות בדיקה</td><td class="num-cell">כל 30 דקות</td>
-            <td>המערכת אינה רציפה. בין בדיקה לבדיקה היא עיוורת.</td></tr>
-        <tr><td>אורך הסדרה הנשמרת</td><td class="num-cell">96 דגימות ≈ 48 שעות</td>
-            <td>"נורמלי" מוגדר מול היומיים האחרונים, לא מול ממוצע היסטורי. כך המדד
+        <tr><td data-label="">תדירות בדיקה</td><td class="num-cell" data-label="ערך">כל 30 דקות</td>
+            <td data-label="הסבר">המערכת אינה רציפה. בין בדיקה לבדיקה היא עיוורת.</td></tr>
+        <tr><td data-label="">אורך הסדרה הנשמרת</td><td class="num-cell" data-label="ערך">96 דגימות ≈ 48 שעות</td>
+            <td data-label="הסבר">"נורמלי" מוגדר מול היומיים האחרונים, לא מול ממוצע היסטורי. כך המדד
             מתאים את עצמו לשינויים אמיתיים בקצב הרקע.</td></tr>
-        <tr><td>מינימום לפני שכלל פעיל</td><td class="num-cell">12 דגימות ≈ 6 שעות</td>
-            <td>כלל שמבוסס על חציון פשוט <b>אינו קיים</b> עד שנצברה היסטוריה. אחרת
+        <tr><td data-label="">מינימום לפני שכלל פעיל</td><td class="num-cell" data-label="ערך">12 דגימות ≈ 6 שעות</td>
+            <td data-label="הסבר">כלל שמבוסס על חציון פשוט <b>אינו קיים</b> עד שנצברה היסטוריה. אחרת
             הרצה ראשונה הייתה מייצרת התרעת שווא מיידית. ארבעת המדדים היומיים
             שבשורה הבאה דורשים במקום זאת 7 <b>ימי</b> היסטוריה — שוק הניבוי
             מגיע עם ההיסטוריה הזו מהמקור עצמו כבר בריצה הראשונה, מדד שיבוש
-            ה-GPS מעל ישראל נזרע בחיבורו ב-31 ימי מדידה אמיתיים מהקבצים
+            ה-GPS מעל ישראל קיבל בהפעלה 31 ימי מדידה אמיתיים מהקבצים
             ההיסטוריים של המקור, והמדד הלווייני בונה את קו הבסיס שלו מחדש
             מ-20.8.2026 — יממה שלמה אמיתית אחת בכל יום — אחרי שבסיס המדידה
             שלו הוחלף (מ"24 השעות האחרונות" ליממה השלמה האחרונה), וקו בסיס
             ישן אינו מושווה לבסיס מדידה חדש.</td></tr>
-        <tr><td>קירור בין התרעות</td><td class="num-cell">6 שעות למשפחה</td>
-            <td>מונע הצפה מפיד מהבהב.</td></tr>
-        <tr><td>"קו בסיס מלחמתי, אוגוסט 2026" המוצג בדף</td><td class="num-cell">אחוזונים 10–90</td>
-            <td>מה שרואים ליד כל מדד הוא הטווח שבו נמצאות 80% מהדגימות האחרונות —
-            כדי שהמספר הנוכחי יהיה קריא בלי לדעת את הפיד. <b>שונה מ"טווח
-            נורמלי" ב-1.9.2026:</b> הדגימה העתיקה ביותר על הדיסק היא מ-1.8.2026
+        <tr><td data-label="">קירור בין התרעות</td><td class="num-cell" data-label="ערך">6 שעות למשפחה</td>
+            <td data-label="הסבר">מונע הצפה מפיד מהבהב.</td></tr>
+        <tr><td data-label="">"קו בסיס מלחמתי נע" המוצג בדף</td><td class="num-cell" data-label="ערך">אחוזונים 10–90</td>
+            <td data-label="הסבר">מה שרואים ליד כל מדד הוא הטווח שבו נמצאות 80% מהדגימות האחרונות —
+            כדי שהמספר הנוכחי יהיה קריא בלי לדעת את הפיד. <b>השם שונה מ"טווח נורמלי" ב-1.9.2026:</b> הדגימה העתיקה ביותר על הדיסק היא מ-1.8.2026
             והמלחמה פתוחה מ-28.2.2026, כך שכל קו בסיס כאן נאסף <b>בתוך</b>
             מלחמה. "נורמלי" היה מטעה; זה קו בסיס מלחמתי, ותו לא.</td></tr>
-        <tr><td>חריגים: שני מדדי שיבוש ה-GPS, שוק הניבוי והחריגות התרמיות</td><td class="num-cell">סדרה יומית · עד 30 יום</td>
-            <td>ארבע משפחות נשפטות מול חציון <b>ימים</b> קודמים ולא מול חלון 48
+        <tr><td data-label="">חריגים: שני מדדי שיבוש ה-GPS, שוק הניבוי והחריגות התרמיות</td><td class="num-cell" data-label="ערך">סדרה יומית · עד 30 יום</td>
+            <td data-label="הסבר">ארבע משפחות נשפטות מול חציון <b>ימים</b> קודמים ולא מול חלון 48
             השעות, וארבעתן דורשות 7 ימי היסטוריה לפחות. שיבוש ה-GPS (הורמוז
             ומרחב ישראל — שני אזורים מאותו קובץ, הורדה אחת ביום): gpsjam.org
-            מפרסם קובץ אחד ליום (בפיגור של כיום), ולכן כל אזור נשפט פעם אחת
+            מפרסם קובץ אחד ליום (בפיגור של כיממה), ולכן כל אזור נשפט פעם אחת
             לכל יום שפורסם. שוק הניבוי (Polymarket): הסדרה היומית נבנית מחדש
             בכל ריצה מההיסטוריה השעתית של השוק עצמו — ולכן קו הבסיס אמיתי כבר
             מהריצה הראשונה — והקריאה החיה נשפטת מולה בכל בדיקת 30 דקות.
@@ -940,12 +1055,13 @@ footer a:hover{color:var(--cyan)}
       </tbody>
     </table></div>
 
-    <h3>אוגר-מצב שני — "האם ההתארגנות נמשכת?" (1.9.2026)</h3>
+    </div></details>
+    <details class="dd"><summary><h3>אוגר-מצב שני — "האם ההתארגנות נמשכת?" (1.9.2026)</h3></summary><div class="dd-body">
     <p>כל מה שתואר עד כאן הוא גלאי <b>שינוי</b>: ערך מול חציון מתגלגל של העבר
     הקרוב שלו. לצורה הזו יש נקודה עיוורת מבנית אחת, ובנתונים השמורים של
-    המערכת יש דוגמה ספרותית שלה. שיבוש ה-GPS במצר הורמוז ישב בין 10% ל-14%
+    המערכת יש דוגמה מובהקת לכך. שיבוש ה-GPS במצר הורמוז ישב בין 10% ל-14%
     מ-9 עד 28 באוגוסט 2026 — פי ארבעה עד חמישה מרמתו שבוע קודם — <b>והדף
-    הראה 🟢 בכל אחד מעשרים הימים האלה</b>, כי עד היום השלישי החציון המתגלגל
+    הראה <span aria-hidden="true">🟢</span> בכל אחד מעשרים הימים האלה</b>, כי עד היום השלישי החציון המתגלגל
     כבר עלה יחד עם המדידה. עוגן מתגלגל אינו יכול לומר "זה עדיין קורה"; מעצם
     בנייתו הוא יכול לומר רק "זה בדיוק השתנה".</p>
     <p>מ-1.9.2026 כל משפחת <b>פעולה</b> נמדדת <b>גם</b> מול <b>עוגן מוצהר</b>:
@@ -968,7 +1084,8 @@ footer a:hover{color:var(--cyan)}
     יכולים לומר "יותר מזמן שלום", כי המערכת הזו מעולם לא ראתה זמן שלום. זו
     מגבלת נתונים, לא בחירת כיול, והיא מודפסת יחד עם כל שורה.</p>
 
-    <h3>שני מספרי מצב בראש כל מדד (2.9.2026)</h3>
+    </div></details>
+    <details class="dd"><summary><h3>שני מספרי מצב בראש כל מדד (2.9.2026)</h3></summary><div class="dd-body">
     <p>האוגר שתואר למעלה עבד מ-1.9.2026, אבל הוא הודפס רק ליד השורה של
     המשפחה עצמה. בערב 1.9.2026, כשדווח על לחימה פעילה באזור, שני המדדים
     הראו 0 בעוד האוגר אמר - בשורה אחת בתוך פאנל איראן - ששיבוש ה-GPS
@@ -996,17 +1113,17 @@ footer a:hover{color:var(--cyan)}
     גלומה משוק</b> של כסף אמיתי ולא תחזית של הדף הזה ולא מדידת חיישן; איזה
     חוזה, בשמו, ומה סוגר אותו; מה מחיר החוזה מגלם לכל אורך חייו הנותרים
     וכמה ימים נותרו; ושהמספר המתפרסם הוא <b>קצב יומי ולא מחיר החוזה</b>.
-    ההפרדה הזו היא כל הסיבה שהמערכת שומרת <code>hazard</code> ולא
-    <code>p</code>: מחיר חוזה יורד מעצמו ככל שמועד הפקיעה מתקרב, ולכן מחיר
+    ההפרדה הזו היא כל הסיבה שהמערכת שומרת את הסיכון היומי ולא את מחיר החוזה: מחיר חוזה יורד מעצמו ככל שמועד הפקיעה מתקרב, ולכן מחיר
     יורד אינו עדות לכלום. המחיר עצמו כן מוצג - אבל כמספר שממנו נורמלו, ולא
     ככותרת, כדי שהקורא יראה את החשבון במקום להתבקש להאמין לו.</p>
     <p><b>שניהם מוצגים ואף אחד מהם אינו מצביע.</b> אף אחד משני המספרים אינו
     נקרא על ידי הקוד שקובע רמה, אינו נספר באף מונה, ואינו יכול להזיז את
-    המחוון. וכשאין מה לדווח - פחות מ-5 ימים אגורים במשפחות המעוגנות של אותו
+    המחוון. וכשאין מה לדווח - פחות מ-5 ימים שמורים במשפחות המעוגנות של אותו
     מדד, או שוק ניבוי שלא נקרא בריצה האחרונה - נכתב זאת במפורש במקום המספר,
     ומספר ישן לא מוצג. <b>היעדר מספר אינו אישור שהכול בסדר.</b></p>
 
-    <h3>למה הספים יחסיים ולא מוחלטים</h3>
+    </div></details>
+    <details class="dd"><summary><h3>למה הספים יחסיים ולא מוחלטים</h3></summary><div class="dd-body">
     <p>אין בקוד ספים כמו "פחות מ-40 מטוסים" או "מעל 100 דולר לחבית". רוב הספים
     מנוסחים כ<b>יחס לחציון</b>. הסיבה מעשית: לכל פיד יש "נורמלי" משלו, והוא נודד.
     תנועה אווירית משתנה לפי עונה ושעה; מספר מסלולי ה-BGP של איראן משתנה עם תשתית.
@@ -1027,11 +1144,12 @@ footer a:hover{color:var(--cyan)}
       lit &nbsp; = current &gt; max(factor × med, med + floor) &nbsp;<span class="c">// surge-type signals</span>
     </div>
 
-    <p>ה-<span class="num-cell">med + floor</span> בכללי הזינוק אינו קישוט: כשהחציון
+    <p>הצירוף של חציון ורצפה מוחלטת בכללי הזינוק אינו קישוט: כשהחציון
     נמוך מאוד, "פי 2" יכול להיות קפיצה מ-3 ל-6, שהיא רעש. הרצפה המוחלטת דורשת גם
     תזוזה משמעותית בגודל אבסולוטי, ולא רק ביחס.</p>
 
-    <h3>מסכת "בוער תמיד" — למה נדרש עיבוד לפני שהנתון בכלל שמיש</h3>
+    </div></details>
+    <details class="dd"><summary><h3>מסכת "בוער תמיד" — למה נדרש עיבוד לפני שהנתון בכלל שמיש</h3></summary><div class="dd-body">
     <p>המדד הלוויני הוא הדוגמה הטובה ביותר לכך שנתון גולמי אינו סיגנל. מדידה על
     האזור (bbox 44,25–64,40) ב-16.8.2026 הראתה כ-800–1,300 חריגות תרמיות
     <b>ביום</b>: 1,181 תאים שונים לאורך 5 ימים, מתוכם 340 בערו ב-3 ימים ומעלה —
@@ -1049,6 +1167,7 @@ footer a:hover{color:var(--cyan)}
       הוא סופר "משהו גדול בוער היכן שבדרך כלל לא בוער", ומסומן בדף בדיוק כך.
       אין כאן שום טענה לקורלציה עם אתרים צבאיים, כי אין רשימת אתרים מאומתת.
     </div>
+    </div></details>
     </div>
     <div data-lang="en">
     <h2><span class="num">04</span> The statistical basis</h2>
@@ -1057,31 +1176,32 @@ footer a:hover{color:var(--cyan)}
     current value outside what has been normal for this indicator in recent
     days?</b> — not "is the value high".</p>
 
-    <h3 id="scoreboard-en">Scoreboard: what this system has actually achieved — a historical snapshot as of 2026-09-01 (not the current record; see the 2026-10-08 update at the top of the page)</h3>
+    <details class="dd"><summary><h3 id="scoreboard-en">Scoreboard: what this system has actually achieved — a historical snapshot as of 2026-09-01 (not the current record; see the 2026-10-08 update in section 10, "What changed")</h3></summary><div class="dd-body">
     <p>This section exists because a page that publishes thresholds owes the reader
-    its record against them. As far as we know no public tracker in this field does
-    this to itself. <b>As of 2026-09-01 21:30 UTC — every figure in the table was derived at that one moment and does not update itself.</b> "Completed runs" is counted from the run log across all three record shapes together (<span class="mono">ok</span>, <span class="mono">ALERT</span>, <span class="mono">GOLIVE</span>) — 793, 18 and 4 respectively. Every other row is derived from the 443 snapshots published in the git history of <span class="mono">status.json</span>. The 18 is the number of families that ever appeared in a snapshot — the roster changed over time, so it exceeds today's count. The level-1 figure counts <b>snapshots</b>, not index cells: in 7 snapshots both indices were at level 1 at once, i.e. 28 index observations of 886 but 21 snapshots of 443. <b>An earlier version of this table mixed cutoffs</b> — the family count came from one moment and the snapshot count from another. Corrected 2026-09-02 after an external review.</p>
+    its record against them. As far as we know, no other public tracker in this field publishes its own track record. <b>As of 2026-09-01 21:30 UTC — every figure in the table was derived at that one moment and does not update itself.</b> "Completed runs" is counted from the run log across all three record shapes together (<span class="mono">ok</span>, <span class="mono">ALERT</span>, <span class="mono">GOLIVE</span>) — 793, 18 and 4 respectively. Every other row is derived from the 443 snapshots published in the git history of <span class="mono">status.json</span>. The 18 is the number of families that ever appeared in a snapshot — the roster changed over time, so it exceeds today's count. The level-1 figure counts <b>snapshots</b>, not index cells: in 7 snapshots both indices were at level 1 at once, i.e. 28 index observations of 886 but 21 snapshots of 443.</p>
 
-    <div class="m-wrap"><table class="m-tbl">
+    <div class="m-wrap" role="region" aria-label="Scoreboard — a historical snapshot as of 2026-09-01" tabindex="0"><table class="m-tbl kv">
+      <caption>Scoreboard — a historical snapshot as of 2026-09-01</caption>
+      <thead class="sr"><tr><th scope="col">Measure</th><th scope="col">Value</th></tr></thead>
       <tbody>
-        <tr><td>System lifetime</td><td class="num-cell">2026-08-16 → 2026-09-01 · 15.9 days</td></tr>
-        <tr><td>Completed runs</td><td class="num-cell">815</td></tr>
-        <tr><td>Published snapshots</td><td class="num-cell">443</td></tr>
-        <tr><td>Families that have ever lit</td><td class="num-cell">5 of 18</td></tr>
-        <tr><td>— firms</td><td class="num-cell">11 snapshots</td></tr>
-        <tr><td>— us_mil_air</td><td class="num-cell">7 snapshots</td></tr>
-        <tr><td>— jo_airspace</td><td class="num-cell">2 snapshots</td></tr>
-        <tr><td>— il_airspace</td><td class="num-cell">1 snapshot</td></tr>
-        <tr><td>— embassy_alerts</td><td class="num-cell">1 snapshot</td></tr>
-        <tr><td>Families that have never lit</td><td class="num-cell">13 of 18</td></tr>
-        <tr><td>Detections of a real event</td><td class="num-cell">0</td></tr>
-        <tr><td>Recorded false alarms</td><td class="num-cell">6</td></tr>
-        <tr><td>Snapshots with either index at level 1</td><td class="num-cell">21 of 443</td></tr>
-        <tr><td>Level 2 or 3</td><td class="num-cell">never</td></tr>
+        <tr><td data-label="">System lifetime</td><td class="num-cell" data-label="Value">2026-08-16 → 2026-09-01 · 15.9 days</td></tr>
+        <tr><td data-label="">Completed runs</td><td class="num-cell" data-label="Value">815</td></tr>
+        <tr><td data-label="">Published snapshots</td><td class="num-cell" data-label="Value">443</td></tr>
+        <tr><td data-label="">Families that have ever lit</td><td class="num-cell" data-label="Value">5 of 18</td></tr>
+        <tr><td data-label="">— firms</td><td class="num-cell" data-label="Value">11 snapshots</td></tr>
+        <tr><td data-label="">— us_mil_air</td><td class="num-cell" data-label="Value">7 snapshots</td></tr>
+        <tr><td data-label="">— jo_airspace</td><td class="num-cell" data-label="Value">2 snapshots</td></tr>
+        <tr><td data-label="">— il_airspace</td><td class="num-cell" data-label="Value">1 snapshot</td></tr>
+        <tr><td data-label="">— embassy_alerts</td><td class="num-cell" data-label="Value">1 snapshot</td></tr>
+        <tr><td data-label="">Families that have never lit</td><td class="num-cell" data-label="Value">13 of 18</td></tr>
+        <tr><td data-label="">Detections of a real event</td><td class="num-cell" data-label="Value">0</td></tr>
+        <tr><td data-label="">Recorded false alarms</td><td class="num-cell" data-label="Value">6</td></tr>
+        <tr><td data-label="">Snapshots with either index at level 1</td><td class="num-cell" data-label="Value">21 of 443</td></tr>
+        <tr><td data-label="">Level 2 or 3</td><td class="num-cell" data-label="Value">never</td></tr>
       </tbody>
     </table></div>
 
-    <p><b>Zero detections means zero.</b> Every alarm episode in the system's life is
+    <p><b>Zero detections means exactly that: zero.</b> Every alarm episode in the system's life is
     attributed to a non-event — an instrument fault, or an episode we could not
     corroborate from an external source. The sharpest test so far: on 2026-08-30 US
     forces struck launchers on Larak Island, and at dawn on 08-31 the IRGC fired a
@@ -1105,7 +1225,8 @@ footer a:hover{color:var(--cyan)}
     ledger once more record accumulates. The ledger and its replay harness live in the
     project repository under <span class="mono">groundtruth/</span>.</p>
 
-    <h3>Why the median and not the mean</h3>
+    </div></details>
+    <details class="dd"><summary><h3>Why the median and not the mean</h3></summary><div class="dd-body">
     <p>Each indicator's baseline is the <b>median</b> of its recent samples, not
     the mean. Two reasons:</p>
     <ul>
@@ -1121,17 +1242,20 @@ footer a:hover{color:var(--cyan)}
       describes almost no actual observation.</li>
     </ul>
 
-    <h3>The window and the sampling</h3>
-    <div class="m-wrap"><table class="m-tbl">
+    </div></details>
+    <details class="dd"><summary><h3>The window and the sampling</h3></summary><div class="dd-body">
+    <div class="m-wrap" role="region" aria-label="The window and the sampling" tabindex="0"><table class="m-tbl">
+      <caption>The window and the sampling</caption>
+      <thead class="sr"><tr><th scope="col">Parameter</th><th scope="col">Value</th><th scope="col">Explanation</th></tr></thead>
       <tbody>
-        <tr><td>Check cadence</td><td class="num-cell">every 30 minutes</td>
-            <td>The system is not continuous. Between checks it is blind.</td></tr>
-        <tr><td>Stored series length</td><td class="num-cell">96 samples ≈ 48 hours</td>
-            <td>"Normal" is defined against the last two days, not a historical
+        <tr><td data-label="">Check cadence</td><td class="num-cell" data-label="Value">every 30 minutes</td>
+            <td data-label="Explanation">The system is not continuous. Between checks it is blind.</td></tr>
+        <tr><td data-label="">Stored series length</td><td class="num-cell" data-label="Value">96 samples ≈ 48 hours</td>
+            <td data-label="Explanation">"Normal" is defined against the last two days, not a historical
             average. That way the indicator adapts to real shifts in the
             background rate.</td></tr>
-        <tr><td>Minimum before a rule is active</td><td class="num-cell">12 samples ≈ 6 hours</td>
-            <td>A median-based rule simply <b>does not exist</b> until history
+        <tr><td data-label="">Minimum before a rule is active</td><td class="num-cell" data-label="Value">12 samples ≈ 6 hours</td>
+            <td data-label="Explanation">A median-based rule simply <b>does not exist</b> until history
             has accumulated. Otherwise the first run would produce an immediate
             false alarm. The four daily families in the row below require
             7 <b>days</b> of history instead — the prediction market arrives
@@ -1142,18 +1266,18 @@ footer a:hover{color:var(--cyan)}
             one real complete day per day — after its measurement basis was
             replaced (from "the last 24 h" to the latest complete UTC day):
             an old baseline is never compared against a new basis.</td></tr>
-        <tr><td>Cooldown between alerts</td><td class="num-cell">6 hours per family</td>
-            <td>Prevents flooding from a flapping feed.</td></tr>
-        <tr><td>"Wartime baseline, August 2026" shown on the page</td><td class="num-cell">10th–90th percentiles</td>
-            <td>What you see next to each indicator is the range holding 80% of
+        <tr><td data-label="">Cooldown between alerts</td><td class="num-cell" data-label="Value">6 hours per family</td>
+            <td data-label="Explanation">Prevents flooding from a flapping feed.</td></tr>
+        <tr><td data-label="">"Rolling wartime baseline" shown on the page</td><td class="num-cell" data-label="Value">10th–90th percentiles</td>
+            <td data-label="Explanation">What you see next to each indicator is the range holding 80% of
             the recent samples — so the current number is readable without
             knowing the feed. <b>Renamed from "Normal range" on 2026-09-01:</b>
             the oldest sample on disk is from 2026-08-01 and the war has been
             open since 2026-02-28, so every baseline here was collected
             <b>inside</b> a war. "Normal" was misleading; this is a wartime
             baseline and nothing more.</td></tr>
-        <tr><td>Exceptions: the two GPS-interference indicators, the prediction market and the thermal anomalies</td><td class="num-cell">daily series · up to 30 days</td>
-            <td>Four families are judged against the median of preceding
+        <tr><td data-label="">Exceptions: the two GPS-interference indicators, the prediction market and the thermal anomalies</td><td class="num-cell" data-label="Value">daily series · up to 30 days</td>
+            <td data-label="Explanation">Four families are judged against the median of preceding
             <b>days</b>, not the 48-hour window, and all four require at
             least 7 days of history. GPS interference (Hormuz and Israeli
             airspace — two regions from the same file, one download a day):
@@ -1173,13 +1297,14 @@ footer a:hover{color:var(--cyan)}
       </tbody>
     </table></div>
 
-    <h3>A second state accumulator — "is the build-up continuing?" (1 Sep 2026)</h3>
+    </div></details>
+    <details class="dd"><summary><h3>A second state accumulator — "is the build-up continuing?" (1 Sep 2026)</h3></summary><div class="dd-body">
     <p>Everything described so far is a <b>change</b> detector: a value against
     a rolling median of its own recent past. That shape has one structural
     blind spot, and this system's own stored data contains a textbook instance
     of it. GPS interference in the Strait of Hormuz sat between 10% and 14%
     from 9 to 28 August 2026 — four to five times its own level a week earlier
-    — <b>and the page showed 🟢 on every one of those twenty days</b>, because
+    — <b>and the page showed <span aria-hidden="true">🟢</span> on every one of those twenty days</b>, because
     by day three the rolling median had moved up with the measurement. A
     rolling reference cannot say "this is still happening"; by construction it
     can only say "this just changed".</p>
@@ -1209,7 +1334,8 @@ footer a:hover{color:var(--cyan)}
     this system has never seen peacetime. That is a data limit, not a
     calibration choice, and it is printed with every line.</p>
 
-    <h3>Two standing figures at the top of each index (2 Sep 2026)</h3>
+    </div></details>
+    <details class="dd"><summary><h3>Two standing figures at the top of each index (2 Sep 2026)</h3></summary><div class="dd-body">
     <p>The accumulator described above has been running since 2026-09-01,
     but it was printed only beside the row of the family it belonged to. On
     the evening of 2026-09-01, with active fighting reported in the region,
@@ -1260,7 +1386,8 @@ footer a:hover{color:var(--cyan)}
     been, and a stale number is not shown. <b>A missing figure is not an
     all-clear.</b></p>
 
-    <h3>Why the thresholds are relative, not absolute</h3>
+    </div></details>
+    <details class="dd"><summary><h3>Why the thresholds are relative, not absolute</h3></summary><div class="dd-body">
     <p>There are no thresholds in the code like "under 40 aircraft" or "above
     $100 a barrel". Most thresholds are phrased as a <b>ratio to the
     median</b>. The reason is practical: every feed has a "normal" of its own,
@@ -1291,7 +1418,8 @@ footer a:hover{color:var(--cyan)}
     which is noise. The absolute floor also demands a move that is meaningful
     in absolute size, not only in ratio.</p>
 
-    <h3>The "always burning" mask — why processing is needed before the data is usable at all</h3>
+    </div></details>
+    <details class="dd"><summary><h3>The "always burning" mask — why processing is needed before the data is usable at all</h3></summary><div class="dd-body">
     <p>The satellite indicator is the best example of raw data not being a
     signal. A measurement over the region (bbox 44,25–64,40) on 16.8.2026
     showed roughly 800–1,300 thermal anomalies <b>per day</b>: 1,181 distinct
@@ -1315,6 +1443,7 @@ footer a:hover{color:var(--cyan)}
       on the page exactly that way. No claim of correlation with military sites
       is made here, because there is no verified site list.
     </div>
+    </div></details>
     </div>
   </section>
 
@@ -1328,71 +1457,71 @@ footer a:hover{color:var(--cyan)}
     הפעולה/דעה של כל משפחה (סעיף 2): רמה 2 ומעלה מחייבת לפחות משפחת
     <b>פעולה</b> אחת דולקת — משפחות <b>דעה</b> לבדן נעצרות ברמה 1.</p>
 
-    <p><b>עודכן 1.9.2026.</b> חמש משפחות עברו ל<b>הקשר בלבד</b>: אזהרות מסע,
-    חריגות תרמיות, שיבוש GPS בהורמוז, השווקים ושוק הניבוי. הן נמדדות, נשמרות
-    ומופיעות בטבלה עם הסף החי שלהן — אבל אינן מצביעות, והעמודה האחרונה שלהן
-    כותבת "הקשר בלבד". מ-1.9.2026 עד 21.10.2026 כל המשפחות המצביעות סווגו <b>פעולה</b> ומסנן הפעולה/דעה היה רדום; מ-21.10.2026 משפחת דעה אחת (ויקיפדיה, מצר הורמוז) מצביעה במדד האיראני, והמסנן חי שוב.</p>
+    
 
-    <p><b>התוצאה במדד האיראני, נאמרת במפורש (מעודכן 21.10.2026):</b> שלוש משפחות מצביעות משלושה ספקים — אינטרנט באיראן (IODA), בדיקות RIPE Atlas ועניין ציבורי בוויקיפדיה. IODA ו-RIPE Atlas הם תופעה אחת וקול אחד (מ-23.10.2026), ולכן רמה 2 היא המקסימום והמחוון כותב "מתוך 2". (עד 8.10.2026 היו שתיים, עם תעופה צבאית באזור; בין 8.10.2026 ל-21.10.2026 אחת.) התקרה נגזרת
+    <p>משפחות שמסומנות <b>הקשר בלבד</b> (כיום: אזהרות מסע, מרחב אווירי ירדן, תעופה צבאית באזור, חריגות תרמיות, שיבוש GPS בהורמוז, השווקים, שוק הניבוי, NOTAM ו-StrikeRadar) נמדדות, נשמרות ומופיעות בטבלה עם הסף החי שלהן, אבל אינן מצביעות; העמודה האחרונה שלהן כותבת "הקשר בלבד". משפחת דעה אחת (ויקיפדיה, מצר הורמוז) מצביעה במדד האיראני, ולכן מסנן הפעולה/דעה חי.</p>
+
+    <p><b>התוצאה במדד האיראני, נאמרת במפורש:</b> שלוש משפחות מצביעות משלושה ספקים — אינטרנט באיראן (IODA), חיישני RIPE Atlas ועניין ציבורי בוויקיפדיה. IODA ו-RIPE Atlas הם תופעה אחת וקול אחד (מ-23.10.2026), ולכן רמה 2 היא המקסימום. (עד 8.10.2026 היו שתיים, עם תעופה צבאית באזור; בין 8.10.2026 ל-21.10.2026 אחת.) התקרה נגזרת
     בקוד מרשימת המשפחות המצביעות ומתפרסמת בשדה <code>max_level</code>, כדי
     שלא תוכל לסטות ממנה.</p>
 
-    <div class="m-wrap"><table class="m-tbl">
-      <thead><tr><th>מדד</th><th>מקור</th><th>מה מדליק</th><th>לאיזה מדד</th></tr></thead>
+    <div class="m-wrap" role="region" aria-label="ספי ההדלקה המדויקים, לפי מדד" tabindex="0"><table class="m-tbl">
+      <caption>ספי ההדלקה המדויקים, לפי מדד</caption>
+      <thead><tr><th scope="col">מדד</th><th scope="col">מקור</th><th scope="col">מה מדליק</th><th scope="col">לאיזה מדד</th></tr></thead>
       <tbody>
-        <tr><td>מדיניות התגוננות</td><td>פיקוד העורף (API רשמי)</td>
-            <td>שינוי בנוסח ההנחיות מול קו הבסיס השמור, <b>ורק כשהוא לכיוון
+        <tr><td data-label="">מדיניות התגוננות</td><td data-label="מקור">פיקוד העורף (API רשמי)</td>
+            <td data-label="מה מדליק">שינוי בנוסח ההנחיות מול קו הבסיס השמור, <b>ורק כשהוא לכיוון
             המגביל</b>: מעבר מ"אין הגבלות" להנחיות מגבילות, או שינוי בתוך מצב
             מגביל. <b>שינוי בלבד</b> — עצם קיומה של מדיניות מגבילה אינו מדליק
             כאן דבר; וגם ניסוח מחדש שאינו משנה את המשמעות, הקלה, או נוסח שאיננו
-            יודעים לסווג — נרשמים ביומן ואינם מעלים רמה</td><td>🇮🇱 ישראל · פעולה</td></tr>
-        <tr><td>מרחב אווירי ישראל</td><td>adsb.lol</td>
-            <td>מטוסים אזרחיים &lt; 35% מהחציון, <b>בשתי בדיקות רצופות</b>;
-            אין שיפוט כשהחציון &lt; 20</td><td>🇮🇱 ישראל · פעולה</td></tr>
-        <tr><td>מרחב אווירי ירדן</td><td>adsb.lol (שתי תיבות שהן חד-משמעית ירדן:
+            יודעים לסווג — נרשמים ביומן ואינם מעלים רמה</td><td data-label="לאיזה מדד"><span aria-hidden="true">🇮🇱</span> ישראל · פעולה</td></tr>
+        <tr><td data-label="">מרחב אווירי ישראל</td><td data-label="מקור">adsb.lol</td>
+            <td data-label="מה מדליק">מטוסים אזרחיים &lt; 35% מהחציון, <b>בשתי בדיקות רצופות</b>;
+            אין שיפוט כשהחציון &lt; 20</td><td data-label="לאיזה מדד"><span aria-hidden="true">🇮🇱</span> ישראל · פעולה</td></tr>
+        <tr><td data-label="">מרחב אווירי ירדן</td><td data-label="מקור">adsb.lol (שתי תיבות שהן חד-משמעית ירדן:
             29.2–32.3°N 35.75–36.5°E והרצועה 32.2–32.7°N 37.2–39.2°E — בלי
             תנועה ישראלית ובלי הנתיב הסעודי)</td>
-            <td><b>סכום 3 הבדיקות האחרונות</b> (90 דקות) ≤ 3 מטוסים; אין
+            <td data-label="מה מדליק"><b>סכום 3 הבדיקות האחרונות</b> (90 דקות) ≤ 3 מטוסים; אין
             שיפוט כשהחציון &lt; 5. אם המעגל הגולמי (170 מייל ימי) ירד בעצמו
             מתחת למחצית החציון שלו — <b>מקור מושבת</b> במקום
-            הדלקה</td><td>🇮🇱 ישראל · <b>הקשר בלבד מ-5.9.2026 — אינו מצביע</b></td></tr>
-        <tr><td>אזהרות מסע — ישראל והסביבה</td><td>מחלקת המדינה האמריקאית</td>
-            <td>עליית רמת אזהרה לישראל / לבנון / ירדן / סוריה — <b>מאושר
+            הדלקה</td><td data-label="לאיזה מדד"><span aria-hidden="true">🇮🇱</span> ישראל · <b>הקשר בלבד מ-5.9.2026 — אינו מצביע</b></td></tr>
+        <tr><td data-label="">אזהרות מסע — ישראל והסביבה</td><td data-label="מקור">מחלקת המדינה האמריקאית</td>
+            <td data-label="מה מדליק">עליית רמת אזהרה לישראל / לבנון / ירדן / סוריה — <b>מאושר
             בשתי תצפיות רצופות</b>. הזרוע הבריטית (FCDO, gov.uk) הוסרה
             מהקוד ב-31.8.2026; שורה זו המשיכה לתאר אותה עד
             1.9.2026. <b>הקשר בלבד מ-1.9.2026 — אינה מצביעה</b>: מה שנקרא כאן
             הוא הכרזה על סיכון, ולבנון וסוריה כבר על תקרת הסולם
-            (4)</td><td>— הקשר בלבד</td></tr>
-        <tr><td>אינטרנט באיראן (ארצי)</td><td>IODA · Georgia Tech</td>
-            <td class="num-cell">merit-nt &lt; 50% מהחציון.
+            (4)</td><td data-label="לאיזה מדד">— הקשר בלבד</td></tr>
+        <tr><td data-label="">אינטרנט באיראן (ארצי)</td><td data-label="מקור">IODA · Georgia Tech</td>
+            <td class="num-cell" data-label="מה מדליק">merit-nt &lt; 50% מהחציון.
             <b>merit-nt היא זרוע ההצבעה היחידה מ-1.9.2026</b>; BGP
             ו-ping-slash24 נמדדים ומוצגים אך אינם מצביעים (BGP במלחמת יוני
             2025 לא ירד מ-94.5% מהבסיס; ping-slash24 הוסר מההצבעה ב-1.9.2026
             אחרי שנמצא החירש מבין השתיים בשחזור על 96 הדגימות
-            השמורות)</td><td>🇮🇷 איראן · פעולה</td></tr>
-        <tr><td>בדיקות RIPE Atlas באיראן</td><td>atlas.ripe.net · RIPE NCC</td>
-            <td>מספר הבדיקות המחוברות באיראן יורד מתחת ל-50% מחציון 14 הימים, <b>בשתי בדיקות רצופות</b>. בקרה: אם גם ישראל קורסת — התקלה ב-RIPE, והמדד אינו נמדד ולא נדלק. עד 3 ימי נתונים החציון הוא 85 (שחזור)</td><td>🇮🇷 איראן · פעולה (תופעה אחת עם אינטרנט באיראן)</td></tr>
-        <tr><td>עניין ציבורי — מצר הורמוז</td><td>wikimedia.org · ויקיפדיה האנגלית</td>
-            <td>הצפיות היומיות בערך Strait of Hormuz ≥ פי 3 מחציון 14 הימים הקודמים. סווג <b>דעה</b> (עניין, לא פעולה): לבדו נעצר ברמה 1</td><td>🇮🇷 איראן · דעה</td></tr>
-        <tr><td>סולם אזהרות מסע (4 ממשלות)</td><td>ארה&quot;ב · קנדה · גרמניה · בריטניה</td>
-            <td><b>לא מדליק כלום</b> — נמדד, עוד לא מצביע (בסיס מ-21.10.2026, בדיקת קידום מ-28.10.2026)</td><td>— נמדד, עוד לא מצביע</td></tr>
-        <tr><td>לינות צוותי אוויר זרים בנתב&quot;ג</td><td>data.gov.il · רשות שדות התעופה</td>
-            <td><b>לא מדליק כלום</b> — נמדד, עוד לא מצביע (בסיס מ-21.10.2026; לוח החורף מתחיל ב-25.10.2026)</td><td>— נמדד, עוד לא מצביע</td></tr>
-        <tr><td>אסטנבול–טהרן: ביטולים</td><td>istairport.com</td>
-            <td><b>לא מדליק כלום</b> — נמדד, עוד לא מצביע (בסיס מ-21.10.2026)</td><td>— נמדד, עוד לא מצביע</td></tr>
-        <tr><td>מטוסי תדלוק ומודיעין באזור</td><td>adsb.lol</td>
-            <td><b>לא מדליק כלום</b> — נמדד, עוד לא מצביע (בסיס מ-21.10.2026, כולל שדה ״ירידה פתאומית״)</td><td>— נמדד, עוד לא מצביע</td></tr>
-        <tr><td>חריגות תרמיות מלוויין</td><td>NASA FIRMS · VIIRS (סדרה יומית —
+            השמורות)</td><td data-label="לאיזה מדד"><span aria-hidden="true">🇮🇷</span> איראן · פעולה</td></tr>
+        <tr><td data-label="">חיישני RIPE Atlas באיראן</td><td data-label="מקור">atlas.ripe.net · RIPE NCC</td>
+            <td data-label="מה מדליק">מספר החיישנים המחוברים באיראן יורד מתחת ל-50% מחציון 14 הימים, <b>בשתי בדיקות רצופות</b>. בקרה: אם גם ישראל קורסת — התקלה ב-RIPE, והמדד אינו נמדד ולא נדלק. עד 3 ימי נתונים החציון הוא 85 (שחזור)</td><td data-label="לאיזה מדד"><span aria-hidden="true">🇮🇷</span> איראן · פעולה (תופעה אחת עם אינטרנט באיראן)</td></tr>
+        <tr><td data-label="">עניין ציבורי — מצר הורמוז</td><td data-label="מקור">wikimedia.org · ויקיפדיה האנגלית</td>
+            <td data-label="מה מדליק">הצפיות היומיות בערך Strait of Hormuz ≥ פי 3 מחציון 14 הימים הקודמים. סווג <b>דעה</b> (עניין, לא פעולה): לבדו נעצר ברמה 1</td><td data-label="לאיזה מדד"><span aria-hidden="true">🇮🇷</span> איראן · דעה</td></tr>
+        <tr><td data-label="">סולם אזהרות מסע (4 ממשלות)</td><td data-label="מקור">ארה&quot;ב · קנדה · גרמניה · בריטניה</td>
+            <td data-label="מה מדליק"><b>לא מדליק כלום</b> — נמדד, עוד לא מצביע (בסיס מ-21.10.2026, בדיקת קידום מ-28.10.2026)</td><td data-label="לאיזה מדד">— נמדד, עוד לא מצביע</td></tr>
+        <tr><td data-label="">לינות צוותי אוויר זרים בנתב&quot;ג</td><td data-label="מקור">data.gov.il · רשות שדות התעופה</td>
+            <td data-label="מה מדליק"><b>לא מדליק כלום</b> — נמדד, עוד לא מצביע (בסיס מ-21.10.2026; לוח החורף מתחיל ב-25.10.2026)</td><td data-label="לאיזה מדד">— נמדד, עוד לא מצביע</td></tr>
+        <tr><td data-label="">אסטנבול–טהרן: ביטולים</td><td data-label="מקור">istairport.com</td>
+            <td data-label="מה מדליק"><b>לא מדליק כלום</b> — נמדד, עוד לא מצביע (בסיס מ-21.10.2026)</td><td data-label="לאיזה מדד">— נמדד, עוד לא מצביע</td></tr>
+        <tr><td data-label="">מטוסי תדלוק ומודיעין באזור</td><td data-label="מקור">adsb.lol</td>
+            <td data-label="מה מדליק"><b>לא מדליק כלום</b> — נמדד, עוד לא מצביע (בסיס מ-21.10.2026, כולל שדה ״ירידה פתאומית״)</td><td data-label="לאיזה מדד">— נמדד, עוד לא מצביע</td></tr>
+        <tr><td data-label="">חריגות תרמיות מלוויין</td><td data-label="מקור">NASA FIRMS · VIIRS (סדרה יומית —
             נמדדת היממה השלמה UTC האחרונה)</td>
-            <td class="num-cell">n &gt; max(3 × חציון הימים הקודמים, חציון + 5)
+            <td class="num-cell" data-label="מה מדליק">n &gt; max(3 × חציון הימים הקודמים, חציון + 5)
             · עד 30 יום · אין שיפוט עם פחות מ-7 ימי היסטוריה · יממה שלמה
             ישנה מ-36 שעות = מקור תקוע, לא אפס. <b>הקשר בלבד מ-1.9.2026 —
             אינה מצביעה</b>: זיהוי תרמי הוא הערכת נזק אחרי אירוע ולא לפניו,
-            וב-1.9.2026 הסף (&gt;8 מוקדים) היה גבוה מהמקסימום שנמדד עד אז (5, מתוך 13 ימים שמורים); הסף החי מודפס בשורה בדף הראשי</td><td>— הקשר בלבד</td></tr>
-        <tr><td>התרעות שגרירות ארה"ב — הוראות מבצעיות</td><td>10 שגרירויות
+            וב-1.9.2026 הסף (&gt;8 מוקדים) היה גבוה מהמקסימום שנמדד עד אז (5, מתוך 13 ימים שמורים); הסף החי מודפס בשורה בדף הראשי</td><td data-label="לאיזה מדד">— הקשר בלבד</td></tr>
+        <tr><td data-label="">התרעות שגרירות ארה"ב — הוראות מבצעיות</td><td data-label="מקור">10 שגרירויות
             ארה"ב באזור (ישראל, לבנון, עיראק, בחריין, כווית, קטאר, איחוד
             האמירויות, ירדן, סעודיה, עומאן)</td>
-            <td>הוראה מבצעית לסגל (הגבלת תנועה / shelter in place / פינוי
+            <td data-label="מה מדליק">הוראה מבצעית לסגל (הגבלת תנועה / shelter in place / פינוי
             מורשה או מחויב) בחלון 72 שעות — מאושר בשתי תצפיות רצופות;
             ניסוחי ביטול והתרעות שגרה מוחרגים. <b>פערי קריאה:</b> פיד שלא
             נקרא בריצה מסוימת, או שמחזיר עמוד מלא של 10 פריטים אחרונים (כך
@@ -1402,15 +1531,12 @@ footer a:hover{color:var(--cyan)}
             שהובילו בסבבים קודמים) לא נקראו הוא קובע שהעדר הוראה אינו מוכח.
             בתשע השגרירויות האזוריות (מחוץ
             לישראל) חל כלל מחמיר יותר: השעיית שירותים קונסולריים אינה
-            נספרת שם, משום שבמפרץ זהו לרוב נוסח של סגירה לחג. החליף
-            ב-22.8.2026 את "אזהרות מסע — איראן והמפרץ": אותו ספק
-            (state_dept), ולכן ההחלפה שומרת על תקרת שני הקולות של
-            הספק. <b>שורת הקשר, לא אות:</b> כש-3 שגרירויות או יותר מפרסמות התרעה כלשהי
+            נספרת שם, משום שבמפרץ זהו לרוב נוסח של סגירה לחג. <b>שורת הקשר, לא אות:</b> כש-3 שגרירויות או יותר מפרסמות התרעה כלשהי
             ב-6 השעות האחרונות, ערך המדד מציג "N/10 שגרירויות פרסמו התרעה"
             — אינה מדליקה ואינה מצביעה (ב-8.10 וב-18.10.2026 גל התרעות כלליות
-            זהות, ללא הוראה מבצעית)</td><td>🇮🇱 ישראל · פעולה</td></tr>
-        <tr><td>שיבוש GPS — מצר הורמוז</td><td>gpsjam.org (נגזר ADS-B, יומי)</td>
-            <td>היחס היומי של מטוסים המדווחים על דיוק GPS ירוד ≥ פי 3 מחציון
+            זהות, ללא הוראה מבצעית)</td><td data-label="לאיזה מדד"><span aria-hidden="true">🇮🇱</span> ישראל · פעולה</td></tr>
+        <tr><td data-label="">שיבוש GPS — מצר הורמוז</td><td data-label="מקור">gpsjam.org (נגזר ADS-B, יומי)</td>
+            <td data-label="מה מדליק">היחס היומי של מטוסים המדווחים על דיוק GPS ירוד ≥ פי 3 מחציון
             הימים הקודמים (עד 30 יום), ולפחות <b>13%</b> בערך מוחלט, <b>ולעולם
             לא יותר מ-8% מעל הערך הגבוה ביותר שנצפה בסדרה</b>; יום עם פחות
             מ-1,000 תצפיות אינו נשפט. התקרה נוספה ב-31.8.2026 אחרי ששלושה
@@ -1431,12 +1557,12 @@ footer a:hover{color:var(--cyan)}
             מדילול כיסוי המטוסים — היחס נגזר מתעופה — ולא מכיבוי משבש. אין
             מקור שני שיפריד ביניהם, ולכן זה מסומן כאמון
             נמוך. <b>הקשר בלבד מ-1.9.2026 — אינה מצביעה</b>: בשחזור יוני 2025 כל הקפיצות שלו הופיעו ביום האירוע ולא לפניו (0.3%→3.7%→7.8% ב-12–14.6.2025) — מכשיר דיווח, לא אות מקדים; התגובה שלו לאירועים מסוגו מחליפה סימן (עלה אחרי תקיפת המכלית ב-8.8.2026, ירד לשפל בליל התקיפה באי לארק); והסף כויל מחדש ב-1.9.2026 ועדיין אין לו רקורד. העוגן
-            והראצ׳ט שלה ממשיכים להתפרסם בפאנל האיראני — הם המנגנון היחיד כאן
-            שעקב אחרי שינוי משטר אמיתי</td><td>— הקשר בלבד</td></tr>
-        <tr><td>שיבוש GPS — מרחב ישראל</td><td>gpsjam.org (אותו קובץ יומי —
+            ומעקב המגמה האיטית שלה ממשיכים להתפרסם בפאנל האיראני — הם המנגנון היחיד כאן
+            שעקב אחרי שינוי משטר אמיתי</td><td data-label="לאיזה מדד">— הקשר בלבד</td></tr>
+        <tr><td data-label="">שיבוש GPS — מרחב ישראל</td><td data-label="מקור">gpsjam.org (אותו קובץ יומי —
             הורדה אחת משרתת את שני מדדי ה-GPS; 51 תאי H3 ברזולוציה 4 מעל
             29.4–33.4°N, 34.2–36.0°E)</td>
-            <td>היחס היומי ≥ פי 3 מחציון הימים הקודמים (עד 30 יום), <b>וגם</b> ≥ 12% בערך מוחלט (מ-1.9.2026; עד אז 18%, ראו להלן). הרצפה המקורית נגזרה ממדידת 31 יום אמיתיים
+            <td data-label="מה מדליק">היחס היומי ≥ פי 3 מחציון הימים הקודמים (עד 30 יום), <b>וגם</b> ≥ 12% בערך מוחלט (מ-1.9.2026; עד אז 18%, ראו להלן). הרצפה המקורית נגזרה ממדידת 31 יום אמיתיים
             (20.7–19.8.2026) עם ערכת התאים הזו: מינימום 1.83%, חציון 5.73%,
             מקסימום 17.25% — שיבוש לסירוגין הוא הרקע הקבוע מעל ישראל, ולכן
             הרצפה יושבת מעל כל המעטפת הזו (רצפת 5% של הורמוז, מושתלת כמות
@@ -1455,24 +1581,24 @@ footer a:hover{color:var(--cyan)}
             <br><b>הכיוון היורד:</b> אותו כלל של הורמוז (0.35 מהחציון ומטה),
             <b>סימן במעקב בלבד</b>. הוא פעיל רק כשהחציון ≥ 5% (ב-1.9.2026 החציון כאן היה 4.7%, ולכן היה <b>רדום</b>; המצב החי מוצג בשורה בדף הראשי). ובשחזור הוא סימן שני ימים שקטים
             (11.8 ו-18.8) שלא נקשר אליהם דבר — זו הסיבה שהוא אינו
-            מצביע</td><td>🇮🇱 ישראל · פעולה</td></tr>
-        <tr><td>תעופה צבאית באזור</td><td>adsb.lol (משבצת 12–40°N, 25–60°E)</td>
-            <td class="num-cell"><b>תצוגה בלבד מ-21.10.2026</b> (29 אירועי הדלקה, אף אחד לא אומת) — הכלל שלהלן הושבת ואינו מדליק דבר, גם לא כהקשר. n &gt; max(3 × חציון, <b>14</b>), בשתי בדיקות
+            מצביע</td><td data-label="לאיזה מדד"><span aria-hidden="true">🇮🇱</span> ישראל · פעולה</td></tr>
+        <tr><td data-label="">תעופה צבאית באזור</td><td data-label="מקור">adsb.lol (משבצת 12–40°N, 25–60°E)</td>
+            <td class="num-cell" data-label="מה מדליק"><b>תצוגה בלבד מ-21.10.2026</b> (29 אירועי הדלקה, אף אחד לא אומת) — הכלל שלהלן הושבת ואינו מדליק דבר, גם לא כהקשר. n &gt; max(3 × חציון, <b>14</b>), בשתי בדיקות
             רצופות. עודכן 1.9.2026 מ-20: הרצפה הישנה הייתה 43% מעל המקסימום
             שנמדד אי פעם (14), כלומר המדד לא היה מסוגל להידלק. הרצפה החדשה
             שווה לאותו מקסימום, מתוך 384 דגימות שמורות (חציון 3 · אחוזון 90 = 8
             · אחוזון 99 = 13 · מקסימום 14). שחזור על אותן דגימות: 0 הדלקות
-            ברצפה 14, הראשונה ברצפה 12. <b>עודכן 8.10.2026:</b> הרצפה נחצתה בתוך שבוע (המקסימום ברשומה המפורסמת: 26) ו-13 הדלקות שווא נרשמו ב-30 יום, כולן במחזור הבוקר (07:42–12:42)</td><td>🌐 אזורי · <b>הקשר בלבד מ-8.10.2026 — אינו מצביע · תצוגה בלבד מ-21.10.2026</b></td></tr>
-        <tr><td>שווקים — ברנט ושקל</td><td>Yahoo Finance BZ=F (ברנט) · בנק ישראל (דולר-שקל)</td>
-            <td>כיוון הסלמה בלבד: ברנט ≥ 108% מהחציון, או שער הדולר-שקל
+            ברצפה 14, הראשונה ברצפה 12. <b>עודכן 8.10.2026:</b> הרצפה נחצתה בתוך שבוע (המקסימום ברשומה המפורסמת: 26) ו-13 הדלקות שווא נרשמו ב-30 יום, כולן במחזור הבוקר (07:42–12:42)</td><td data-label="לאיזה מדד">🌐 אזורי · <b>הקשר בלבד מ-8.10.2026 — אינו מצביע · תצוגה בלבד מ-21.10.2026</b></td></tr>
+        <tr><td data-label="">שווקים — ברנט ושקל</td><td data-label="מקור">Yahoo Finance BZ=F (ברנט) · בנק ישראל (דולר-שקל)</td>
+            <td data-label="מה מדליק">כיוון הסלמה בלבד: ברנט ≥ 108% מהחציון, או שער הדולר-שקל
             ≥ 103% מהחציון (היחלשות שקל). <b>הקשר בלבד מ-1.9.2026 — אינה
             מצביעה באף אחד משני המדדים</b>, אף שהיא מוצגת בשניהם: מחיר מתמחר
             מחדש חדשות שכבר פורסמו, וב-1.9.2026 שני הספים (ברנט ≥$97.9 · דולר ≥3.08 ₪) היו גבוהים מהמקסימום שנמדד אז בחלון החי (93.879 · 3.012); הספים החיים מודפסים בשורה בדף הראשי</td>
-            <td>— הקשר בלבד</td></tr>
-        <tr><td>שוק ניבוי — הפסקת האש</td><td>Polymarket (האירוע "Israel x Iran
+            <td data-label="לאיזה מדד">— הקשר בלבד</td></tr>
+        <tr><td data-label="">שוק ניבוי — הפסקת האש</td><td data-label="מקור">Polymarket (האירוע "Israel x Iran
             ceasefire continues through...?", ~$26M מחזור; תנאי ההכרעה —
             תקיפה אווירית או טילית של צד אחד בשני, דו-כיווני)</td>
-            <td>הסיכון היומי הגלום h = 1 − (1 − p)^(1/ימים שנותרו) —
+            <td data-label="מה מדליק">הסיכון היומי הגלום h = 1 − (1 − p)^(1/ימים שנותרו) —
             <b>לעולם לא המחיר הגולמי</b>, שיורד מעצמו כשהאופק מתקצר —
             ≥ פי 3 מחציון הימים הקודמים (עד 30 יום), <b>וגם</b> ≥ 2% ליום
             בערך מוחלט; אין שיפוט עם פחות מ-7 ימי היסטוריה קודמים. נבחר
@@ -1484,9 +1610,9 @@ footer a:hover{color:var(--cyan)}
             (הנימוק המדוד בהמשך הסעיף). <b>הקשר בלבד מ-1.9.2026 — אינה
             מצביעה באף אחד משני המדדים</b>, אף שהיא מוצגת בשניהם: מהמר שאין
             לו מידע פרטי קורא את אותן כותרות, וב-1.9.2026 הסף (2% ליום) היה גבוה מהמקסימום שנמדד עד אז (0.87% ליום, מתוך 26 ימים שמורים); ב-21.10.2026 הוא נחצה לראשונה</td>
-            <td>— הקשר בלבד</td></tr>
-        <tr><td>הודעות NOTAM — מרחב ישראל</td><td>brin.iaa.gov.il</td>
-            <td><b>לא מדליק כלום</b> — <b>הקשר בלבד מ-1.9.2026</b>, ואינו
+            <td data-label="לאיזה מדד">— הקשר בלבד</td></tr>
+        <tr><td data-label="">הודעות NOTAM — מרחב ישראל</td><td data-label="מקור">brin.iaa.gov.il</td>
+            <td data-label="מה מדליק"><b>לא מדליק כלום</b> — <b>הקשר בלבד מ-1.9.2026</b>, ואינו
             מצביע. הדף נקרא לכל היותר פעם בשעה ונשמר במטמון (כ-1.21MB לקריאה;
             קריאה בכל מחזור = כ-58MB ליום מאתר ממשלתי). נמדדים: מספר ההודעות
             הפעילות, כמה מהן כוללות CLSD, כמה סוגרות בהיקף רחב (AD CLSD, או
@@ -1497,13 +1623,14 @@ footer a:hover{color:var(--cyan)}
             <b>נכשל סגור:</b> חסימת Radware (עמוד קפצ'ה בקוד 200), קיטוע, דף
             שאינו דף ה-NOTAM, פחות מ-20 מזהים, או ספירת CLSD שאינה תואמת את
             הדף — כולם מסמנים "לא נקרא", לעולם לא "שקט"</td>
-            <td>אין עדיין קו בסיס — 30 יום של קריאות שעתיות <b>וגם</b> אירוע
+            <td data-label="לאיזה מדד">אין עדיין קו בסיס — 30 יום של קריאות שעתיות <b>וגם</b> אירוע
             מרחב-אווירי אחד לפחות בתוכן</td></tr>
-        <tr><td>StrikeRadar</td><td>usstrikeradar.com</td>
-            <td><b>לא מדליק כלום</b> — הקשר בלבד</td><td>—</td></tr>
+        <tr><td data-label="">StrikeRadar</td><td data-label="מקור">usstrikeradar.com</td>
+            <td data-label="מה מדליק"><b>לא מדליק כלום</b> — הקשר בלבד</td><td data-label="לאיזה מדד">—</td></tr>
       </tbody>
     </table></div>
 
+    <details class="dd"><summary><h3>כללים שנולדו מכישלון או ממדידה אמיתית</h3></summary><div class="dd-body">
     <p>כללים שמופיעים בטבלה ומקורם בכישלון או במדידה אמיתית, לא בתיאוריה:</p>
     <ul>
       <li><b>למה אזהרות מסע דורשות שתי תצפיות:</b> פיד ה-RSS של מחלקת המדינה אינו
@@ -1525,7 +1652,7 @@ footer a:hover{color:var(--cyan)}
       החירש: מועמד ששקט פי 3 התגלה כחירש יותר מהכלל הישן בכל עוצמת סגירה,
       ונפסל. בכל ההיסטוריה שנמדדה סכום 3 הבדיקות לא ירד מתחת ל-5. המבחן
       המאוחד גם תופס דפוסים מעורבים כמו 1,0,2 שכלל של רצף מפספס מבנית.
-      <b>המחיר, ונאמר ביושר:</b> ירידה מתמשכת ל-2 מטוסים — כ-60% מהתנועה —
+      <b>המחיר, ונאמר ביושר:</b> ירידה מתמשכת של כ-60% מהתנועה (לכ-2 מטוסים)
       אינה ניתנת לזיהוי בשום כיול שנבדק, כולל הישן. זו מגבלת אות בספירות
       כאלה, לא באג, והמדד מוצג ככזה.</li>
       <li><b>מגן בריאות-כיסוי (23.8.2026):</b> התרעת השווא היחידה שנצפתה
@@ -1555,7 +1682,7 @@ footer a:hover{color:var(--cyan)}
       הקצה העליון של "הטווח הרגיל 1–10" שהדף עצמו מדפיס באותה שורה. הרצה
       חוזרת של הכלל על 96 הדגימות השמורות הדליקה אותו <b>ארבע פעמים</b> על
       נתונים רגילים לחלוטין (10 מול חציון 1, 13 מול 2, 11 מול 2, 14 מול 4),
-      וביומן ההרצה נשלחו שלוש הודעות 🟡 בארבע שעות. הפיד מתנדנד לפי שעות
+      וביומן ההרצה נשלחו שלוש הודעות <span aria-hidden="true">🟡</span> בארבע שעות. הפיד מתנדנד לפי שעות
       היום, כך שאשכול יום שנמדד מול חציון של שפל לילה מייצר "זינוק" יש מאין.
       הפילוג הנמדד: חציון 4, אחוזון 90 = 10, אחוזון 95 = 11, אחוזון 99 ≈
       13.05, מקסימום 14. הסף המוחלט שנקבע אז, 20 (הוחלף ב-1.9.2026 ל-14, ובהמשך המשפחה כולה הועברה להקשר ב-8.10.2026), נמצא 43% מעל הערך הגבוה ביותר שנמדד אי־פעם, והמכפיל עלה מפי 2 לפי 3, בתוספת אישור בשתי בדיקות. באותה הרצה
@@ -1565,7 +1692,7 @@ footer a:hover{color:var(--cyan)}
       האירוע עצמו. דוגמה מהנתונים החיים: חציון המרחב האווירי הישראלי הוא 78,
       כלומר סף של 27. אם התנועה קורסת ל-20 ונשארת שם, אחרי כ-24 שעות החציון
       המתגלגל הוא כ-26.5 והסף כ-9.3 — והמדד <b>נכבה בזמן שהקריסה נמשכת</b>,
-      והדף חוזר ל-🟢 שקט. מערכת שמוכרת שכבת התארגנות של 1–3 ימים לא יכולה
+      והדף חוזר ל-<span aria-hidden="true">🟢</span> שקט. מערכת שמתיימרת לתת שכבת התארגנות של 1–3 ימים לא יכולה
       שקווי הבסיס שלה יתמוססו בתוך אירוע של 1–3 ימים. לכן משפחה שדולקת
       מפסיקה להזין את הסדרה של עצמה, ונשפטת מול קו הבסיס שלפני האירוע.
       ההקפאה חסומה ב-144 דגימות = <b>72 שעות</b> — יותר מחלון 48 השעות ויותר
@@ -1580,7 +1707,7 @@ footer a:hover{color:var(--cyan)}
       הייתה רגיעה אמיתית, אבל <b>יותר מחצי</b> מהירידה הגולמית הייתה תעתוע
       לוח-שנה. הכלל — פי 3 מחציון הימים הקודמים וגם ≥2% ליום (שקול ל~45%
       בתוך חודש) — הורץ לאחור על הסדרה השעתית האמיתית (743 נקודות,
-      20.7–20.8) לפני החיבור. במסגרת ההוגנת: מתוך 32 התאריכים בחלון נשפטו
+      20.7–20.8) לפני החיבור. בחישוב הוגן: מתוך 32 התאריכים בחלון נשפטו
       <b>25</b> — שבעת הימים הראשונים הם חימום קו הבסיס, ודווקא בהם נמצא
       הקטע המתוח ביותר (23–24 ביולי, ~3.3–3.5% ליום, שמעולם לא נשפט: היו
       אז רק 3–4 ימים קודמים). מבין הימים שנשפטו הכלל נדלק <b>אפס פעמים</b>;
@@ -1604,6 +1731,7 @@ footer a:hover{color:var(--cyan)}
       הייתה 79% מהסף (31.7). חודש רגוע שמייצר אפס התרעות הוא ההתנהגות
       הרצויה; המחיר, והוא נאמר ביושר: זינוק שנשאר מתחת ל-18% לא יידלק.</li>
     </ul>
+    </div></details>
     </div>
     <div data-lang="en">
     <h2><span class="num">05</span> The exact thresholds</h2>
@@ -1614,80 +1742,79 @@ footer a:hover{color:var(--cyan)}
     a level of 2 or higher requires at least one lit <b>action</b> family —
     <b>belief</b> families alone stop at level 1.</p>
 
-    <p><b>Updated 2026-09-01.</b> Five families became <b>context only</b>:
-    travel advisories, satellite thermal anomalies, Hormuz GPS interference,
-    the markets and the prediction market. They are still measured, still
-    stored and still listed below with their live thresholds — but they cast
-    no vote, and their last column reads "context only". From 2026-09-01 to 2026-10-21 every voting family was typed <b>action</b> and the action/belief guard was dormant; since 2026-10-21 one belief family (Wikipedia, Strait of Hormuz) votes on the Iran index, so the guard is live again.</p>
+    
 
-    <p><b>The consequence on the Iran index, said plainly (updated 2026-10-21):</b> three voting families over three providers — Iranian internet (IODA), RIPE Atlas probes and Wikipedia attention. IODA and RIPE Atlas are one phenomenon and one vote (since 2026-10-23), so level 2 is the maximum and the gauge says &quot;of 2&quot;. (Until 2026-10-08 there were two, with regional military aviation; between 2026-10-08 and 2026-10-21 there was one.) The ceiling is derived
+    <p>Families marked <b>context only</b> (today: travel advisories, Jordanian airspace, regional military aviation, satellite thermal anomalies, Hormuz GPS interference, the markets, the prediction market, NOTAM and StrikeRadar) are measured, stored and listed below with their live thresholds, but cast no vote; their last column reads "context only". One belief family (Wikipedia, Strait of Hormuz) votes on the Iran index, so the action/belief guard is live.</p>
+
+    <p><b>The consequence on the Iran index, said plainly:</b> three voting families over three providers — Iranian internet (IODA), RIPE Atlas probes and Wikipedia attention. IODA and RIPE Atlas are one phenomenon and one vote (since 2026-10-23), so level 2 is the maximum. (Until 2026-10-08 there were two, with regional military aviation; between 2026-10-08 and 2026-10-21 there was one.) The ceiling is derived
     in code from the voting roster and published in a <code>max_level</code>
     field, so it cannot drift from it.</p>
 
-    <div class="m-wrap"><table class="m-tbl">
-      <thead><tr><th>Indicator</th><th>Source</th><th>What lights it</th><th>Which index</th></tr></thead>
+    <div class="m-wrap" role="region" aria-label="The exact thresholds, by indicator" tabindex="0"><table class="m-tbl">
+      <caption>The exact thresholds, by indicator</caption>
+      <thead><tr><th scope="col">Indicator</th><th scope="col">Source</th><th scope="col">What lights it</th><th scope="col">Which index</th></tr></thead>
       <tbody>
-        <tr><td>Defence policy</td><td>Home Front Command (official API)</td>
-            <td>A change of the instructions' wording against the stored
+        <tr><td data-label="">Defence policy</td><td data-label="Source">Home Front Command (official API)</td>
+            <td data-label="What lights it">A change of the instructions' wording against the stored
             baseline, <b>and only in the restrictive direction</b>: a move from
             "no restrictions" to restrictive guidance, or a change within an
             already-restrictive state. <b>Change only</b> — the mere existence
             of a restrictive policy lights nothing here; and a rewording that
             does not change the meaning, a relaxation, or wording we cannot
-            classify are logged and never raise the level</td><td>🇮🇱 Israel · action</td></tr>
-        <tr><td>Israeli airspace</td><td>adsb.lol</td>
-            <td>civil aircraft &lt; 35% of the median, <b>on two consecutive
-            checks</b>; not judged when the median is &lt; 20</td><td>🇮🇱 Israel · action</td></tr>
-        <tr><td>Jordanian airspace</td><td>adsb.lol (two boxes that are
+            classify are logged and never raise the level</td><td data-label="Which index"><span aria-hidden="true">🇮🇱</span> Israel · action</td></tr>
+        <tr><td data-label="">Israeli airspace</td><td data-label="Source">adsb.lol</td>
+            <td data-label="What lights it">civil aircraft &lt; 35% of the median, <b>on two consecutive
+            checks</b>; not judged when the median is &lt; 20</td><td data-label="Which index"><span aria-hidden="true">🇮🇱</span> Israel · action</td></tr>
+        <tr><td data-label="">Jordanian airspace</td><td data-label="Source">adsb.lol (two boxes that are
             unambiguously Jordan: 29.2–32.3°N 35.75–36.5°E and the strip
             32.2–32.7°N 37.2–39.2°E — no Israeli traffic, no Saudi
             corridor)</td>
-            <td><b>the sum of the last 3 checks</b> (90 minutes) &le; 3
+            <td data-label="What lights it"><b>the sum of the last 3 checks</b> (90 minutes) &le; 3
             aircraft; not judged when the median is &lt; 5. If the raw 170 nm
             circle has itself fallen below half its own median, a
             <b>degraded source</b> is reported instead of a
-            light</td><td>🇮🇱 Israel · <b>context only since 2026-09-05 — casts no vote</b></td></tr>
-        <tr><td>Travel advisories — Israel and neighbours</td><td>US State Department</td>
-            <td>An advisory-level rise for Israel / Lebanon / Jordan / Syria —
+            light</td><td data-label="Which index"><span aria-hidden="true">🇮🇱</span> Israel · <b>context only since 2026-09-05 — casts no vote</b></td></tr>
+        <tr><td data-label="">Travel advisories — Israel and neighbours</td><td data-label="Source">US State Department</td>
+            <td data-label="What lights it">An advisory-level rise for Israel / Lebanon / Jordan / Syria —
             <b>confirmed by two consecutive observations</b>. The UK arm
             (FCDO, gov.uk) was removed from the code on 2026-08-31; this row
             went on describing it until 2026-09-01. <b>Context only since
             2026-09-01 — it casts no vote</b>: what is read here is an
             announcement about risk, and Lebanon and Syria already sit at the
-            top of the scale (4)</td><td>— context only</td></tr>
-        <tr><td>Iranian internet (national)</td><td>IODA · Georgia Tech</td>
-            <td class="num-cell">merit-nt &lt; 50% of the median.
+            top of the scale (4)</td><td data-label="Which index">— context only</td></tr>
+        <tr><td data-label="">Iranian internet (national)</td><td data-label="Source">IODA · Georgia Tech</td>
+            <td class="num-cell" data-label="What lights it">merit-nt &lt; 50% of the median.
             <b>merit-nt is the only voting arm since 2026-09-01</b>; BGP and
             ping-slash24 are measured and displayed but do not vote (BGP never
             fell under 94.5% of baseline in the June-2025 war; ping-slash24
             was removed from the vote on 2026-09-01 after it was found to be
             the deafer of the two on a replay over the 96 stored
-            samples)</td><td>🇮🇷 Iran · action</td></tr>
-        <tr><td>RIPE Atlas probes in Iran</td><td>atlas.ripe.net · RIPE NCC</td>
-            <td>Connected probes in Iran fall below 50% of the 14-day median, on <b>two consecutive checks</b>. Control: if Israel collapses too, the fault is RIPE and the indicator is not measured and does not light. Until 3 days of data exist the median is 85 (backtest)</td><td>🇮🇷 Iran · action (one phenomenon with Iranian internet)</td></tr>
-        <tr><td>Public attention — Strait of Hormuz</td><td>wikimedia.org · English Wikipedia</td>
-            <td>Daily views of the Strait of Hormuz article ≥ 3x the median of the previous 14 days. Typed <b>belief</b> (attention, not action): on its own it stops at level 1</td><td>🇮🇷 Iran · belief</td></tr>
-        <tr><td>Travel-advisory ladder (4 governments)</td><td>US · Canada · Germany · UK</td>
-            <td><b>Lights nothing</b> — measured, not yet voting (baseline from 2026-10-21, promotion review from 2026-10-28)</td><td>— measured, not yet voting</td></tr>
-        <tr><td>Foreign air-crew night-stops at Ben Gurion</td><td>data.gov.il · Israel Airports Authority</td>
-            <td><b>Lights nothing</b> — measured, not yet voting (baseline from 2026-10-21; winter schedule starts 2026-10-25)</td><td>— measured, not yet voting</td></tr>
-        <tr><td>Istanbul–Tehran cancellations</td><td>istairport.com</td>
-            <td><b>Lights nothing</b> — measured, not yet voting (baseline from 2026-10-21)</td><td>— measured, not yet voting</td></tr>
-        <tr><td>Western tanker and ISR aircraft in the region</td><td>adsb.lol</td>
-            <td><b>Lights nothing</b> — measured, not yet voting (baseline from 2026-10-21, with a sudden-drop field)</td><td>— measured, not yet voting</td></tr>
-        <tr><td>Satellite thermal anomalies</td><td>NASA FIRMS · VIIRS (daily
+            samples)</td><td data-label="Which index"><span aria-hidden="true">🇮🇷</span> Iran · action</td></tr>
+        <tr><td data-label="">RIPE Atlas probes in Iran</td><td data-label="Source">atlas.ripe.net · RIPE NCC</td>
+            <td data-label="What lights it">Connected probes in Iran fall below 50% of the 14-day median, on <b>two consecutive checks</b>. Control: if Israel collapses too, the fault is RIPE and the indicator is not measured and does not light. Until 3 days of data exist the median is 85 (backtest)</td><td data-label="Which index"><span aria-hidden="true">🇮🇷</span> Iran · action (one phenomenon with Iranian internet)</td></tr>
+        <tr><td data-label="">Public attention — Strait of Hormuz</td><td data-label="Source">wikimedia.org · English Wikipedia</td>
+            <td data-label="What lights it">Daily views of the Strait of Hormuz article ≥ 3x the median of the previous 14 days. Typed <b>belief</b> (attention, not action): on its own it stops at level 1</td><td data-label="Which index"><span aria-hidden="true">🇮🇷</span> Iran · belief</td></tr>
+        <tr><td data-label="">Travel-advisory ladder (4 governments)</td><td data-label="Source">US · Canada · Germany · UK</td>
+            <td data-label="What lights it"><b>Lights nothing</b> — measured, not yet voting (baseline from 2026-10-21, promotion review from 2026-10-28)</td><td data-label="Which index">— measured, not yet voting</td></tr>
+        <tr><td data-label="">Foreign air-crew night-stops at Ben Gurion</td><td data-label="Source">data.gov.il · Israel Airports Authority</td>
+            <td data-label="What lights it"><b>Lights nothing</b> — measured, not yet voting (baseline from 2026-10-21; winter schedule starts 2026-10-25)</td><td data-label="Which index">— measured, not yet voting</td></tr>
+        <tr><td data-label="">Istanbul–Tehran cancellations</td><td data-label="Source">istairport.com</td>
+            <td data-label="What lights it"><b>Lights nothing</b> — measured, not yet voting (baseline from 2026-10-21)</td><td data-label="Which index">— measured, not yet voting</td></tr>
+        <tr><td data-label="">Western tanker and ISR aircraft in the region</td><td data-label="Source">adsb.lol</td>
+            <td data-label="What lights it"><b>Lights nothing</b> — measured, not yet voting (baseline from 2026-10-21, with a sudden-drop field)</td><td data-label="Which index">— measured, not yet voting</td></tr>
+        <tr><td data-label="">Satellite thermal anomalies</td><td data-label="Source">NASA FIRMS · VIIRS (daily
             series — measured over the latest complete UTC day)</td>
-            <td class="num-cell">n &gt; max(3 × the preceding days' median,
+            <td class="num-cell" data-label="What lights it">n &gt; max(3 × the preceding days' median,
             median + 5) · up to 30 days · no judgement with fewer than 7 days
             of history · a complete day older than 36 h = stuck source, not
             zero. <b>Context only since 2026-09-01 — it casts no vote</b>:
             thermal detection is damage assessment after an event, not before
-            it, and on 2026-09-01 the bar (&gt;8 hotspots) sat above the highest count recorded until then (5, over 13 stored days); the live bar is printed on the main page row</td><td>— context only</td></tr>
-        <tr><td>US embassy alerts — operational orders</td><td>10 U.S.
+            it, and on 2026-09-01 the bar (&gt;8 hotspots) sat above the highest count recorded until then (5, over 13 stored days); the live bar is printed on the main page row</td><td data-label="Which index">— context only</td></tr>
+        <tr><td data-label="">US embassy alerts — operational orders</td><td data-label="Source">10 U.S.
             embassies in the region (Israel, Lebanon, Iraq, Bahrain, Kuwait,
             Qatar, UAE, Jordan, Saudi Arabia, Oman)</td>
-            <td>An operational order to staff (travel restriction / shelter in
-            place / authorized or ordered departure) within a 72-hour window —
+            <td data-label="What lights it">An operational order to staff (travel restriction / shelter in
+            place / authorised or ordered departure) within a 72-hour window —
             confirmed on two consecutive observations; rescission wording and
             routine alerts are excluded. <b>Reading gaps:</b> a feed that
             cannot be read in a run, or that serves a full page of 10 recent
@@ -1700,17 +1827,15 @@ footer a:hover{color:var(--cyan)}
             not established. At the nine regional posts (outside
             Israel) a stricter rule applies: a consular-service suspension
             does not count there, because in the Gulf that wording usually
-            means a holiday closure. Replaced "Travel advisories — Iran
-            and the Gulf" on 2026-08-22: same provider (state_dept), so the
-            swap keeps the provider's two-vote ceiling. <b>Context line, not a
+            means a holiday closure. <b>Context line, not a
             signal:</b> when 3 or more embassies publish any alert within the
             last 6 hours, the indicator's value shows "N of 10 embassies
             published an alert" — it does not light and casts no vote (on 8
             and 18 Oct 2026 an identical generic alert wave carried no
-            operational order)</td><td>🇮🇱 Israel ·
+            operational order)</td><td data-label="Which index"><span aria-hidden="true">🇮🇱</span> Israel ·
             action</td></tr>
-        <tr><td>GPS interference — Strait of Hormuz</td><td>gpsjam.org (ADS-B-derived, daily)</td>
-            <td>The daily ratio of aircraft reporting degraded GPS accuracy
+        <tr><td data-label="">GPS interference — Strait of Hormuz</td><td data-label="Source">gpsjam.org (ADS-B-derived, daily)</td>
+            <td data-label="What lights it">The daily ratio of aircraft reporting degraded GPS accuracy
             ≥ 3× the median of the preceding days (up to 30 days), and at
             least <b>13%</b> in absolute terms, <b>and never more than 8%
             above the highest ratio observed in the series</b>; a day with
@@ -1739,11 +1864,11 @@ footer a:hover{color:var(--cyan)}
             confidence. <b>Context only since 2026-09-01 — it casts no
             vote</b>: on the June-2025 replay every one of its jumps came on the event day, not before it (0.3%→3.7%→7.8% over 12–14 June 2025) — a report instrument, not a leading signal; its response to its own class of event flips sign (up after the 2026-08-08 tanker strike, down to a low on the night of the Larak Island strike); and its bar was recalibrated on 2026-09-01 and has no track record yet. Its anchor and
             its ratchet keep publishing on the Iran panel — they are the only
-            mechanism here that tracked a real regime change</td><td>— context only</td></tr>
-        <tr><td>GPS interference — Israeli airspace</td><td>gpsjam.org (the
+            mechanism here that tracked a real regime change</td><td data-label="Which index">— context only</td></tr>
+        <tr><td data-label="">GPS interference — Israeli airspace</td><td data-label="Source">gpsjam.org (the
             same daily file — one download serves both GPS indicators; 51 H3
             resolution-4 cells over 29.4–33.4°N, 34.2–36.0°E)</td>
-            <td>The daily ratio ≥ 3× the median of the preceding days (up to 30 days), <b>and</b> ≥ 12% in absolute terms (since 2026-09-01; 18% until then, see below). The original floor was derived from a measurement of 31 real days (20 Jul–19 Aug 2026)
+            <td data-label="What lights it">The daily ratio ≥ 3× the median of the preceding days (up to 30 days), <b>and</b> ≥ 12% in absolute terms (since 2026-09-01; 18% until then, see below). The original floor was derived from a measurement of 31 real days (20 Jul–19 Aug 2026)
             with this exact cell set: minimum 1.83%, median 5.73%, maximum
             17.25% — intermittent jamming is the standing background over
             Israel, so the floor sits above that whole envelope (Hormuz's 5%
@@ -1766,27 +1891,27 @@ footer a:hover{color:var(--cyan)}
             <br><b>The downward direction:</b> the same rule as at Hormuz (0.35x
             the median or below), a <b>watched signal only</b>. It is active only while the median is ≥ 5% (on 2026-09-01 the median here was 4.7%, so it was <b>dormant</b>; the live state is shown on the main page row). And on replay it flagged two ordinary quiet days
             (2026-08-11 and 08-18) with nothing attached to them — which is why
-            it casts no vote</td><td>🇮🇱 Israel · action</td></tr>
-        <tr><td>Military aviation in the region</td><td>adsb.lol (box 12–40°N, 25–60°E)</td>
-            <td class="num-cell"><b>Display only since 21.10.2026</b> (29 episodes, none confirmed) — the rule below has been switched off and lights nothing, not even as context. n &gt; max(3 × median, <b>14</b>), on two
+            it casts no vote</td><td data-label="Which index"><span aria-hidden="true">🇮🇱</span> Israel · action</td></tr>
+        <tr><td data-label="">Military aviation in the region</td><td data-label="Source">adsb.lol (box 12–40°N, 25–60°E)</td>
+            <td class="num-cell" data-label="What lights it"><b>Display only since 21.10.2026</b> (29 episodes, none confirmed) — the rule below has been switched off and lights nothing, not even as context. n &gt; max(3 × median, <b>14</b>), on two
             consecutive checks. Lowered from 20 on 2026-09-01: the old floor
             was 43% above the highest value ever measured (14), i.e. the
             indicator could not fire. The new floor equals that maximum, over
             384 stored samples (median 3 · p90 8 · p99 13 · max 14). Replay
             over those samples: 0 firings at a floor of 14, the first at
-            12. <b>Updated 2026-10-08:</b> the floor was exceeded within a week (maximum in the published record: 26) and 13 false episodes were logged in 30 days, all in the morning cycle (07:42–12:42)</td><td>🌐 Regional · <b>context only since 2026-10-08 — casts no vote · display only since 2026-10-21</b></td></tr>
-        <tr><td>Markets — Brent and the shekel</td><td>Yahoo Finance BZ=F (Brent) · Bank of Israel (USD/ILS)</td>
-            <td>Escalation direction only: Brent ≥ 108% of the median, or the
+            12. <b>Updated 2026-10-08:</b> the floor was exceeded within a week (maximum in the published record: 26) and 13 false episodes were logged in 30 days, all in the morning cycle (07:42–12:42)</td><td data-label="Which index">🌐 Regional · <b>context only since 2026-10-08 — casts no vote · display only since 2026-10-21</b></td></tr>
+        <tr><td data-label="">Markets — Brent and the shekel</td><td data-label="Source">Yahoo Finance BZ=F (Brent) · Bank of Israel (USD/ILS)</td>
+            <td data-label="What lights it">Escalation direction only: Brent ≥ 108% of the median, or the
             USD/ILS rate ≥ 103% of the median (shekel weakening).
             <b>Context only since 2026-09-01 — it casts no vote on either
             index</b>, although it is displayed on both: a price reprices news
             that has already been published, and on 2026-09-01 both bars (Brent ≥$97.9 · USD/ILS ≥3.08) sat above the highest values then in the live window (93.879 · 3.012); the live bars are printed on the main page row</td>
-            <td>— context only</td></tr>
-        <tr><td>Prediction market — ceasefire</td><td>Polymarket (the event
+            <td data-label="Which index">— context only</td></tr>
+        <tr><td data-label="">Prediction market — ceasefire</td><td data-label="Source">Polymarket (the event
             "Israel x Iran ceasefire continues through...?", ~$26M volume;
             resolution criterion — an air or missile strike by either side on
             the other, bidirectional)</td>
-            <td>The implied daily hazard h = 1 − (1 − p)^(1/days remaining) —
+            <td data-label="What lights it">The implied daily hazard h = 1 − (1 − p)^(1/days remaining) —
             <b>never the raw price</b>, which falls on its own as the horizon
             shortens — ≥ 3× the median of the preceding days (up to 30),
             <b>and</b> ≥ 2% per day in absolute terms; not judged with fewer
@@ -1801,9 +1926,9 @@ footer a:hover{color:var(--cyan)}
             section). <b>Context only since 2026-09-01 — it casts no vote on
             either index</b>, although it is displayed on both: a bettor with
             no private information reads the same headlines, and on 2026-09-01 the bar (2% per day) sat above the highest value recorded until then (0.87% per day, over 26 stored days); it was first crossed on 2026-10-21</td>
-            <td>— context only</td></tr>
-        <tr><td>Israeli NOTAMs — airspace closures</td><td>brin.iaa.gov.il</td>
-            <td><b>Lights nothing</b> — <b>context only since 2026-09-01</b>,
+            <td data-label="Which index">— context only</td></tr>
+        <tr><td data-label="">Israeli NOTAMs — airspace closures</td><td data-label="Source">brin.iaa.gov.il</td>
+            <td data-label="What lights it"><b>Lights nothing</b> — <b>context only since 2026-09-01</b>,
             and it casts no vote. The page is read at most once an hour and
             cached (~1.21MB a read; reading it every cycle would be ~58MB a day
             off a government host). Measured: the number of active notices, how
@@ -1817,13 +1942,14 @@ footer a:hover{color:var(--cyan)}
             a truncation, a page that is not the NOTAM page, fewer than 20 ids,
             or a CLSD count that does not reconcile with the page — each marks
             the family unread, never quiet</td>
-            <td>No baseline yet — 30 days of hourly readings <b>and</b> at
+            <td data-label="Which index">No baseline yet — 30 days of hourly readings <b>and</b> at
             least one airspace event inside them</td></tr>
-        <tr><td>StrikeRadar</td><td>usstrikeradar.com</td>
-            <td><b>Lights nothing</b> — context only</td><td>—</td></tr>
+        <tr><td data-label="">StrikeRadar</td><td data-label="Source">usstrikeradar.com</td>
+            <td data-label="What lights it"><b>Lights nothing</b> — context only</td><td data-label="Which index">—</td></tr>
       </tbody>
     </table></div>
 
+    <details class="dd"><summary><h3>Rules born of failure or real measurement</h3></summary><div class="dd-body">
     <p>Rules in the table that come from real failure or real measurement, not from theory:</p>
     <ul>
       <li><b>Why travel advisories require two observations:</b> the State
@@ -1880,7 +2006,7 @@ footer a:hover{color:var(--cyan)}
       traffic runs 41–127 with a median near 76, so 35% of the median is about
       27 while the 10th percentile sits near 60 — the first condition is always
       the lower bar and therefore already implies the second. Across 89 of 89
-      judged windows the percentile blocked nothing. The threshold shown on the page did not change, because it was the minimum of the two all along. <b>As of 2026-10-23 (measured):</b> the median has drifted down from 72 (09-01) to 43–51 in October, so the effective bar is now about 15–18 aircraft; the ordinary night trough in the October windows is about 20–25 aircraft, only some 25%–60% above the bar, and the two-consecutive-checks rule is what stops a single low sample from lighting it. <b>Declared gap:</b> the indicator&#39;s four lights on 10 Oct and 22–23 Oct 2026 (1–10 aircraft) were regional adsb.lol coverage collapses — in the same runs the raw count over Jordan collapsed too and "empty feed" errors were logged; and during the two lights of 22–23 Oct the same provider&#39;s worldwide military-aircraft count stayed in its normal range (257–313). A guard comparing against a far region (Greece/Turkey) was examined and not adopted: it would not have caught the two of 22–23 Oct (no comparison data exists for the 10 Oct pair), and a Jordanian control would hide a real joint Israel+Jordan closure (April 2024). So a regional coverage collapse still looks like a closure here.
+      judged windows the percentile blocked nothing. The threshold shown on the page did not change, because it was the minimum of the two all along. <b>As of 2026-10-23 (measured):</b> the median has drifted down from 72 (09-01) to 43–51 in October, so the effective bar is now about 15–18 aircraft; the ordinary night trough in the October windows is about 20–25 aircraft, only some 25%–60% above the bar, and the two-consecutive-checks rule is what stops a single low sample from lighting it. <b>Declared gap:</b> the four times the indicator lit (on 10 Oct and 22–23 Oct 2026, with 1–10 aircraft) were regional adsb.lol coverage collapses — in the same runs the raw count over Jordan collapsed too and "empty feed" errors were logged; and during the two lights of 22–23 Oct the same provider&#39;s worldwide military-aircraft count stayed in its normal range (257–313). A guard comparing against a far region (Greece/Turkey) was examined and not adopted: it would not have caught the two of 22–23 Oct (no comparison data exists for the 10 Oct pair), and a Jordanian control would hide a real joint Israel+Jordan closure (April 2024). So a regional coverage collapse still looks like a closure here.
       What was deliberately <b>not</b> copied from
       Jordan: the absolute "≤2 aircraft" ceiling Jordan carried at the time.
       That is calibrated to a 5–15 aircraft feed; at Israel's scale (median 78)
@@ -1893,7 +2019,7 @@ footer a:hover{color:var(--cyan)}
       page itself prints on that very row. Replayed over the 96 stored samples
       it fired <b>four times</b> on entirely ordinary data (10 against a median
       of 1, 13 against 2, 11 against 2, 14 against 4), and the run log shows
-      three 🟡 notifications inside four hours. The feed swings with the time of
+      three <span aria-hidden="true">🟡</span> notifications inside four hours. The feed swings with the time of
       day, so a daytime cluster measured against a night-lull median
       manufactures a "surge" out of nothing. The measured distribution: median
       4, p90 = 10, p95 = 11, p99 ≈ 13.05, max = 14. The absolute floor set then, 20 (replaced by 14 on 2026-09-01, and the whole family moved to context on 2026-10-08), sits 43% above the highest value ever measured, the multiplier rose from
@@ -1906,7 +2032,7 @@ footer a:hover{color:var(--cyan)}
       threshold is 27. If traffic collapses to 20 and stays there, after about
       24 hours the rolling median is ≈26.5 and the threshold ≈9.3 — and the
       indicator <b>goes out while the collapse is still happening</b>, and the
-      page returns to 🟢 calm. A system sold as a 1–3 day preparation layer
+      page returns to <span aria-hidden="true">🟢</span> calm. A system sold as a 1–3 day preparation layer
       cannot have baselines that dissolve inside a 1–3 day event. So a lit
       family stops feeding its own series and is judged against the pre-event
       baseline. The hold is capped at 144 samples = <b>72 hours</b> — longer
@@ -1919,7 +2045,7 @@ footer a:hover{color:var(--cyan)}
       nothing happened, simply because the horizon shortens. Measured on the
       August-31 contract: the raw "No" price fell 13× in a month
       (0.605 → 0.045) — looking like dramatic de-escalation — while the
-      normalized daily hazard, h = 1 − (1 − p)^(1/days), fell only 5.6×
+      normalised daily hazard, h = 1 − (1 − p)^(1/days), fell only 5.6×
       (2.22% → 0.39% per day). Real de-escalation existed, but <b>more than
       half</b> of the raw drop was a calendar artifact. The rule — 3× the
       median of the preceding days and ≥2% per day (equivalent to ~45%
@@ -1955,6 +2081,7 @@ footer a:hover{color:var(--cyan)}
       zero alerts is the desired behaviour; the price, stated honestly: a
       surge that stays under 18% will not light.</li>
     </ul>
+    </div></details>
     </div>
   </section>
 
@@ -1969,7 +2096,7 @@ footer a:hover{color:var(--cyan)}
 
     <div class="ep">
       <div class="when">APRIL 2024</div>
-      <h4>מטח הכטב"מים והטילים האיראני על ישראל · ליל 13–14 באפריל</h4>
+      <h3>מטח הכטב"מים והטילים האיראני על ישראל · ליל 13–14 באפריל</h3>
       <ul>
         <li><b>T‑12 ימים —</b> התקיפה במתחם הקונסוליה האיראנית בדמשק (1 באפריל) יצרה
         חובת תגמול מוצהרת ופומבית. מאותו יום היה "חלון פתוח".</li>
@@ -1977,7 +2104,7 @@ footer a:hover{color:var(--cyan)}
         את ההשעיה — כולל הימנעות ממרחב אווירי איראני — עוד לפני המטח.
         <b>זו פעולה שעולה כסף</b>, ולכן היא נספרת כאן.</li>
         <li><b>T‑1 יום —</b> אזהרה רשמית מפורשת: ב-12 באפריל נאמר שהתקיפה צפויה
-        "מוקדם מאוחר יותר".</li>
+        "בקרוב ולא בעוד זמן רב".</li>
       </ul>
       <span class="lead-badge">זמן התרעה מרבי מנתונים ציבוריים: ~שבוע</span>
       <div class="src">מקורות (נבדקו 16.8.2026):
@@ -1988,13 +2115,13 @@ footer a:hover{color:var(--cyan)}
 
     <div class="ep">
       <div class="when">OCTOBER 2024</div>
-      <h4>מטח הטילים הבליסטיים · 1 באוקטובר, ~19:30 שעון ישראל</h4>
+      <h3>מטח הטילים הבליסטיים · 1 באוקטובר, ~19:30 שעון ישראל</h3>
       <ul>
         <li><b>הקשר, T‑1 עד T‑4 ימים —</b> חיסול נסראללה ב-27 בספטמבר והמבצע הקרקעי
         בלבנון ב-30 בספטמבר פתחו חלון תגמול סביר — אבל בלי שום מבשר ציבורי ספציפי.</li>
         <li><b>T‑שעות —</b> בבוקר ובצהרי 1 באוקטובר הזהיר גורם אמריקאי בפומבי
         מפני מתקפת טילים "מיידית". השיגור הגיע באותו יום.</li>
-        <li><b>ממצא כן ולא נוח —</b> שום פיד ציבורי אחר — תעופה, ספנות, נפט — לא זז
+        <li><b>ממצא ישר ולא נוח —</b> שום פיד ציבורי אחר — תעופה, ספנות, נפט — לא זז
         מראש. זהו המקרה המהיר, והתקרה של מערכת כמו זו בו היא <b>שעות</b>, ורק דרך
         ערוץ האזהרה הרשמית.</li>
       </ul>
@@ -2007,17 +2134,17 @@ footer a:hover{color:var(--cyan)}
 
     <div class="ep">
       <div class="when">JUNE 2025</div>
-      <h4>המערכה הישראלית באיראן (מ-13 ביוני) והתקיפה האמריקאית (21–22 ביוני)</h4>
+      <h3>המערכה הישראלית באיראן (מ-13 ביוני) והתקיפה האמריקאית (21–22 ביוני)</h3>
       <ul>
         <li><b>T‑~40 שעות —</b> ב-11 ביוני הורתה מחלקת המדינה על עזיבת אנשי סגל
-        לא-חיוניים משגרירות בגדד, ואושרה עזיבה וולונטרית של בני משפחות אנשי צבא
+        לא-חיוניים משגרירות בגדד, ואושרה עזיבה מרצון של בני משפחות אנשי צבא
         בבחריין, כווית ואיחוד האמירויות. התקיפה החלה בשעות הראשונות של 13 ביוני.
         <b>ממשלות לא מפנות אנשים סתם</b> — זהו האות היקר החזק ביותר שנמצא.</li>
         <li><b>נפט —</b> עלה ביותר מ-4% ב-11 ביוני — כתגובה <b>לחדשות הפינוי</b> —
         ואת התזוזה הגדולה (~7%) עשה רק <b>אחרי</b> התקיפה. הנפט הוא נגזרת של המבשר,
         ולא מבשר בעצמו.</li>
-        <li><b>שיעור ההטעיה, 21 ביוני —</b> אתרי מעקב טיסות הראו שישה מפציצי B-2
-        נעים מערבה לגואם. זו הייתה הסחה מכוונת; מטוסי התקיפה טסו מזרחה בלי מעקב.
+        <li><b>הלקח מההטעיה, 21 ביוני —</b> אתרי מעקב טיסות הראו שישה מפציצי B-2
+        נעים מערבה לגואם. דווח שזו הייתה הסחה מכוונת; מטוסי התקיפה טסו מזרחה בלי מעקב.
         יומיים קודם נאמר שההחלטה תתקבל "בתוך שבועיים".</li>
       </ul>
       <span class="lead-badge">זמן התרעה מרבי מנתונים ציבוריים: ~40 שעות</span>
@@ -2027,30 +2154,31 @@ footer a:hover{color:var(--cyan)}
       </div>
     </div>
 
-    <h3>דירוג משפחות האינדיקטורים לפי זמן התרעה משוער (השערה מרשומה חדשותית של שלושה אירועים — לא הודגם על ידי הלוח)</h3>
-    <div class="m-wrap"><table class="m-tbl">
-      <thead><tr><th>משפחה</th><th>זמן התרעה משוער</th><th>הערכה</th></tr></thead>
+    <details class="dd"><summary><h3>דירוג משפחות האינדיקטורים לפי זמן התרעה משוער (השערה מרשומה חדשותית של שלושה אירועים — לא הודגם על ידי הלוח)</h3></summary><div class="dd-body">
+    <div class="m-wrap" role="region" aria-label="דירוג משפחות האינדיקטורים לפי זמן התרעה משוער" tabindex="0"><table class="m-tbl">
+      <caption>דירוג משפחות האינדיקטורים לפי זמן התרעה משוער</caption>
+      <thead><tr><th scope="col">משפחה</th><th scope="col">זמן התרעה משוער</th><th scope="col">הערכה</th></tr></thead>
       <tbody>
-        <tr><td>פעולות הגנה רשמיות (פינוי שגרירויות, קפיצת רמת אזהרה)</td>
-            <td class="num-cell">1–3 ימים</td>
-            <td>המשפחה הטובה ביותר. אות יקר, נדיר, ניתן לבדיקה אוטומטית.</td></tr>
-        <tr><td>אירוע מבני שפותח חלון (תקיפה, חיסול, חובת תגמול מוצהרת)</td>
-            <td class="num-cell">ימים–שבועות</td>
-            <td>לא אומר <b>מתי</b>, אומר "דרוך". ערך גבוה ליחידת התרעת שווא.</td></tr>
-        <tr><td>השעיות טיסה של חברות תעופה</td>
-            <td class="num-cell">ימים–שבוע</td>
-            <td>אות יקר. לעיתים נדלק גם על אי-שקט כללי.</td></tr>
-        <tr><td>אזהרה רשמית מפורשת "מתקפה מיידית"</td>
-            <td class="num-cell">שעות–יום</td>
-            <td>הדבר היחיד שהוביל את המקרה המהיר.</td></tr>
-        <tr><td>שוקי ניבוי</td><td class="num-cell">שעות–ימים, מזוהם</td>
-            <td>חלקית הד לחדשות, חלקית — כפי שהתברר ב-2026 — מידע פנים. ראו סעיף 7.</td></tr>
-        <tr><td>מעקב תנועות צבאיות (OSINT)</td><td class="num-cell">ימים, פגיע להטעיה</td>
-            <td>עלול להצביע לכיוון הלא נכון <b>במכוון</b>.</td></tr>
-        <tr><td>נפט, ספנות, ביטוח ימי</td><td class="num-cell">אחרי, או הד באותה שעה</td>
-            <td>מאשש, לא מתריע.</td></tr>
-        <tr><td>נפח חדשות ומדדים משוקללים</td><td class="num-cell">בו-זמני</td>
-            <td>בדיוק מה שהתכנון הזה נועד להפסיק להישען עליו.</td></tr>
+        <tr><td data-label="">פעולות הגנה רשמיות (פינוי שגרירויות, קפיצת רמת אזהרה)</td>
+            <td class="num-cell" data-label="זמן התרעה משוער">1–3 ימים</td>
+            <td data-label="הערכה">המשפחה הטובה ביותר. אות יקר, נדיר, ניתן לבדיקה אוטומטית.</td></tr>
+        <tr><td data-label="">אירוע מבני שפותח חלון (תקיפה, חיסול, חובת תגמול מוצהרת)</td>
+            <td class="num-cell" data-label="זמן התרעה משוער">ימים–שבועות</td>
+            <td data-label="הערכה">לא אומר <b>מתי</b>, אומר "דרוך". שווה הרבה ביחס למספר התרעות השווא שהוא מייצר.</td></tr>
+        <tr><td data-label="">השעיות טיסה של חברות תעופה</td>
+            <td class="num-cell" data-label="זמן התרעה משוער">ימים–שבוע</td>
+            <td data-label="הערכה">אות יקר. לעיתים נדלק גם על אי-שקט כללי.</td></tr>
+        <tr><td data-label="">אזהרה רשמית מפורשת "מתקפה מיידית"</td>
+            <td class="num-cell" data-label="זמן התרעה משוער">שעות–יום</td>
+            <td data-label="הערכה">הדבר היחיד שהוביל את המקרה המהיר.</td></tr>
+        <tr><td data-label="">שוקי ניבוי</td><td class="num-cell" data-label="זמן התרעה משוער">שעות–ימים, מזוהם</td>
+            <td data-label="הערכה">חלקית הד לחדשות, חלקית — כפי שהתברר ב-2026 — מידע פנים. ראו סעיף 7.</td></tr>
+        <tr><td data-label="">מעקב תנועות צבאיות (OSINT)</td><td class="num-cell" data-label="זמן התרעה משוער">ימים, פגיע להטעיה</td>
+            <td data-label="הערכה">עלול להצביע לכיוון הלא נכון <b>במכוון</b>.</td></tr>
+        <tr><td data-label="">נפט, ספנות, ביטוח ימי</td><td class="num-cell" data-label="זמן התרעה משוער">אחרי, או הד באותה שעה</td>
+            <td data-label="הערכה">מאשש, לא מתריע.</td></tr>
+        <tr><td data-label="">נפח חדשות ומדדים משוקללים</td><td class="num-cell" data-label="זמן התרעה משוער">בו-זמני</td>
+            <td data-label="הערכה">בדיוק מה שהתכנון הזה נועד להפסיק להישען עליו.</td></tr>
       </tbody>
     </table></div>
 
@@ -2060,6 +2188,7 @@ footer a:hover{color:var(--cyan)}
       "68% סיכוי לתקיפה". כל מי שמציג אחוז כזה על בסיס נתונים ציבוריים עושה
       התאמת עקומה לשלוש נקודות.
     </div>
+    </div></details>
     </div>
     <div data-lang="en">
     <h2><span class="num">06</span> The historical basis</h2>
@@ -2071,7 +2200,7 @@ footer a:hover{color:var(--cyan)}
 
     <div class="ep">
       <div class="when">APRIL 2024</div>
-      <h4>The Iranian drone-and-missile barrage on Israel · night of 13–14 April</h4>
+      <h3>The Iranian drone-and-missile barrage on Israel · night of 13–14 April</h3>
       <ul>
         <li><b>T‑12 days —</b> the strike on the Iranian consulate compound in
         Damascus (1 April) created a declared, public obligation to retaliate.
@@ -2083,7 +2212,7 @@ footer a:hover{color:var(--cyan)}
         <li><b>T‑1 day —</b> an explicit official warning: on 12 April the
         attack was said to be expected "sooner rather than later".</li>
       </ul>
-      <span class="lead-badge">Maximum warning time from public data: ~a week</span>
+      <span class="lead-badge">Maximum warning time from public data: about a week</span>
       <div class="src">Sources (checked 16.8.2026):
         <a href="https://www.usnews.com/news/world/articles/2024-04-10/lufthansa-suspends-tehran-flights-middle-east-on-alert-for-potential-iran-attacks" target="_blank" rel="noopener">US News</a> ·
         <a href="https://www.timesofisrael.com/liveblog-april-12-2024/" target="_blank" rel="noopener">Times of Israel</a>
@@ -2092,7 +2221,7 @@ footer a:hover{color:var(--cyan)}
 
     <div class="ep">
       <div class="when">OCTOBER 2024</div>
-      <h4>The ballistic-missile barrage · 1 October, ~19:30 Israel time</h4>
+      <h3>The ballistic-missile barrage · 1 October, ~19:30 Israel time</h3>
       <ul>
         <li><b>Context, T‑1 to T‑4 days —</b> the killing of Nasrallah on
         27 September and the ground operation in Lebanon on 30 September opened
@@ -2101,9 +2230,8 @@ footer a:hover{color:var(--cyan)}
         <li><b>T‑hours —</b> on the morning and midday of 1 October a US
         official publicly warned of an "imminent" missile attack. The launch
         came the same day.</li>
-        <li><b>An honest and uncomfortable finding —</b> no other public feed —
-        aviation, shipping, oil — moved in advance. This is the fast case, and
-        the ceiling for a system like this one in it is <b>hours</b>, and only
+        <li><b>An honest and uncomfortable finding:</b> no other public feed (aviation, shipping, oil) moved in advance. This is the fast case, and
+        the ceiling for a system like this in that case is <b>hours</b>, and only
         through the official-warning channel.</li>
       </ul>
       <span class="lead-badge">Maximum warning time from public data: hours</span>
@@ -2115,7 +2243,7 @@ footer a:hover{color:var(--cyan)}
 
     <div class="ep">
       <div class="when">JUNE 2025</div>
-      <h4>The Israeli campaign in Iran (from 13 June) and the US strike (21–22 June)</h4>
+      <h3>The Israeli campaign in Iran (from 13 June) and the US strike (21–22 June)</h3>
       <ul>
         <li><b>T‑~40 hours —</b> on 11 June the State Department ordered
         non-essential staff out of the Baghdad embassy, and voluntary departure
@@ -2128,42 +2256,43 @@ footer a:hover{color:var(--cyan)}
         strike. Oil is a derivative of the precursor, not a precursor
         itself.</li>
         <li><b>The deception lesson, 21 June —</b> flight-tracking sites showed
-        six B-2 bombers moving west to Guam. It was a deliberate decoy; the
+        six B-2 bombers moving west to Guam. It is widely reported to have been a deliberate decoy; the
         strike aircraft flew east untracked. Two days earlier it had been said
         the decision would come "within two weeks".</li>
       </ul>
-      <span class="lead-badge">Maximum warning time from public data: ~40 hours</span>
+      <span class="lead-badge">Maximum warning time from public data: about 40 hours</span>
       <div class="src">Sources:
         <a href="https://www.aljazeera.com/news/2025/6/12/us-evacuates-personnel-from-middle-east-in-sign-of-growing-regional-tension" target="_blank" rel="noopener">Al Jazeera</a> ·
         <a href="https://www.twz.com/air/b-2-used-as-decoy-for-iran-strike-mission-is-stuck-in-hawaii" target="_blank" rel="noopener">TWZ</a>
       </div>
     </div>
 
-    <h3>Indicator families ranked by hypothesised warning time (from news records of three events — not demonstrated by this board)</h3>
-    <div class="m-wrap"><table class="m-tbl">
-      <thead><tr><th>Family</th><th>Hypothesised warning time</th><th>Assessment</th></tr></thead>
+    <details class="dd"><summary><h3>Indicator families ranked by hypothesised warning time (from news records of three events — not demonstrated by this board)</h3></summary><div class="dd-body">
+    <div class="m-wrap" role="region" aria-label="Indicator families ranked by hypothesised warning time" tabindex="0"><table class="m-tbl">
+      <caption>Indicator families ranked by hypothesised warning time</caption>
+      <thead><tr><th scope="col">Family</th><th scope="col">Hypothesised warning time</th><th scope="col">Assessment</th></tr></thead>
       <tbody>
-        <tr><td>Official protective actions (embassy evacuations, advisory-level jumps)</td>
-            <td class="num-cell">1–3 days</td>
-            <td>The best family. A costly, rare, automatically checkable signal.</td></tr>
-        <tr><td>A structural event that opens a window (a strike, an assassination, a declared obligation to retaliate)</td>
-            <td class="num-cell">days–weeks</td>
-            <td>Does not say <b>when</b>, says "braced". High value per false alarm.</td></tr>
-        <tr><td>Airline flight suspensions</td>
-            <td class="num-cell">days–a week</td>
-            <td>A costly signal. Sometimes lights on general unrest too.</td></tr>
-        <tr><td>An explicit official "imminent attack" warning</td>
-            <td class="num-cell">hours–a day</td>
-            <td>The only thing that led the fast case.</td></tr>
-        <tr><td>Prediction markets</td><td class="num-cell">hours–days, contaminated</td>
-            <td>Partly an echo of the news, partly — as emerged in 2026 — inside
+        <tr><td data-label="">Official protective actions (embassy evacuations, advisory-level jumps)</td>
+            <td class="num-cell" data-label="Hypothesised warning time">1–3 days</td>
+            <td data-label="Assessment">The best family. A costly, rare, automatically checkable signal.</td></tr>
+        <tr><td data-label="">A structural event that opens a window (a strike, an assassination, a declared obligation to retaliate)</td>
+            <td class="num-cell" data-label="Hypothesised warning time">days–weeks</td>
+            <td data-label="Assessment">Does not say <b>when</b>, says "braced". High value per false alarm.</td></tr>
+        <tr><td data-label="">Airline flight suspensions</td>
+            <td class="num-cell" data-label="Hypothesised warning time">days–a week</td>
+            <td data-label="Assessment">A costly signal. Sometimes lights on general unrest too.</td></tr>
+        <tr><td data-label="">An explicit official "imminent attack" warning</td>
+            <td class="num-cell" data-label="Hypothesised warning time">hours–a day</td>
+            <td data-label="Assessment">The only thing that led the fast case.</td></tr>
+        <tr><td data-label="">Prediction markets</td><td class="num-cell" data-label="Hypothesised warning time">hours–days, contaminated</td>
+            <td data-label="Assessment">Partly an echo of the news, partly — as emerged in 2026 — inside
             information. See section 7.</td></tr>
-        <tr><td>Military-movement tracking (OSINT)</td><td class="num-cell">days, vulnerable to deception</td>
-            <td>Can point the wrong way <b>on purpose</b>.</td></tr>
-        <tr><td>Oil, shipping, marine insurance</td><td class="num-cell">after, or a same-hour echo</td>
-            <td>Confirms, does not warn.</td></tr>
-        <tr><td>News volume and weighted indices</td><td class="num-cell">simultaneous</td>
-            <td>Exactly what this design was built to stop relying on.</td></tr>
+        <tr><td data-label="">Military-movement tracking (OSINT)</td><td class="num-cell" data-label="Hypothesised warning time">days, vulnerable to deception</td>
+            <td data-label="Assessment">Can point the wrong way <b>on purpose</b>.</td></tr>
+        <tr><td data-label="">Oil, shipping, marine insurance</td><td class="num-cell" data-label="Hypothesised warning time">after, or a same-hour echo</td>
+            <td data-label="Assessment">Confirms, does not warn.</td></tr>
+        <tr><td data-label="">News volume and weighted indices</td><td class="num-cell" data-label="Hypothesised warning time">simultaneous</td>
+            <td data-label="Assessment">Exactly what this design was built to stop relying on.</td></tr>
       </tbody>
     </table></div>
 
@@ -2174,6 +2303,7 @@ footer a:hover{color:var(--cyan)}
       Anyone showing such a percentage built on public data is fitting a curve
       to three points.
     </div>
+    </div></details>
     </div>
   </section>
 
@@ -2185,6 +2315,7 @@ footer a:hover{color:var(--cyan)}
     <p>רשימת הדברים שלא נכנסו חשובה לא פחות מרשימת מה שכן — כי היא מראה איפה
     המערכת בחרה להצהיר "אני לא יודעת" במקום להציג מחוון ירוק.</p>
 
+    <details class="dd"><summary><h3>הרשימה המלאה: מה נבדק ולמה נפסל</h3></summary><div class="dd-body">
     <ul>
       <li><b>מרחב אווירי איראני —</b> אין בכלל כיסוי של מקלטי ADS-B מעל איראן.
       במדידה: 0 מטוסים מעל טהרן ומעל מרכז איראן, מול 96 מעל ישראל. לכן אין מקבילה
@@ -2269,6 +2400,7 @@ footer a:hover{color:var(--cyan)}
       ממדידת 31 יום — סעיף 05) — בלי הורדה נוספת: קריאה אחת ביום משרתת את
       שני המדדים, והם מסומנים כספק אחד במסנן גיוון-הספקים.</li>
     </ul>
+    </div></details>
     </div>
     <div data-lang="en">
     <h2><span class="num">07</span> What was tested and rejected</h2>
@@ -2277,6 +2409,7 @@ footer a:hover{color:var(--cyan)}
     in — because it shows where the system chose to declare "I don't know"
     instead of showing a green dial.</p>
 
+    <details class="dd"><summary><h3>The full list: what was tested and why it was rejected</h3></summary><div class="dd-body">
     <ul>
       <li><b>Iranian airspace —</b> there is no ADS-B receiver coverage over
       Iran at all. Measured: 0 aircraft over Tehran and over central Iran,
@@ -2310,7 +2443,7 @@ footer a:hover{color:var(--cyan)}
       separate providers and are read in the same run, and that is the whole
       of what can be said about them together.</li>
       <li><b>Prediction markets (Polymarket) — rejected on 16.8, wired on 20.8
-      as a voting family, in normalized form.</b> The original reservations
+      as a voting family, in normalised form.</b> The original reservations
       stand and are declared: they showed ~99% for an Israeli strike before
       13 June 2025, but (a) they mostly tracked the same public evacuation
       news; (b) in February 2026 it was reported that Israelis with
@@ -2319,7 +2452,7 @@ footer a:hover{color:var(--cyan)}
       time. What changed: an event was found whose resolution criterion is a
       near-exact match for this radar's question (an air/missile strike by
       either side on the other, bidirectional, ~$26M volume), and the
-      measurement moved to a <b>horizon-normalized</b> figure — an implied
+      measurement moved to a <b>horizon-normalised</b> figure — an implied
       daily hazard, never the raw price — with a liquidity floor, a 21-day
       horizon floor, and a backtest over the last real month of trading
       (25 judged days of the 32 in the window — section 05).
@@ -2327,7 +2460,7 @@ footer a:hover{color:var(--cyan)}
       channel</b>, with the
       same standing the markets family has: real money, a genuinely separate
       provider — but a belief, not a costly state action. Since 20 Aug that
-      standing is also enforced structurally: the family is typed "belief",
+      standing is also enforced structurally: the family is classified as "belief",
       and belief families alone — however many light together — were capped
       at level 1 by that rule (section 2). <b>And since 2026-09-01 it
       casts no vote at all</b>: it moved to <b>context only</b> alongside the
@@ -2389,6 +2522,7 @@ footer a:hover{color:var(--cyan)}
       indicators, and they are tagged as one provider in the
       provider-diversity guard.</li>
     </ul>
+    </div></details>
     </div>
   </section>
 
@@ -2412,12 +2546,12 @@ footer a:hover{color:var(--cyan)}
       המדד ("הנחיות מגבילות בתוקף"), אבל אינה מעלה רמה.</li>
       <li><b>מקור שנפל מוצג כאזהרה, לא כשקט.</b> זו נקודה קריטית: מדד שלא נקרא
       אינו יכול להידלק, ולכן <b>תקלה בפיד גורמת לדף להיראות רגוע יותר מהמציאות</b>.
-      לכן כשמקור נופל מופיעה הודעה מפורשת ש"ייתכן שהרמה מדווחת בחסר".</li>
+      לכן כשמקור נופל מופיעה הודעה מפורשת ש"ייתכן שהרמה מוצגת נמוך מדי".</li>
       <li><b>נתונים ישנים מסומנים.</b> מעל 90 דקות ללא עדכון — סימון כתום;
       מעל 12 שעות — המחוונים מאפירים לגמרי. עדיף דף שמודה שהוא לא יודע.</li>
     </ul>
 
-    <h3>מה ש-0 אומר — ומה שאינו אומר (1.9.2026)</h3>
+    <details class="dd" open><summary><h3>מה ש-0 אומר — ומה שאינו אומר (1.9.2026)</h3></summary><div class="dd-body">
     <p>ארבעת הכללים שלמעלה נאכפים בקוד. מה שלמטה אינו כלל אלא <b>עובדה על
     רשימת המקורות</b>, והיא נכתבת כאן כי בערב ה-1.9.2026 שני המדדים הראו 0
     בזמן שדווח על שיגורים לעבר ירדן. ה-0 היה נכון — אף מדד לא זז — והוא גם
@@ -2428,7 +2562,7 @@ footer a:hover{color:var(--cyan)}
     החינמיים שהדף הזה קורא.</b> מעל איראן אין כיסוי מקלטי ADS-B כלל, ומעל
     ישראל אותו ערוץ סופר מטוסים אזרחיים באוויר ולא גופים בטיסה בליסטית; זיהוי
     תרמי מלוויין נמדד על יום ה-UTC המלא האחרון בלבד — פיגור של יממה, והוא
-    הערכת נזק אחרי פגיעה; קובצי שיבוש ה-GPS יומיים ומתפרסמים בפיגור של כיום;
+    הערכת נזק אחרי פגיעה; קובצי שיבוש ה-GPS יומיים ומתפרסמים בפיגור של כיממה;
     מחירים זזים רק אחרי שהידיעה ציבורית, והשער היציג של בנק ישראל מתפרסם פעם
     ביום עסקים. הערוץ המהיר ביותר ברשימה, קישוריות האינטרנט של איראן, נדגם
     בכל ריצה — אבל הוא מודד אם מדינה מחוברת, לא אם משהו שוגר.</p>
@@ -2436,6 +2570,7 @@ footer a:hover{color:var(--cyan)}
     האלה שקטים&quot;, ולא &quot;השמיים שקטים&quot;</b>. שכבת ההתארגנות שהדף
     מודד נמדדת בימים; להתרעה על שיגור יש מקור מחייב אחד, והוא פיקוד
     העורף.</p>
+    </div></details>
     </div>
     <div data-lang="en">
     <h2><span class="num">08</span> The page's honesty rules</h2>
@@ -2460,14 +2595,14 @@ footer a:hover{color:var(--cyan)}
       <li><b>A failed source is shown as a warning, not as quiet.</b> This is
       the critical point: an indicator that was not read cannot light, so
       <b>a feed failure makes the page look calmer than reality</b>. That is
-      why, when a source fails, an explicit notice appears that "the level may
+      why, when a source fails, an explicit notice appears saying that "the level may
       be under-reported".</li>
       <li><b>Stale data is marked.</b> Over 90 minutes without an update — an
       amber mark; over 12 hours — the dials grey out entirely. Better a page
       that admits it does not know.</li>
     </ul>
 
-    <h3>What a 0 means — and what it does not (2026-09-01)</h3>
+    <details class="dd" open><summary><h3>What a 0 means — and what it does not (2026-09-01)</h3></summary><div class="dd-body">
     <p>The four rules above are enforced in code. What follows is not a rule
     but a <b>fact about the roster</b>, written here because on the evening of
     2026-09-01 both indices read 0 while launches toward Jordan were being
@@ -2495,6 +2630,7 @@ footer a:hover{color:var(--cyan)}
     quiet&quot;</b>. The preparation layer this page measures is measured in
     days; for a launch warning there is one authoritative source, and it is
     the Home Front Command.</p>
+    </div></details>
     </div>
   </section>
 
@@ -2514,7 +2650,7 @@ footer a:hover{color:var(--cyan)}
       <li>סקירת האירועים ההיסטוריים, דירוג משפחות האינדיקטורים והביקורת על מודל
       משוקלל — נעשו בעזרת כלי AI, מול מקורות פומביים שקושרו בסעיף 6.</li>
       <li>הספים המספריים נגזרו מ<b>מדידה של הפידים עצמם</b> (התפלגות, חציון,
-      אחוזונים), ולא מהערכה של מודל שפה. איפה שהתבססנו על מדידה — היא מצוינת
+      אחוזונים), ולא מהערכה של מודל שפה. במקומות שבהם הסתמכנו על מדידה — היא מצוינת
       בעמוד עם תאריך. <b>ומה שזה לא אומר:</b> הספים הם גבולות חריגה שנמדדו
       בתקופות רגועות, ולא מנבאי תקיפה שאומתו מול תקיפות. אף סף כאן לא נבחן מול
       שיגור אמיתי, ואי אפשר לבחון אותו עד שיקרה.</li>
@@ -2547,11 +2683,10 @@ footer a:hover{color:var(--cyan)}
     <h2><span class="num">09</span> Disclosure: developed with AI tools</h2>
 
     <p class="lead">The methodology on this page, the analysis of the previous
-    rounds and the code that runs the radar were developed with artificial-
-    intelligence tools, working jointly with a human operator.</p>
+    rounds and the code that runs the radar were developed with artificial-intelligence tools, working jointly with a human operator.</p>
 
     <p>This statement appears here because it is relevant to the question "how
-    much can this be trusted", not to tick a box. Hence the detail:</p>
+    much can this be trusted", not to tick a box. The details follow.</p>
 
     <h3>What this means in practice</h3>
     <ul>
@@ -2561,7 +2696,7 @@ footer a:hover{color:var(--cyan)}
       <li>The numeric thresholds were derived from <b>measuring the feeds
       themselves</b> (distribution, median, percentiles), not from a language
       model's estimate. Wherever a measurement was relied on — it is noted on
-      the page with a date. <b>What that does not mean:</b> the thresholds are
+      the page with a date. <b>What that does not establish:</b> the thresholds are
       anomaly bounds measured over quiet periods, not attack predictors
       validated against attacks. No threshold here has ever been tested against
       a real launch, and none can be until one happens.</li>
@@ -2597,13 +2732,170 @@ footer a:hover{color:var(--cyan)}
     </div>
   </section>
 
+  <!-- ─────────────────────────────────────────────── -->
+  <section class="blk" id="changes">
+    <div data-lang="he">
+    <h2><span class="num">10</span> מה השתנה</h2>
+
+    <p class="lead">הסעיפים 01–09 מתארים את המערכת כפי שהיא היום. הסעיף הזה אוסף במקום אחד את היסטוריית השינויים, לפי תאריך, כדי שהתיאור עצמו יישאר בלשון הווה.</p>
+    <details class="dd"><summary><h3>ציר זמן קצר</h3></summary><div class="dd-body">
+    <ul>
+      <li><b>16.8.2026</b> — תחילת חלון הרקורד המדוד שהוצג בעמוד הראשי (16.8–5.9.2026, 529 פרסומים); פירוט בבלוק "טקסט היסטורי שהוצא מהעמוד הראשי" למטה.</li>
+      <li><b>22.8.2026</b> — שורת "אזהרות מסע — איראן והמפרץ" הוחלפה בשורת התרעות השגרירויות (אותו ספק, מחלקת המדינה האמריקאית).</li>
+      <li><b>31.8.2026</b> — הזרוע הבריטית (FCDO, gov.uk) של אזהרות המסע הוסרה מהקוד; השורה המשיכה לתאר אותה עד 1.9.2026.</li>
+      <li><b>1.9.2026</b> — חמש משפחות עברו להקשר בלבד (אזהרות מסע, חריגות תרמיות, שיבוש GPS בהורמוז, השווקים, שוק הניבוי); תקרת הקולות לספק הוסרה מהקוד; נוספו העוגנים המוצהרים והמעקב אחרי "מצב עומד".</li>
+      <li><b>2.9.2026</b> — תוקן לוח התוצאות (חתכי זמן מעורבבים); שני מספרי המצב הועברו לראש כל מדד.</li>
+      <li><b>5.9.2026</b> — מרחב אווירי ירדן עבר להקשר בלבד; שינויי רמה חדלו להתפרסם בערוץ; הרמות 0–3 חדלו להיות מסר ציבורי; סולם 0–3 עם המילים שקט / מוגבר / אזהרה / קריטי ובצבעי רמזור הוסר מהעמוד הראשי.</li>
+      <li><b>8.10.2026</b> — תעופה צבאית באזור עברה להקשר בלבד.</li>
+      <li><b>21.10.2026</b> — המדד האיראני נשען על שלוש משפחות מצביעות; משפחת דעה אחת (ויקיפדיה, מצר הורמוז) הפעילה מחדש את מסנן הפעולה/דעה; נוספו ארבע שורות "נמדד, עוד לא מצביע"; קריאת נפט ברנט עברה ל-Yahoo Finance.</li>
+      <li><b>23.10.2026</b> — אינטרנט באיראן (IODA) וחיישני RIPE Atlas נספרים כתופעה אחת וקול אחד; רמה 2 היא המקסימום במדד האיראני. עד 23.10.2026 נרשמו מאז 5.9.2026 לפחות 32 הדלקות (נבדק ידנית), ואף אחת לא אושרה כאירוע.</li>
+      <li><b>25.10.2026</b> — העמוד הראשי עוצב מחדש: הפסקאות ההיסטוריות והבלוק המתודולוגי המוטמע הוצאו ממנו ונאספו כאן.</li>
+      <li>במדד האיראני: מ-1.9.2026 עד 8.10.2026 שתי משפחות מצביעות, בין 8.10.2026 ל-21.10.2026 אחת, ומ-21.10.2026 שלוש.</li>
+    </ul>
+    </div></details>
+    <details class="dd"><summary><h3>עדכון 8.10.2026 (נוסח מקורי, לפני העיצוב מחדש)</h3></summary><div class="dd-body">
+<div class="call info"><b>עדכון 8.10.2026 — מה השתנה מאז שרוב הסעיפים כאן נכתבו.</b>
+    (1) <b>תעופה צבאית
+    באזור</b> עברה להקשר בלבד ב-8.10.2026: 13 הדלקות שווא ב-30 יום, כולן בין 07:42
+    ל-12:42, והרצפה (14) נחצתה בתוך שבוע; המקסימום ברשומה המפורסמת הוא 26.
+    (2) <b>מרחב אווירי ירדן</b> הקשר בלבד מ-5.9.2026. (3) מרחב אווירי ישראל: תנאי
+    האחוזון ה-10 הוסר ב-1.9.2026. (4) המדד האיראני נשען מ-21.10.2026 על שלוש משפחות מצביעות (אינטרנט באיראן, חיישני RIPE Atlas, עניין ציבורי בוויקיפדיה); הישראלי על ארבע. (5) קווי הבסיס הם <b>נעים</b> (48 שעות או
+    30 יום) ולא "אוגוסט 2026". (6) הרמות 0–3 אינן מוצגות עוד כמסר ציבורי; מה שמוצג
+    הוא ספירת חיישנים. (7) לוח התוצאות בסעיף 04 הוא תצלום היסטורי מ-1.9.2026; מאז
+    נרשמו עוד 17 הדלקות, אף אחת לא אושרה כאירוע. (8) הטבלה בסעיף 06 היא
+    <b>השערה</b> מתיעוד חדשותי על שלושה אירועים, לא זמן התרעה שהלוח הדגים.</div>
+    </div></details>
+    <details class="dd"><summary><h3>סעיף שהוסר ב-1.9.2026: תקרת קולות לספק</h3></summary><div class="dd-body">
+<p><b>סעיף שהוסר, 1.9.2026.</b> עד אז נכתב כאן גם ש"משפחות שחולקות ספק
+    תורמות יחד לכל היותר שני קולות". התקרה ההיא נמחקה מהקוד באותו יום, אחרי
+    שנבדקו כל 131,072 המצבים האפשריים (2<sup>16</sup> תת-קבוצות של משפחות
+    דולקות × שני מדדים) עם התקרה ובלעדיה, ולא נמצא <b>אף</b> הבדל בתוצאה. היא
+    לא שינתה רמה מעולם: הדרישה לשלושה ספקים ברמה 3 כבר חוסמת בדיוק את אותו
+    מצב. ההערה נשארת כאן כדי שקורא שזוכר את הכלל הישן ידע שהוא הוסר בכוונה
+    ומדוע.</p>
+    </div></details>
+    <details class="dd"><summary><h3>כלל פעולה/דעה: רדום מ-1.9.2026 עד 21.10.2026</h3></summary><div class="dd-body">
+<p><b>מ-1.9.2026 עד 21.10.2026 הכלל הזה היה רדום, והוא נשמר בכוונה.</b> שלוש משפחות הדעה
+    (שווקים, שוק הניבוי, אזהרות מסע) עברו באותו יום ל<b>הקשר בלבד</b>, ולכן
+    כל משפחה שיכלה להיספר סווגה פעולה. <b>מ-21.10.2026 הכלל חי שוב</b>: משפחת דעה אחת —
+    העניין הציבורי בוויקיפדיה במצר הורמוז, במדד האיראני בלבד — קיבלה קול, ולבדה
+    (או עם עוד דעה) היא נעצרת ברמה 1. הסיווג מוצג בכל שורה.</p>
+    </div></details>
+    <details class="dd"><summary><h3>לוח התוצאות: תיקון ב-2.9.2026</h3></summary><div class="dd-body">
+<p><b>גרסה קודמת של הטבלה ערבבה חתכי זמן</b> — מספר המשפחות נלקח מרגע אחד ומספר התצלומים מרגע אחר. תוקן ב-2.9.2026 אחרי ביקורת חיצונית.</p>
+    </div></details>
+    <details class="dd"><summary><h3>הקשר בלבד: חמש משפחות, 1.9.2026</h3></summary><div class="dd-body">
+<p><b>עודכן 1.9.2026.</b> חמש משפחות עברו ל<b>הקשר בלבד</b>: אזהרות מסע,
+    חריגות תרמיות, שיבוש GPS בהורמוז, השווקים ושוק הניבוי. הן נמדדות, נשמרות
+    ומופיעות בטבלה עם הסף החי שלהן — אבל אינן מצביעות, והעמודה האחרונה שלהן
+    כותבת "הקשר בלבד". מ-1.9.2026 עד 21.10.2026 כל המשפחות המצביעות סווגו <b>פעולה</b> ומסנן הפעולה/דעה היה רדום; מ-21.10.2026 משפחת דעה אחת (ויקיפדיה, מצר הורמוז) מצביעה במדד האיראני, והמסנן חי שוב.</p>
+    </div></details>
+    <details class="dd"><summary><h3>טקסט היסטורי שהוצא מהעמוד הראשי (25.10.2026)</h3></summary><div class="dd-body">
+    <p>הפריטים כאן הוצאו מהעמוד הראשי ביום 25.10.2026 כדי שיישאר בלשון הווה. רובם כבר מופיעים בסעיפים 02–08 ובבלוקים שלמעלה; כאן נשמרות העובדות שלא הופיעו בהם, לפי סדר התאריכים.</p>
+    <ul>
+      <li><b>16.8–5.9.2026 — הרקורד המדוד כפי שהוצג בעמוד הראשי.</b> "16.8–5.9.2026, 529 פרסומים: הלוח לא הקדים ולו אירוע מאומת אחד. שתי חציות הסף היחידות שנרשמו הופיעו 8.7 ו-15.2 שעות אחרי שהאירוע כבר החל. נרשמו 6 התרעות שווא מאושרות, והלוח מעולם לא פרסם רמה 2 או 3." (בעמוד הראשי נשארו שני משפטים בלבד, ובעברית "כ-9 וכ-15 שעות", כי "8.7" נקרא כתאריך; בעמוד האנגלי נשארו 8.7 ו-15.2. הסיפא על רמה 2–3 הוסרה יחד עם סולם 0–3. לוח התוצאות הנוכחי בסעיף 04.)</li>
+      <li><b>1.9.2026 — כללי הגנה: ניסוח היסטורי שהוסר.</b> מסנן גיוון-ספקים: רמה 2 ומעלה מחייבת שני ספקים נפרדים לפחות ורמה 3 שלושה; שלוש משפחות הגיעו מ-adsb.lol, ושתי משפחות שיבוש ה-GPS מאותו קובץ gpsjam יומי (מ-1.9.2026 רק il_gps מצביע מהשתיים). המסנן יכול רק להוריד רמה. החריג המוצהר: שינוי במדיניות ההתגוננות מספיק לבדו, כפעולה רשמית אחת של מדינת ישראל. אפיון המסנן הישן "עד 1.9.2026 משפחות דעה נעצרות ברמה 1; מאז הן אינן מצביעות כלל" נשאר תקף עד 21.10.2026 (ראו "כלל פעולה/דעה" למעלה).</li>
+      <li><b>1.9.2026 — חיווי רדום.</b> ליד הרמה נכתב בעמוד הראשי "1 · מוגבר - משפחה אחת" עם הערה שמ-1.9.2026 אין משפחות דעה מצביעות. הסולם עצמו הוסר מהמחוון ב-5.9.2026; שני הניסוחים נשארו ברשימת ההסבר בעמוד הראשי עד העיצוב מחדש ב-25.10.2026.</li>
+      <li><b>1.9.2026 — כיולים שנרשמו בשורות המדדים.</b> משמר פיקוד העורף (hfc_policy): מצב "מוחזק" נכנס אחרי שתי קריאות מגבילות רצופות, משתחרר בקריאה הראשונה של "אין הגבלות", וניסוח שלא ניתן לסווג בזמן שהמדד מוחזק אינו משחרר אותו. אינטרנט באיראן: ביוני 2025 Merit חצה ב-14.6 ו-ping-slash24 ב-18.6, כלומר ping מאשר ולא מקדים; בשחזור על 96 הדגימות השמורות (84 נשפטו) הצניחה העמוקה ביותר של merit-nt מגיעה לפי 1.133 מסף ההדלקה שלה, ושל ping רק לפי 1.896. מרחב אווירי ירדן: בכל ההיסטוריה שנמדדה סכום 3 הבדיקות לא ירד מתחת ל-5; הכלל מסרב לשפוט כשהחציון נמוך מ-5. אזהרות מסע: לבנון וסוריה יושבות על תקרת הסולם (4), כך ש-2 מתוך 4 המדינות במעקב חסרות מרווח מבנית. שוק ניבוי: הסף (2.00% ליום) היה גבוה מהמקסימום הקודם (0.87% ליום, 26 ימים שמורים) ונחצה לראשונה ב-21.10.2026. מ-20.8.2026 עד 1.9.2026 המשפחה הצביעה בתקרה של רמה 1.</li>
+      <li><b>1.9.2026 — פילוגי שיבוש ה-GPS כפי שנכתבו בשורות.</b> שיבוש GPS מעל מרחב ישראל, הפילוג (30 יום): מינימום 1.8%, חציון 4.5%, אחוזון 90 = 11.5%, מקסימום 17.25%. שיבוש GPS בהורמוז: הצמד הישן (רצפה 5%, תקרה 15%) נדלק בשחזור ב-5 מתוך 22 ימים שנשפטו, כולם ברמפה הרגילה של 10–14.8.</li>
+      <li><b>21.10.2026 — ארבע שורות "נמדד, עוד לא מצביע".</b> סולם אזהרות מסע (4 ממשלות), לינות צוותי אוויר זרים בנתב"ג, ביטולי אסטנבול–טהרן, מטוסי תדלוק ומודיעין באזור. הן נרשמות לבסיס של 7 ימים ורק אחריו ייבחן קידום (לא לפני 28.10.2026); עד אז אין להן השפעה על רמה, ספירה או התרעה. אסטנבול–טהרן: שיעור הביטולים גבוה גם ביום שקט (3 מתוך 9 ב-21.10.2026), והלוח חלון נע ללא היסטוריה. לינות בנתב"ג: לוח הטיסות מכסה כ-3 ימים בלבד ואין לו היסטוריה; לוח הקיץ-חורף מתחלף ב-25.10.2026 ולכן ספירות לפני ואחרי אינן ברות השוואה. מטוסי תדלוק ומודיעין: "ירידה פתאומית" היא ספירה מתחת ל-50% מחציון 24 השעות; כיבוי משדר ותרגילים ייראו כירידה, וזה מה שהבסיס צריך ללמוד. סולם אזהרות מסע: מה שהבסיס צריך לענות — כמה פעמים סולם משתנה ביום רגיל, והאם שינוי בכמה ממשלות יחד מקדים משהו.</li>
+      <li><b>21.10.2026 — RIPE Atlas וויקיפדיה: פרטי כיול.</b> RIPE Atlas: עד שנצברים 3 ימי נתונים החציון הוא ערך ההפעלה מהשחזור (85); אם גם מספר החיישנים בישראל קורס, התקלה ב-RIPE או ב-API והמדד מוצג "לא נמדד". ויקיפדיה, מצר הורמוז: חציון של כ-2,000 צפיות ביום, כלומר סף של כ-6,000 (נכון ל-25.10.2026).</li>
+      <li><b>21.10.2026 — המדד האיראני, ניסוח שהוסר.</b> "בין 8.10.2026 ל-21.10.2026 הייתה משפחה מצביעה אחת בלבד, אחרי שהתעופה הצבאית הועברה להקשר." שלוש המשפחות המצביעות הן משלושה ספקים נפרדים: IODA, RIPE Atlas וויקיפדיה. 🟠 איראני פירושו ניתוק אינטרנט וגם זינוק בעניין בוויקיפדיה. בעמוד הראשי נכתב גם שהמחוון האיראני כותב "מתוך 2" — זה לא נכון (המחוון מציג 0/3) והמשפט הוסר; רמה 2 היא המקסימום האפשרי במדד האיראני, אבל המונה אינו מציג זאת כמכנה.</li>
+      <li><b>25.10.2026 — סף merit-nt.</b> הסף של merit-nt (IODA) היה נמוך מ-24, והערך הנמוך ביותר שנשמר ב-14 התצלומים היומיים השמורים הוא 26.4. זו אמירה על מה שאפשר למדוד, לא על איראן. הסף החי מוצג בשורת המדד.</li>
+      <li><b>מגבלות קבועות שהועברו מהעמוד הראשי.</b> נפילת אינטרנט במדינה שכנה איננה בהכרח אות מלחמה: תחזוקה, קריסת חשמל וצנזורה של מחאה פנימית נראות זהות מבחוץ. כלל מבוסס חציון אינו פעיל עד שנצברו מספיק דגימות (כשש שעות מהפעלה; ראו "קו בסיס לפני התרעה" בסעיף 08). StrikeRadar אינו מצביע לעולם: כל רכיביו משפחה אחת של כותרות, והוא מוצג כהקשר בלבד.</li>
+    </ul>
+    </div></details>
+    </div>
+    <div data-lang="en">
+    <h2><span class="num">10</span> What changed</h2>
+
+    <p class="lead">Sections 01–09 describe the system as it is today. This section gathers the change history, by date, in one place, so the description itself can stay in the present tense.</p>
+    <details class="dd"><summary><h3>Short timeline</h3></summary><div class="dd-body">
+    <ul>
+      <li><b>2026-08-16</b> — start of the measured-record window shown on the main page (2026-08-16 to 2026-09-05, 529 published snapshots); details in the "Historical text removed from the main page" block below.</li>
+      <li><b>2026-08-22</b> — the "Travel advisories — Iran and the Gulf" row was replaced by the embassy-alerts row (same provider, the US State Department).</li>
+      <li><b>2026-08-31</b> — the British arm (FCDO, gov.uk) of the travel advisories was removed from the code; the row kept describing it until 2026-09-01.</li>
+      <li><b>2026-09-01</b> — five families moved to context only (travel advisories, thermal anomalies, Hormuz GPS interference, the markets, the prediction market); the per-provider vote cap was removed from the code; declared anchors and the "standing state" tracker were added.</li>
+      <li><b>2026-09-02</b> — the scoreboard was corrected (mixed cutoffs); the two standing figures moved to the top of each index.</li>
+      <li><b>2026-09-05</b> — Jordanian airspace became context only; level changes stopped being posted to the channel; the 0–3 levels stopped being a public message; the 0–3 scale labelled Quiet / Elevated / Warning / Critical in traffic-light colours was removed from the main page.</li>
+      <li><b>2026-10-08</b> — regional military aviation became context only.</li>
+      <li><b>2026-10-21</b> — the Iran index came to rest on three voting families; one belief family (Wikipedia, Strait of Hormuz) revived the action/belief guard; four "measured, not yet voting" rows were added; the Brent-crude read moved to Yahoo Finance.</li>
+      <li><b>2026-10-23</b> — Iranian internet (IODA) and RIPE Atlas probes count as one phenomenon and one vote; level 2 is the maximum on the Iran index. By 2026-10-23, at least 32 lit episodes had been logged since 2026-09-05 (reviewed by hand), none confirmed as an event.</li>
+      <li><b>2026-10-25</b> — the main page was redesigned: its historical paragraphs and the inline methodology block were taken out of it and gathered here.</li>
+      <li>Iran index voting families: two from 2026-09-01 to 2026-10-08, one between 2026-10-08 and 2026-10-21, three since 2026-10-21.</li>
+    </ul>
+    </div></details>
+    <details class="dd"><summary><h3>Update 2026-10-08 (original wording, before the redesign)</h3></summary><div class="dd-body">
+<div class="call info"><b>Update 2026-10-08 — what has changed since most sections here were written.</b>
+    (1) <b>Regional military aviation</b> became context-only on 2026-10-08:
+    13 false episodes in 30 days, all between 07:42 and 12:42, and its floor (14) was
+    exceeded within a week; the maximum in the published record is 26.
+    (2) <b>Jordanian airspace</b> has been context-only since 2026-09-05. (3) Israeli
+    airspace: the 10th-percentile arm was removed on 2026-09-01. (4) Since 2026-10-21 the Iran index rests on three voting families (Iranian internet, RIPE Atlas probes, Wikipedia attention to Hormuz); the Israel index on four.
+    (5) Baselines are <b>rolling</b> (48 hours or 30 days), not "August 2026".
+    (6) The 0–3 levels are no longer a public message; what is shown is a sensor
+    count. (7) The scoreboard in section 04 is a historical snapshot from 2026-09-01;
+    since then 17 further lit episodes were logged, none confirmed as an event.
+    (8) The table in section 06 is a <b>hypothesis</b> from news records of three
+    events, not a warning time this board has demonstrated.</div>
+    </div></details>
+    <details class="dd"><summary><h3>A clause removed on 2026-09-01: the per-provider vote cap</h3></summary><div class="dd-body">
+<p><b>A clause removed on 2026-09-01.</b> Until then this list also said
+    that "families sharing a provider contribute at most two votes between
+    them". That cap was deleted from the code the same day, after all 131,072
+    possible states (2<sup>16</sup> subsets of lit families × two indices)
+    were evaluated with and without it and produced <b>zero</b> differing
+    outcomes. It never once changed a level: the three-provider requirement
+    for level 3 already blocks exactly the same case. The note stays here so
+    a reader who remembers the old rule knows it was removed deliberately,
+    and why.</p>
+    </div></details>
+    <details class="dd"><summary><h3>Action/belief rule: dormant from 2026-09-01 to 2026-10-21</h3></summary><div class="dd-body">
+<p><b>The rule was dormant from 2026-09-01 to 2026-10-21, and kept on purpose.</b>
+    All three belief families (markets, the prediction market, travel
+    advisories) moved to <b>context only</b> on the first date, so every family
+    that could be counted was classified as action. <b>Since 2026-10-21 it is live again:</b>
+    one belief family — public attention to the Strait of Hormuz on Wikipedia,
+    on the Iran index only — was given a vote, and on its own (or with another
+    belief) it stops at level 1. The type is shown on every row.</p>
+    </div></details>
+    <details class="dd"><summary><h3>Scoreboard: correction of 2026-09-02</h3></summary><div class="dd-body">
+<p><b>An earlier version of this table mixed cutoffs</b> — the family count came from one moment and the snapshot count from another. Corrected 2026-09-02 after an external review.</p>
+    </div></details>
+    <details class="dd"><summary><h3>Context only: five families, 2026-09-01</h3></summary><div class="dd-body">
+<p><b>Updated 2026-09-01.</b> Five families became <b>context only</b>:
+    travel advisories, satellite thermal anomalies, Hormuz GPS interference,
+    the markets and the prediction market. They are still measured, still
+    stored and still listed below with their live thresholds — but they cast
+    no vote, and their last column reads "context only". From 2026-09-01 to 2026-10-21 every voting family was classified as <b>action</b> and the action/belief guard was dormant; since 2026-10-21 one belief family (Wikipedia, Strait of Hormuz) votes on the Iran index, so the guard is live again.</p>
+    </div></details>
+    <details class="dd"><summary><h3>Historical text removed from the main page (2026-10-25)</h3></summary><div class="dd-body">
+    <p>These items were taken off the main page on 2026-10-25 so that it can stay in the present tense. Most are already covered in sections 02–08 and in the blocks above; what is kept here are the facts they did not already contain, in date order.</p>
+    <ul>
+      <li><b>2026-08-16 to 2026-09-05 — the measured record as the main page showed it.</b> "2026-08-16 to 2026-09-05, 529 published snapshots: this board has never detected a corroborated event in advance. The only two crossings on record arrived 8.7 h and 15.2 h after the event had already begun. Six confirmed false alarms. It has never published level 2 or 3." (The main page now keeps two sentences; only its Hebrew text rounds to "about 9 and about 15 hours", because "8.7" reads as a date in Hebrew, and the English text keeps 8.7 h and 15.2 h. The level 2/3 sentence went with the 0–3 scale. The current scoreboard is in section 04.)</li>
+      <li><b>2026-09-01 — guard wording that was removed.</b> Provider-diversity guard: level 2 or higher needs at least two separate providers and level 3 at least three; three families arrived over adsb.lol, and the two GPS-interference families over one daily gpsjam file (since 2026-09-01 only il_gps of the two votes). The guard can only lower a level. The declared exception: a Home Front Command defence-policy change is sufficient alone, as a single official act of the Israeli government. The old wording "until 2026-09-01 belief families stop at level 1; today they cast no vote at all" stood until 2026-10-21 (see "Action/belief rule" above).</li>
+      <li><b>2026-09-01 — a dormant label.</b> The main page showed "1 · Elevated — one family" with a note that from 2026-09-01 no belief family votes. The scale was removed from the gauge on 2026-09-05; both wordings stayed in the main page's explanation list until the 2026-10-25 redesign.</li>
+      <li><b>2026-09-01 — calibrations once written on the indicator rows.</b> Home Front Command policy (hfc_policy): the indicator enters a held state after two consecutive restrictive readings, is released on the first reading of an all-clear, and a wording that cannot be classified while held does not release it. Iranian internet: in June 2025 Merit crossed on the 14th and ping-slash24 on the 18th, so ping confirms rather than leads; replayed over the 96 stored samples (84 judged) merit-nt's deepest dip reaches 1.133x its own firing bar and ping's only 1.896x. Jordanian airspace: across the whole measured history the 3-check sum never fell below 5; the rule refuses to judge when the median is under 5. Travel advisories: Lebanon and Syria already sit at the top of the scale (4), so 2 of the 4 watched countries have no headroom by construction. Prediction market: the bar (2.00% per day) sat above the highest earlier value (0.87% per day over 26 stored days) and was first crossed on 2026-10-21. From 2026-08-20 to 2026-09-01 the family voted under a ceiling of level 1.</li>
+      <li><b>2026-09-01 — the GPS-interference distributions as the rows gave them.</b> GPS interference over Israel, distribution (30 days): min 1.8%, median 4.5%, p90 11.5%, max 17.25%. Hormuz GPS interference: on replay the old pair (5% floor, 15% cap) fired on 5 of 22 judged days (2026-08-10..14), all on the ordinary 10–14.8 ramp.</li>
+      <li><b>2026-10-21 — four "measured, not yet voting" rows.</b> The travel-advisory ladder (4 governments), foreign air-crew night-stops at Ben Gurion, Istanbul–Tehran cancellations, and Western tanker and ISR aircraft in the region. They are logged for a 7-day baseline and only then is promotion considered (no earlier than 2026-10-28); until then they have no effect on any level, count or alert. Istanbul–Tehran: the cancellation rate is high even on a quiet day (3 of 9 on 2026-10-21), and the board is a rolling window with no history. Ben Gurion night-stops: the board covers about 3 days ahead and has no history; the summer/winter schedule changes on 2026-10-25, so counts before and after are not comparable. Tanker and ISR aircraft: the "sudden drop" field is a count below 50% of the 24-hour median; transponders switched off and exercises will look like a drop, which is what the baseline has to learn. Advisory ladder: the baseline has to answer how often a ladder moves on an ordinary day and whether a move by several governments together precedes anything.</li>
+      <li><b>2026-10-21 — RIPE Atlas and Wikipedia calibration details.</b> RIPE Atlas: until 3 days of own data exist the median is the backtest bootstrap value (85); if the Israel probe count collapses too, the fault is RIPE or its API and the indicator is shown as not measured. Wikipedia, Strait of Hormuz: the median is about 2,000 views a day, so the bar is about 6,000 (as of 2026-10-25).</li>
+      <li><b>2026-10-21 — Iran index, wording that was removed.</b> "Between 2026-10-08 and 2026-10-21 it rested on one voting family only, after regional military aviation was moved to context." The three voting families come from three separate providers: IODA, RIPE Atlas and Wikipedia. An Iranian 🟠 means an internet cut and a Wikipedia attention spike. The main page also said the Iran gauge reads "of 2"; that was wrong (the gauge shows 0/3) and the sentence was removed; level 2 is the maximum the Iran index can reach, but the denominator does not show it.</li>
+      <li><b>2026-10-25 — the merit-nt bar.</b> The merit-nt (IODA) bar was below 24, and the lowest value retained across the 14 stored daily snapshots is 26.4. This is a statement about what can be measured, not about Iran. The live bar is on the indicator row.</li>
+      <li><b>Standing limits moved from the main page.</b> An internet drop in a neighbouring state is not necessarily a war signal: maintenance, a power failure and censorship of domestic protest look identical from outside. A median-based rule is not active until enough samples have accumulated (about six hours from start-up; see "Baseline before alert" in section 08). StrikeRadar never votes: all of its components are one family of headlines, and it is shown for context only.</li>
+    </ul>
+    </div></details>
+    </div>
+  </section>
+
   <div class="backbar">
     <a href="/radar/"><span data-lang="he">← חזרה למצב הנוכחי בראדאר</span><span data-lang="en">← Back to the current radar state</span></a>
   </div>
 
-  <div class="stamp">Last methodology update: 2026-10-23</div>
+  <div class="stamp">Last methodology update: 2026-10-25</div>
 
   </main>
+
+  <button type="button" class="totop" id="totop"><span aria-hidden="true">↑</span><span class="sr" data-lang="he">חזרה לראש העמוד</span><span class="sr" data-lang="en">Back to top</span></button>
 
   <footer>
     <nav class="legal" aria-label="מידע משפטי" data-lang="he">
@@ -2635,6 +2927,10 @@ function setLang(l, persist){
     const btn = document.getElementById('lang-' + x);
     if (btn) btn.setAttribute('aria-pressed', String(x === lang));
   });
+  // aria-labels cannot be toggled by CSS; swap the localised ones (2026-10-25).
+  document.querySelectorAll('[data-label-he]').forEach(el => {
+    el.setAttribute('aria-label', el.getAttribute('data-label-' + lang) || el.getAttribute('data-label-he'));
+  });
   if (persist) { try { localStorage.setItem('radar-lang', lang); } catch(e){} }
 }
 (function initLang(){
@@ -2649,6 +2945,66 @@ function setLang(l, persist){
     const btn = document.getElementById('lang-' + x);
     if (btn) btn.addEventListener('click', () => setLang(x, true));
   });
+})();
+
+// ── redesign 2026-10: contents bar, collapsible details, back to top ──
+(function(){
+  var dd = document.getElementById('tocdd');
+  var now = document.getElementById('tocnow');
+  var top = document.getElementById('totop');
+  var secs = Array.prototype.slice.call(document.querySelectorAll('section.blk'));
+  function vis(el){ return el && el.offsetParent !== null; }
+  function h2text(sec){
+    var hs = sec.querySelectorAll('h2');
+    for (var i = 0; i < hs.length; i++) if (vis(hs[i])) return hs[i].textContent.replace(/\s+/g, ' ').trim();
+    return '';
+  }
+  var tick = false;
+  function onScroll(){
+    if (tick) return; tick = true;
+    requestAnimationFrame(function(){
+      tick = false;
+      var cur = null;
+      for (var i = 0; i < secs.length; i++) { if (secs[i].getBoundingClientRect().top <= 90) cur = secs[i]; }
+      if (now) now.textContent = cur ? h2text(cur) : '';
+      if (top) top.classList.toggle('show', window.scrollY > 700);
+      var tb = document.getElementById('tocbar'); if (tb) tb.classList.toggle('on', window.scrollY > 520);
+    });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  document.addEventListener('click', function(e){
+    var t = e.target;
+    if (t.closest && t.closest('#tocdd .panel a')) { dd.removeAttribute('open'); return; }
+    if (dd && dd.hasAttribute('open') && !(t.closest && t.closest('#tocdd'))) dd.removeAttribute('open');
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && dd && dd.hasAttribute('open')) { dd.removeAttribute('open'); var s = dd.querySelector('summary'); if (s) s.focus(); }
+  });
+  if (top) top.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+    var sk = document.querySelector('.skip'); if (sk) sk.focus({preventScroll:true});
+  });
+  function setAll(open){
+    document.querySelectorAll('details.dd').forEach(function(d){ if (open) d.setAttribute('open',''); else d.removeAttribute('open'); });
+  }
+  var oa = document.getElementById('openall'), ca = document.getElementById('closeall');
+  if (oa) oa.addEventListener('click', function(){ setAll(true); });
+  if (ca) ca.addEventListener('click', function(){ setAll(false); });
+  // a link (or a shared URL) that points inside a collapsed section opens it
+  function openTarget(){
+    var id = decodeURIComponent((location.hash || '').slice(1));
+    if (!id) return;
+    var el = document.getElementById(id);
+    if (!el) return;
+    var p = el.closest ? el.closest('details.dd') : null;
+    var opened = false;
+    while (p) { if (!p.open) { p.open = true; opened = true; } p = p.parentElement && p.parentElement.closest ? p.parentElement.closest('details.dd') : null; }
+    if (opened) setTimeout(function(){ el.scrollIntoView(); }, 0);
+  }
+  window.addEventListener('hashchange', openTarget);
+  window.addEventListener('beforeprint', function(){ setAll(true); });
+  openTarget(); onScroll();
 })();
 </script>
 </body>
