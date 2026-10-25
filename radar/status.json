@@ -1,18 +1,6 @@
 {
- "generated": "2026-10-25T20:42:34+00:00",
+ "generated": "2026-10-25T21:42:29+00:00",
  "history": [
-  {
-   "t": 1792356175,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1792357955,
-   "il": 0,
-   "ir": 1,
-   "deg": 0
-  },
   {
    "t": 1792359751,
    "il": 0,
@@ -2040,6 +2028,18 @@
    "il": 1,
    "ir": 0,
    "deg": 0
+  },
+  {
+   "t": 1792962742,
+   "il": 1,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1792964549,
+   "il": 1,
+   "ir": 0,
+   "deg": 0
   }
  ],
  "indices": [
@@ -2115,8 +2115,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "56 מטוסים אזרחיים באזור",
-     "value_en": "56 civil aircraft in the area",
+     "value": "40 מטוסים אזרחיים באזור",
+     "value_en": "40 civil aircraft in the area",
      "range": "30–70",
      "threshold_now": "פחות מ-18 מטוסים",
      "threshold_now_en": "<18 aircraft",
@@ -2145,8 +2145,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "5 מטוסים מעל ירדן",
-     "value_en": "5 aircraft over Jordan",
+     "value": "2 מטוסים מעל ירדן",
+     "value_en": "2 aircraft over Jordan",
      "range": "2–8",
      "threshold_now": "3 מטוסים או פחות ב-3 בדיקות",
      "threshold_now_en": "≤3 aircraft over 3 checks",
@@ -2197,7 +2197,7 @@
      "daily": false,
      "lit": true,
      "frozen": true,
-     "frozen_hours": 33.0,
+     "frozen_hours": 34.0,
      "frozen_expired": false,
      "ok": true,
      "partial": false,
@@ -2265,8 +2265,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "125 הודעות · 67 עם סגירה · 23 בהיקף רחב (3 נתיבי ATS, 6 שדות) (+0/-6 מהקריאה הקודמת) · נקרא לפני 59 דק׳ — אין עדיין קו בסיס, אינו מצביע",
-     "value_en": "125 NOTAMs · 67 carry a closure · 23 wide-scope (3 ATS routes, 6 aerodromes) (+0/-6 since the previous read) · read 59 min ago — no baseline yet, casts no vote",
+     "value": "125 הודעות · 67 עם סגירה · 23 בהיקף רחב (3 נתיבי ATS, 6 שדות) (+0/-0 מהקריאה הקודמת) · נקרא לפני 30 דק׳ — אין עדיין קו בסיס, אינו מצביע",
+     "value_en": "125 NOTAMs · 67 carry a closure · 23 wide-scope (3 ATS routes, 6 aerodromes) (+0/-0 since the previous read) · read 30 min ago — no baseline yet, casts no vote",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2552,8 +2552,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה: merit-nt 39 מול חציון 44 (×0.89) · 41,626 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity normal: merit-nt 39 vs a median of 44 (0.89x) · 41,626 BGP routes (display only)",
+     "value": "קישוריות תקינה: merit-nt 38 מול חציון 44 (×0.85) · 41,626 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity normal: merit-nt 38 vs a median of 44 (0.85x) · 41,626 BGP routes (display only)",
      "range": "33–70",
      "threshold_now": "merit-nt פחות מ-22",
      "threshold_now_en": "merit-nt <22",
@@ -2822,8 +2822,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "איסטנבול→טהרן היום: 7 מתוך 20 המראות בוטלו (7 חברות) — שיעור הבסיס גבוה גם ביום שקט",
-     "value_en": "Istanbul→Tehran today: 7 of 20 departures cancelled (7 carriers) — the base rate is high on a quiet day",
+     "value": "איסטנבול→טהרן היום: 5 מתוך 20 המראות בוטלו (5 חברות) — שיעור הבסיס גבוה גם ביום שקט",
+     "value_en": "Istanbul→Tehran today: 5 of 20 departures cancelled (5 carriers) — the base rate is high on a quiet day",
      "range": "",
      "threshold_now": "נמדד, עוד לא מצביע — בסיס מ-21.10.2026, בדיקת קידום מ-28.10.2026",
      "threshold_now_en": "measured, not yet voting — baseline from 2026-10-21, promotion review from 2026-10-28",
