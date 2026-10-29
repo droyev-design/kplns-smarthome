@@ -1,24 +1,6 @@
 {
- "generated": "2026-10-28T23:42:29+00:00",
+ "generated": "2026-10-29T00:42:40+00:00",
  "history": [
-  {
-   "t": 1792626155,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1792627973,
-   "il": 1,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1792629759,
-   "il": 1,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1792631580,
    "il": 1,
@@ -2022,6 +2004,18 @@
    "il": 0,
    "ir": 0,
    "deg": 3
+  },
+  {
+   "t": 1793232778,
+   "il": 0,
+   "ir": 0,
+   "deg": 3
+  },
+  {
+   "t": 1793234560,
+   "il": 0,
+   "ir": 0,
+   "deg": 3
   }
  ],
  "indices": [
@@ -2093,15 +2087,15 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "39 מטוסים אזרחיים באזור",
-     "value_en": "39 civil aircraft in the area",
+     "value": "36 מטוסים אזרחיים באזור",
+     "value_en": "36 civil aircraft in the area",
      "range": "29–66",
      "threshold_now": "פחות מ-15 מטוסים",
      "threshold_now_en": "<15 aircraft",
      "watch": "",
      "watch_en": "",
-     "anchor": "📈 מצב: 8 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (40), כולל היום האחרון שנשמר. אינו מצביע. העוגן נמדד בתוך המלחמה.",
-     "anchor_en": "📈 State: 8 of the last 14 days at or below the declared anchor (40), including the most recent stored day. Casts no vote. The anchor was measured inside the war."
+     "anchor": "📈 מצב: 9 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (40), 2 מהם ברצף. אינו מצביע. העוגן נמדד בתוך המלחמה.",
+     "anchor_en": "📈 State: 9 of the last 14 days at or below the declared anchor (40), the last 2 of them consecutively. Casts no vote. The anchor was measured inside the war."
     },
     {
      "key": "jo_airspace",
@@ -2130,8 +2124,8 @@
      "threshold_now_en": "",
      "watch": "",
      "watch_en": "",
-     "anchor": "📈 מצב: 11 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (3), 2 מהם ברצף. אינו מצביע. העוגן נמדד בתוך המלחמה.",
-     "anchor_en": "📈 State: 11 of the last 14 days at or below the declared anchor (3), the last 2 of them consecutively. Casts no vote. The anchor was measured inside the war."
+     "anchor": "📈 מצב: 11 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (3), 3 מהם ברצף. אינו מצביע. העוגן נמדד בתוך המלחמה.",
+     "anchor_en": "📈 State: 11 of the last 14 days at or below the declared anchor (3), the last 3 of them consecutively. Casts no vote. The anchor was measured inside the war."
     },
     {
      "key": "advisories_il",
@@ -2273,8 +2267,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "0 מטוסים צבאיים באזור",
-     "value_en": "0 military aircraft in the area",
+     "value": "מטוס צבאי אחד באזור",
+     "value_en": "1 military aircraft in the area",
      "range": "0–15",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2303,11 +2297,11 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $110.6 · דולר 3.13 ₪",
-     "value_en": "Brent $110.6 · USD 3.13 ILS",
+     "value": "ברנט $110.8 · דולר 3.13 ₪",
+     "value_en": "Brent $110.8 · USD 3.13 ILS",
      "range": "",
-     "threshold_now": "ברנט $119.4 ומעלה · דולר 3.17 ₪ ומעלה",
-     "threshold_now_en": "Brent ≥$119.4 · USD/ILS ≥3.17",
+     "threshold_now": "ברנט $119.5 ומעלה · דולר 3.17 ₪ ומעלה",
+     "threshold_now_en": "Brent ≥$119.5 · USD/ILS ≥3.17",
      "watch": "",
      "watch_en": "",
      "anchor": "",
@@ -2363,8 +2357,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "18/100",
-     "value_en": "18/100",
+     "value": "17/100",
+     "value_en": "17/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2487,8 +2481,8 @@
      "sustained_days": 6
     }
    ],
-   "standing": "📈 מצב עומד (אינו רמה): 4 משפחות מעוגנות במדד הזה צברו מספיק ימים כדי לדווח, ו-2 מהן חוצות את העוגן המוצהר שלהן ביום האחרון שנשמר. הספירה הגבוהה ביותר באוגר: מרחב אווירי ירדן · 11 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (3), 2 מהם ברצף. אינו מצביע; כל העוגנים נמדדו בתוך המלחמה.",
-   "standing_en": "📈 Standing state (not a level): 4 anchored families on this index have enough stored days to report, and 2 of them are past their declared anchors on the most recent stored day. Longest-running: Jordanian airspace · 11 of the last 14 days at or below the declared anchor (3), the last 2 of them consecutively. Casts no vote; every anchor was measured inside the war.",
+   "standing": "📈 מצב עומד (אינו רמה): 4 משפחות מעוגנות במדד הזה צברו מספיק ימים כדי לדווח, ו-2 מהן חוצות את העוגן המוצהר שלהן ביום האחרון שנשמר. הספירה הגבוהה ביותר באוגר: מרחב אווירי ירדן · 11 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (3), 3 מהם ברצף. אינו מצביע; כל העוגנים נמדדו בתוך המלחמה.",
+   "standing_en": "📈 Standing state (not a level): 4 anchored families on this index have enough stored days to report, and 2 of them are past their declared anchors on the most recent stored day. Longest-running: Jordanian airspace · 11 of the last 14 days at or below the declared anchor (3), the last 3 of them consecutively. Casts no vote; every anchor was measured inside the war.",
    "standing_risk": "🎲 סיכון יומי עומד: שוק הניבוי לא נקרא בריצה האחרונה, ולכן אין מספר עדכני — ומספר ישן לא יוצג במכוון. היעדר מספר אינו אישור שהכול בסדר.",
    "standing_risk_en": "🎲 Standing daily risk: the prediction market was not read in the last run, so there is no current figure — and a stale one is deliberately not shown. A missing figure is not an all-clear."
   },
@@ -2530,8 +2524,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה: merit-nt 35 מול חציון 42 (×0.84) · 41,667 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity normal: merit-nt 35 vs a median of 42 (0.84x) · 41,667 BGP routes (display only)",
+     "value": "קישוריות תקינה: merit-nt 37 מול חציון 42 (×0.88) · 41,667 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity normal: merit-nt 37 vs a median of 42 (0.88x) · 41,667 BGP routes (display only)",
      "range": "29–69",
      "threshold_now": "merit-nt פחות מ-21",
      "threshold_now_en": "merit-nt <21",
@@ -2560,8 +2554,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "0 מוקדים תרמיים חדשים ב-2026-10-27 (מתוך 3,027 זיהויים גולמיים מ-3 לוויינים, כולל שרפות ותעשייה)",
-     "value_en": "0 new thermal hotspots on 2026-10-27 (out of 3,027 raw detections from 3 satellites, incl. wildfires and industry)",
+     "value": "0 מוקדים תרמיים חדשים ב-2026-10-28 (מתוך 829 זיהויים גולמיים מ-3 לוויינים, כולל שרפות ותעשייה)",
+     "value_en": "0 new thermal hotspots on 2026-10-28 (out of 829 raw detections from 3 satellites, incl. wildfires and industry)",
      "range": "0–2",
      "threshold_now": "יותר מ-5 מוקדים",
      "threshold_now_en": ">5 hotspots",
@@ -2620,8 +2614,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "0 מטוסים צבאיים באזור",
-     "value_en": "0 military aircraft in the area",
+     "value": "מטוס צבאי אחד באזור",
+     "value_en": "1 military aircraft in the area",
      "range": "0–15",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2650,11 +2644,11 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $110.6 · דולר 3.13 ₪",
-     "value_en": "Brent $110.6 · USD 3.13 ILS",
+     "value": "ברנט $110.8 · דולר 3.13 ₪",
+     "value_en": "Brent $110.8 · USD 3.13 ILS",
      "range": "",
-     "threshold_now": "ברנט $119.4 ומעלה · דולר 3.17 ₪ ומעלה",
-     "threshold_now_en": "Brent ≥$119.4 · USD/ILS ≥3.17",
+     "threshold_now": "ברנט $119.5 ומעלה · דולר 3.17 ₪ ומעלה",
+     "threshold_now_en": "Brent ≥$119.5 · USD/ILS ≥3.17",
      "watch": "",
      "watch_en": "",
      "anchor": "",
@@ -2710,8 +2704,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "18/100",
-     "value_en": "18/100",
+     "value": "17/100",
+     "value_en": "17/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2740,8 +2734,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "105 חיישנים מחוברים באיראן (חציון 103; בקרה — ישראל 36)",
-     "value_en": "105 probes connected in Iran (median 103; control — Israel 36)",
+     "value": "105 חיישנים מחוברים באיראן (חציון 104; בקרה — ישראל 36)",
+     "value_en": "105 probes connected in Iran (median 104; control — Israel 36)",
      "range": "79–105",
      "threshold_now": "פחות מ-52 חיישנים מחוברים, ב-2 בדיקות רצופות",
      "threshold_now_en": "<52 connected probes, on 2 consecutive checks",
@@ -2770,11 +2764,11 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "1,799 צפיות ב-2026-10-26 — פי 1.0 מחציון 14 הימים הקודמים (1,800)",
-     "value_en": "1,799 views on 2026-10-26 — 1.0x the prior-14-day median (1,800)",
+     "value": "1,776 צפיות ב-2026-10-27 — פי 1.0 מחציון 14 הימים הקודמים (1,772)",
+     "value_en": "1,776 views on 2026-10-27 — 1.0x the prior-14-day median (1,772)",
      "range": "1,617–2,668",
-     "threshold_now": "5,400 צפיות ביום ומעלה",
-     "threshold_now_en": "≥5,400 views a day",
+     "threshold_now": "5,318 צפיות ביום ומעלה",
+     "threshold_now_en": "≥5,318 views a day",
      "watch": "",
      "watch_en": "",
      "anchor": "",
@@ -2908,14 +2902,14 @@
  "anchor_summary": {
   "families_reported": 7,
   "families_on_anchor": 3,
-  "longest_streak_days": 2,
+  "longest_streak_days": 3,
   "window_days": 14,
   "families_anchored": 7,
   "min_days": 5,
   "top_family": "jo_airspace",
   "top_days": 11,
   "top_window": 14,
-  "top_streak": 2
+  "top_streak": 3
  },
  "degraded": [
   "שיבוש GPS — מרחב ישראל",
