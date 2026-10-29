@@ -1,18 +1,6 @@
 {
- "generated": "2026-10-29T12:42:39+00:00",
+ "generated": "2026-10-29T13:42:38+00:00",
  "history": [
-  {
-   "t": 1792672970,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1792674794,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1792676602,
    "il": 0,
@@ -2022,6 +2010,18 @@
    "il": 0,
    "ir": 0,
    "deg": 1
+  },
+  {
+   "t": 1793279552,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1793281358,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
   }
  ],
  "indices": [
@@ -2093,8 +2093,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "72 מטוסים אזרחיים באזור",
-     "value_en": "72 civil aircraft in the area",
+     "value": "63 מטוסים אזרחיים באזור",
+     "value_en": "63 civil aircraft in the area",
      "range": "30–66",
      "threshold_now": "פחות מ-16 מטוסים",
      "threshold_now_en": "<16 aircraft",
@@ -2273,8 +2273,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "4 מטוסים צבאיים באזור",
-     "value_en": "4 military aircraft in the area",
+     "value": "מטוס צבאי אחד באזור",
+     "value_en": "1 military aircraft in the area",
      "range": "0–16",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2303,8 +2303,8 @@
      "partial_why_en": "one arm unavailable: the shekel rate",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $110.6",
-     "value_en": "Brent $110.6",
+     "value": "ברנט $109.4",
+     "value_en": "Brent $109.4",
      "range": "",
      "threshold_now": "ברנט $119.4 ומעלה · דולר 3.17 ₪ ומעלה",
      "threshold_now_en": "Brent ≥$119.4 · USD/ILS ≥3.17",
@@ -2530,8 +2530,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה: merit-nt 44 מול חציון 42 (×1.05) · 41,675 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity normal: merit-nt 44 vs a median of 42 (1.05x) · 41,675 BGP routes (display only)",
+     "value": "קישוריות תקינה: merit-nt 45 מול חציון 44 (×1.00) · 41,674 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity normal: merit-nt 45 vs a median of 44 (1.00x) · 41,674 BGP routes (display only)",
      "range": "29–66",
      "threshold_now": "merit-nt פחות מ-22",
      "threshold_now_en": "merit-nt <22",
@@ -2620,8 +2620,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "4 מטוסים צבאיים באזור",
-     "value_en": "4 military aircraft in the area",
+     "value": "מטוס צבאי אחד באזור",
+     "value_en": "1 military aircraft in the area",
      "range": "0–16",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2650,8 +2650,8 @@
      "partial_why_en": "one arm unavailable: the shekel rate",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $110.6",
-     "value_en": "Brent $110.6",
+     "value": "ברנט $109.4",
+     "value_en": "Brent $109.4",
      "range": "",
      "threshold_now": "ברנט $119.4 ומעלה · דולר 3.17 ₪ ומעלה",
      "threshold_now_en": "Brent ≥$119.4 · USD/ILS ≥3.17",
