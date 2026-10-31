@@ -1,18 +1,6 @@
 {
- "generated": "2026-10-31T06:13:02+00:00",
+ "generated": "2026-10-31T07:12:46+00:00",
  "history": [
-  {
-   "t": 1792824168,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1792825954,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1792827761,
    "il": 0,
@@ -2010,6 +1998,18 @@
    "il": 0,
    "ir": 0,
    "deg": 0
+  },
+  {
+   "t": 1793428983,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1793430766,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
   }
  ],
  "indices": [
@@ -2081,11 +2081,11 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "37 מטוסים אזרחיים באזור",
-     "value_en": "37 civil aircraft in the area",
+     "value": "44 מטוסים אזרחיים באזור",
+     "value_en": "44 civil aircraft in the area",
      "range": "27–64",
-     "threshold_now": "פחות מ-16 מטוסים",
-     "threshold_now_en": "<16 aircraft",
+     "threshold_now": "פחות מ-15 מטוסים",
+     "threshold_now_en": "<15 aircraft",
      "watch": "",
      "watch_en": "",
      "anchor": "📈 מצב: 10 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (40), 4 מהם ברצף. אינו מצביע. העוגן נמדד בתוך המלחמה.",
@@ -2111,8 +2111,8 @@
      "partial_why_en": "traffic too thin to judge — median 4 below 5",
      "reason": "",
      "reason_en": "",
-     "value": "2 מטוסים מעל ירדן",
-     "value_en": "2 aircraft over Jordan",
+     "value": "4 מטוסים מעל ירדן",
+     "value_en": "4 aircraft over Jordan",
      "range": "1–6",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2231,8 +2231,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "125 הודעות · 67 עם סגירה · 23 בהיקף רחב (3 נתיבי ATS, 6 שדות) (+0/-0 מהקריאה הקודמת) · נקרא לפני פחות מדקה — אין עדיין קו בסיס, אינו מצביע",
-     "value_en": "125 NOTAMs · 67 carry a closure · 23 wide-scope (3 ATS routes, 6 aerodromes) (+0/-0 since the previous read) · read 0 min ago — no baseline yet, casts no vote",
+     "value": "125 הודעות · 67 עם סגירה · 23 בהיקף רחב (3 נתיבי ATS, 6 שדות) (+0/-0 מהקריאה הקודמת) · נקרא לפני 59 דק׳ — אין עדיין קו בסיס, אינו מצביע",
+     "value_en": "125 NOTAMs · 67 carry a closure · 23 wide-scope (3 ATS routes, 6 aerodromes) (+0/-0 since the previous read) · read 59 min ago — no baseline yet, casts no vote",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2518,9 +2518,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה: merit-nt 72 מול חציון 35 (×2.04) · 41,675 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity normal: merit-nt 72 vs a median of 35 (2.04x) · 41,675 BGP routes (display only)",
-     "range": "31–46",
+     "value": "קישוריות תקינה: merit-nt 62 מול חציון 35 (×1.76) · 41,676 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity normal: merit-nt 62 vs a median of 35 (1.76x) · 41,676 BGP routes (display only)",
+     "range": "31–47",
      "threshold_now": "merit-nt פחות מ-18",
      "threshold_now_en": "merit-nt <18",
      "watch": "",
@@ -2728,8 +2728,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "100 חיישנים מחוברים באיראן (חציון 103; בקרה — ישראל 37)",
-     "value_en": "100 probes connected in Iran (median 103; control — Israel 37)",
+     "value": "101 חיישנים מחוברים באיראן (חציון 103; בקרה — ישראל 37)",
+     "value_en": "101 probes connected in Iran (median 103; control — Israel 37)",
      "range": "80–105",
      "threshold_now": "פחות מ-52 חיישנים מחוברים, ב-2 בדיקות רצופות",
      "threshold_now_en": "<52 connected probes, on 2 consecutive checks",
