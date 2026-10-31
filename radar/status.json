@@ -1,18 +1,6 @@
 {
- "generated": "2026-10-31T08:12:43+00:00",
+ "generated": "2026-10-31T09:12:59+00:00",
  "history": [
-  {
-   "t": 1792831343,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1792833165,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1792834976,
    "il": 0,
@@ -2010,6 +1998,18 @@
    "il": 0,
    "ir": 0,
    "deg": 0
+  },
+  {
+   "t": 1793436169,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1793437979,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
   }
  ],
  "indices": [
@@ -2081,8 +2081,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "46 מטוסים אזרחיים באזור",
-     "value_en": "46 civil aircraft in the area",
+     "value": "58 מטוסים אזרחיים באזור",
+     "value_en": "58 civil aircraft in the area",
      "range": "27–64",
      "threshold_now": "פחות מ-15 מטוסים",
      "threshold_now_en": "<15 aircraft",
@@ -2107,12 +2107,12 @@
      "frozen_expired": false,
      "ok": true,
      "partial": true,
-     "partial_why": "תעבורה דלילה מדי לשיפוט — חציון 4 מתחת ל-5",
-     "partial_why_en": "traffic too thin to judge — median 4 below 5",
+     "partial_why": "תעבורה דלילה מדי לשיפוט — חציון 3 מתחת ל-5",
+     "partial_why_en": "traffic too thin to judge — median 3 below 5",
      "reason": "",
      "reason_en": "",
-     "value": "3 מטוסים מעל ירדן",
-     "value_en": "3 aircraft over Jordan",
+     "value": "4 מטוסים מעל ירדן",
+     "value_en": "4 aircraft over Jordan",
      "range": "1–6",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2231,8 +2231,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "125 הודעות · 67 עם סגירה · 23 בהיקף רחב (3 נתיבי ATS, 6 שדות) (+0/-0 מהקריאה הקודמת) · נקרא לפני 29 דק׳ — אין עדיין קו בסיס, אינו מצביע",
-     "value_en": "125 NOTAMs · 67 carry a closure · 23 wide-scope (3 ATS routes, 6 aerodromes) (+0/-0 since the previous read) · read 29 min ago — no baseline yet, casts no vote",
+     "value": "125 הודעות · 67 עם סגירה · 23 בהיקף רחב (3 נתיבי ATS, 6 שדות) (+0/-0 מהקריאה הקודמת) · נקרא לפני פחות מדקה — אין עדיין קו בסיס, אינו מצביע",
+     "value_en": "125 NOTAMs · 67 carry a closure · 23 wide-scope (3 ATS routes, 6 aerodromes) (+0/-0 since the previous read) · read 0 min ago — no baseline yet, casts no vote",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2518,9 +2518,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה: merit-nt 63 מול חציון 35 (×1.77) · 41,675 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity normal: merit-nt 63 vs a median of 35 (1.77x) · 41,675 BGP routes (display only)",
-     "range": "31–51",
+     "value": "קישוריות תקינה: merit-nt 68 מול חציון 35 (×1.92) · 41,676 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity normal: merit-nt 68 vs a median of 35 (1.92x) · 41,676 BGP routes (display only)",
+     "range": "31–53",
      "threshold_now": "merit-nt פחות מ-18",
      "threshold_now_en": "merit-nt <18",
      "watch": "",
