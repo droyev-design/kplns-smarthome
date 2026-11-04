@@ -364,7 +364,7 @@ details.dd>.dd-body>:first-child{margin-top:4px}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-  {"@type":"WebPage","@id":"https://kplns.com/radar/methodology.html#webpage","url":"https://kplns.com/radar/methodology.html","dateModified":"2026-10-25","name":"מתודולוגיה — ראדאר הסלמה ישראל ואיראן","description":"איך נקבעת הרמה, מה מדליק כל מדד, על מה מבוססים הספים, ומה המערכת לא יכולה לעשות.","inLanguage":["he-IL","en"],"breadcrumb":{"@id":"https://kplns.com/radar/methodology.html#breadcrumb"}},
+  {"@type":"WebPage","@id":"https://kplns.com/radar/methodology.html#webpage","url":"https://kplns.com/radar/methodology.html","dateModified":"2026-11-04","name":"מתודולוגיה — ראדאר הסלמה ישראל ואיראן","description":"איך נקבעת הרמה, מה מדליק כל מדד, על מה מבוססים הספים, ומה המערכת לא יכולה לעשות.","inLanguage":["he-IL","en"],"breadcrumb":{"@id":"https://kplns.com/radar/methodology.html#breadcrumb"}},
   {"@type":"BreadcrumbList","@id":"https://kplns.com/radar/methodology.html#breadcrumb","itemListElement":[
     {"@type":"ListItem","position":1,"name":"ראדאר הסלמה","item":"https://kplns.com/radar/"},
     {"@type":"ListItem","position":2,"name":"מתודולוגיה","item":"https://kplns.com/radar/methodology.html"}
@@ -1493,12 +1493,13 @@ details.dd>.dd-body>:first-child{margin-top:4px}
             הוא הכרזה על סיכון, ולבנון וסוריה כבר על תקרת הסולם
             (4)</td><td data-label="לאיזה מדד">— הקשר בלבד</td></tr>
         <tr><td data-label="">אינטרנט באיראן (ארצי)</td><td data-label="מקור">IODA · Georgia Tech</td>
-            <td class="num-cell" data-label="מה מדליק">merit-nt &lt; 50% מהחציון.
-            <b>merit-nt היא זרוע ההצבעה היחידה מ-1.9.2026</b>; BGP
-            ו-ping-slash24 נמדדים ומוצגים אך אינם מצביעים (BGP במלחמת יוני
-            2025 לא ירד מ-94.5% מהבסיס; ping-slash24 הוסר מההצבעה ב-1.9.2026
-            אחרי שנמצא החירש מבין השתיים בשחזור על 96 הדגימות
-            השמורות)</td><td data-label="לאיזה מדד"><span aria-hidden="true">🇮🇷</span> איראן · פעולה</td></tr>
+            <td class="num-cell" data-label="מה מדליק">לפחות 2 מתוך 3 מדידות
+            נמוכות ב-2 בדיקות רצופות: merit-nt &lt; 50% מהחציון,
+            ping-slash24 &lt; 80% מהחציון, Google &lt; 50% מהתחזית.
+            <b>נכבה רק אחרי 6 בדיקות תקינות</b> (3 שעות), והחציון מוקפא עד אז.
+            פחות מ-2 מדידות קריאות: לא נמדד, לא רגוע. שלוש המדידות מגיעות
+            מ-IODA, ולכן זה אימות מדידה ולא עדות עצמאית. BGP נמדד ומוצג אך
+            אינו מצביע (במלחמת יוני 2025 לא ירד מ-94.5% מהבסיס)</td><td data-label="לאיזה מדד"><span aria-hidden="true">🇮🇷</span> איראן · פעולה</td></tr>
         <tr><td data-label="">חיישני RIPE Atlas באיראן</td><td data-label="מקור">atlas.ripe.net · RIPE NCC</td>
             <td data-label="מה מדליק">מספר החיישנים המחוברים באיראן יורד מתחת ל-50% מחציון 14 הימים, <b>בשתי בדיקות רצופות</b>. בקרה: אם גם ישראל קורסת — התקלה ב-RIPE, והמדד אינו נמדד ולא נדלק. עד 3 ימי נתונים החציון הוא 85 (שחזור)</td><td data-label="לאיזה מדד"><span aria-hidden="true">🇮🇷</span> איראן · פעולה (תופעה אחת עם אינטרנט באיראן)</td></tr>
         <tr><td data-label="">עניין ציבורי — מצר הורמוז</td><td data-label="מקור">wikimedia.org · ויקיפדיה האנגלית</td>
@@ -1783,13 +1784,15 @@ details.dd>.dd-body>:first-child{margin-top:4px}
             announcement about risk, and Lebanon and Syria already sit at the
             top of the scale (4)</td><td data-label="Which index">— context only</td></tr>
         <tr><td data-label="">Iranian internet (national)</td><td data-label="Source">IODA · Georgia Tech</td>
-            <td class="num-cell" data-label="What lights it">merit-nt &lt; 50% of the median.
-            <b>merit-nt is the only voting arm since 2026-09-01</b>; BGP and
-            ping-slash24 are measured and displayed but do not vote (BGP never
-            fell under 94.5% of baseline in the June-2025 war; ping-slash24
-            was removed from the vote on 2026-09-01 after it was found to be
-            the deafer of the two on a replay over the 96 stored
-            samples)</td><td data-label="Which index"><span aria-hidden="true">🇮🇷</span> Iran · action</td></tr>
+            <td class="num-cell" data-label="What lights it">At least 2 of 3 measures
+            low on 2 consecutive checks: merit-nt &lt; 50% of the median,
+            ping-slash24 &lt; 80% of the median, Google traffic &lt; 50% of its forecast.
+            <b>It clears only after 6 clean checks</b> (3 hours), and the median
+            stays frozen until then. Fewer than 2 readable measures: not
+            measured, not calm. All three come from IODA, so this checks a
+            measurement and adds no independent witness. BGP is measured and
+            displayed but does not vote (it never fell under 94.5% of baseline
+            in the June-2025 war)</td><td data-label="Which index"><span aria-hidden="true">🇮🇷</span> Iran · action</td></tr>
         <tr><td data-label="">RIPE Atlas probes in Iran</td><td data-label="Source">atlas.ripe.net · RIPE NCC</td>
             <td data-label="What lights it">Connected probes in Iran fall below 50% of the 14-day median, on <b>two consecutive checks</b>. Control: if Israel collapses too, the fault is RIPE and the indicator is not measured and does not light. Until 3 days of data exist the median is 85 (backtest)</td><td data-label="Which index"><span aria-hidden="true">🇮🇷</span> Iran · action (one phenomenon with Iranian internet)</td></tr>
         <tr><td data-label="">Public attention — Strait of Hormuz</td><td data-label="Source">wikimedia.org · English Wikipedia</td>
@@ -2750,6 +2753,7 @@ details.dd>.dd-body>:first-child{margin-top:4px}
       <li><b>21.10.2026</b> — המדד האיראני נשען על שלוש משפחות מצביעות; משפחת דעה אחת (ויקיפדיה, מצר הורמוז) הפעילה מחדש את מסנן הפעולה/דעה; נוספו ארבע שורות "נמדד, עוד לא מצביע"; קריאת נפט ברנט עברה ל-Yahoo Finance.</li>
       <li><b>23.10.2026</b> — אינטרנט באיראן (IODA) וחיישני RIPE Atlas נספרים כתופעה אחת וקול אחד; רמה 2 היא המקסימום במדד האיראני. עד 23.10.2026 נרשמו מאז 5.9.2026 לפחות 32 הדלקות (נבדק ידנית), ואף אחת לא אושרה כאירוע.</li>
       <li><b>25.10.2026</b> — העמוד הראשי עוצב מחדש: הפסקאות ההיסטוריות והבלוק המתודולוגי המוטמע הוצאו ממנו ונאספו כאן.</li>
+      <li><b>4.11.2026</b> — אינטרנט באיראן עבר לכלל של 2 מתוך 3 (merit-nt, ping-slash24 ו-Google): נדלק אחרי 2 בדיקות רצופות שבהן לפחות 2 מדידות נמוכות, ונכבה אחרי 6 בדיקות תקינות. בשחזור על שלוש ההשבתות (יוני 2025, ינואר 2026, פברואר־מרץ 2026) ועל יולי ואוקטובר 2026, הכלל הקודם נתן 65 אפיזודות, 10 מהן מחוץ להשבתות; גרסה שרצה בצל (3 בדיקות, כיבוי מיד) נתנה 15; הכלל החדש נתן 3, אחת לכל השבתה, אפס מחוץ להשבתות, ונדלק 0–30 דקות אחרי הכלל הקודם. עם מגבלת 72 השעות על הקפאת החציון אותו שחזור נותן 10 אפיזודות, כולן בתוך ההשבתות. הכלל נבחר על אותם נתונים שעליהם נבדק, ויש רק 3 אירועים. הירידה של 18.10.2026 הייתה כנראה אמיתית והכלל לא תופס אותה, כי רק בדיקה אחת עברה את הסף. שלוש המדידות מגיעות מאותו מקור (IODA), כך שזה אימות מדידה ולא עדות עצמאית. הסמן מראה השבתה בזמן שהיא קורית ולא חוזה אותה.</li>
       <li>במדד האיראני: מ-1.9.2026 עד 8.10.2026 שתי משפחות מצביעות, בין 8.10.2026 ל-21.10.2026 אחת, ומ-21.10.2026 שלוש.</li>
     </ul>
     </div></details>
@@ -2822,6 +2826,7 @@ details.dd>.dd-body>:first-child{margin-top:4px}
       <li><b>2026-10-21</b> — the Iran index came to rest on three voting families; one belief family (Wikipedia, Strait of Hormuz) revived the action/belief guard; four "measured, not yet voting" rows were added; the Brent-crude read moved to Yahoo Finance.</li>
       <li><b>2026-10-23</b> — Iranian internet (IODA) and RIPE Atlas probes count as one phenomenon and one vote; level 2 is the maximum on the Iran index. By 2026-10-23, at least 32 lit episodes had been logged since 2026-09-05 (reviewed by hand), none confirmed as an event.</li>
       <li><b>2026-10-25</b> — the main page was redesigned: its historical paragraphs and the inline methodology block were taken out of it and gathered here.</li>
+      <li><b>2026-11-04</b> — Iranian internet moved to a 2-of-3 rule (merit-nt, ping-slash24 and Google): it lights after 2 consecutive checks with at least 2 measures low, and clears after 6 clean checks. Replayed over the three shutdowns (June 2025, January 2026, February-March 2026) plus July and October 2026, the previous rule gave 65 episodes, 10 of them outside shutdowns; a shadow version (3 checks, immediate clear) gave 15; the new rule gave 3, one per shutdown, none outside, lighting 0-30 minutes after the previous rule. With the 72-hour limit on the median freeze the same replay gives 10 episodes, all inside the shutdowns. The rule was chosen on the data it was tested on, and there are only 3 events. The drop of 2026-10-18 was probably real and the rule does not catch it, because only one check crossed the bar. All three measures come from one source (IODA), so this checks a measurement and adds no independent witness. The indicator shows a shutdown while it happens; it does not predict one.</li>
       <li>Iran index voting families: two from 2026-09-01 to 2026-10-08, one between 2026-10-08 and 2026-10-21, three since 2026-10-21.</li>
     </ul>
     </div></details>
@@ -2891,7 +2896,7 @@ details.dd>.dd-body>:first-child{margin-top:4px}
     <a href="/radar/"><span data-lang="he">← חזרה למצב הנוכחי בראדאר</span><span data-lang="en">← Back to the current radar state</span></a>
   </div>
 
-  <div class="stamp">Last methodology update: 2026-10-25</div>
+  <div class="stamp">Last methodology update: 2026-11-04</div>
 
   </main>
 
