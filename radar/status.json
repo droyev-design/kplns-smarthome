@@ -1,18 +1,6 @@
 {
- "generated": "2026-11-04T11:12:43+00:00",
+ "generated": "2026-11-04T11:42:39+00:00",
  "history": [
-  {
-   "t": 1793185982,
-   "il": 0,
-   "ir": 0,
-   "deg": 2
-  },
-  {
-   "t": 1793187753,
-   "il": 0,
-   "ir": 0,
-   "deg": 2
-  },
   {
    "t": 1793189543,
    "il": 0,
@@ -2016,6 +2004,12 @@
    "il": 0,
    "ir": 0,
    "deg": 0
+  },
+  {
+   "t": 1793792559,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
   }
  ],
  "indices": [
@@ -2089,8 +2083,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "54 מטוסים אזרחיים באזור",
-     "value_en": "54 civil aircraft in the area",
+     "value": "64 מטוסים אזרחיים באזור",
+     "value_en": "64 civil aircraft in the area",
      "range": "28–66",
      "threshold_now": "פחות מ-16 מטוסים",
      "threshold_now_en": "<16 aircraft",
@@ -2244,8 +2238,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "116 הודעות · 58 עם סגירה · 23 בהיקף רחב (1 נתיבי ATS, 9 שדות) (+2/-0 מהקריאה הקודמת) · נקרא לפני 30 דק׳ — אין עדיין קו בסיס, אינו מצביע",
-     "value_en": "116 NOTAMs · 58 carry a closure · 23 wide-scope (1 ATS routes, 9 aerodromes) (+2/-0 since the previous read) · read 30 min ago — no baseline yet, casts no vote",
+     "value": "116 הודעות · 57 עם סגירה · 23 בהיקף רחב (1 נתיבי ATS, 9 שדות) (+1/-1 מהקריאה הקודמת) · נקרא לפני פחות מדקה — אין עדיין קו בסיס, אינו מצביע",
+     "value_en": "116 NOTAMs · 57 carry a closure · 23 wide-scope (1 ATS routes, 9 aerodromes) (+1/-1 since the previous read) · read 0 min ago — no baseline yet, casts no vote",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2461,8 +2455,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "0 מטוסי תדלוק, 2 מטוסי מודיעין/התרעה באזור",
-     "value_en": "0 tankers + 2 ISR/AWACS aircraft in the Mediterranean and Middle East area",
+     "value": "0 מטוסי תדלוק, מטוס מודיעין/התרעה אחד באזור",
+     "value_en": "0 tankers + 1 ISR/AWACS aircraft in the Mediterranean and Middle East area",
      "range": "",
      "threshold_now": "נמדד, עוד לא מצביע — בסיס מ-21.10.2026, בדיקת קידום מ-28.10.2026",
      "threshold_now_en": "measured, not yet voting — baseline from 2026-10-21, promotion review from 2026-10-28",
@@ -2539,11 +2533,11 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה: merit-nt 52 מול חציון 54 (×0.96) · ping-slash24 ×1.01 · Google ×1.03 מהתחזית · 41,740 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity normal: merit-nt 52 vs a median of 54 (0.96x) · ping-slash24 1.01x · Google 1.03x its forecast · 41,740 BGP routes (display only)",
+     "value": "קישוריות תקינה: merit-nt 52 מול חציון 53 (×0.98) · ping-slash24 ×1.01 · Google ×1.01 מהתחזית · 41,742 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity normal: merit-nt 52 vs a median of 53 (0.98x) · ping-slash24 1.01x · Google 1.01x its forecast · 41,742 BGP routes (display only)",
      "range": "38–76",
-     "threshold_now": "merit-nt פחות מ-27 · ping-slash24 פחות מ-9,206 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
-     "threshold_now_en": "merit-nt <27 · ping-slash24 <9,206 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
+     "threshold_now": "merit-nt פחות מ-26 · ping-slash24 פחות מ-9,206 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
+     "threshold_now_en": "merit-nt <26 · ping-slash24 <9,206 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
      "watch": "",
      "watch_en": "",
      "anchor": "",
@@ -2849,8 +2843,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "0 מטוסי תדלוק, 2 מטוסי מודיעין/התרעה באזור",
-     "value_en": "0 tankers + 2 ISR/AWACS aircraft in the Mediterranean and Middle East area",
+     "value": "0 מטוסי תדלוק, מטוס מודיעין/התרעה אחד באזור",
+     "value_en": "0 tankers + 1 ISR/AWACS aircraft in the Mediterranean and Middle East area",
      "range": "",
      "threshold_now": "נמדד, עוד לא מצביע — בסיס מ-21.10.2026, בדיקת קידום מ-28.10.2026",
      "threshold_now_en": "measured, not yet voting — baseline from 2026-10-21, promotion review from 2026-10-28",
