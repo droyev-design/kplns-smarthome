@@ -5,10 +5,14 @@ name: radar dead-man
 
 on:
   schedule:
-    # Every 30 minutes. GitHub's scheduler is best-effort and routinely runs
-    # late under load, which is one of the reasons the staleness threshold
-    # below is generous rather than tight.
-    - cron: '*/30 * * * *'
+    # Three off-peak minutes per hour. GitHub's scheduler is best-effort: a
+    # single '*/30' entry (top-of-hour, the busiest slot) was observed running
+    # only every 3-6 h, which let the 2026-11-07 outage (15:23-18:00 IST) go
+    # unseen. Off-peak minutes and several entries raise the odds that at
+    # least one run lands inside any outage window.
+    - cron: '7 * * * *'
+    - cron: '27 * * * *'
+    - cron: '47 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -24,11 +28,11 @@ jobs:
           set -uo pipefail
 
           URL="https://kplns.com/radar/status.json"
-          # The published copy legitimately trails the monitor by up to one
-          # 30-minute cycle, and GitHub may run this job late. 150 minutes is
-          # ~5 missed cycles: comfortably past any normal lag, and still fast
-          # enough that a dead host is caught the same morning.
-          MAX_AGE_MIN=150
+          # The page is republished at least hourly (heartbeat commit at :12),
+          # and GitHub may run this job late. 120 minutes = two missed hourly
+          # heartbeats: past any normal lag, short enough to catch a ~2.5 h
+          # outage like 2026-11-07 (was 150, tightened 2026-11-08).
+          MAX_AGE_MIN=120
           # A fresh timestamp is not the same as a working radar. If most
           # collectors fail but at least one succeeds, monitor.py still writes
           # a new `generated` and the page keeps looking current — so an
