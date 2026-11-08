@@ -1,18 +1,6 @@
 {
- "generated": "2026-11-08T10:42:22+00:00",
+ "generated": "2026-11-08T11:42:25+00:00",
  "history": [
-  {
-   "t": 1793531547,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1793533341,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1793535150,
    "il": 0,
@@ -1986,6 +1974,18 @@
    "il": 0,
    "ir": 0,
    "deg": 0
+  },
+  {
+   "t": 1794136343,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
+  },
+  {
+   "t": 1794138145,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
   }
  ],
  "indices": [
@@ -2059,9 +2059,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "44 מטוסים אזרחיים באזור",
-     "value_en": "44 civil aircraft in the area",
-     "range": "25–62",
+     "value": "69 מטוסים אזרחיים באזור",
+     "value_en": "69 civil aircraft in the area",
+     "range": "25–63",
      "threshold_now": "פחות מ-14 מטוסים",
      "threshold_now_en": "<14 aircraft",
      "watch": "",
@@ -2090,8 +2090,8 @@
      "partial_why_en": "traffic too thin to judge — median 4 below 5",
      "reason": "",
      "reason_en": "",
-     "value": "2 מטוסים מעל ירדן",
-     "value_en": "2 aircraft over Jordan",
+     "value": "5 מטוסים מעל ירדן",
+     "value_en": "5 aircraft over Jordan",
      "range": "1–7",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2245,8 +2245,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "3 מטוסים צבאיים באזור",
-     "value_en": "3 military aircraft in the area",
+     "value": "4 מטוסים צבאיים באזור",
+     "value_en": "4 military aircraft in the area",
      "range": "0–4",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2493,11 +2493,11 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה: merit-nt 298 מול חציון 37 (×8.06) · ping-slash24 ×1.01 · Google ×1.07 מהתחזית · 41,755 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity normal: merit-nt 298 vs a median of 37 (8.06x) · ping-slash24 1.01x · Google 1.07x its forecast · 41,755 BGP routes (display only)",
-     "range": "31–96",
-     "threshold_now": "merit-nt פחות מ-18 · ping-slash24 פחות מ-9,183 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
-     "threshold_now_en": "merit-nt <18 · ping-slash24 <9,183 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
+     "value": "קישוריות תקינה: merit-nt 297 מול חציון 37 (×7.99) · ping-slash24 ×1.01 · Google ×1.07 מהתחזית · 41,758 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity normal: merit-nt 297 vs a median of 37 (7.99x) · ping-slash24 1.01x · Google 1.07x its forecast · 41,758 BGP routes (display only)",
+     "range": "31–297",
+     "threshold_now": "merit-nt פחות מ-19 · ping-slash24 פחות מ-9,188 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
+     "threshold_now_en": "merit-nt <19 · ping-slash24 <9,188 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
      "watch": "",
      "watch_en": "",
      "anchor": "",
@@ -2586,8 +2586,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "3 מטוסים צבאיים באזור",
-     "value_en": "3 military aircraft in the area",
+     "value": "4 מטוסים צבאיים באזור",
+     "value_en": "4 military aircraft in the area",
      "range": "0–4",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
