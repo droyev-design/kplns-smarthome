@@ -364,7 +364,7 @@ details.dd>.dd-body>:first-child{margin-top:4px}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-  {"@type":"WebPage","@id":"https://kplns.com/radar/methodology.html#webpage","url":"https://kplns.com/radar/methodology.html","dateModified":"2026-11-04","name":"מתודולוגיה — ראדאר הסלמה ישראל ואיראן","description":"איך נקבעת הרמה, מה מדליק כל מדד, על מה מבוססים הספים, ומה המערכת לא יכולה לעשות.","inLanguage":["he-IL","en"],"breadcrumb":{"@id":"https://kplns.com/radar/methodology.html#breadcrumb"}},
+  {"@type":"WebPage","@id":"https://kplns.com/radar/methodology.html#webpage","url":"https://kplns.com/radar/methodology.html","dateModified":"2026-11-08","name":"מתודולוגיה — ראדאר הסלמה ישראל ואיראן","description":"איך נקבעת הרמה, מה מדליק כל מדד, על מה מבוססים הספים, ומה המערכת לא יכולה לעשות.","inLanguage":["he-IL","en"],"breadcrumb":{"@id":"https://kplns.com/radar/methodology.html#breadcrumb"}},
   {"@type":"BreadcrumbList","@id":"https://kplns.com/radar/methodology.html#breadcrumb","itemListElement":[
     {"@type":"ListItem","position":1,"name":"ראדאר הסלמה","item":"https://kplns.com/radar/"},
     {"@type":"ListItem","position":2,"name":"מתודולוגיה","item":"https://kplns.com/radar/methodology.html"}
@@ -1047,7 +1047,13 @@ details.dd>.dd-body>:first-child{margin-top:4px}
             בכל ריצה מההיסטוריה השעתית של השוק עצמו — ולכן קו הבסיס אמיתי כבר
             מהריצה הראשונה — והקריאה החיה נשפטת מולה בכל בדיקת 30 דקות.
             החריגות התרמיות (NASA FIRMS): שלושת לווייני VIIRS (SNPP,
-            NOAA-20, NOAA-21) — כל אחד עובר מעל האזור פעם או פעמיים ביממה —
+            NOAA-20, NOAA-21) — כל אחד עובר מעל האזור פעם או פעמיים ביממה.
+            כלל מסתגל (מ-8.11.2026): לוויין שהנתונים שלו מפגרים ביותר מיום אחד
+            אחרי הלוויין העדכני ביותר (לפי דיווח NASA) מושמט מהקבוצה הנדרשת,
+            והדבר מוצג בגלוי בשורה ובכותרת העליונה כ"כיסוי מופחת"; הבסיס
+            ההשוואתי נשמר לפי קבוצת הלוויינים, כך שיממה שנמדדה בשניים נשפטת רק
+            מול יממות שנמדדו באותם שניים; כשהלוויין חוזר, הקבוצה המלאה חוזרת
+            אוטומטית. כלומר — העיבוד מפגר בשעות,
             והעיבוד מפגר בשעות, ולכן נמדדת היממה השלמה (UTC) האחרונה — לא
             היום הנוכחי, שנראה ריק עד שעות הצהריים — וכל יממה שפורסמה נשפטת
             פעם אחת. יממה שלמה שמתיישנת מעל 36 שעות פירושה מקור תקוע, והמדד
@@ -1288,7 +1294,14 @@ details.dd>.dd-body>:first-child{margin-top:4px}
             the first run — and the live reading is judged against it on
             every 30-minute check. The thermal anomalies (NASA FIRMS): three
             VIIRS satellites (SNPP, NOAA-20, NOAA-21) each pass over the area
-            once or twice a day and processing lags by hours, so what is
+            once or twice a day. Adaptive rule (from 2026-11-08): a satellite
+            whose data (per NASA's own availability report) lags the freshest
+            one by more than a day is dropped from the required set, and this
+            is shown openly on the row and in the top banner as "reduced
+            coverage"; the baseline is kept per satellite set, so a day
+            measured by two satellites is judged only against days measured by
+            the same two; when the satellite returns, the full set resumes
+            automatically. Processing lags by hours, so what is
             measured is the most recent complete UTC day —
             not the current day, which looks empty until around noon — and
             each published day is judged exactly once. A complete day older
@@ -2753,6 +2766,7 @@ details.dd>.dd-body>:first-child{margin-top:4px}
       <li><b>21.10.2026</b> — המדד האיראני נשען על שלוש משפחות מצביעות; משפחת דעה אחת (ויקיפדיה, מצר הורמוז) הפעילה מחדש את מסנן הפעולה/דעה; נוספו ארבע שורות "נמדד, עוד לא מצביע"; קריאת נפט ברנט עברה ל-Yahoo Finance.</li>
       <li><b>23.10.2026</b> — אינטרנט באיראן (IODA) וחיישני RIPE Atlas נספרים כתופעה אחת וקול אחד; רמה 2 היא המקסימום במדד האיראני. עד 23.10.2026 נרשמו מאז 5.9.2026 לפחות 32 הדלקות (נבדק ידנית), ואף אחת לא אושרה כאירוע.</li>
       <li><b>25.10.2026</b> — העמוד הראשי עוצב מחדש: הפסקאות ההיסטוריות והבלוק המתודולוגי המוטמע הוצאו ממנו ונאספו כאן.</li>
+      <li><b>8.11.2026</b> — החריגות התרמיות (NASA FIRMS): SNPP הפסיק לפרסם ב-2.11.2026 והבסיס קפא שישה ימים. מעתה לוויין שמפגר ביותר מיום אחד מושמט מהקבוצה הנדרשת (ומוצג כ"כיסוי מופחת"), הבסיס נשמר לפי קבוצת לוויינים (הושלם לאחור ל-NOAA-20+NOAA-21), והקבוצה המלאה חוזרת אוטומטית כש-SNPP מתאושש.</li>
       <li><b>4.11.2026</b> — אינטרנט באיראן עבר לכלל של 2 מתוך 3 (merit-nt, ping-slash24 ו-Google): נדלק אחרי 2 בדיקות רצופות שבהן לפחות 2 מדידות נמוכות, ונכבה אחרי 6 בדיקות תקינות. בשחזור על שלוש ההשבתות (יוני 2025, ינואר 2026, פברואר־מרץ 2026) ועל יולי ואוקטובר 2026, הכלל הקודם נתן 65 אפיזודות, 10 מהן מחוץ להשבתות; גרסה שרצה בצל (3 בדיקות, כיבוי מיד) נתנה 15; הכלל החדש נתן 3, אחת לכל השבתה, אפס מחוץ להשבתות, ונדלק 0–30 דקות אחרי הכלל הקודם. עם מגבלת 72 השעות על הקפאת החציון אותו שחזור נותן 10 אפיזודות, כולן בתוך ההשבתות. הכלל נבחר על אותם נתונים שעליהם נבדק, ויש רק 3 אירועים. הירידה של 18.10.2026 הייתה כנראה אמיתית והכלל לא תופס אותה, כי רק בדיקה אחת עברה את הסף. שלוש המדידות מגיעות מאותו מקור (IODA), כך שזה אימות מדידה ולא עדות עצמאית. הסמן מראה השבתה בזמן שהיא קורית ולא חוזה אותה.</li>
       <li>במדד האיראני: מ-1.9.2026 עד 8.10.2026 שתי משפחות מצביעות, בין 8.10.2026 ל-21.10.2026 אחת, ומ-21.10.2026 שלוש.</li>
     </ul>
@@ -2826,6 +2840,7 @@ details.dd>.dd-body>:first-child{margin-top:4px}
       <li><b>2026-10-21</b> — the Iran index came to rest on three voting families; one belief family (Wikipedia, Strait of Hormuz) revived the action/belief guard; four "measured, not yet voting" rows were added; the Brent-crude read moved to Yahoo Finance.</li>
       <li><b>2026-10-23</b> — Iranian internet (IODA) and RIPE Atlas probes count as one phenomenon and one vote; level 2 is the maximum on the Iran index. By 2026-10-23, at least 32 lit episodes had been logged since 2026-09-05 (reviewed by hand), none confirmed as an event.</li>
       <li><b>2026-10-25</b> — the main page was redesigned: its historical paragraphs and the inline methodology block were taken out of it and gathered here.</li>
+      <li><b>2026-11-08</b> — Satellite thermal anomalies (NASA FIRMS): SNPP stopped publishing on 2026-11-02 and the baseline froze for six days. A satellite lagging by more than a day is now dropped from the required set (and shown as "reduced coverage"), the baseline is kept per satellite set (back-filled for NOAA-20+NOAA-21), and the full set returns automatically when SNPP recovers.</li>
       <li><b>2026-11-04</b> — Iranian internet moved to a 2-of-3 rule (merit-nt, ping-slash24 and Google): it lights after 2 consecutive checks with at least 2 measures low, and clears after 6 clean checks. Replayed over the three shutdowns (June 2025, January 2026, February-March 2026) plus July and October 2026, the previous rule gave 65 episodes, 10 of them outside shutdowns; a shadow version (3 checks, immediate clear) gave 15; the new rule gave 3, one per shutdown, none outside, lighting 0-30 minutes after the previous rule. With the 72-hour limit on the median freeze the same replay gives 10 episodes, all inside the shutdowns. The rule was chosen on the data it was tested on, and there are only 3 events. The drop of 2026-10-18 was probably real and the rule does not catch it, because only one check crossed the bar. All three measures come from one source (IODA), so this checks a measurement and adds no independent witness. The indicator shows a shutdown while it happens; it does not predict one.</li>
       <li>Iran index voting families: two from 2026-09-01 to 2026-10-08, one between 2026-10-08 and 2026-10-21, three since 2026-10-21.</li>
     </ul>
@@ -2896,7 +2911,7 @@ details.dd>.dd-body>:first-child{margin-top:4px}
     <a href="/radar/"><span data-lang="he">← חזרה למצב הנוכחי בראדאר</span><span data-lang="en">← Back to the current radar state</span></a>
   </div>
 
-  <div class="stamp">Last methodology update: 2026-11-04</div>
+  <div class="stamp">Last methodology update: 2026-11-08</div>
 
   </main>
 
