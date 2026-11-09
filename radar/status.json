@@ -1,12 +1,6 @@
 {
- "generated": "2026-11-09T00:43:01+00:00",
+ "generated": "2026-11-09T01:12:29+00:00",
  "history": [
-  {
-   "t": 1793581943,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1793583748,
    "il": 0,
@@ -1986,6 +1980,12 @@
    "il": 0,
    "ir": 0,
    "deg": 1
+  },
+  {
+   "t": 1794186749,
+   "il": 0,
+   "ir": 0,
+   "deg": 0
   }
  ],
  "indices": [
@@ -2059,8 +2059,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "46 מטוסים אזרחיים באזור",
-     "value_en": "46 civil aircraft in the area",
+     "value": "45 מטוסים אזרחיים באזור",
+     "value_en": "45 civil aircraft in the area",
      "range": "29–66",
      "threshold_now": "פחות מ-16 מטוסים",
      "threshold_now_en": "<16 aircraft",
@@ -2214,8 +2214,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "117 הודעות · 60 עם סגירה · 21 בהיקף רחב (1 נתיבי ATS, 10 שדות) (+0/-0 מהקריאה הקודמת) · נקרא לפני פחות מדקה — אין עדיין קו בסיס, אינו מצביע",
-     "value_en": "117 NOTAMs · 60 carry a closure · 21 wide-scope (1 ATS routes, 10 aerodromes) (+0/-0 since the previous read) · read 0 min ago — no baseline yet, casts no vote",
+     "value": "117 הודעות · 60 עם סגירה · 21 בהיקף רחב (1 נתיבי ATS, 10 שדות) (+0/-0 מהקריאה הקודמת) · נקרא לפני 29 דק׳ — אין עדיין קו בסיס, אינו מצביע",
+     "value_en": "117 NOTAMs · 60 carry a closure · 21 wide-scope (1 ATS routes, 10 aerodromes) (+0/-0 since the previous read) · read 29 min ago — no baseline yet, casts no vote",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2245,8 +2245,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "מטוס צבאי אחד באזור",
-     "value_en": "1 military aircraft in the area",
+     "value": "2 מטוסים צבאיים באזור",
+     "value_en": "2 military aircraft in the area",
      "range": "0–4",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2276,8 +2276,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $97.6 · דולר 3.19 ₪",
-     "value_en": "Brent $97.6 · USD 3.19 ILS",
+     "value": "ברנט $97.7 · דולר 3.19 ₪",
+     "value_en": "Brent $97.7 · USD 3.19 ILS",
      "range": "",
      "threshold_now": "ברנט $106.2 ומעלה · דולר 3.29 ₪ ומעלה",
      "threshold_now_en": "Brent ≥$106.2 · USD/ILS ≥3.29",
@@ -2493,8 +2493,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה: merit-nt 49 מול חציון 52 (×0.95) · ping-slash24 ×1.00 · Google ×1.06 מהתחזית · 41,756 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity normal: merit-nt 49 vs a median of 52 (0.95x) · ping-slash24 1.00x · Google 1.06x its forecast · 41,756 BGP routes (display only)",
+     "value": "קישוריות תקינה: merit-nt 44 מול חציון 52 (×0.86) · ping-slash24 ×0.99 · Google ×1.02 מהתחזית · 41,756 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity normal: merit-nt 44 vs a median of 52 (0.86x) · ping-slash24 0.99x · Google 1.02x its forecast · 41,756 BGP routes (display only)",
      "range": "31–297",
      "threshold_now": "merit-nt פחות מ-26 · ping-slash24 פחות מ-9,241 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
      "threshold_now_en": "merit-nt <26 · ping-slash24 <9,241 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
@@ -2586,8 +2586,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "מטוס צבאי אחד באזור",
-     "value_en": "1 military aircraft in the area",
+     "value": "2 מטוסים צבאיים באזור",
+     "value_en": "2 military aircraft in the area",
      "range": "0–4",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2617,8 +2617,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $97.6 · דולר 3.19 ₪",
-     "value_en": "Brent $97.6 · USD 3.19 ILS",
+     "value": "ברנט $97.7 · דולר 3.19 ₪",
+     "value_en": "Brent $97.7 · USD 3.19 ILS",
      "range": "",
      "threshold_now": "ברנט $106.2 ומעלה · דולר 3.29 ₪ ומעלה",
      "threshold_now_en": "Brent ≥$106.2 · USD/ILS ≥3.29",
@@ -2766,14 +2766,14 @@
      "frozen": false,
      "frozen_hours": 0,
      "frozen_expired": false,
-     "ok": false,
+     "ok": true,
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "",
-     "value_en": "",
+     "value": "איסטנבול→טהרן היום: 11 מתוך 19 המראות בוטלו (9 חברות) — שיעור הבסיס גבוה גם ביום שקט",
+     "value_en": "Istanbul→Tehran today: 11 of 19 departures cancelled (9 carriers) — the base rate is high on a quiet day",
      "range": "",
      "threshold_now": "נמדד, עוד לא מצביע — בסיס מ-21.10.2026, בדיקת קידום מ-28.10.2026",
      "threshold_now_en": "measured, not yet voting — baseline from 2026-10-21, promotion review from 2026-10-28",
@@ -2837,7 +2837,7 @@
    ]
   }
  ],
- "sources_ok": 19,
+ "sources_ok": 20,
  "sources_total": 20,
  "families_total": 20,
  "context_total": 13,
@@ -2858,12 +2858,8 @@
   "top_window": 14,
   "top_streak": 2
  },
- "degraded": [
-  "איסטנבול–טהרן: ביטולי טיסות (נמדד, עוד לא מצביע)"
- ],
- "degraded_en": [
-  "Istanbul–Tehran flight cancellations (measured, not yet voting)"
- ],
+ "degraded": [],
+ "degraded_en": [],
  "reduced": [
   "חריגות תרמיות מלוויין (NASA FIRMS): כיסוי לוויני מופחת — פועל על NOAA20 + NOAA21 בלבד; SNPP (עד 2026-11-02) הושמט כי הנתונים שלו תקועים. פחות מעברים פירושו שאירועים עלולים לא להיקלט; ההשוואה היא רק מול ימים שנמדדו באותם לוויינים"
  ],
