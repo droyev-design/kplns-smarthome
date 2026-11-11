@@ -1,12 +1,6 @@
 {
- "generated": "2026-11-11T16:15:48+00:00",
+ "generated": "2026-11-11T16:46:02+00:00",
  "history": [
-  {
-   "t": 1793810548,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
   {
    "t": 1793812387,
    "il": 0,
@@ -1962,6 +1956,12 @@
    "il": 0,
    "ir": 0,
    "deg": 4
+  },
+  {
+   "t": 1794415562,
+   "il": 0,
+   "ir": 0,
+   "deg": 5
   }
  ],
  "indices": [
@@ -2060,14 +2060,14 @@
      "frozen": false,
      "frozen_hours": 0,
      "frozen_expired": false,
-     "ok": true,
-     "partial": true,
-     "partial_why": "תעבורה דלילה מדי לשיפוט — חציון 4 מתחת ל-5",
-     "partial_why_en": "traffic too thin to judge — median 4 below 5",
+     "ok": false,
+     "partial": false,
+     "partial_why": "",
+     "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "2 מטוסים מעל ירדן",
-     "value_en": "2 aircraft over Jordan",
+     "value": "",
+     "value_en": "",
      "range": "1–7",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2252,8 +2252,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $93.9 · דולר 3.17 ₪",
-     "value_en": "Brent $93.9 · USD 3.17 ILS",
+     "value": "ברנט $94.0 · דולר 3.17 ₪",
+     "value_en": "Brent $94.0 · USD 3.17 ILS",
      "range": "",
      "threshold_now": "ברנט $99.4 ומעלה · דולר 3.27 ₪ ומעלה",
      "threshold_now_en": "Brent ≥$99.4 · USD/ILS ≥3.27",
@@ -2469,9 +2469,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות מתחת לרגיל: merit-nt 138 מול חציון 271 (×0.51) · ping-slash24 ×1.00 · Google ×1.06 מהתחזית · 41,736 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity below normal: merit-nt 138 vs a median of 271 (0.51x) · ping-slash24 1.00x · Google 1.06x its forecast · 41,736 BGP routes (display only)",
-     "range": "175–390",
+     "value": "קישוריות מתחת לרגיל: merit-nt 138 מול חציון 253 (×0.55) · ping-slash24 ×1.00 · Google ×1.06 מהתחזית · 41,736 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity below normal: merit-nt 138 vs a median of 253 (0.55x) · ping-slash24 1.00x · Google 1.06x its forecast · 41,736 BGP routes (display only)",
+     "range": "174–390",
      "threshold_now": "merit-nt פחות מ-126 · ping-slash24 פחות מ-9,284 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
      "threshold_now_en": "merit-nt <126 · ping-slash24 <9,284 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
      "watch": "",
@@ -2593,8 +2593,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $93.9 · דולר 3.17 ₪",
-     "value_en": "Brent $93.9 · USD 3.17 ILS",
+     "value": "ברנט $94.0 · דולר 3.17 ₪",
+     "value_en": "Brent $94.0 · USD 3.17 ILS",
      "range": "",
      "threshold_now": "ברנט $99.4 ומעלה · דולר 3.27 ₪ ומעלה",
      "threshold_now_en": "Brent ≥$99.4 · USD/ILS ≥3.27",
@@ -2813,7 +2813,7 @@
    ]
   }
  ],
- "sources_ok": 16,
+ "sources_ok": 15,
  "sources_total": 20,
  "families_total": 20,
  "context_total": 13,
@@ -2836,12 +2836,14 @@
  },
  "degraded": [
   "מרחב אווירי ישראל",
+  "מרחב אווירי ירדן",
   "הודעות NOTAM — מרחב ישראל (הקשר בלבד)",
   "תעופה צבאית באזור",
   "מטוסי תדלוק ומודיעין מערביים באזור (נמדד, עוד לא מצביע)"
  ],
  "degraded_en": [
   "Israeli airspace",
+  "Jordanian airspace",
   "Israeli NOTAMs — airspace closures (context only)",
   "Military aviation in the region",
   "Western tanker and ISR aircraft in the region (measured, not yet voting)"
