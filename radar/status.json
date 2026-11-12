@@ -1,18 +1,6 @@
 {
- "generated": "2026-11-12T03:42:20+00:00",
+ "generated": "2026-11-12T04:42:48+00:00",
  "history": [
-  {
-   "t": 1793850145,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1793851959,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1793853772,
    "il": 0,
@@ -1968,6 +1956,18 @@
    "il": 0,
    "ir": 0,
    "deg": 1
+  },
+  {
+   "t": 1794456747,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1794458568,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
   }
  ],
  "indices": [
@@ -2041,8 +2041,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "27 מטוסים אזרחיים באזור",
-     "value_en": "27 civil aircraft in the area",
+     "value": "39 מטוסים אזרחיים באזור",
+     "value_en": "39 civil aircraft in the area",
      "range": "25–67",
      "threshold_now": "פחות מ-15 מטוסים",
      "threshold_now_en": "<15 aircraft",
@@ -2227,8 +2227,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "2 מטוסים צבאיים באזור",
-     "value_en": "2 military aircraft in the area",
+     "value": "6 מטוסים צבאיים באזור",
+     "value_en": "6 military aircraft in the area",
      "range": "1–11",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2258,8 +2258,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $91.7 · דולר 3.17 ₪",
-     "value_en": "Brent $91.7 · USD 3.17 ILS",
+     "value": "ברנט $91.3 · דולר 3.17 ₪",
+     "value_en": "Brent $91.3 · USD 3.17 ILS",
      "range": "",
      "threshold_now": "ברנט $99.4 ומעלה · דולר 3.27 ₪ ומעלה",
      "threshold_now_en": "Brent ≥$99.4 · USD/ILS ≥3.27",
@@ -2475,11 +2475,11 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה: merit-nt 153 מול חציון 189 (×0.81) · ping-slash24 ×0.99 · Google ×1.30 מהתחזית · 41,734 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity normal: merit-nt 153 vs a median of 189 (0.81x) · ping-slash24 0.99x · Google 1.30x its forecast · 41,734 BGP routes (display only)",
-     "range": "146–326",
-     "threshold_now": "merit-nt פחות מ-94 · ping-slash24 פחות מ-9,262 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
-     "threshold_now_en": "merit-nt <94 · ping-slash24 <9,262 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
+     "value": "קישוריות מתחת לרגיל: merit-nt 146 מול חציון 187 (×0.78) · ping-slash24 ×0.98 · 41,735 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity below normal: merit-nt 146 vs a median of 187 (0.78x) · ping-slash24 0.98x · 41,735 BGP routes (display only)",
+     "range": "146–319",
+     "threshold_now": "merit-nt פחות מ-93 · ping-slash24 פחות מ-9,262 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
+     "threshold_now_en": "merit-nt <93 · ping-slash24 <9,262 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
      "watch": "",
      "watch_en": "",
      "anchor": "",
@@ -2568,8 +2568,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "2 מטוסים צבאיים באזור",
-     "value_en": "2 military aircraft in the area",
+     "value": "6 מטוסים צבאיים באזור",
+     "value_en": "6 military aircraft in the area",
      "range": "1–11",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2599,8 +2599,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $91.7 · דולר 3.17 ₪",
-     "value_en": "Brent $91.7 · USD 3.17 ILS",
+     "value": "ברנט $91.3 · דולר 3.17 ₪",
+     "value_en": "Brent $91.3 · USD 3.17 ILS",
      "range": "",
      "threshold_now": "ברנט $99.4 ומעלה · דולר 3.27 ₪ ומעלה",
      "threshold_now_en": "Brent ≥$99.4 · USD/ILS ≥3.27",
