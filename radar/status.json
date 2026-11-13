@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T23:43:14+00:00",
+ "generated": "2026-11-13T00:12:40+00:00",
  "history": [
   {
    "t": 1793923971,
@@ -1962,6 +1962,12 @@
    "il": 0,
    "ir": 0,
    "deg": 2
+  },
+  {
+   "t": 1794528760,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
   }
  ],
  "indices": [
@@ -2035,15 +2041,15 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "50 מטוסים אזרחיים באזור",
-     "value_en": "50 civil aircraft in the area",
+     "value": "37 מטוסים אזרחיים באזור",
+     "value_en": "37 civil aircraft in the area",
      "range": "26–66",
      "threshold_now": "פחות מ-17 מטוסים",
      "threshold_now_en": "<17 aircraft",
      "watch": "",
      "watch_en": "",
-     "anchor": "📈 מצב: 8 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (40), אך לא ביום האחרון שנשמר. אינו מצביע. העוגן נמדד בתוך המלחמה.",
-     "anchor_en": "📈 State: 8 of the last 14 days at or below the declared anchor (40), but not on the most recent stored day. Casts no vote. The anchor was measured inside the war."
+     "anchor": "📈 מצב: 8 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (40), כולל היום האחרון שנשמר. אינו מצביע. העוגן נמדד בתוך המלחמה.",
+     "anchor_en": "📈 State: 8 of the last 14 days at or below the declared anchor (40), including the most recent stored day. Casts no vote. The anchor was measured inside the war."
     },
     {
      "key": "jo_airspace",
@@ -2066,15 +2072,15 @@
      "partial_why_en": "traffic too thin to judge — median 3 below 5",
      "reason": "",
      "reason_en": "",
-     "value": "5 מטוסים מעל ירדן",
-     "value_en": "5 aircraft over Jordan",
+     "value": "0 מטוסים מעל ירדן",
+     "value_en": "0 aircraft over Jordan",
      "range": "1–6",
      "threshold_now": "",
      "threshold_now_en": "",
      "watch": "",
      "watch_en": "",
-     "anchor": "📈 מצב: 8 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (3), 2 מהם ברצף. אינו מצביע. העוגן נמדד בתוך המלחמה.",
-     "anchor_en": "📈 State: 8 of the last 14 days at or below the declared anchor (3), the last 2 of them consecutively. Casts no vote. The anchor was measured inside the war."
+     "anchor": "📈 מצב: 9 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (3), 3 מהם ברצף. אינו מצביע. העוגן נמדד בתוך המלחמה.",
+     "anchor_en": "📈 State: 9 of the last 14 days at or below the declared anchor (3), the last 3 of them consecutively. Casts no vote. The anchor was measured inside the war."
     },
     {
      "key": "advisories_il",
@@ -2425,8 +2431,8 @@
    "context_lit_names": [],
    "context_lit_names_en": [],
    "ratchets": [],
-   "standing": "📈 מצב עומד (אינו רמה): 4 משפחות מעוגנות במדד הזה צברו מספיק ימים כדי לדווח, ואחת מהן (מרחב אווירי ירדן) חוצה את העוגן המוצהר שלה ביום האחרון שנשמר. הספירה הגבוהה ביותר באוגר: מרחב אווירי ירדן · 8 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (3), 2 מהם ברצף. אינו מצביע; כל העוגנים נמדדו בתוך המלחמה.",
-   "standing_en": "📈 Standing state (not a level): 4 anchored families on this index have enough stored days to report, and one of them is past its declared anchor on the most recent stored day. Longest-running: Jordanian airspace · 8 of the last 14 days at or below the declared anchor (3), the last 2 of them consecutively. Casts no vote; every anchor was measured inside the war.",
+   "standing": "📈 מצב עומד (אינו רמה): 4 משפחות מעוגנות במדד הזה צברו מספיק ימים כדי לדווח, ו-2 מהן חוצות את העוגן המוצהר שלהן ביום האחרון שנשמר. הספירה הגבוהה ביותר באוגר: מרחב אווירי ירדן · 9 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (3), 3 מהם ברצף. אינו מצביע; כל העוגנים נמדדו בתוך המלחמה.",
+   "standing_en": "📈 Standing state (not a level): 4 anchored families on this index have enough stored days to report, and 2 of them are past their declared anchors on the most recent stored day. Longest-running: Jordanian airspace · 9 of the last 14 days at or below the declared anchor (3), the last 3 of them consecutively. Casts no vote; every anchor was measured inside the war.",
    "standing_risk": "🎲 סיכון יומי עומד: 1.05% ליום. זו הסתברות גלומה מהשוק — כסף אמיתי ב-Polymarket — ולא תחזית של הדף הזה ולא מדידת חיישן. היא נגזרת מחוזה פתוח אחד, ⁦\"Israel x Iran ceasefire continues through December 15?\"⁩, שמוכרע לפי תקיפה אווירית או טילית של צד אחד בשני: מחירו מגלם 30% לתקיפה כזו עד סוף 15.12.2026, ונותרו לו 33 ימים. המספר המתפרסם הוא הקצב היומי ולא מחיר החוזה: מחיר חוזה יורד מעצמו ככל שמועד הפקיעה מתקרב, גם כשדבר לא השתנה, ולכן רק הקצב היומי בר-השוואה משבוע לשבוע. אינו מצביע.",
    "standing_risk_en": "🎲 Standing daily risk: 1.05%/day. This is a MARKET-IMPLIED probability — real money on Polymarket — not a forecast by this page and not a sensor reading. It comes from one open contract, \"Israel x Iran ceasefire continues through December 15?\", which resolves on an air or missile strike by either side against the other: its price implies a 30% chance of such a strike before 2026-12-16, with 33 days left to run. The figure published is the PER-DAY rate, not the contract price: a contract price falls on its own as expiry approaches even when nothing has changed, so only the daily rate is comparable from one week to the next. Casts no vote."
   },
@@ -2469,11 +2475,11 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות מתחת לרגיל: merit-nt 37 מול חציון 161 (×0.23) · ping-slash24 ×0.99 · Google ×1.00 מהתחזית · 41,727 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity below normal: merit-nt 37 vs a median of 161 (0.23x) · ping-slash24 0.99x · Google 1.00x its forecast · 41,727 BGP routes (display only)",
+     "value": "קישוריות מתחת לרגיל: merit-nt 41 מול חציון 160 (×0.26) · ping-slash24 ×0.99 · Google ×1.00 מהתחזית · 41,728 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity below normal: merit-nt 41 vs a median of 160 (0.26x) · ping-slash24 0.99x · Google 1.00x its forecast · 41,728 BGP routes (display only)",
      "range": "43–194",
-     "threshold_now": "merit-nt פחות מ-80 · ping-slash24 פחות מ-9,231 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
-     "threshold_now_en": "merit-nt <80 · ping-slash24 <9,231 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
+     "threshold_now": "merit-nt פחות מ-79 · ping-slash24 פחות מ-9,230 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
+     "threshold_now_en": "merit-nt <79 · ping-slash24 <9,230 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
      "watch": "",
      "watch_en": "",
      "anchor": "",
@@ -2500,8 +2506,8 @@
      "partial_why_en": "reduced satellite coverage — running on NOAA20 + NOAA21 only; SNPP (data ends 2026-11-02) dropped as stale. Fewer passes means events can be missed; compared only with days measured by the same satellites",
      "reason": "",
      "reason_en": "",
-     "value": "3 מוקדים תרמיים חדשים ב-2026-11-11 (מתוך 1,814 זיהויים גולמיים מ-2 לוויינים, כולל שרפות ותעשייה)",
-     "value_en": "3 new thermal hotspots on 2026-11-11 (out of 1,814 raw detections from 2 satellites, incl. wildfires and industry)",
+     "value": "2 מוקדים תרמיים חדשים ב-2026-11-12 (מתוך 673 זיהויים גולמיים מ-2 לוויינים, כולל שרפות ותעשייה)",
+     "value_en": "2 new thermal hotspots on 2026-11-12 (out of 673 raw detections from 2 satellites, incl. wildfires and industry)",
      "range": "0–2",
      "threshold_now": "יותר מ-5 מוקדים",
      "threshold_now_en": ">5 hotspots",
@@ -2686,11 +2692,11 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "95 חיישנים מחוברים באיראן (חציון 95; בקרה — ישראל 37)",
-     "value_en": "95 probes connected in Iran (median 95; control — Israel 37)",
-     "range": "74–107",
-     "threshold_now": "פחות מ-48 חיישנים מחוברים, ב-2 בדיקות רצופות",
-     "threshold_now_en": "<48 connected probes, on 2 consecutive checks",
+     "value": "93 חיישנים מחוברים באיראן (חציון 95; בקרה — ישראל 37)",
+     "value_en": "93 probes connected in Iran (median 95; control — Israel 37)",
+     "range": "73–107",
+     "threshold_now": "פחות מ-47 חיישנים מחוברים, ב-2 בדיקות רצופות",
+     "threshold_now_en": "<47 connected probes, on 2 consecutive checks",
      "watch": "",
      "watch_en": "",
      "anchor": "",
@@ -2717,9 +2723,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "1,679 צפיות ב-2026-11-10 — פי 1.0 מחציון 14 הימים הקודמים (1,623)",
-     "value_en": "1,679 views on 2026-11-10 — 1.0x the prior-14-day median (1,623)",
-     "range": "1,454–2,442",
+     "value": "1,428 צפיות ב-2026-11-11 — פי 0.9 מחציון 14 הימים הקודמים (1,623)",
+     "value_en": "1,428 views on 2026-11-11 — 0.9x the prior-14-day median (1,623)",
+     "range": "1,454–2,355",
      "threshold_now": "4,869 צפיות ביום ומעלה",
      "threshold_now_en": "≥4,869 views a day",
      "watch": "",
@@ -2742,14 +2748,14 @@
      "frozen": false,
      "frozen_hours": 0,
      "frozen_expired": false,
-     "ok": false,
+     "ok": true,
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "",
-     "value_en": "",
+     "value": "איסטנבול→טהרן היום: 11 מתוך 20 המראות בוטלו (8 חברות) — שיעור הבסיס גבוה גם ביום שקט",
+     "value_en": "Istanbul→Tehran today: 11 of 20 departures cancelled (8 carriers) — the base rate is high on a quiet day",
      "range": "",
      "threshold_now": "נמדד, עוד לא מצביע — בסיס מ-21.10.2026, בדיקת קידום מ-28.10.2026",
      "threshold_now_en": "measured, not yet voting — baseline from 2026-10-21, promotion review from 2026-10-28",
@@ -2813,7 +2819,7 @@
    ]
   }
  ],
- "sources_ok": 18,
+ "sources_ok": 19,
  "sources_total": 20,
  "families_total": 20,
  "context_total": 13,
@@ -2824,23 +2830,21 @@
  "ratchets": [],
  "anchor_summary": {
   "families_reported": 7,
-  "families_on_anchor": 1,
-  "longest_streak_days": 2,
+  "families_on_anchor": 2,
+  "longest_streak_days": 3,
   "window_days": 14,
   "families_anchored": 7,
   "min_days": 5,
   "top_family": "jo_airspace",
-  "top_days": 8,
+  "top_days": 9,
   "top_window": 14,
-  "top_streak": 2
+  "top_streak": 3
  },
  "degraded": [
-  "הודעות NOTAM — מרחב ישראל (הקשר בלבד)",
-  "איסטנבול–טהרן: ביטולי טיסות (נמדד, עוד לא מצביע)"
+  "הודעות NOTAM — מרחב ישראל (הקשר בלבד)"
  ],
  "degraded_en": [
-  "Israeli NOTAMs — airspace closures (context only)",
-  "Istanbul–Tehran flight cancellations (measured, not yet voting)"
+  "Israeli NOTAMs — airspace closures (context only)"
  ],
  "reduced": [
   "חריגות תרמיות מלוויין (NASA FIRMS): כיסוי לוויני מופחת — פועל על NOAA20 + NOAA21 בלבד; SNPP (עד 2026-11-02) הושמט כי הנתונים שלו תקועים. פחות מעברים פירושו שאירועים עלולים לא להיקלט; ההשוואה היא רק מול ימים שנמדדו באותם לוויינים"
