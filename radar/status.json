@@ -1,12 +1,6 @@
 {
- "generated": "2026-11-13T05:12:36+00:00",
+ "generated": "2026-11-13T05:42:43+00:00",
  "history": [
-  {
-   "t": 1793941969,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1793943788,
    "il": 0,
@@ -1968,6 +1962,12 @@
    "il": 0,
    "ir": 0,
    "deg": 1
+  },
+  {
+   "t": 1794548563,
+   "il": 1,
+   "ir": 0,
+   "deg": 1
   }
  ],
  "indices": [
@@ -1976,16 +1976,20 @@
    "flag": "🇮🇱",
    "name": "ישראל",
    "name_en": "Israel",
-   "level": 0,
+   "level": 1,
    "guard": {
-    "families": 0,
-    "votes": 0,
-    "phenomena": [],
-    "providers": [],
+    "families": 1,
+    "votes": 1,
+    "phenomena": [
+     "il_airspace"
+    ],
+    "providers": [
+     "adsb.lol"
+    ],
     "single_provider_clamp": false,
     "l3_provider_clamp": false,
     "hfc_override": false,
-    "action_lit": false,
+    "action_lit": true,
     "belief_cap": false
    },
    "tripwires": [
@@ -2030,7 +2034,7 @@
      "shared": false,
      "context": false,
      "daily": false,
-     "lit": false,
+     "lit": true,
      "recovering": false,
      "frozen": false,
      "frozen_hours": 0,
@@ -2039,11 +2043,11 @@
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
-     "reason": "",
-     "reason_en": "",
-     "value": "11 מטוסים אזרחיים באזור",
-     "value_en": "11 civil aircraft in the area",
-     "range": "27–66",
+     "reason": "תנועה אזרחית קרסה: 4 מטוסים מול חציון 47 (שתי בדיקות רצופות)",
+     "reason_en": "Civil traffic collapsed: 4 aircraft vs a median of 47 (two consecutive checks)",
+     "value": "4 מטוסים אזרחיים באזור",
+     "value_en": "4 civil aircraft in the area",
+     "range": "26–66",
      "threshold_now": "פחות מ-16 מטוסים",
      "threshold_now_en": "<16 aircraft",
      "watch": "",
@@ -2227,8 +2231,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "11 מטוסים צבאיים באזור",
-     "value_en": "11 military aircraft in the area",
+     "value": "מטוס צבאי אחד באזור",
+     "value_en": "1 military aircraft in the area",
      "range": "0–9",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2425,7 +2429,7 @@
     }
    ],
    "measurable_total": 4,
-   "lit_count": 0,
+   "lit_count": 1,
    "max_level": 3,
    "context_lit": 0,
    "context_lit_names": [],
@@ -2475,11 +2479,11 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות מתחת לרגיל: merit-nt 40 מול חציון 150 (×0.27) · ping-slash24 ×0.98 · Google ×0.85 מהתחזית · 41,732 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity below normal: merit-nt 40 vs a median of 150 (0.27x) · ping-slash24 0.98x · Google 0.85x its forecast · 41,732 BGP routes (display only)",
+     "value": "קישוריות מתחת לרגיל: merit-nt 40 מול חציון 147 (×0.27) · ping-slash24 ×0.99 · Google ×0.87 מהתחזית · 41,732 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity below normal: merit-nt 40 vs a median of 147 (0.27x) · ping-slash24 0.99x · Google 0.87x its forecast · 41,732 BGP routes (display only)",
      "range": "37–194",
-     "threshold_now": "merit-nt פחות מ-74 · ping-slash24 פחות מ-9,214 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
-     "threshold_now_en": "merit-nt <74 · ping-slash24 <9,214 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
+     "threshold_now": "merit-nt פחות מ-73 · ping-slash24 פחות מ-9,213 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
+     "threshold_now_en": "merit-nt <73 · ping-slash24 <9,213 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
      "watch": "",
      "watch_en": "",
      "anchor": "",
@@ -2568,8 +2572,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "11 מטוסים צבאיים באזור",
-     "value_en": "11 military aircraft in the area",
+     "value": "מטוס צבאי אחד באזור",
+     "value_en": "1 military aircraft in the area",
      "range": "0–9",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2692,8 +2696,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "91 חיישנים מחוברים באיראן (חציון 94; בקרה — ישראל 37)",
-     "value_en": "91 probes connected in Iran (median 94; control — Israel 37)",
+     "value": "93 חיישנים מחוברים באיראן (חציון 94; בקרה — ישראל 37)",
+     "value_en": "93 probes connected in Iran (median 94; control — Israel 37)",
      "range": "73–107",
      "threshold_now": "פחות מ-47 חיישנים מחוברים, ב-2 בדיקות רצופות",
      "threshold_now_en": "<47 connected probes, on 2 consecutive checks",
@@ -2825,7 +2829,7 @@
  "context_total": 13,
  "measurable_total": 7,
  "unmeasurable_total": 3,
- "lit_count": 0,
+ "lit_count": 1,
  "context_lit": 0,
  "ratchets": [],
  "anchor_summary": {
