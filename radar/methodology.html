@@ -364,7 +364,7 @@ details.dd>.dd-body>:first-child{margin-top:4px}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-  {"@type":"WebPage","@id":"https://kplns.com/radar/methodology.html#webpage","url":"https://kplns.com/radar/methodology.html","dateModified":"2026-11-08","name":"מתודולוגיה — ראדאר הסלמה ישראל ואיראן","description":"איך נקבעת הרמה, מה מדליק כל מדד, על מה מבוססים הספים, ומה המערכת לא יכולה לעשות.","inLanguage":["he-IL","en"],"breadcrumb":{"@id":"https://kplns.com/radar/methodology.html#breadcrumb"}},
+  {"@type":"WebPage","@id":"https://kplns.com/radar/methodology.html#webpage","url":"https://kplns.com/radar/methodology.html","dateModified":"2026-11-14","name":"מתודולוגיה — ראדאר הסלמה ישראל ואיראן","description":"איך נקבעת הרמה, מה מדליק כל מדד, על מה מבוססים הספים, ומה המערכת לא יכולה לעשות.","inLanguage":["he-IL","en"],"breadcrumb":{"@id":"https://kplns.com/radar/methodology.html#breadcrumb"}},
   {"@type":"BreadcrumbList","@id":"https://kplns.com/radar/methodology.html#breadcrumb","itemListElement":[
     {"@type":"ListItem","position":1,"name":"ראדאר הסלמה","item":"https://kplns.com/radar/"},
     {"@type":"ListItem","position":2,"name":"מתודולוגיה","item":"https://kplns.com/radar/methodology.html"}
@@ -1746,6 +1746,16 @@ details.dd>.dd-body>:first-child{margin-top:4px}
       הרצויה; המחיר, והוא נאמר ביושר: זינוק שנשאר מתחת ל-18% לא יידלק.</li>
     </ul>
     </div></details>
+    <details class="dd" id="weather-card"><summary><h3>כרטיס מזג אוויר: הקשר בלבד, לא סמן</h3></summary><div class="dd-body">
+    <p><b>מידע בלבד — לא סמן.</b> הכרטיס אינו מצביע, אינו משפיע על הרמה, אינו נספר בסמנים המדידים ואינו מתפרסם בערוץ. הוא מוצג בין שורות ההקשר, מתחת לסמנים המצביעים.</p>
+    <ul>
+      <li><b>מה נמדד:</b> עננות כוללת (cloud_cover) בתחזית ל-12 השעות הקרובות בשש נקודות: טהרן, איספהאן, נתנז/פורדו (נקודה אחת), תבריז, כרמנשאה ותל אביב. איראן = ממוצע חמש הנקודות האיראניות; ישראל = תל אביב. ראות אינה בשימוש (המודל שמאחורי הסדרה ההיסטורית השתנה).</li>
+      <li><b>מקור ותדירות:</b> Open-Meteo (forecast API, שעתי, UTC), בקשה אחת לשש הנקודות, עד פעם בשש שעות. קריאה שנכשלה: הכרטיס מוצג כ"לא זמין", והתקלה נכנסת לסיכום היומי של מקורות ההקשר ולא להתראה מיידית. מעל 12 שעות בלי קריאה תקינה הכרטיס מאפור ואינו מציג ערכים.</li>
+      <li><b>קטגוריות:</b> בהיר — עד 20% עננות; חלקי — 20-70%; מעונן — מעל 70%.</li>
+      <li><b>"בעונה זו":</b> אקלים שחושב מראש מארכיון ERA5 של 2020-2025: חלק חלונות ה-12 שעות, שהתחילו באותה שעה ובטווח של ±30 יום מאותו יום בשנה, שהיו באותה קטגוריה. הקובץ הסטטי הוא weather_climatology.json.</li>
+      <li><b>בדיקה לאחור (14.11.2026):</b> שישה אירועים (אפריל 2024 עד פברואר 2026), עננות ERA5 מול כ-410 חלונות בקרה עונתיים לכל אירוע. לא נמצא קשר. ארבעה אירועים היו בהירים מהחציון העונתי (אחוזונים 11-27), אך שניים מהם בעונה שבה 86-88% מהחלונות בהירים ממילא; ב-26.10.2024 חלון הבדיקה כולו היה מעונן יותר מ-93% מהחלונות העונתיים, אך מעל טהרן היה בהיר בגל הראשון והעננות נכנסה רק אחריו, כך שאירוע זה אינו מכריע לשום כיוון. <b>מגבלות:</b> n=6; שעות האירוע בשלושה מהשישה הן הנחה (אינן מתועדות במאגר); חלונות הבקרה מתואמים זה עם זה; הבדיקה אינה בעלת עוצמה סטטיסטית, כלומר היא מראה שאין השפעה חזקה, לא שאין השפעה. לכן בהיר אינו מעיד על סיכון, ומעונן אינו מרגיע.</li>
+    </ul>
+    </div></details>
     </div>
     <div data-lang="en">
     <h2><span class="num">05</span> The exact thresholds</h2>
@@ -2096,6 +2106,16 @@ details.dd>.dd-body>:first-child{margin-top:4px}
       closest approach 79% of threshold (31 Jul). A calm month producing
       zero alerts is the desired behaviour; the price, stated honestly: a
       surge that stays under 18% will not light.</li>
+    </ul>
+    </div></details>
+    <details class="dd" id="weather-card-en"><summary><h3>Weather card: context only, not an indicator</h3></summary><div class="dd-body">
+    <p><b>Information only — not an indicator.</b> The card casts no vote, does not affect the level, is not counted among the measurable indicators and is not posted to the channel. It sits among the context rows, below the voting indicators.</p>
+    <ul>
+      <li><b>What is measured:</b> total cloud cover (cloud_cover) in the forecast for the next 12 hours at six points: Tehran, Isfahan, Natanz/Fordow (one point), Tabriz, Kermanshah and Tel Aviv. Iran = the mean of the five Iranian points; Israel = Tel Aviv. Visibility is not used (the model behind the historical series changed).</li>
+      <li><b>Source and cadence:</b> Open-Meteo (forecast API, hourly, UTC), one request for the six points, at most once every six hours. A failed read: the card shows "not available" and the fault goes into the daily context-sources digest, not an immediate alert. After 12 hours without a good read the card is greyed and shows no values.</li>
+      <li><b>Categories:</b> clear — up to 20% cloud; partly — 20–70%; cloudy — above 70%.</li>
+      <li><b>"This season":</b> a climatology precomputed from the 2020–2025 ERA5 archive: the share of 12-hour windows, starting at the same hour and within ±30 days of the same day of year, that fell in the same category. The static file is weather_climatology.json.</li>
+      <li><b>Backtest (2026-11-14):</b> six events (April 2024 to February 2026), ERA5 cloud cover against about 410 seasonal control windows per event. No link was found. Four events were clearer than the seasonal median (percentiles 11–27), but two of them fell in a season where 86–88% of windows are clear anyway; for 2024-10-26 the whole test window was cloudier than 93% of seasonal windows, but Tehran was clear during the first wave and the cloud arrived only afterwards, so this event points neither way. <b>Limits:</b> n=6; the event hours of three of the six are assumed (not documented in the repository); the control windows are correlated with each other; the test has no statistical power, i.e. it shows there is no strong effect, not that there is none. So clear does not indicate risk, and cloudy is not reassurance.</li>
     </ul>
     </div></details>
     </div>
@@ -2768,6 +2788,7 @@ details.dd>.dd-body>:first-child{margin-top:4px}
       <li><b>25.10.2026</b> — העמוד הראשי עוצב מחדש: הפסקאות ההיסטוריות והבלוק המתודולוגי המוטמע הוצאו ממנו ונאספו כאן.</li>
       <li><b>8.11.2026</b> — החריגות התרמיות (NASA FIRMS): SNPP הפסיק לפרסם ב-2.11.2026 והבסיס קפא שישה ימים. מעתה לוויין שמפגר ביותר מיום אחד מושמט מהקבוצה הנדרשת (ומוצג כ"כיסוי מופחת"), הבסיס נשמר לפי קבוצת לוויינים (הושלם לאחור ל-NOAA-20+NOAA-21), והקבוצה המלאה חוזרת אוטומטית כש-SNPP מתאושש.</li>
       <li><b>4.11.2026</b> — אינטרנט באיראן עבר לכלל של 2 מתוך 3 (merit-nt, ping-slash24 ו-Google): נדלק אחרי 2 בדיקות רצופות שבהן לפחות 2 מדידות נמוכות, ונכבה אחרי 6 בדיקות תקינות. בשחזור על שלוש ההשבתות (יוני 2025, ינואר 2026, פברואר־מרץ 2026) ועל יולי ואוקטובר 2026, הכלל הקודם נתן 65 אפיזודות, 10 מהן מחוץ להשבתות; גרסה שרצה בצל (3 בדיקות, כיבוי מיד) נתנה 15; הכלל החדש נתן 3, אחת לכל השבתה, אפס מחוץ להשבתות, ונדלק 0–30 דקות אחרי הכלל הקודם. עם מגבלת 72 השעות על הקפאת החציון אותו שחזור נותן 10 אפיזודות, כולן בתוך ההשבתות. הכלל נבחר על אותם נתונים שעליהם נבדק, ויש רק 3 אירועים. הירידה של 18.10.2026 הייתה כנראה אמיתית והכלל לא תופס אותה, כי רק בדיקה אחת עברה את הסף. שלוש המדידות מגיעות מאותו מקור (IODA), כך שזה אימות מדידה ולא עדות עצמאית. הסמן מראה השבתה בזמן שהיא קורית ולא חוזה אותה.</li>
+      <li><b>14.11.2026</b> — נוסף כרטיס מזג אוויר (הקשר בלבד, לא סמן): תחזית עננות ל-12 השעות הקרובות באיראן ובתל אביב מול האקלים העונתי. הכרטיס אינו מצביע ואינו משפיע על הרמה או על הספירה; בדיקה לאחור של 6 אירועים לא מצאה קשר בין עננות לתקיפות (סעיף 05).</li>
       <li>במדד האיראני: מ-1.9.2026 עד 8.10.2026 שתי משפחות מצביעות, בין 8.10.2026 ל-21.10.2026 אחת, ומ-21.10.2026 שלוש.</li>
     </ul>
     </div></details>
@@ -2842,6 +2863,7 @@ details.dd>.dd-body>:first-child{margin-top:4px}
       <li><b>2026-10-25</b> — the main page was redesigned: its historical paragraphs and the inline methodology block were taken out of it and gathered here.</li>
       <li><b>2026-11-08</b> — Satellite thermal anomalies (NASA FIRMS): SNPP stopped publishing on 2026-11-02 and the baseline froze for six days. A satellite lagging by more than a day is now dropped from the required set (and shown as "reduced coverage"), the baseline is kept per satellite set (back-filled for NOAA-20+NOAA-21), and the full set returns automatically when SNPP recovers.</li>
       <li><b>2026-11-04</b> — Iranian internet moved to a 2-of-3 rule (merit-nt, ping-slash24 and Google): it lights after 2 consecutive checks with at least 2 measures low, and clears after 6 clean checks. Replayed over the three shutdowns (June 2025, January 2026, February-March 2026) plus July and October 2026, the previous rule gave 65 episodes, 10 of them outside shutdowns; a shadow version (3 checks, immediate clear) gave 15; the new rule gave 3, one per shutdown, none outside, lighting 0-30 minutes after the previous rule. With the 72-hour limit on the median freeze the same replay gives 10 episodes, all inside the shutdowns. The rule was chosen on the data it was tested on, and there are only 3 events. The drop of 2026-10-18 was probably real and the rule does not catch it, because only one check crossed the bar. All three measures come from one source (IODA), so this checks a measurement and adds no independent witness. The indicator shows a shutdown while it happens; it does not predict one.</li>
+      <li><b>2026-11-14</b> — a weather card was added (context only, not an indicator): the cloud-cover forecast for the next 12 hours over Iran and Tel Aviv against the seasonal climatology. The card casts no vote and does not affect the level or the counts; a backtest of 6 events found no link between cloud cover and strikes (section 05).</li>
       <li>Iran index voting families: two from 2026-09-01 to 2026-10-08, one between 2026-10-08 and 2026-10-21, three since 2026-10-21.</li>
     </ul>
     </div></details>
@@ -2911,7 +2933,7 @@ details.dd>.dd-body>:first-child{margin-top:4px}
     <a href="/radar/"><span data-lang="he">← חזרה למצב הנוכחי בראדאר</span><span data-lang="en">← Back to the current radar state</span></a>
   </div>
 
-  <div class="stamp">Last methodology update: 2026-11-08</div>
+  <div class="stamp">Last methodology update: 2026-11-14</div>
 
   </main>
 
