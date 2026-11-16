@@ -1,18 +1,6 @@
 {
- "generated": "2026-11-16T09:42:38+00:00",
+ "generated": "2026-11-16T10:42:50+00:00",
  "history": [
-  {
-   "t": 1794219148,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1794220957,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1794222763,
    "il": 0,
@@ -1992,6 +1980,18 @@
    "il": 0,
    "ir": 0,
    "deg": 1
+  },
+  {
+   "t": 1794823940,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1794825770,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
   }
  ],
  "indices": [
@@ -2065,9 +2065,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "54 מטוסים אזרחיים באזור",
-     "value_en": "54 civil aircraft in the area",
-     "range": "27–66",
+     "value": "52 מטוסים אזרחיים באזור",
+     "value_en": "52 civil aircraft in the area",
+     "range": "28–66",
      "threshold_now": "פחות מ-17 מטוסים",
      "threshold_now_en": "<17 aircraft",
      "watch": "",
@@ -2096,8 +2096,8 @@
      "partial_why_en": "traffic too thin to judge — median 3 below 5",
      "reason": "",
      "reason_en": "",
-     "value": "5 מטוסים מעל ירדן",
-     "value_en": "5 aircraft over Jordan",
+     "value": "4 מטוסים מעל ירדן",
+     "value_en": "4 aircraft over Jordan",
      "range": "0–7",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2251,8 +2251,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "14 מטוסים צבאיים באזור",
-     "value_en": "14 military aircraft in the area",
+     "value": "5 מטוסים צבאיים באזור",
+     "value_en": "5 military aircraft in the area",
      "range": "0–8",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2282,8 +2282,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $92.2 · דולר 3.20 ₪",
-     "value_en": "Brent $92.2 · USD 3.20 ILS",
+     "value": "ברנט $95.5 · דולר 3.20 ₪",
+     "value_en": "Brent $95.5 · USD 3.20 ILS",
      "range": "",
      "threshold_now": "ברנט $103.5 ומעלה · דולר 3.29 ₪ ומעלה",
      "threshold_now_en": "Brent ≥$103.5 · USD/ILS ≥3.29",
@@ -2499,8 +2499,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה: merit-nt 77 מול חציון 50 (×1.52) · ping-slash24 ×1.00 · Google ×0.98 מהתחזית · 41,765 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity normal: merit-nt 77 vs a median of 50 (1.52x) · ping-slash24 1.00x · Google 0.98x its forecast · 41,765 BGP routes (display only)",
+     "value": "קישוריות תקינה: merit-nt 59 מול חציון 50 (×1.16) · ping-slash24 ×1.00 · Google ×0.96 מהתחזית · 41,765 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity normal: merit-nt 59 vs a median of 50 (1.16x) · ping-slash24 1.00x · Google 0.96x its forecast · 41,765 BGP routes (display only)",
      "range": "39–80",
      "threshold_now": "merit-nt פחות מ-25 · ping-slash24 פחות מ-9,248 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
      "threshold_now_en": "merit-nt <25 · ping-slash24 <9,248 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
@@ -2592,8 +2592,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "14 מטוסים צבאיים באזור",
-     "value_en": "14 military aircraft in the area",
+     "value": "5 מטוסים צבאיים באזור",
+     "value_en": "5 military aircraft in the area",
      "range": "0–8",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2623,8 +2623,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $92.2 · דולר 3.20 ₪",
-     "value_en": "Brent $92.2 · USD 3.20 ILS",
+     "value": "ברנט $95.5 · דולר 3.20 ₪",
+     "value_en": "Brent $95.5 · USD 3.20 ILS",
      "range": "",
      "threshold_now": "ברנט $103.5 ומעלה · דולר 3.29 ₪ ומעלה",
      "threshold_now_en": "Brent ≥$103.5 · USD/ILS ≥3.29",
@@ -2778,8 +2778,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "איסטנבול→טהרן היום: 10 מתוך 18 המראות בוטלו (9 חברות) — שיעור הבסיס גבוה גם ביום שקט",
-     "value_en": "Istanbul→Tehran today: 10 of 18 departures cancelled (9 carriers) — the base rate is high on a quiet day",
+     "value": "איסטנבול→טהרן היום: 10 מתוך 17 המראות בוטלו (9 חברות) — שיעור הבסיס גבוה גם ביום שקט",
+     "value_en": "Istanbul→Tehran today: 10 of 17 departures cancelled (9 carriers) — the base rate is high on a quiet day",
      "range": "",
      "threshold_now": "נמדד, עוד לא מצביע — בסיס מ-21.10.2026, בדיקת קידום מ-28.10.2026",
      "threshold_now_en": "measured, not yet voting — baseline from 2026-10-21, promotion review from 2026-10-28",
@@ -2878,7 +2878,7 @@
  ],
  "weather": {
   "voting": false,
-  "generated": "2026-11-16T09:42:38+00:00",
+  "generated": "2026-11-16T10:42:50+00:00",
   "title_he": "☁️ מזג אוויר — הקשר בלבד",
   "title_en": "☁️ Weather — context only",
   "disclaimer_he": "מידע בלבד — לא סמן. בדיקה לאחור של 6 אירועים (2024-2026) לא מצאה קשר בין עננות לתקיפות; בהיר אינו מעיד על סיכון.",
@@ -2890,56 +2890,56 @@
     "key": "iran",
     "label_he": "איראן",
     "label_en": "Iran",
-    "cloud": 41,
+    "cloud": 42,
     "cat": "partly",
     "cat_he": "מעונן חלקית",
     "cat_en": "partly cloudy",
     "cat_he_pl": "מעוננים חלקית",
     "cat_en_pl": "partly cloudy",
-    "clim_pct": 54,
+    "clim_pct": 53,
     "n": 5,
     "points": [
      {
       "he": "טהרן",
       "en": "Tehran",
-      "cloud": 53,
+      "cloud": 54,
       "cat": "partly"
      },
      {
       "he": "איספהאן",
       "en": "Isfahan",
-      "cloud": 5,
+      "cloud": 3,
       "cat": "clear"
      },
      {
       "he": "נתנז/פורדו",
       "en": "Natanz/Fordow",
-      "cloud": 42,
+      "cloud": 44,
       "cat": "partly"
      },
      {
       "he": "תבריז",
       "en": "Tabriz",
-      "cloud": 87,
+      "cloud": 89,
       "cat": "cloudy"
      },
      {
       "he": "כרמנשאה",
       "en": "Kermanshah",
-      "cloud": 16,
-      "cat": "clear"
+      "cloud": 20,
+      "cat": "partly"
      }
     ],
-    "text_he": "איראן: מעונן חלקית · עננות ממוצעת 41% · בעונה זו כ-54% מהחלונות המקבילים היו מעוננים חלקית",
-    "text_en": "Iran: partly cloudy · mean cloud cover 41% · this season ~54% of comparable 12-hour windows were partly cloudy",
-    "pts_he": "טהרן 53% · איספהאן 5% · נתנז/פורדו 42% · תבריז 87% · כרמנשאה 16%",
-    "pts_en": "Tehran 53% · Isfahan 5% · Natanz/Fordow 42% · Tabriz 87% · Kermanshah 16%"
+    "text_he": "איראן: מעונן חלקית · עננות ממוצעת 42% · בעונה זו כ-53% מהחלונות המקבילים היו מעוננים חלקית",
+    "text_en": "Iran: partly cloudy · mean cloud cover 42% · this season ~53% of comparable 12-hour windows were partly cloudy",
+    "pts_he": "טהרן 54% · איספהאן 3% · נתנז/פורדו 44% · תבריז 89% · כרמנשאה 20%",
+    "pts_en": "Tehran 54% · Isfahan 3% · Natanz/Fordow 44% · Tabriz 89% · Kermanshah 20%"
    },
    {
     "key": "israel",
     "label_he": "ישראל",
     "label_en": "Israel",
-    "cloud": 46,
+    "cloud": 44,
     "cat": "partly",
     "cat_he": "מעונן חלקית",
     "cat_en": "partly cloudy",
@@ -2951,21 +2951,21 @@
      {
       "he": "תל אביב",
       "en": "Tel Aviv",
-      "cloud": 46,
+      "cloud": 44,
       "cat": "partly"
      }
     ],
-    "text_he": "ישראל: מעונן חלקית · עננות ממוצעת 46% · בעונה זו כ-38% מהחלונות המקבילים היו מעוננים חלקית",
-    "text_en": "Israel: partly cloudy · mean cloud cover 46% · this season ~38% of comparable 12-hour windows were partly cloudy",
+    "text_he": "ישראל: מעונן חלקית · עננות ממוצעת 44% · בעונה זו כ-38% מהחלונות המקבילים היו מעוננים חלקית",
+    "text_en": "Israel: partly cloudy · mean cloud cover 44% · this season ~38% of comparable 12-hour windows were partly cloudy",
     "pts_he": "",
     "pts_en": ""
    }
   ],
   "fetched": "2026-11-16T07:12:37+00:00",
-  "age_h": 2.5,
+  "age_h": 3.5,
   "status": "ok",
-  "window_he": "12:00-00:00 (שעון ישראל)",
-  "window_en": "12:00–00:00 (Israel time)",
+  "window_he": "13:00-01:00 (שעון ישראל)",
+  "window_en": "13:00–01:00 (Israel time)",
   "updated_he": "נקרא ב-09:12",
   "updated_en": "read at 09:12",
   "climatology": true
