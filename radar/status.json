@@ -1,18 +1,6 @@
 {
- "generated": "2026-11-16T11:42:23+00:00",
+ "generated": "2026-11-16T12:42:55+00:00",
  "history": [
-  {
-   "t": 1794224554,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
-  {
-   "t": 1794226345,
-   "il": 0,
-   "ir": 0,
-   "deg": 0
-  },
   {
    "t": 1794228178,
    "il": 0,
@@ -1998,6 +1986,18 @@
    "il": 0,
    "ir": 0,
    "deg": 1
+  },
+  {
+   "t": 1794831148,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
+  },
+  {
+   "t": 1794832975,
+   "il": 0,
+   "ir": 0,
+   "deg": 1
   }
  ],
  "indices": [
@@ -2071,11 +2071,11 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "54 מטוסים אזרחיים באזור",
-     "value_en": "54 civil aircraft in the area",
-     "range": "28–66",
-     "threshold_now": "פחות מ-17 מטוסים",
-     "threshold_now_en": "<17 aircraft",
+     "value": "66 מטוסים אזרחיים באזור",
+     "value_en": "66 civil aircraft in the area",
+     "range": "30–66",
+     "threshold_now": "פחות מ-18 מטוסים",
+     "threshold_now_en": "<18 aircraft",
      "watch": "",
      "watch_en": "",
      "anchor": "📈 מצב: 9 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (40), 4 מהם ברצף. אינו מצביע. העוגן נמדד בתוך המלחמה.",
@@ -2257,8 +2257,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "13 מטוסים צבאיים באזור",
-     "value_en": "13 military aircraft in the area",
+     "value": "4 מטוסים צבאיים באזור",
+     "value_en": "4 military aircraft in the area",
      "range": "0–8",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2288,8 +2288,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $95.3 · דולר 3.20 ₪",
-     "value_en": "Brent $95.3 · USD 3.20 ILS",
+     "value": "ברנט $94.7 · דולר 3.20 ₪",
+     "value_en": "Brent $94.7 · USD 3.20 ILS",
      "range": "",
      "threshold_now": "ברנט $103.5 ומעלה · דולר 3.29 ₪ ומעלה",
      "threshold_now_en": "Brent ≥$103.5 · USD/ILS ≥3.29",
@@ -2350,8 +2350,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "34/100",
-     "value_en": "34/100",
+     "value": "35/100",
+     "value_en": "35/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2505,8 +2505,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה: merit-nt 58 מול חציון 50 (×1.14) · ping-slash24 ×1.00 · Google ×0.95 מהתחזית · 41,764 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity normal: merit-nt 58 vs a median of 50 (1.14x) · ping-slash24 1.00x · Google 0.95x its forecast · 41,764 BGP routes (display only)",
+     "value": "קישוריות תקינה: merit-nt 49 מול חציון 50 (×0.96) · ping-slash24 ×1.00 · Google ×0.96 מהתחזית · 41,748 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity normal: merit-nt 49 vs a median of 50 (0.96x) · ping-slash24 1.00x · Google 0.96x its forecast · 41,748 BGP routes (display only)",
      "range": "39–80",
      "threshold_now": "merit-nt פחות מ-25 · ping-slash24 פחות מ-9,251 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
      "threshold_now_en": "merit-nt <25 · ping-slash24 <9,251 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
@@ -2598,8 +2598,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "13 מטוסים צבאיים באזור",
-     "value_en": "13 military aircraft in the area",
+     "value": "4 מטוסים צבאיים באזור",
+     "value_en": "4 military aircraft in the area",
      "range": "0–8",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2629,8 +2629,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $95.3 · דולר 3.20 ₪",
-     "value_en": "Brent $95.3 · USD 3.20 ILS",
+     "value": "ברנט $94.7 · דולר 3.20 ₪",
+     "value_en": "Brent $94.7 · USD 3.20 ILS",
      "range": "",
      "threshold_now": "ברנט $103.5 ומעלה · דולר 3.29 ₪ ומעלה",
      "threshold_now_en": "Brent ≥$103.5 · USD/ILS ≥3.29",
@@ -2691,8 +2691,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "34/100",
-     "value_en": "34/100",
+     "value": "35/100",
+     "value_en": "35/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2722,8 +2722,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "91 חיישנים מחוברים באיראן (חציון 92; בקרה — ישראל 38)",
-     "value_en": "91 probes connected in Iran (median 92; control — Israel 38)",
+     "value": "92 חיישנים מחוברים באיראן (חציון 92; בקרה — ישראל 38)",
+     "value_en": "92 probes connected in Iran (median 92; control — Israel 38)",
      "range": "73–102",
      "threshold_now": "פחות מ-46 חיישנים מחוברים, ב-2 בדיקות רצופות",
      "threshold_now_en": "<46 connected probes, on 2 consecutive checks",
@@ -2884,7 +2884,7 @@
  ],
  "weather": {
   "voting": false,
-  "generated": "2026-11-16T11:42:23+00:00",
+  "generated": "2026-11-16T12:42:55+00:00",
   "title_he": "☁️ מזג אוויר — הקשר בלבד",
   "title_en": "☁️ Weather — context only",
   "disclaimer_he": "מידע בלבד — לא סמן. בדיקה לאחור של 6 אירועים (2024-2026) לא מצאה קשר בין עננות לתקיפות; בהיר אינו מעיד על סיכון.",
@@ -2896,7 +2896,7 @@
     "key": "iran",
     "label_he": "איראן",
     "label_en": "Iran",
-    "cloud": 43,
+    "cloud": 44,
     "cat": "partly",
     "cat_he": "מעונן חלקית",
     "cat_en": "partly cloudy",
@@ -2908,70 +2908,70 @@
      {
       "he": "טהרן",
       "en": "Tehran",
-      "cloud": 56,
+      "cloud": 60,
       "cat": "partly"
      },
      {
       "he": "איספהאן",
       "en": "Isfahan",
-      "cloud": 1,
+      "cloud": 0,
       "cat": "clear"
      },
      {
       "he": "נתנז/פורדו",
       "en": "Natanz/Fordow",
-      "cloud": 48,
+      "cloud": 49,
       "cat": "partly"
      },
      {
       "he": "תבריז",
       "en": "Tabriz",
-      "cloud": 91,
+      "cloud": 94,
       "cat": "cloudy"
      },
      {
       "he": "כרמנשאה",
       "en": "Kermanshah",
-      "cloud": 19,
+      "cloud": 18,
       "cat": "clear"
      }
     ],
-    "text_he": "איראן: מעונן חלקית · עננות ממוצעת 43% · בעונה זו כ-51% מהחלונות המקבילים היו מעוננים חלקית",
-    "text_en": "Iran: partly cloudy · mean cloud cover 43% · this season ~51% of comparable 12-hour windows were partly cloudy",
-    "pts_he": "טהרן 56% · איספהאן 1% · נתנז/פורדו 48% · תבריז 91% · כרמנשאה 19%",
-    "pts_en": "Tehran 56% · Isfahan 1% · Natanz/Fordow 48% · Tabriz 91% · Kermanshah 19%"
+    "text_he": "איראן: מעונן חלקית · עננות ממוצעת 44% · בעונה זו כ-51% מהחלונות המקבילים היו מעוננים חלקית",
+    "text_en": "Iran: partly cloudy · mean cloud cover 44% · this season ~51% of comparable 12-hour windows were partly cloudy",
+    "pts_he": "טהרן 60% · איספהאן 0% · נתנז/פורדו 49% · תבריז 94% · כרמנשאה 18%",
+    "pts_en": "Tehran 60% · Isfahan 0% · Natanz/Fordow 49% · Tabriz 94% · Kermanshah 18%"
    },
    {
     "key": "israel",
     "label_he": "ישראל",
     "label_en": "Israel",
-    "cloud": 42,
+    "cloud": 40,
     "cat": "partly",
     "cat_he": "מעונן חלקית",
     "cat_en": "partly cloudy",
     "cat_he_pl": "מעוננים חלקית",
     "cat_en_pl": "partly cloudy",
-    "clim_pct": 40,
+    "clim_pct": 44,
     "n": 1,
     "points": [
      {
       "he": "תל אביב",
       "en": "Tel Aviv",
-      "cloud": 42,
+      "cloud": 40,
       "cat": "partly"
      }
     ],
-    "text_he": "ישראל: מעונן חלקית · עננות ממוצעת 42% · בעונה זו כ-40% מהחלונות המקבילים היו מעוננים חלקית",
-    "text_en": "Israel: partly cloudy · mean cloud cover 42% · this season ~40% of comparable 12-hour windows were partly cloudy",
+    "text_he": "ישראל: מעונן חלקית · עננות ממוצעת 40% · בעונה זו כ-44% מהחלונות המקבילים היו מעוננים חלקית",
+    "text_en": "Israel: partly cloudy · mean cloud cover 40% · this season ~44% of comparable 12-hour windows were partly cloudy",
     "pts_he": "",
     "pts_en": ""
    }
   ],
   "fetched": "2026-11-16T07:12:37+00:00",
-  "age_h": 4.5,
+  "age_h": 5.5,
   "status": "ok",
-  "window_he": "14:00-02:00 (שעון ישראל)",
-  "window_en": "14:00–02:00 (Israel time)",
+  "window_he": "15:00-03:00 (שעון ישראל)",
+  "window_en": "15:00–03:00 (Israel time)",
   "updated_he": "נקרא ב-09:12",
   "updated_en": "read at 09:12",
   "climatology": true
