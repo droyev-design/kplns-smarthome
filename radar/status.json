@@ -1,18 +1,6 @@
 {
- "generated": "2026-11-25T11:42:33+00:00",
+ "generated": "2026-11-25T12:12:53+00:00",
  "history": [
-  {
-   "t": 1795002165,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
-  {
-   "t": 1795003960,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
   {
    "t": 1795005781,
    "il": 0,
@@ -2022,6 +2010,12 @@
    "il": 0,
    "ir": 0,
    "deg": 1
+  },
+  {
+   "t": 1795608773,
+   "il": 0,
+   "ir": 0,
+   "deg": 4
   }
  ],
  "indices": [
@@ -2089,14 +2083,14 @@
      "frozen": false,
      "frozen_hours": 0,
      "frozen_expired": false,
-     "ok": true,
+     "ok": false,
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "71 מטוסים אזרחיים באזור",
-     "value_en": "71 civil aircraft in the area",
+     "value": "",
+     "value_en": "",
      "range": "21–65",
      "threshold_now": "פחות מ-15 מטוסים",
      "threshold_now_en": "<15 aircraft",
@@ -2275,14 +2269,14 @@
      "frozen": false,
      "frozen_hours": 0,
      "frozen_expired": false,
-     "ok": true,
+     "ok": false,
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "12 מטוסים צבאיים באזור",
-     "value_en": "12 military aircraft in the area",
+     "value": "",
+     "value_en": "",
      "range": "1–12",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2312,8 +2306,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $88.3 · דולר 3.35 ₪",
-     "value_en": "Brent $88.3 · USD 3.35 ILS",
+     "value": "ברנט $88.5 · דולר 3.35 ₪",
+     "value_en": "Brent $88.5 · USD 3.35 ILS",
      "range": "",
      "threshold_now": "ברנט $94.3 ומעלה · דולר 3.44 ₪ ומעלה",
      "threshold_now_en": "Brent ≥$94.3 · USD/ILS ≥3.44",
@@ -2461,14 +2455,14 @@
      "frozen": false,
      "frozen_hours": 0,
      "frozen_expired": false,
-     "ok": true,
+     "ok": false,
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "0 מטוסי תדלוק, אין מטוסי מודיעין/התרעה באזור",
-     "value_en": "0 tankers + 0 ISR/AWACS aircraft in the Mediterranean and Middle East area",
+     "value": "",
+     "value_en": "",
      "range": "",
      "threshold_now": "נמדד, עוד לא מצביע — בסיס מ-21.10.2026, בדיקת קידום מ-28.10.2026",
      "threshold_now_en": "measured, not yet voting — baseline from 2026-10-21, promotion review from 2026-10-28",
@@ -2478,7 +2472,7 @@
      "anchor_en": ""
     }
    ],
-   "measurable_total": 4,
+   "measurable_total": 3,
    "lit_count": 0,
    "max_level": 3,
    "context_lit": 0,
@@ -2529,8 +2523,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות תקינה: merit-nt 36 מול חציון 37 (×0.97) · ping-slash24 ×0.99 · Google ×1.00 מהתחזית · 41,776 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity normal: merit-nt 36 vs a median of 37 (0.97x) · ping-slash24 0.99x · Google 1.00x its forecast · 41,776 BGP routes (display only)",
+     "value": "קישוריות תקינה: merit-nt 37 מול חציון 37 (×1.01) · ping-slash24 ×1.00 · Google ×0.99 מהתחזית · 41,779 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity normal: merit-nt 37 vs a median of 37 (1.01x) · ping-slash24 1.00x · Google 0.99x its forecast · 41,779 BGP routes (display only)",
      "range": "28–65",
      "threshold_now": "merit-nt פחות מ-18 · ping-slash24 פחות מ-9,206 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
      "threshold_now_en": "merit-nt <18 · ping-slash24 <9,206 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
@@ -2616,14 +2610,14 @@
      "frozen": false,
      "frozen_hours": 0,
      "frozen_expired": false,
-     "ok": true,
+     "ok": false,
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "12 מטוסים צבאיים באזור",
-     "value_en": "12 military aircraft in the area",
+     "value": "",
+     "value_en": "",
      "range": "1–12",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2653,8 +2647,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $88.3 · דולר 3.35 ₪",
-     "value_en": "Brent $88.3 · USD 3.35 ILS",
+     "value": "ברנט $88.5 · דולר 3.35 ₪",
+     "value_en": "Brent $88.5 · USD 3.35 ILS",
      "range": "",
      "threshold_now": "ברנט $94.3 ומעלה · דולר 3.44 ₪ ומעלה",
      "threshold_now_en": "Brent ≥$94.3 · USD/ILS ≥3.44",
@@ -2746,8 +2740,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "88 חיישנים מחוברים באיראן (חציון 89; בקרה — ישראל 43)",
-     "value_en": "88 probes connected in Iran (median 89; control — Israel 43)",
+     "value": "87 חיישנים מחוברים באיראן (חציון 89; בקרה — ישראל 43)",
+     "value_en": "87 probes connected in Iran (median 89; control — Israel 43)",
      "range": "85–93",
      "threshold_now": "פחות מ-44 חיישנים מחוברים, ב-2 בדיקות רצופות",
      "threshold_now_en": "<44 connected probes, on 2 consecutive checks",
@@ -2833,14 +2827,14 @@
      "frozen": false,
      "frozen_hours": 0,
      "frozen_expired": false,
-     "ok": true,
+     "ok": false,
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "0 מטוסי תדלוק, אין מטוסי מודיעין/התרעה באזור",
-     "value_en": "0 tankers + 0 ISR/AWACS aircraft in the Mediterranean and Middle East area",
+     "value": "",
+     "value_en": "",
      "range": "",
      "threshold_now": "נמדד, עוד לא מצביע — בסיס מ-21.10.2026, בדיקת קידום מ-28.10.2026",
      "threshold_now_en": "measured, not yet voting — baseline from 2026-10-21, promotion review from 2026-10-28",
@@ -2873,11 +2867,11 @@
    ]
   }
  ],
- "sources_ok": 19,
+ "sources_ok": 16,
  "sources_total": 20,
  "families_total": 20,
  "context_total": 13,
- "measurable_total": 7,
+ "measurable_total": 6,
  "unmeasurable_total": 3,
  "lit_count": 0,
  "context_lit": 0,
@@ -2895,10 +2889,16 @@
   "top_streak": 1
  },
  "degraded": [
-  "הודעות NOTAM — מרחב ישראל (הקשר בלבד)"
+  "מרחב אווירי ישראל",
+  "הודעות NOTAM — מרחב ישראל (הקשר בלבד)",
+  "תעופה צבאית באזור",
+  "מטוסי תדלוק ומודיעין מערביים באזור (נמדד, עוד לא מצביע)"
  ],
  "degraded_en": [
-  "Israeli NOTAMs — airspace closures (context only)"
+  "Israeli airspace",
+  "Israeli NOTAMs — airspace closures (context only)",
+  "Military aviation in the region",
+  "Western tanker and ISR aircraft in the region (measured, not yet voting)"
  ],
  "reduced": [
   "חריגות תרמיות מלוויין (NASA FIRMS): כיסוי לוויני מופחת — פועל על NOAA20 + NOAA21 בלבד; SNPP (עד 2026-11-02) הושמט כי הנתונים שלו תקועים. פחות מעברים פירושו שאירועים עלולים לא להיקלט; ההשוואה היא רק מול ימים שנמדדו באותם לוויינים"
@@ -2908,7 +2908,7 @@
  ],
  "weather": {
   "voting": false,
-  "generated": "2026-11-25T11:42:33+00:00",
+  "generated": "2026-11-25T12:12:53+00:00",
   "title_he": "☁️ מזג אוויר — הקשר בלבד",
   "title_en": "☁️ Weather — context only",
   "disclaimer_he": "מידע בלבד — לא סמן. בדיקה לאחור של 6 אירועים (2024-2026) לא מצאה קשר בין עננות לתקיפות; בהיר אינו מעיד על סיכון.",
@@ -2926,13 +2926,13 @@
     "cat_en": "clear",
     "cat_he_pl": "בהירים",
     "cat_en_pl": "clear",
-    "clim_pct": 30,
+    "clim_pct": 31,
     "n": 5,
     "points": [
      {
       "he": "טהרן",
       "en": "Tehran",
-      "cloud": 7,
+      "cloud": 6,
       "cat": "clear"
      },
      {
@@ -2950,7 +2950,7 @@
      {
       "he": "תבריז",
       "en": "Tabriz",
-      "cloud": 44,
+      "cloud": 45,
       "cat": "partly"
      },
      {
@@ -2960,10 +2960,10 @@
       "cat": "clear"
      }
     ],
-    "text_he": "איראן: בהיר · עננות ממוצעת 11% · בעונה זו כ-30% מהחלונות המקבילים היו בהירים",
-    "text_en": "Iran: clear · mean cloud cover 11% · this season ~30% of comparable 12-hour windows were clear",
-    "pts_he": "טהרן 7% · איספהאן 1% · נתנז/פורדו 0% · תבריז 44% · כרמנשאה 1%",
-    "pts_en": "Tehran 7% · Isfahan 1% · Natanz/Fordow 0% · Tabriz 44% · Kermanshah 1%"
+    "text_he": "איראן: בהיר · עננות ממוצעת 11% · בעונה זו כ-31% מהחלונות המקבילים היו בהירים",
+    "text_en": "Iran: clear · mean cloud cover 11% · this season ~31% of comparable 12-hour windows were clear",
+    "pts_he": "טהרן 6% · איספהאן 1% · נתנז/פורדו 0% · תבריז 45% · כרמנשאה 1%",
+    "pts_en": "Tehran 6% · Isfahan 1% · Natanz/Fordow 0% · Tabriz 45% · Kermanshah 1%"
    },
    {
     "key": "israel",
@@ -2975,7 +2975,7 @@
     "cat_en": "clear",
     "cat_he_pl": "בהירים",
     "cat_en_pl": "clear",
-    "clim_pct": 38,
+    "clim_pct": 35,
     "n": 1,
     "points": [
      {
@@ -2985,17 +2985,17 @@
       "cat": "clear"
      }
     ],
-    "text_he": "ישראל: בהיר · עננות ממוצעת 16% · בעונה זו כ-38% מהחלונות המקבילים היו בהירים",
-    "text_en": "Israel: clear · mean cloud cover 16% · this season ~38% of comparable 12-hour windows were clear",
+    "text_he": "ישראל: בהיר · עננות ממוצעת 16% · בעונה זו כ-35% מהחלונות המקבילים היו בהירים",
+    "text_en": "Israel: clear · mean cloud cover 16% · this season ~35% of comparable 12-hour windows were clear",
     "pts_he": "",
     "pts_en": ""
    }
   ],
   "fetched": "2026-11-25T10:43:23+00:00",
-  "age_h": 1.0,
+  "age_h": 1.5,
   "status": "ok",
-  "window_he": "14:00-02:00 (שעון ישראל)",
-  "window_en": "14:00–02:00 (Israel time)",
+  "window_he": "15:00-03:00 (שעון ישראל)",
+  "window_en": "15:00–03:00 (Israel time)",
   "updated_he": "נקרא ב-12:43",
   "updated_en": "read at 12:43",
   "climatology": true
