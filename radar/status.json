@@ -1,12 +1,6 @@
 {
- "generated": "2026-11-25T02:42:58+00:00",
+ "generated": "2026-11-25T03:13:04+00:00",
  "history": [
-  {
-   "t": 1794971564,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
   {
    "t": 1794973349,
    "il": 0,
@@ -2016,6 +2010,12 @@
    "il": 0,
    "ir": 0,
    "deg": 6
+  },
+  {
+   "t": 1795576384,
+   "il": 0,
+   "ir": 0,
+   "deg": 5
   }
  ],
  "indices": [
@@ -2182,8 +2182,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "הפיד במעקב — אין הוראה מבצעית פעילה · 6/10 שגרירויות פרסמו התרעה ב-6 השעות האחרונות (הקשר בלבד, לא אות) · 10/10 נקראו",
-     "value_en": "feed monitored — no operational order active · 6 of 10 embassies published an alert in the last 6 h (context only, not a signal) · 10/10 read",
+     "value": "הפיד במעקב — אין הוראה מבצעית פעילה · 3/10 שגרירויות פרסמו התרעה ב-6 השעות האחרונות (הקשר בלבד, לא אות) · 10/10 נקראו",
+     "value_en": "feed monitored — no operational order active · 3 of 10 embassies published an alert in the last 6 h (context only, not a signal) · 10/10 read",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2306,8 +2306,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $87.7 · דולר 3.35 ₪",
-     "value_en": "Brent $87.7 · USD 3.35 ILS",
+     "value": "ברנט $87.5 · דולר 3.35 ₪",
+     "value_en": "Brent $87.5 · USD 3.35 ILS",
      "range": "",
      "threshold_now": "ברנט $94.5 ומעלה · דולר 3.44 ₪ ומעלה",
      "threshold_now_en": "Brent ≥$94.5 · USD/ILS ≥3.44",
@@ -2337,8 +2337,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "סיכון גלום לתקיפה 1.02% ליום (חוזה עד סוף 15.12.2026, מנורמל לאופק); קו הבסיס משלב כרגע יותר מחוזה אחד (אחרי גלגול)",
-     "value_en": "1.02%/day implied strike risk (contract to 2026-12-16, horizon-normalized); baseline currently spans more than one contract (post-roll)",
+     "value": "סיכון גלום לתקיפה 0.97% ליום (חוזה עד סוף 15.12.2026, מנורמל לאופק); קו הבסיס משלב כרגע יותר מחוזה אחד (אחרי גלגול)",
+     "value_en": "0.97%/day implied strike risk (contract to 2026-12-16, horizon-normalized); baseline currently spans more than one contract (post-roll)",
      "range": "0.81%–1.95%",
      "threshold_now": "3.97% ליום ומעלה",
      "threshold_now_en": "≥3.97%/day",
@@ -2481,8 +2481,8 @@
    "ratchets": [],
    "standing": "📈 מצב עומד (אינו רמה): 4 משפחות מעוגנות במדד הזה צברו מספיק ימים כדי לדווח, ואחת מהן (מרחב אווירי ישראל) חוצה את העוגן המוצהר שלה ביום האחרון שנשמר. הספירה הגבוהה ביותר באוגר: מרחב אווירי ישראל · 11 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (40), כולל היום האחרון שנשמר. אינו מצביע; כל העוגנים נמדדו בתוך המלחמה.",
    "standing_en": "📈 Standing state (not a level): 4 anchored families on this index have enough stored days to report, and one of them is past its declared anchor on the most recent stored day. Longest-running: Israeli airspace · 11 of the last 14 days at or below the declared anchor (40), including the most recent stored day. Casts no vote; every anchor was measured inside the war.",
-   "standing_risk": "🎲 סיכון יומי עומד: 1.02% ליום. זו הסתברות גלומה מהשוק — כסף אמיתי ב-Polymarket — ולא תחזית של הדף הזה ולא מדידת חיישן. היא נגזרת מחוזה פתוח אחד, ⁦\"Israel x Iran ceasefire continues through December 15?\"⁩, שמוכרע לפי תקיפה אווירית או טילית של צד אחד בשני: מחירו מגלם 20% לתקיפה כזו עד סוף 15.12.2026, ונותרו לו 21 ימים. המספר המתפרסם הוא הקצב היומי ולא מחיר החוזה: מחיר חוזה יורד מעצמו ככל שמועד הפקיעה מתקרב, גם כשדבר לא השתנה, ולכן רק הקצב היומי בר-השוואה משבוע לשבוע. אינו מצביע.",
-   "standing_risk_en": "🎲 Standing daily risk: 1.02%/day. This is a MARKET-IMPLIED probability — real money on Polymarket — not a forecast by this page and not a sensor reading. It comes from one open contract, \"Israel x Iran ceasefire continues through December 15?\", which resolves on an air or missile strike by either side against the other: its price implies a 20% chance of such a strike before 2026-12-16, with 21 days left to run. The figure published is the PER-DAY rate, not the contract price: a contract price falls on its own as expiry approaches even when nothing has changed, so only the daily rate is comparable from one week to the next. Casts no vote."
+   "standing_risk": "🎲 סיכון יומי עומד: 0.97% ליום. זו הסתברות גלומה מהשוק — כסף אמיתי ב-Polymarket — ולא תחזית של הדף הזה ולא מדידת חיישן. היא נגזרת מחוזה פתוח אחד, ⁦\"Israel x Iran ceasefire continues through December 15?\"⁩, שמוכרע לפי תקיפה אווירית או טילית של צד אחד בשני: מחירו מגלם 18% לתקיפה כזו עד סוף 15.12.2026, ונותרו לו 21 ימים. המספר המתפרסם הוא הקצב היומי ולא מחיר החוזה: מחיר חוזה יורד מעצמו ככל שמועד הפקיעה מתקרב, גם כשדבר לא השתנה, ולכן רק הקצב היומי בר-השוואה משבוע לשבוע. אינו מצביע.",
+   "standing_risk_en": "🎲 Standing daily risk: 0.97%/day. This is a MARKET-IMPLIED probability — real money on Polymarket — not a forecast by this page and not a sensor reading. It comes from one open contract, \"Israel x Iran ceasefire continues through December 15?\", which resolves on an air or missile strike by either side against the other: its price implies a 18% chance of such a strike before 2026-12-16, with 21 days left to run. The figure published is the PER-DAY rate, not the contract price: a contract price falls on its own as expiry approaches even when nothing has changed, so only the daily rate is comparable from one week to the next. Casts no vote."
   },
   {
    "key": "ir",
@@ -2523,9 +2523,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות מתחת לרגיל: merit-nt 27 מול חציון 37 (×0.73) · ping-slash24 ×0.99 · Google ×0.97 מהתחזית · 41,775 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity below normal: merit-nt 27 vs a median of 37 (0.73x) · ping-slash24 0.99x · Google 0.97x its forecast · 41,775 BGP routes (display only)",
-     "range": "27–65",
+     "value": "קישוריות מתחת לרגיל: merit-nt 28 מול חציון 37 (×0.76) · ping-slash24 ×0.99 · Google ×0.97 מהתחזית · 41,780 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity below normal: merit-nt 28 vs a median of 37 (0.76x) · ping-slash24 0.99x · Google 0.97x its forecast · 41,780 BGP routes (display only)",
+     "range": "28–65",
      "threshold_now": "merit-nt פחות מ-18 · ping-slash24 פחות מ-9,210 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
      "threshold_now_en": "merit-nt <18 · ping-slash24 <9,210 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
      "watch": "",
@@ -2647,8 +2647,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $87.7 · דולר 3.35 ₪",
-     "value_en": "Brent $87.7 · USD 3.35 ILS",
+     "value": "ברנט $87.5 · דולר 3.35 ₪",
+     "value_en": "Brent $87.5 · USD 3.35 ILS",
      "range": "",
      "threshold_now": "ברנט $94.5 ומעלה · דולר 3.44 ₪ ומעלה",
      "threshold_now_en": "Brent ≥$94.5 · USD/ILS ≥3.44",
@@ -2678,8 +2678,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "סיכון גלום לתקיפה 1.02% ליום (חוזה עד סוף 15.12.2026, מנורמל לאופק); קו הבסיס משלב כרגע יותר מחוזה אחד (אחרי גלגול)",
-     "value_en": "1.02%/day implied strike risk (contract to 2026-12-16, horizon-normalized); baseline currently spans more than one contract (post-roll)",
+     "value": "סיכון גלום לתקיפה 0.97% ליום (חוזה עד סוף 15.12.2026, מנורמל לאופק); קו הבסיס משלב כרגע יותר מחוזה אחד (אחרי גלגול)",
+     "value_en": "0.97%/day implied strike risk (contract to 2026-12-16, horizon-normalized); baseline currently spans more than one contract (post-roll)",
      "range": "0.81%–1.95%",
      "threshold_now": "3.97% ליום ומעלה",
      "threshold_now_en": "≥3.97%/day",
@@ -2740,8 +2740,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "86 חיישנים מחוברים באיראן (חציון 89; בקרה — ישראל 43)",
-     "value_en": "86 probes connected in Iran (median 89; control — Israel 43)",
+     "value": "87 חיישנים מחוברים באיראן (חציון 89; בקרה — ישראל 43)",
+     "value_en": "87 probes connected in Iran (median 89; control — Israel 43)",
      "range": "85–93",
      "threshold_now": "פחות מ-44 חיישנים מחוברים, ב-2 בדיקות רצופות",
      "threshold_now_en": "<44 connected probes, on 2 consecutive checks",
@@ -2796,14 +2796,14 @@
      "frozen": false,
      "frozen_hours": 0,
      "frozen_expired": false,
-     "ok": false,
+     "ok": true,
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "",
-     "value_en": "",
+     "value": "איסטנבול→טהרן היום: 5 מתוך 17 המראות בוטלו (4 חברות) — שיעור הבסיס גבוה גם ביום שקט",
+     "value_en": "Istanbul→Tehran today: 5 of 17 departures cancelled (4 carriers) — the base rate is high on a quiet day",
      "range": "",
      "threshold_now": "נמדד, עוד לא מצביע — בסיס מ-21.10.2026, בדיקת קידום מ-28.10.2026",
      "threshold_now_en": "measured, not yet voting — baseline from 2026-10-21, promotion review from 2026-10-28",
@@ -2853,8 +2853,8 @@
    "ratchets": [],
    "standing": "📈 מצב עומד (אינו רמה): 4 משפחות מעוגנות במדד הזה צברו מספיק ימים כדי לדווח, ואף אחת מהן אינה חוצה את העוגן המוצהר שלה ביום האחרון שנשמר. הספירה הגבוהה ביותר באוגר: שיבוש GPS — מצר הורמוז · 10 מתוך 14 הימים האחרונים מעל העוגן המוצהר (5.0%), אך לא ביום האחרון שנשמר. אינו מצביע; כל העוגנים נמדדו בתוך המלחמה.",
    "standing_en": "📈 Standing state (not a level): 4 anchored families on this index have enough stored days to report, and none of them is past its declared anchor on the most recent stored day. Longest-running: GPS interference — Strait of Hormuz · 10 of the last 14 days at or above the declared anchor (5.0%), but not on the most recent stored day. Casts no vote; every anchor was measured inside the war.",
-   "standing_risk": "🎲 סיכון יומי עומד: 1.02% ליום. זו הסתברות גלומה מהשוק — כסף אמיתי ב-Polymarket — ולא תחזית של הדף הזה ולא מדידת חיישן. היא נגזרת מחוזה פתוח אחד, ⁦\"Israel x Iran ceasefire continues through December 15?\"⁩, שמוכרע לפי תקיפה אווירית או טילית של צד אחד בשני: מחירו מגלם 20% לתקיפה כזו עד סוף 15.12.2026, ונותרו לו 21 ימים. המספר המתפרסם הוא הקצב היומי ולא מחיר החוזה: מחיר חוזה יורד מעצמו ככל שמועד הפקיעה מתקרב, גם כשדבר לא השתנה, ולכן רק הקצב היומי בר-השוואה משבוע לשבוע. אינו מצביע.",
-   "standing_risk_en": "🎲 Standing daily risk: 1.02%/day. This is a MARKET-IMPLIED probability — real money on Polymarket — not a forecast by this page and not a sensor reading. It comes from one open contract, \"Israel x Iran ceasefire continues through December 15?\", which resolves on an air or missile strike by either side against the other: its price implies a 20% chance of such a strike before 2026-12-16, with 21 days left to run. The figure published is the PER-DAY rate, not the contract price: a contract price falls on its own as expiry approaches even when nothing has changed, so only the daily rate is comparable from one week to the next. Casts no vote.",
+   "standing_risk": "🎲 סיכון יומי עומד: 0.97% ליום. זו הסתברות גלומה מהשוק — כסף אמיתי ב-Polymarket — ולא תחזית של הדף הזה ולא מדידת חיישן. היא נגזרת מחוזה פתוח אחד, ⁦\"Israel x Iran ceasefire continues through December 15?\"⁩, שמוכרע לפי תקיפה אווירית או טילית של צד אחד בשני: מחירו מגלם 18% לתקיפה כזו עד סוף 15.12.2026, ונותרו לו 21 ימים. המספר המתפרסם הוא הקצב היומי ולא מחיר החוזה: מחיר חוזה יורד מעצמו ככל שמועד הפקיעה מתקרב, גם כשדבר לא השתנה, ולכן רק הקצב היומי בר-השוואה משבוע לשבוע. אינו מצביע.",
+   "standing_risk_en": "🎲 Standing daily risk: 0.97%/day. This is a MARKET-IMPLIED probability — real money on Polymarket — not a forecast by this page and not a sensor reading. It comes from one open contract, \"Israel x Iran ceasefire continues through December 15?\", which resolves on an air or missile strike by either side against the other: its price implies a 18% chance of such a strike before 2026-12-16, with 21 days left to run. The figure published is the PER-DAY rate, not the contract price: a contract price falls on its own as expiry approaches even when nothing has changed, so only the daily rate is comparable from one week to the next. Casts no vote.",
    "unavailable": [
     "אין כיסוי מקלטי ADS-B מעל איראן — לא ניתן למדוד",
     "הודעות NOTAM לאיראן, לירדן ולאזור — כל הערוצים החינמיים שנבדקו חסומים מהשרת, ושרתי ה-AIS של ירדן (carc.jo) אינם נפתרים ב-DNS — לא ניתן למדוד. (NOTAM ישראליים כן נקראים מ-1.9.2026 — מוצגים כהקשר בלבד)",
@@ -2867,7 +2867,7 @@
    ]
   }
  ],
- "sources_ok": 14,
+ "sources_ok": 15,
  "sources_total": 20,
  "families_total": 20,
  "context_total": 13,
@@ -2893,7 +2893,6 @@
   "מרחב אווירי ירדן",
   "הודעות NOTAM — מרחב ישראל (הקשר בלבד)",
   "תעופה צבאית באזור",
-  "איסטנבול–טהרן: ביטולי טיסות (נמדד, עוד לא מצביע)",
   "מטוסי תדלוק ומודיעין מערביים באזור (נמדד, עוד לא מצביע)"
  ],
  "degraded_en": [
@@ -2901,7 +2900,6 @@
   "Jordanian airspace",
   "Israeli NOTAMs — airspace closures (context only)",
   "Military aviation in the region",
-  "Istanbul–Tehran flight cancellations (measured, not yet voting)",
   "Western tanker and ISR aircraft in the region (measured, not yet voting)"
  ],
  "reduced": [
@@ -2912,7 +2910,7 @@
  ],
  "weather": {
   "voting": false,
-  "generated": "2026-11-25T02:42:57+00:00",
+  "generated": "2026-11-25T03:13:03+00:00",
   "title_he": "☁️ מזג אוויר — הקשר בלבד",
   "title_en": "☁️ Weather — context only",
   "disclaimer_he": "מידע בלבד — לא סמן. בדיקה לאחור של 6 אירועים (2024-2026) לא מצאה קשר בין עננות לתקיפות; בהיר אינו מעיד על סיכון.",
@@ -2924,37 +2922,37 @@
     "key": "iran",
     "label_he": "איראן",
     "label_en": "Iran",
-    "cloud": 16,
+    "cloud": 17,
     "cat": "clear",
     "cat_he": "בהיר",
     "cat_en": "clear",
     "cat_he_pl": "בהירים",
     "cat_en_pl": "clear",
-    "clim_pct": 30,
+    "clim_pct": 31,
     "n": 5,
     "points": [
      {
       "he": "טהרן",
       "en": "Tehran",
-      "cloud": 3,
+      "cloud": 5,
       "cat": "clear"
      },
      {
       "he": "איספהאן",
       "en": "Isfahan",
-      "cloud": 9,
+      "cloud": 8,
       "cat": "clear"
      },
      {
       "he": "נתנז/פורדו",
       "en": "Natanz/Fordow",
-      "cloud": 26,
+      "cloud": 25,
       "cat": "partly"
      },
      {
       "he": "תבריז",
       "en": "Tabriz",
-      "cloud": 38,
+      "cloud": 42,
       "cat": "partly"
      },
      {
@@ -2964,42 +2962,42 @@
       "cat": "clear"
      }
     ],
-    "text_he": "איראן: בהיר · עננות ממוצעת 16% · בעונה זו כ-30% מהחלונות המקבילים היו בהירים",
-    "text_en": "Iran: clear · mean cloud cover 16% · this season ~30% of comparable 12-hour windows were clear",
-    "pts_he": "טהרן 3% · איספהאן 9% · נתנז/פורדו 26% · תבריז 38% · כרמנשאה 4%",
-    "pts_en": "Tehran 3% · Isfahan 9% · Natanz/Fordow 26% · Tabriz 38% · Kermanshah 4%"
+    "text_he": "איראן: בהיר · עננות ממוצעת 17% · בעונה זו כ-31% מהחלונות המקבילים היו בהירים",
+    "text_en": "Iran: clear · mean cloud cover 17% · this season ~31% of comparable 12-hour windows were clear",
+    "pts_he": "טהרן 5% · איספהאן 8% · נתנז/פורדו 25% · תבריז 42% · כרמנשאה 4%",
+    "pts_en": "Tehran 5% · Isfahan 8% · Natanz/Fordow 25% · Tabriz 42% · Kermanshah 4%"
    },
    {
     "key": "israel",
     "label_he": "ישראל",
     "label_en": "Israel",
-    "cloud": 61,
+    "cloud": 55,
     "cat": "partly",
     "cat_he": "מעונן חלקית",
     "cat_en": "partly cloudy",
     "cat_he_pl": "מעוננים חלקית",
     "cat_en_pl": "partly cloudy",
-    "clim_pct": 48,
+    "clim_pct": 47,
     "n": 1,
     "points": [
      {
       "he": "תל אביב",
       "en": "Tel Aviv",
-      "cloud": 61,
+      "cloud": 55,
       "cat": "partly"
      }
     ],
-    "text_he": "ישראל: מעונן חלקית · עננות ממוצעת 61% · בעונה זו כ-48% מהחלונות המקבילים היו מעוננים חלקית",
-    "text_en": "Israel: partly cloudy · mean cloud cover 61% · this season ~48% of comparable 12-hour windows were partly cloudy",
+    "text_he": "ישראל: מעונן חלקית · עננות ממוצעת 55% · בעונה זו כ-47% מהחלונות המקבילים היו מעוננים חלקית",
+    "text_en": "Israel: partly cloudy · mean cloud cover 55% · this season ~47% of comparable 12-hour windows were partly cloudy",
     "pts_he": "",
     "pts_en": ""
    }
   ],
   "fetched": "2026-11-24T22:13:03+00:00",
-  "age_h": 4.5,
+  "age_h": 5.0,
   "status": "ok",
-  "window_he": "05:00-17:00 (שעון ישראל)",
-  "window_en": "05:00–17:00 (Israel time)",
+  "window_he": "06:00-18:00 (שעון ישראל)",
+  "window_en": "06:00–18:00 (Israel time)",
   "updated_he": "נקרא ב-00:13",
   "updated_en": "read at 00:13",
   "climatology": true
