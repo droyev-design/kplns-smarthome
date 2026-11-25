@@ -1,18 +1,6 @@
 {
- "generated": "2026-11-25T03:13:04+00:00",
+ "generated": "2026-11-25T04:13:36+00:00",
  "history": [
-  {
-   "t": 1794973349,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
-  {
-   "t": 1794975165,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
   {
    "t": 1794976954,
    "il": 0,
@@ -2016,6 +2004,18 @@
    "il": 0,
    "ir": 0,
    "deg": 5
+  },
+  {
+   "t": 1795578191,
+   "il": 0,
+   "ir": 0,
+   "deg": 5
+  },
+  {
+   "t": 1795580016,
+   "il": 0,
+   "ir": 0,
+   "deg": 5
   }
  ],
  "indices": [
@@ -2182,8 +2182,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "הפיד במעקב — אין הוראה מבצעית פעילה · 3/10 שגרירויות פרסמו התרעה ב-6 השעות האחרונות (הקשר בלבד, לא אות) · 10/10 נקראו",
-     "value_en": "feed monitored — no operational order active · 3 of 10 embassies published an alert in the last 6 h (context only, not a signal) · 10/10 read",
+     "value": "הפיד במעקב — אין הוראה מבצעית פעילה · 10/10 נקראו",
+     "value_en": "feed monitored — no operational order active · 10/10 read",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2368,8 +2368,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "47/100",
-     "value_en": "47/100",
+     "value": "46/100",
+     "value_en": "46/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2399,8 +2399,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ישראל — US 3 · CA 2 · UK חלקית · נרשמו 44 קריאות",
-     "value_en": "Israel — US level 3 · Canada level 2 · UK: partial advisory · 44 readings logged",
+     "value": "ישראל — US 3 · UK חלקית · נרשמו 33 קריאות",
+     "value_en": "Israel — US level 3 · UK: partial advisory · 33 readings logged",
      "range": "",
      "threshold_now": "נמדד, עוד לא מצביע — בסיס מ-21.10.2026, בדיקת קידום מ-28.10.2026",
      "threshold_now_en": "measured, not yet voting — baseline from 2026-10-21, promotion review from 2026-10-28",
@@ -2523,8 +2523,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "קישוריות מתחת לרגיל: merit-nt 28 מול חציון 37 (×0.76) · ping-slash24 ×0.99 · Google ×0.97 מהתחזית · 41,780 מסלולי BGP (תצוגה בלבד)",
-     "value_en": "Connectivity below normal: merit-nt 28 vs a median of 37 (0.76x) · ping-slash24 0.99x · Google 0.97x its forecast · 41,780 BGP routes (display only)",
+     "value": "קישוריות תקינה: merit-nt 33 מול חציון 37 (×0.89) · ping-slash24 ×0.99 · Google ×1.03 מהתחזית · 41,781 מסלולי BGP (תצוגה בלבד)",
+     "value_en": "Connectivity normal: merit-nt 33 vs a median of 37 (0.89x) · ping-slash24 0.99x · Google 1.03x its forecast · 41,781 BGP routes (display only)",
      "range": "28–65",
      "threshold_now": "merit-nt פחות מ-18 · ping-slash24 פחות מ-9,210 · Google פחות מ-50% מהתחזית (2 מתוך 3, 2 בדיקות רצופות)",
      "threshold_now_en": "merit-nt <18 · ping-slash24 <9,210 · Google <50% of its forecast (2 of 3, 2 consecutive checks)",
@@ -2709,8 +2709,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "47/100",
-     "value_en": "47/100",
+     "value": "46/100",
+     "value_en": "46/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2910,7 +2910,7 @@
  ],
  "weather": {
   "voting": false,
-  "generated": "2026-11-25T03:13:03+00:00",
+  "generated": "2026-11-25T04:13:35+00:00",
   "title_he": "☁️ מזג אוויר — הקשר בלבד",
   "title_en": "☁️ Weather — context only",
   "disclaimer_he": "מידע בלבד — לא סמן. בדיקה לאחור של 6 אירועים (2024-2026) לא מצאה קשר בין עננות לתקיפות; בהיר אינו מעיד על סיכון.",
@@ -2922,7 +2922,7 @@
     "key": "iran",
     "label_he": "איראן",
     "label_en": "Iran",
-    "cloud": 17,
+    "cloud": 15,
     "cat": "clear",
     "cat_he": "בהיר",
     "cat_en": "clear",
@@ -2934,38 +2934,38 @@
      {
       "he": "טהרן",
       "en": "Tehran",
-      "cloud": 5,
+      "cloud": 10,
       "cat": "clear"
      },
      {
       "he": "איספהאן",
       "en": "Isfahan",
-      "cloud": 8,
+      "cloud": 6,
       "cat": "clear"
      },
      {
       "he": "נתנז/פורדו",
       "en": "Natanz/Fordow",
-      "cloud": 25,
-      "cat": "partly"
+      "cloud": 16,
+      "cat": "clear"
      },
      {
       "he": "תבריז",
       "en": "Tabriz",
-      "cloud": 42,
+      "cloud": 40,
       "cat": "partly"
      },
      {
       "he": "כרמנשאה",
       "en": "Kermanshah",
-      "cloud": 4,
+      "cloud": 5,
       "cat": "clear"
      }
     ],
-    "text_he": "איראן: בהיר · עננות ממוצעת 17% · בעונה זו כ-31% מהחלונות המקבילים היו בהירים",
-    "text_en": "Iran: clear · mean cloud cover 17% · this season ~31% of comparable 12-hour windows were clear",
-    "pts_he": "טהרן 5% · איספהאן 8% · נתנז/פורדו 25% · תבריז 42% · כרמנשאה 4%",
-    "pts_en": "Tehran 5% · Isfahan 8% · Natanz/Fordow 25% · Tabriz 42% · Kermanshah 4%"
+    "text_he": "איראן: בהיר · עננות ממוצעת 15% · בעונה זו כ-31% מהחלונות המקבילים היו בהירים",
+    "text_en": "Iran: clear · mean cloud cover 15% · this season ~31% of comparable 12-hour windows were clear",
+    "pts_he": "טהרן 10% · איספהאן 6% · נתנז/פורדו 16% · תבריז 40% · כרמנשאה 5%",
+    "pts_en": "Tehran 10% · Isfahan 6% · Natanz/Fordow 16% · Tabriz 40% · Kermanshah 5%"
    },
    {
     "key": "israel",
@@ -2977,7 +2977,7 @@
     "cat_en": "partly cloudy",
     "cat_he_pl": "מעוננים חלקית",
     "cat_en_pl": "partly cloudy",
-    "clim_pct": 47,
+    "clim_pct": 45,
     "n": 1,
     "points": [
      {
@@ -2987,19 +2987,19 @@
       "cat": "partly"
      }
     ],
-    "text_he": "ישראל: מעונן חלקית · עננות ממוצעת 55% · בעונה זו כ-47% מהחלונות המקבילים היו מעוננים חלקית",
-    "text_en": "Israel: partly cloudy · mean cloud cover 55% · this season ~47% of comparable 12-hour windows were partly cloudy",
+    "text_he": "ישראל: מעונן חלקית · עננות ממוצעת 55% · בעונה זו כ-45% מהחלונות המקבילים היו מעוננים חלקית",
+    "text_en": "Israel: partly cloudy · mean cloud cover 55% · this season ~45% of comparable 12-hour windows were partly cloudy",
     "pts_he": "",
     "pts_en": ""
    }
   ],
-  "fetched": "2026-11-24T22:13:03+00:00",
-  "age_h": 5.0,
+  "fetched": "2026-11-25T04:13:35+00:00",
+  "age_h": 0.0,
   "status": "ok",
-  "window_he": "06:00-18:00 (שעון ישראל)",
-  "window_en": "06:00–18:00 (Israel time)",
-  "updated_he": "נקרא ב-00:13",
-  "updated_en": "read at 00:13",
+  "window_he": "07:00-19:00 (שעון ישראל)",
+  "window_en": "07:00–19:00 (Israel time)",
+  "updated_he": "נקרא ב-06:13",
+  "updated_en": "read at 06:13",
   "climatology": true
  },
  "manual_override": {
