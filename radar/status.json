@@ -1,18 +1,6 @@
 {
- "generated": "2026-11-27T02:42:53+00:00",
+ "generated": "2026-11-27T03:42:52+00:00",
  "history": [
-  {
-   "t": 1795142577,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
-  {
-   "t": 1795144376,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
   {
    "t": 1795146186,
    "il": 0,
@@ -2022,6 +2010,18 @@
    "il": 0,
    "ir": 0,
    "deg": 2
+  },
+  {
+   "t": 1795749179,
+   "il": 0,
+   "ir": 0,
+   "deg": 2
+  },
+  {
+   "t": 1795750972,
+   "il": 0,
+   "ir": 0,
+   "deg": 2
   }
  ],
  "indices": [
@@ -2095,8 +2095,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "32 מטוסים אזרחיים באזור",
-     "value_en": "32 civil aircraft in the area",
+     "value": "34 מטוסים אזרחיים באזור",
+     "value_en": "34 civil aircraft in the area",
      "range": "30–71",
      "threshold_now": "פחות מ-16 מטוסים",
      "threshold_now_en": "<16 aircraft",
@@ -2281,8 +2281,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "3 מטוסים צבאיים באזור",
-     "value_en": "3 military aircraft in the area",
+     "value": "2 מטוסים צבאיים באזור",
+     "value_en": "2 military aircraft in the area",
      "range": "0–10",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2467,8 +2467,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "מטוס תדלוק אחד, אין מטוסי מודיעין/התרעה באזור",
-     "value_en": "1 tanker + 0 ISR/AWACS aircraft in the Mediterranean and Middle East area",
+     "value": "0 מטוסי תדלוק, אין מטוסי מודיעין/התרעה באזור",
+     "value_en": "0 tankers + 0 ISR/AWACS aircraft in the Mediterranean and Middle East area",
      "range": "",
      "threshold_now": "נמדד, עוד לא מצביע — בסיס מ-21.10.2026, בדיקת קידום מ-28.10.2026",
      "threshold_now_en": "measured, not yet voting — baseline from 2026-10-21, promotion review from 2026-10-28",
@@ -2560,8 +2560,8 @@
      "partial_why_en": "reduced satellite coverage — running on NOAA20 + NOAA21 only; SNPP (data ends 2026-11-02) dropped as stale. Fewer passes means events can be missed; compared only with days measured by the same satellites",
      "reason": "",
      "reason_en": "",
-     "value": "מוקד תרמי חדש אחד ב-2026-11-26 (מתוך 2,082 זיהויים גולמיים מ-2 לוויינים, כולל שרפות ותעשייה)",
-     "value_en": "1 new thermal hotspot on 2026-11-26 (out of 2,082 raw detections from 2 satellites, incl. wildfires and industry)",
+     "value": "מוקד תרמי חדש אחד ב-2026-11-26 (מתוך 2,215 זיהויים גולמיים מ-2 לוויינים, כולל שרפות ותעשייה)",
+     "value_en": "1 new thermal hotspot on 2026-11-26 (out of 2,215 raw detections from 2 satellites, incl. wildfires and industry)",
      "range": "0–3",
      "threshold_now": "יותר מ-5 מוקדים",
      "threshold_now_en": ">5 hotspots",
@@ -2622,8 +2622,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "3 מטוסים צבאיים באזור",
-     "value_en": "3 military aircraft in the area",
+     "value": "2 מטוסים צבאיים באזור",
+     "value_en": "2 military aircraft in the area",
      "range": "0–10",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2839,8 +2839,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "מטוס תדלוק אחד, אין מטוסי מודיעין/התרעה באזור",
-     "value_en": "1 tanker + 0 ISR/AWACS aircraft in the Mediterranean and Middle East area",
+     "value": "0 מטוסי תדלוק, אין מטוסי מודיעין/התרעה באזור",
+     "value_en": "0 tankers + 0 ISR/AWACS aircraft in the Mediterranean and Middle East area",
      "range": "",
      "threshold_now": "נמדד, עוד לא מצביע — בסיס מ-21.10.2026, בדיקת קידום מ-28.10.2026",
      "threshold_now_en": "measured, not yet voting — baseline from 2026-10-21, promotion review from 2026-10-28",
@@ -2914,7 +2914,7 @@
  ],
  "weather": {
   "voting": false,
-  "generated": "2026-11-27T02:42:53+00:00",
+  "generated": "2026-11-27T03:42:52+00:00",
   "title_he": "☁️ מזג אוויר — הקשר בלבד",
   "title_en": "☁️ Weather — context only",
   "disclaimer_he": "מידע בלבד — לא סמן. בדיקה לאחור של 6 אירועים (2024-2026) לא מצאה קשר בין עננות לתקיפות; בהיר אינו מעיד על סיכון.",
@@ -2926,50 +2926,50 @@
     "key": "iran",
     "label_he": "איראן",
     "label_en": "Iran",
-    "cloud": 42,
+    "cloud": 48,
     "cat": "partly",
     "cat_he": "מעונן חלקית",
     "cat_en": "partly cloudy",
     "cat_he_pl": "מעוננים חלקית",
     "cat_en_pl": "partly cloudy",
-    "clim_pct": 51,
+    "clim_pct": 50,
     "n": 5,
     "points": [
      {
       "he": "טהרן",
       "en": "Tehran",
-      "cloud": 42,
+      "cloud": 50,
       "cat": "partly"
      },
      {
       "he": "איספהאן",
       "en": "Isfahan",
-      "cloud": 10,
+      "cloud": 11,
       "cat": "clear"
      },
      {
       "he": "נתנז/פורדו",
       "en": "Natanz/Fordow",
-      "cloud": 11,
+      "cloud": 19,
       "cat": "clear"
      },
      {
       "he": "תבריז",
       "en": "Tabriz",
-      "cloud": 62,
+      "cloud": 68,
       "cat": "partly"
      },
      {
       "he": "כרמנשאה",
       "en": "Kermanshah",
-      "cloud": 86,
+      "cloud": 92,
       "cat": "cloudy"
      }
     ],
-    "text_he": "איראן: מעונן חלקית · עננות ממוצעת 42% · בעונה זו כ-51% מהחלונות המקבילים היו מעוננים חלקית",
-    "text_en": "Iran: partly cloudy · mean cloud cover 42% · this season ~51% of comparable 12-hour windows were partly cloudy",
-    "pts_he": "טהרן 42% · איספהאן 10% · נתנז/פורדו 11% · תבריז 62% · כרמנשאה 86%",
-    "pts_en": "Tehran 42% · Isfahan 10% · Natanz/Fordow 11% · Tabriz 62% · Kermanshah 86%"
+    "text_he": "איראן: מעונן חלקית · עננות ממוצעת 48% · בעונה זו כ-50% מהחלונות המקבילים היו מעוננים חלקית",
+    "text_en": "Iran: partly cloudy · mean cloud cover 48% · this season ~50% of comparable 12-hour windows were partly cloudy",
+    "pts_he": "טהרן 50% · איספהאן 11% · נתנז/פורדו 19% · תבריז 68% · כרמנשאה 92%",
+    "pts_en": "Tehran 50% · Isfahan 11% · Natanz/Fordow 19% · Tabriz 68% · Kermanshah 92%"
    },
    {
     "key": "israel",
@@ -2981,7 +2981,7 @@
     "cat_en": "clear",
     "cat_he_pl": "בהירים",
     "cat_en_pl": "clear",
-    "clim_pct": 33,
+    "clim_pct": 35,
     "n": 1,
     "points": [
      {
@@ -2991,17 +2991,17 @@
       "cat": "clear"
      }
     ],
-    "text_he": "ישראל: בהיר · עננות ממוצעת 0% · בעונה זו כ-33% מהחלונות המקבילים היו בהירים",
-    "text_en": "Israel: clear · mean cloud cover 0% · this season ~33% of comparable 12-hour windows were clear",
+    "text_he": "ישראל: בהיר · עננות ממוצעת 0% · בעונה זו כ-35% מהחלונות המקבילים היו בהירים",
+    "text_en": "Israel: clear · mean cloud cover 0% · this season ~35% of comparable 12-hour windows were clear",
     "pts_he": "",
     "pts_en": ""
    }
   ],
   "fetched": "2026-11-27T01:12:46+00:00",
-  "age_h": 1.5,
+  "age_h": 2.5,
   "status": "ok",
-  "window_he": "05:00-17:00 (שעון ישראל)",
-  "window_en": "05:00–17:00 (Israel time)",
+  "window_he": "06:00-18:00 (שעון ישראל)",
+  "window_en": "06:00–18:00 (Israel time)",
   "updated_he": "נקרא ב-03:12",
   "updated_en": "read at 03:12",
   "climatology": true
