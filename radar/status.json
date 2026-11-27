@@ -1,18 +1,6 @@
 {
- "generated": "2026-11-27T03:42:52+00:00",
+ "generated": "2026-11-27T04:43:01+00:00",
  "history": [
-  {
-   "t": 1795146186,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
-  {
-   "t": 1795147990,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
   {
    "t": 1795149809,
    "il": 0,
@@ -2022,6 +2010,18 @@
    "il": 0,
    "ir": 0,
    "deg": 2
+  },
+  {
+   "t": 1795752788,
+   "il": 0,
+   "ir": 0,
+   "deg": 2
+  },
+  {
+   "t": 1795754581,
+   "il": 0,
+   "ir": 0,
+   "deg": 2
   }
  ],
  "indices": [
@@ -2126,8 +2126,8 @@
      "partial_why_en": "traffic too thin to judge — median 4 below 5",
      "reason": "",
      "reason_en": "",
-     "value": "4 מטוסים מעל ירדן",
-     "value_en": "4 aircraft over Jordan",
+     "value": "3 מטוסים מעל ירדן",
+     "value_en": "3 aircraft over Jordan",
      "range": "2–7",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2281,8 +2281,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "2 מטוסים צבאיים באזור",
-     "value_en": "2 military aircraft in the area",
+     "value": "4 מטוסים צבאיים באזור",
+     "value_en": "4 military aircraft in the area",
      "range": "0–10",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2312,11 +2312,11 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $92.2 · דולר 3.33 ₪",
-     "value_en": "Brent $92.2 · USD 3.33 ILS",
+     "value": "ברנט $92.3 · דולר 3.33 ₪",
+     "value_en": "Brent $92.3 · USD 3.33 ILS",
      "range": "",
-     "threshold_now": "ברנט $98.0 ומעלה · דולר 3.46 ₪ ומעלה",
-     "threshold_now_en": "Brent ≥$98.0 · USD/ILS ≥3.46",
+     "threshold_now": "ברנט $98.1 ומעלה · דולר 3.46 ₪ ומעלה",
+     "threshold_now_en": "Brent ≥$98.1 · USD/ILS ≥3.46",
      "watch": "",
      "watch_en": "",
      "anchor": "",
@@ -2374,8 +2374,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "32/100",
-     "value_en": "32/100",
+     "value": "31/100",
+     "value_en": "31/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2622,8 +2622,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "2 מטוסים צבאיים באזור",
-     "value_en": "2 military aircraft in the area",
+     "value": "4 מטוסים צבאיים באזור",
+     "value_en": "4 military aircraft in the area",
      "range": "0–10",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2653,11 +2653,11 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "ברנט $92.2 · דולר 3.33 ₪",
-     "value_en": "Brent $92.2 · USD 3.33 ILS",
+     "value": "ברנט $92.3 · דולר 3.33 ₪",
+     "value_en": "Brent $92.3 · USD 3.33 ILS",
      "range": "",
-     "threshold_now": "ברנט $98.0 ומעלה · דולר 3.46 ₪ ומעלה",
-     "threshold_now_en": "Brent ≥$98.0 · USD/ILS ≥3.46",
+     "threshold_now": "ברנט $98.1 ומעלה · דולר 3.46 ₪ ומעלה",
+     "threshold_now_en": "Brent ≥$98.1 · USD/ILS ≥3.46",
      "watch": "",
      "watch_en": "",
      "anchor": "",
@@ -2715,8 +2715,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "32/100",
-     "value_en": "32/100",
+     "value": "31/100",
+     "value_en": "31/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2746,8 +2746,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "85 חיישנים מחוברים באיראן (חציון 88; בקרה — ישראל 44)",
-     "value_en": "85 probes connected in Iran (median 88; control — Israel 44)",
+     "value": "84 חיישנים מחוברים באיראן (חציון 88; בקרה — ישראל 44)",
+     "value_en": "84 probes connected in Iran (median 88; control — Israel 44)",
      "range": "84–92",
      "threshold_now": "פחות מ-44 חיישנים מחוברים, ב-2 בדיקות רצופות",
      "threshold_now_en": "<44 connected probes, on 2 consecutive checks",
@@ -2914,7 +2914,7 @@
  ],
  "weather": {
   "voting": false,
-  "generated": "2026-11-27T03:42:52+00:00",
+  "generated": "2026-11-27T04:43:01+00:00",
   "title_he": "☁️ מזג אוויר — הקשר בלבד",
   "title_en": "☁️ Weather — context only",
   "disclaimer_he": "מידע בלבד — לא סמן. בדיקה לאחור של 6 אירועים (2024-2026) לא מצאה קשר בין עננות לתקיפות; בהיר אינו מעיד על סיכון.",
@@ -2926,82 +2926,82 @@
     "key": "iran",
     "label_he": "איראן",
     "label_en": "Iran",
-    "cloud": 48,
+    "cloud": 52,
     "cat": "partly",
     "cat_he": "מעונן חלקית",
     "cat_en": "partly cloudy",
     "cat_he_pl": "מעוננים חלקית",
     "cat_en_pl": "partly cloudy",
-    "clim_pct": 50,
+    "clim_pct": 52,
     "n": 5,
     "points": [
      {
       "he": "טהרן",
       "en": "Tehran",
-      "cloud": 50,
+      "cloud": 56,
       "cat": "partly"
      },
      {
       "he": "איספהאן",
       "en": "Isfahan",
-      "cloud": 11,
+      "cloud": 16,
       "cat": "clear"
      },
      {
       "he": "נתנז/פורדו",
       "en": "Natanz/Fordow",
-      "cloud": 19,
-      "cat": "clear"
+      "cloud": 28,
+      "cat": "partly"
      },
      {
       "he": "תבריז",
       "en": "Tabriz",
-      "cloud": 68,
-      "cat": "partly"
+      "cloud": 73,
+      "cat": "cloudy"
      },
      {
       "he": "כרמנשאה",
       "en": "Kermanshah",
-      "cloud": 92,
+      "cloud": 89,
       "cat": "cloudy"
      }
     ],
-    "text_he": "איראן: מעונן חלקית · עננות ממוצעת 48% · בעונה זו כ-50% מהחלונות המקבילים היו מעוננים חלקית",
-    "text_en": "Iran: partly cloudy · mean cloud cover 48% · this season ~50% of comparable 12-hour windows were partly cloudy",
-    "pts_he": "טהרן 50% · איספהאן 11% · נתנז/פורדו 19% · תבריז 68% · כרמנשאה 92%",
-    "pts_en": "Tehran 50% · Isfahan 11% · Natanz/Fordow 19% · Tabriz 68% · Kermanshah 92%"
+    "text_he": "איראן: מעונן חלקית · עננות ממוצעת 52% · בעונה זו כ-52% מהחלונות המקבילים היו מעוננים חלקית",
+    "text_en": "Iran: partly cloudy · mean cloud cover 52% · this season ~52% of comparable 12-hour windows were partly cloudy",
+    "pts_he": "טהרן 56% · איספהאן 16% · נתנז/פורדו 28% · תבריז 73% · כרמנשאה 89%",
+    "pts_en": "Tehran 56% · Isfahan 16% · Natanz/Fordow 28% · Tabriz 73% · Kermanshah 89%"
    },
    {
     "key": "israel",
     "label_he": "ישראל",
     "label_en": "Israel",
-    "cloud": 0,
+    "cloud": 2,
     "cat": "clear",
     "cat_he": "בהיר",
     "cat_en": "clear",
     "cat_he_pl": "בהירים",
     "cat_en_pl": "clear",
-    "clim_pct": 35,
+    "clim_pct": 36,
     "n": 1,
     "points": [
      {
       "he": "תל אביב",
       "en": "Tel Aviv",
-      "cloud": 0,
+      "cloud": 2,
       "cat": "clear"
      }
     ],
-    "text_he": "ישראל: בהיר · עננות ממוצעת 0% · בעונה זו כ-35% מהחלונות המקבילים היו בהירים",
-    "text_en": "Israel: clear · mean cloud cover 0% · this season ~35% of comparable 12-hour windows were clear",
+    "text_he": "ישראל: בהיר · עננות ממוצעת 2% · בעונה זו כ-36% מהחלונות המקבילים היו בהירים",
+    "text_en": "Israel: clear · mean cloud cover 2% · this season ~36% of comparable 12-hour windows were clear",
     "pts_he": "",
     "pts_en": ""
    }
   ],
   "fetched": "2026-11-27T01:12:46+00:00",
-  "age_h": 2.5,
+  "age_h": 3.5,
   "status": "ok",
-  "window_he": "06:00-18:00 (שעון ישראל)",
-  "window_en": "06:00–18:00 (Israel time)",
+  "window_he": "07:00-19:00 (שעון ישראל)",
+  "window_en": "07:00–19:00 (Israel time)",
   "updated_he": "נקרא ב-03:12",
   "updated_en": "read at 03:12",
   "climatology": true
