@@ -1,18 +1,6 @@
 {
- "generated": "2026-11-27T22:13:13+00:00",
+ "generated": "2026-11-27T23:12:57+00:00",
  "history": [
-  {
-   "t": 1795214574,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
-  {
-   "t": 1795216372,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
   {
    "t": 1795218154,
    "il": 0,
@@ -2016,6 +2004,18 @@
    "il": 0,
    "ir": 0,
    "deg": 2
+  },
+  {
+   "t": 1795819381,
+   "il": 0,
+   "ir": 0,
+   "deg": 2
+  },
+  {
+   "t": 1795821177,
+   "il": 0,
+   "ir": 0,
+   "deg": 2
   }
  ],
  "indices": [
@@ -2089,8 +2089,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "21 מטוסים אזרחיים באזור",
-     "value_en": "21 civil aircraft in the area",
+     "value": "26 מטוסים אזרחיים באזור",
+     "value_en": "26 civil aircraft in the area",
      "range": "30–73",
      "threshold_now": "פחות מ-17 מטוסים",
      "threshold_now_en": "<17 aircraft",
@@ -2120,9 +2120,9 @@
      "partial_why_en": "traffic too thin to judge — median 4 below 5",
      "reason": "",
      "reason_en": "",
-     "value": "2 מטוסים מעל ירדן",
-     "value_en": "2 aircraft over Jordan",
-     "range": "1–6",
+     "value": "4 מטוסים מעל ירדן",
+     "value_en": "4 aircraft over Jordan",
+     "range": "2–6",
      "threshold_now": "",
      "threshold_now_en": "",
      "watch": "",
@@ -2275,8 +2275,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "2 מטוסים צבאיים באזור",
-     "value_en": "2 military aircraft in the area",
+     "value": "מטוס צבאי אחד באזור",
+     "value_en": "1 military aircraft in the area",
      "range": "0–6",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2461,8 +2461,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "מטוס תדלוק אחד, אין מטוסי מודיעין/התרעה באזור",
-     "value_en": "1 tanker + 0 ISR/AWACS aircraft in the Mediterranean and Middle East area",
+     "value": "0 מטוסי תדלוק, אין מטוסי מודיעין/התרעה באזור",
+     "value_en": "0 tankers + 0 ISR/AWACS aircraft in the Mediterranean and Middle East area",
      "range": "",
      "threshold_now": "נמדד, עוד לא מצביע — בסיס מ-21.10.2026, בדיקת קידום מ-28.10.2026",
      "threshold_now_en": "measured, not yet voting — baseline from 2026-10-21, promotion review from 2026-10-28",
@@ -2616,8 +2616,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "2 מטוסים צבאיים באזור",
-     "value_en": "2 military aircraft in the area",
+     "value": "מטוס צבאי אחד באזור",
+     "value_en": "1 military aircraft in the area",
      "range": "0–6",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2833,8 +2833,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "מטוס תדלוק אחד, אין מטוסי מודיעין/התרעה באזור",
-     "value_en": "1 tanker + 0 ISR/AWACS aircraft in the Mediterranean and Middle East area",
+     "value": "0 מטוסי תדלוק, אין מטוסי מודיעין/התרעה באזור",
+     "value_en": "0 tankers + 0 ISR/AWACS aircraft in the Mediterranean and Middle East area",
      "range": "",
      "threshold_now": "נמדד, עוד לא מצביע — בסיס מ-21.10.2026, בדיקת קידום מ-28.10.2026",
      "threshold_now_en": "measured, not yet voting — baseline from 2026-10-21, promotion review from 2026-10-28",
@@ -2908,7 +2908,7 @@
  ],
  "weather": {
   "voting": false,
-  "generated": "2026-11-27T22:13:12+00:00",
+  "generated": "2026-11-27T23:12:57+00:00",
   "title_he": "☁️ מזג אוויר — הקשר בלבד",
   "title_en": "☁️ Weather — context only",
   "disclaimer_he": "מידע בלבד — לא סמן. בדיקה לאחור של 6 אירועים (2024-2026) לא מצאה קשר בין עננות לתקיפות; בהיר אינו מעיד על סיכון.",
@@ -2920,56 +2920,56 @@
     "key": "iran",
     "label_he": "איראן",
     "label_en": "Iran",
-    "cloud": 61,
+    "cloud": 55,
     "cat": "partly",
     "cat_he": "מעונן חלקית",
     "cat_en": "partly cloudy",
     "cat_he_pl": "מעוננים חלקית",
     "cat_en_pl": "partly cloudy",
-    "clim_pct": 53,
+    "clim_pct": 54,
     "n": 5,
     "points": [
      {
       "he": "טהרן",
       "en": "Tehran",
-      "cloud": 87,
+      "cloud": 79,
       "cat": "cloudy"
      },
      {
       "he": "איספהאן",
       "en": "Isfahan",
-      "cloud": 60,
+      "cloud": 58,
       "cat": "partly"
      },
      {
       "he": "נתנז/פורדו",
       "en": "Natanz/Fordow",
-      "cloud": 60,
+      "cloud": 51,
       "cat": "partly"
      },
      {
       "he": "תבריז",
       "en": "Tabriz",
-      "cloud": 87,
+      "cloud": 78,
       "cat": "cloudy"
      },
      {
       "he": "כרמנשאה",
       "en": "Kermanshah",
-      "cloud": 14,
+      "cloud": 7,
       "cat": "clear"
      }
     ],
-    "text_he": "איראן: מעונן חלקית · עננות ממוצעת 61% · בעונה זו כ-53% מהחלונות המקבילים היו מעוננים חלקית",
-    "text_en": "Iran: partly cloudy · mean cloud cover 61% · this season ~53% of comparable 12-hour windows were partly cloudy",
-    "pts_he": "טהרן 87% · איספהאן 60% · נתנז/פורדו 60% · תבריז 87% · כרמנשאה 14%",
-    "pts_en": "Tehran 87% · Isfahan 60% · Natanz/Fordow 60% · Tabriz 87% · Kermanshah 14%"
+    "text_he": "איראן: מעונן חלקית · עננות ממוצעת 55% · בעונה זו כ-54% מהחלונות המקבילים היו מעוננים חלקית",
+    "text_en": "Iran: partly cloudy · mean cloud cover 55% · this season ~54% of comparable 12-hour windows were partly cloudy",
+    "pts_he": "טהרן 79% · איספהאן 58% · נתנז/פורדו 51% · תבריז 78% · כרמנשאה 7%",
+    "pts_en": "Tehran 79% · Isfahan 58% · Natanz/Fordow 51% · Tabriz 78% · Kermanshah 7%"
    },
    {
     "key": "israel",
     "label_he": "ישראל",
     "label_en": "Israel",
-    "cloud": 73,
+    "cloud": 75,
     "cat": "cloudy",
     "cat_he": "מעונן",
     "cat_en": "cloudy",
@@ -2981,21 +2981,21 @@
      {
       "he": "תל אביב",
       "en": "Tel Aviv",
-      "cloud": 73,
+      "cloud": 75,
       "cat": "cloudy"
      }
     ],
-    "text_he": "ישראל: מעונן · עננות ממוצעת 73% · בעונה זו כ-21% מהחלונות המקבילים היו מעוננים",
-    "text_en": "Israel: cloudy · mean cloud cover 73% · this season ~21% of comparable 12-hour windows were cloudy",
+    "text_he": "ישראל: מעונן · עננות ממוצעת 75% · בעונה זו כ-21% מהחלונות המקבילים היו מעוננים",
+    "text_en": "Israel: cloudy · mean cloud cover 75% · this season ~21% of comparable 12-hour windows were cloudy",
     "pts_he": "",
     "pts_en": ""
    }
   ],
   "fetched": "2026-11-27T19:43:13+00:00",
-  "age_h": 2.5,
+  "age_h": 3.5,
   "status": "ok",
-  "window_he": "01:00-13:00 (שעון ישראל)",
-  "window_en": "01:00–13:00 (Israel time)",
+  "window_he": "02:00-14:00 (שעון ישראל)",
+  "window_en": "02:00–14:00 (Israel time)",
   "updated_he": "נקרא ב-21:43",
   "updated_en": "read at 21:43",
   "climatology": true
