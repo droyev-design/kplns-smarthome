@@ -1,18 +1,6 @@
 {
- "generated": "2026-11-28T11:43:12+00:00",
+ "generated": "2026-11-28T12:43:26+00:00",
  "history": [
-  {
-   "t": 1795263167,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
-  {
-   "t": 1795264969,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
   {
    "t": 1795266775,
    "il": 0,
@@ -2016,6 +2004,18 @@
    "il": 0,
    "ir": 0,
    "deg": 2
+  },
+  {
+   "t": 1795867994,
+   "il": 0,
+   "ir": 0,
+   "deg": 2
+  },
+  {
+   "t": 1795869806,
+   "il": 0,
+   "ir": 0,
+   "deg": 2
   }
  ],
  "indices": [
@@ -2089,9 +2089,9 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "57 מטוסים אזרחיים באזור",
-     "value_en": "57 civil aircraft in the area",
-     "range": "26–70",
+     "value": "65 מטוסים אזרחיים באזור",
+     "value_en": "65 civil aircraft in the area",
+     "range": "26–68",
      "threshold_now": "פחות מ-15 מטוסים",
      "threshold_now_en": "<15 aircraft",
      "watch": "",
@@ -2368,8 +2368,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "28/100",
-     "value_en": "28/100",
+     "value": "27/100",
+     "value_en": "27/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2709,8 +2709,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "28/100",
-     "value_en": "28/100",
+     "value": "27/100",
+     "value_en": "27/100",
      "range": "",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2740,8 +2740,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "90 חיישנים מחוברים באיראן (חציון 88; בקרה — ישראל 44)",
-     "value_en": "90 probes connected in Iran (median 88; control — Israel 44)",
+     "value": "86 חיישנים מחוברים באיראן (חציון 88; בקרה — ישראל 44)",
+     "value_en": "86 probes connected in Iran (median 88; control — Israel 44)",
      "range": "84–91",
      "threshold_now": "פחות מ-44 חיישנים מחוברים, ב-2 בדיקות רצופות",
      "threshold_now_en": "<44 connected probes, on 2 consecutive checks",
@@ -2904,7 +2904,7 @@
  ],
  "weather": {
   "voting": false,
-  "generated": "2026-11-28T11:43:12+00:00",
+  "generated": "2026-11-28T12:43:26+00:00",
   "title_he": "☁️ מזג אוויר — הקשר בלבד",
   "title_en": "☁️ Weather — context only",
   "disclaimer_he": "מידע בלבד — לא סמן. בדיקה לאחור של 6 אירועים (2024-2026) לא מצאה קשר בין עננות לתקיפות; בהיר אינו מעיד על סיכון.",
@@ -2916,7 +2916,7 @@
     "key": "iran",
     "label_he": "איראן",
     "label_en": "Iran",
-    "cloud": 59,
+    "cloud": 57,
     "cat": "partly",
     "cat_he": "מעונן חלקית",
     "cat_en": "partly cloudy",
@@ -2928,38 +2928,38 @@
      {
       "he": "טהרן",
       "en": "Tehran",
-      "cloud": 5,
+      "cloud": 14,
       "cat": "clear"
      },
      {
       "he": "איספהאן",
       "en": "Isfahan",
-      "cloud": 96,
+      "cloud": 88,
       "cat": "cloudy"
      },
      {
       "he": "נתנז/פורדו",
       "en": "Natanz/Fordow",
-      "cloud": 76,
-      "cat": "cloudy"
+      "cloud": 68,
+      "cat": "partly"
      },
      {
       "he": "תבריז",
       "en": "Tabriz",
-      "cloud": 53,
+      "cloud": 56,
       "cat": "partly"
      },
      {
       "he": "כרמנשאה",
       "en": "Kermanshah",
-      "cloud": 62,
+      "cloud": 61,
       "cat": "partly"
      }
     ],
-    "text_he": "איראן: מעונן חלקית · עננות ממוצעת 59% · בעונה זו כ-53% מהחלונות המקבילים היו מעוננים חלקית",
-    "text_en": "Iran: partly cloudy · mean cloud cover 59% · this season ~53% of comparable 12-hour windows were partly cloudy",
-    "pts_he": "טהרן 5% · איספהאן 96% · נתנז/פורדו 76% · תבריז 53% · כרמנשאה 62%",
-    "pts_en": "Tehran 5% · Isfahan 96% · Natanz/Fordow 76% · Tabriz 53% · Kermanshah 62%"
+    "text_he": "איראן: מעונן חלקית · עננות ממוצעת 57% · בעונה זו כ-53% מהחלונות המקבילים היו מעוננים חלקית",
+    "text_en": "Iran: partly cloudy · mean cloud cover 57% · this season ~53% of comparable 12-hour windows were partly cloudy",
+    "pts_he": "טהרן 14% · איספהאן 88% · נתנז/פורדו 68% · תבריז 56% · כרמנשאה 61%",
+    "pts_en": "Tehran 14% · Isfahan 88% · Natanz/Fordow 68% · Tabriz 56% · Kermanshah 61%"
    },
    {
     "key": "israel",
@@ -2988,10 +2988,10 @@
    }
   ],
   "fetched": "2026-11-28T08:13:06+00:00",
-  "age_h": 3.5,
+  "age_h": 4.5,
   "status": "ok",
-  "window_he": "14:00-02:00 (שעון ישראל)",
-  "window_en": "14:00–02:00 (Israel time)",
+  "window_he": "15:00-03:00 (שעון ישראל)",
+  "window_en": "15:00–03:00 (Israel time)",
   "updated_he": "נקרא ב-10:13",
   "updated_en": "read at 10:13",
   "climatology": true
