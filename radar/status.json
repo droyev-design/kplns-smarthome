@@ -1,24 +1,6 @@
 {
- "generated": "2026-11-28T09:42:52+00:00",
+ "generated": "2026-11-28T10:43:13+00:00",
  "history": [
-  {
-   "t": 1795254179,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
-  {
-   "t": 1795255959,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
-  {
-   "t": 1795257788,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
   {
    "t": 1795259585,
    "il": 0,
@@ -2022,6 +2004,18 @@
    "il": 0,
    "ir": 0,
    "deg": 2
+  },
+  {
+   "t": 1795860792,
+   "il": 0,
+   "ir": 0,
+   "deg": 2
+  },
+  {
+   "t": 1795862593,
+   "il": 0,
+   "ir": 0,
+   "deg": 2
   }
  ],
  "indices": [
@@ -2095,11 +2089,11 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "39 מטוסים אזרחיים באזור",
-     "value_en": "39 civil aircraft in the area",
+     "value": "43 מטוסים אזרחיים באזור",
+     "value_en": "43 civil aircraft in the area",
      "range": "26–70",
-     "threshold_now": "פחות מ-16 מטוסים",
-     "threshold_now_en": "<16 aircraft",
+     "threshold_now": "פחות מ-15 מטוסים",
+     "threshold_now_en": "<15 aircraft",
      "watch": "",
      "watch_en": "",
      "anchor": "📈 מצב: 11 מתוך 14 הימים האחרונים מתחת לעוגן המוצהר (40), 2 מהם ברצף. אינו מצביע. העוגן נמדד בתוך המלחמה.",
@@ -2126,8 +2120,8 @@
      "partial_why_en": "traffic too thin to judge — median 4 below 5",
      "reason": "",
      "reason_en": "",
-     "value": "4 מטוסים מעל ירדן",
-     "value_en": "4 aircraft over Jordan",
+     "value": "מטוס אחד מעל ירדן",
+     "value_en": "1 aircraft over Jordan",
      "range": "1–6",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2281,8 +2275,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "4 מטוסים צבאיים באזור",
-     "value_en": "4 military aircraft in the area",
+     "value": "מטוס צבאי אחד באזור",
+     "value_en": "1 military aircraft in the area",
      "range": "0–5",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2315,8 +2309,8 @@
      "value": "ברנט $90.8 · דולר 3.29 ₪",
      "value_en": "Brent $90.8 · USD 3.29 ILS",
      "range": "",
-     "threshold_now": "ברנט $98.6 ומעלה · דולר 3.43 ₪ ומעלה",
-     "threshold_now_en": "Brent ≥$98.6 · USD/ILS ≥3.43",
+     "threshold_now": "ברנט $98.6 ומעלה · דולר 3.39 ₪ ומעלה",
+     "threshold_now_en": "Brent ≥$98.6 · USD/ILS ≥3.39",
      "watch": "",
      "watch_en": "",
      "anchor": "",
@@ -2622,8 +2616,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "4 מטוסים צבאיים באזור",
-     "value_en": "4 military aircraft in the area",
+     "value": "מטוס צבאי אחד באזור",
+     "value_en": "1 military aircraft in the area",
      "range": "0–5",
      "threshold_now": "תצוגה בלבד",
      "threshold_now_en": "display only",
@@ -2656,8 +2650,8 @@
      "value": "ברנט $90.8 · דולר 3.29 ₪",
      "value_en": "Brent $90.8 · USD 3.29 ILS",
      "range": "",
-     "threshold_now": "ברנט $98.6 ומעלה · דולר 3.43 ₪ ומעלה",
-     "threshold_now_en": "Brent ≥$98.6 · USD/ILS ≥3.43",
+     "threshold_now": "ברנט $98.6 ומעלה · דולר 3.39 ₪ ומעלה",
+     "threshold_now_en": "Brent ≥$98.6 · USD/ILS ≥3.39",
      "watch": "",
      "watch_en": "",
      "anchor": "",
@@ -2746,8 +2740,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "91 חיישנים מחוברים באיראן (חציון 88; בקרה — ישראל 44)",
-     "value_en": "91 probes connected in Iran (median 88; control — Israel 44)",
+     "value": "89 חיישנים מחוברים באיראן (חציון 88; בקרה — ישראל 44)",
+     "value_en": "89 probes connected in Iran (median 88; control — Israel 44)",
      "range": "84–91",
      "threshold_now": "פחות מ-44 חיישנים מחוברים, ב-2 בדיקות רצופות",
      "threshold_now_en": "<44 connected probes, on 2 consecutive checks",
@@ -2910,7 +2904,7 @@
  ],
  "weather": {
   "voting": false,
-  "generated": "2026-11-28T09:42:52+00:00",
+  "generated": "2026-11-28T10:43:13+00:00",
   "title_he": "☁️ מזג אוויר — הקשר בלבד",
   "title_en": "☁️ Weather — context only",
   "disclaimer_he": "מידע בלבד — לא סמן. בדיקה לאחור של 6 אירועים (2024-2026) לא מצאה קשר בין עננות לתקיפות; בהיר אינו מעיד על סיכון.",
@@ -2922,7 +2916,7 @@
     "key": "iran",
     "label_he": "איראן",
     "label_en": "Iran",
-    "cloud": 52,
+    "cloud": 55,
     "cat": "partly",
     "cat_he": "מעונן חלקית",
     "cat_en": "partly cloudy",
@@ -2940,19 +2934,19 @@
      {
       "he": "איספהאן",
       "en": "Isfahan",
-      "cloud": 80,
+      "cloud": 88,
       "cat": "cloudy"
      },
      {
       "he": "נתנז/פורדו",
       "en": "Natanz/Fordow",
-      "cloud": 71,
+      "cloud": 76,
       "cat": "cloudy"
      },
      {
       "he": "תבריז",
       "en": "Tabriz",
-      "cloud": 43,
+      "cloud": 45,
       "cat": "partly"
      },
      {
@@ -2962,10 +2956,10 @@
       "cat": "partly"
      }
     ],
-    "text_he": "איראן: מעונן חלקית · עננות ממוצעת 52% · בעונה זו כ-54% מהחלונות המקבילים היו מעוננים חלקית",
-    "text_en": "Iran: partly cloudy · mean cloud cover 52% · this season ~54% of comparable 12-hour windows were partly cloudy",
-    "pts_he": "טהרן 0% · איספהאן 80% · נתנז/פורדו 71% · תבריז 43% · כרמנשאה 64%",
-    "pts_en": "Tehran 0% · Isfahan 80% · Natanz/Fordow 71% · Tabriz 43% · Kermanshah 64%"
+    "text_he": "איראן: מעונן חלקית · עננות ממוצעת 55% · בעונה זו כ-54% מהחלונות המקבילים היו מעוננים חלקית",
+    "text_en": "Iran: partly cloudy · mean cloud cover 55% · this season ~54% of comparable 12-hour windows were partly cloudy",
+    "pts_he": "טהרן 0% · איספהאן 88% · נתנז/פורדו 76% · תבריז 45% · כרמנשאה 64%",
+    "pts_en": "Tehran 0% · Isfahan 88% · Natanz/Fordow 76% · Tabriz 45% · Kermanshah 64%"
    },
    {
     "key": "israel",
@@ -2994,10 +2988,10 @@
    }
   ],
   "fetched": "2026-11-28T08:13:06+00:00",
-  "age_h": 1.5,
+  "age_h": 2.5,
   "status": "ok",
-  "window_he": "12:00-00:00 (שעון ישראל)",
-  "window_en": "12:00–00:00 (Israel time)",
+  "window_he": "13:00-01:00 (שעון ישראל)",
+  "window_en": "13:00–01:00 (Israel time)",
   "updated_he": "נקרא ב-10:13",
   "updated_en": "read at 10:13",
   "climatology": true
