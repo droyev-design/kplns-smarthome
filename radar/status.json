@@ -1,18 +1,6 @@
 {
- "generated": "2026-11-28T00:43:00+00:00",
+ "generated": "2026-11-28T01:42:47+00:00",
  "history": [
-  {
-   "t": 1795223546,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
-  {
-   "t": 1795225345,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
   {
    "t": 1795227168,
    "il": 0,
@@ -2016,6 +2004,18 @@
    "il": 0,
    "ir": 0,
    "deg": 2
+  },
+  {
+   "t": 1795828366,
+   "il": 0,
+   "ir": 0,
+   "deg": 2
+  },
+  {
+   "t": 1795830167,
+   "il": 0,
+   "ir": 0,
+   "deg": 2
   }
  ],
  "indices": [
@@ -2089,8 +2089,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "36 מטוסים אזרחיים באזור",
-     "value_en": "36 civil aircraft in the area",
+     "value": "31 מטוסים אזרחיים באזור",
+     "value_en": "31 civil aircraft in the area",
      "range": "29–73",
      "threshold_now": "פחות מ-17 מטוסים",
      "threshold_now_en": "<17 aircraft",
@@ -2120,8 +2120,8 @@
      "partial_why_en": "traffic too thin to judge — median 4 below 5",
      "reason": "",
      "reason_en": "",
-     "value": "2 מטוסים מעל ירדן",
-     "value_en": "2 aircraft over Jordan",
+     "value": "3 מטוסים מעל ירדן",
+     "value_en": "3 aircraft over Jordan",
      "range": "2–6",
      "threshold_now": "",
      "threshold_now_en": "",
@@ -2554,8 +2554,8 @@
      "partial_why_en": "reduced satellite coverage — running on NOAA20 + NOAA21 only; SNPP (data ends 2026-11-02) dropped as stale. Fewer passes means events can be missed; compared only with days measured by the same satellites",
      "reason": "",
      "reason_en": "",
-     "value": "0 מוקדים תרמיים חדשים ב-2026-11-27 (מתוך 1,042 זיהויים גולמיים מ-2 לוויינים, כולל שרפות ותעשייה)",
-     "value_en": "0 new thermal hotspots on 2026-11-27 (out of 1,042 raw detections from 2 satellites, incl. wildfires and industry)",
+     "value": "0 מוקדים תרמיים חדשים ב-2026-11-27 (מתוך 1,643 זיהויים גולמיים מ-2 לוויינים, כולל שרפות ותעשייה)",
+     "value_en": "0 new thermal hotspots on 2026-11-27 (out of 1,643 raw detections from 2 satellites, incl. wildfires and industry)",
      "range": "0–3",
      "threshold_now": "יותר מ-5 מוקדים",
      "threshold_now_en": ">5 hotspots",
@@ -2904,7 +2904,7 @@
  ],
  "weather": {
   "voting": false,
-  "generated": "2026-11-28T00:43:00+00:00",
+  "generated": "2026-11-28T01:42:47+00:00",
   "title_he": "☁️ מזג אוויר — הקשר בלבד",
   "title_en": "☁️ Weather — context only",
   "disclaimer_he": "מידע בלבד — לא סמן. בדיקה לאחור של 6 אירועים (2024-2026) לא מצאה קשר בין עננות לתקיפות; בהיר אינו מעיד על סיכון.",
@@ -2916,7 +2916,7 @@
     "key": "iran",
     "label_he": "איראן",
     "label_en": "Iran",
-    "cloud": 50,
+    "cloud": 48,
     "cat": "partly",
     "cat_he": "מעונן חלקית",
     "cat_en": "partly cloudy",
@@ -2928,8 +2928,8 @@
      {
       "he": "טהרן",
       "en": "Tehran",
-      "cloud": 72,
-      "cat": "cloudy"
+      "cloud": 67,
+      "cat": "partly"
      },
      {
       "he": "איספהאן",
@@ -2940,58 +2940,58 @@
      {
       "he": "נתנז/פורדו",
       "en": "Natanz/Fordow",
-      "cloud": 43,
+      "cloud": 37,
       "cat": "partly"
      },
      {
       "he": "תבריז",
       "en": "Tabriz",
-      "cloud": 71,
-      "cat": "cloudy"
+      "cloud": 66,
+      "cat": "partly"
      },
      {
       "he": "כרמנשאה",
       "en": "Kermanshah",
-      "cloud": 6,
+      "cloud": 11,
       "cat": "clear"
      }
     ],
-    "text_he": "איראן: מעונן חלקית · עננות ממוצעת 50% · בעונה זו כ-52% מהחלונות המקבילים היו מעוננים חלקית",
-    "text_en": "Iran: partly cloudy · mean cloud cover 50% · this season ~52% of comparable 12-hour windows were partly cloudy",
-    "pts_he": "טהרן 72% · איספהאן 58% · נתנז/פורדו 43% · תבריז 71% · כרמנשאה 6%",
-    "pts_en": "Tehran 72% · Isfahan 58% · Natanz/Fordow 43% · Tabriz 71% · Kermanshah 6%"
+    "text_he": "איראן: מעונן חלקית · עננות ממוצעת 48% · בעונה זו כ-52% מהחלונות המקבילים היו מעוננים חלקית",
+    "text_en": "Iran: partly cloudy · mean cloud cover 48% · this season ~52% of comparable 12-hour windows were partly cloudy",
+    "pts_he": "טהרן 67% · איספהאן 58% · נתנז/פורדו 37% · תבריז 66% · כרמנשאה 11%",
+    "pts_en": "Tehran 67% · Isfahan 58% · Natanz/Fordow 37% · Tabriz 66% · Kermanshah 11%"
    },
    {
     "key": "israel",
     "label_he": "ישראל",
     "label_en": "Israel",
-    "cloud": 77,
+    "cloud": 78,
     "cat": "cloudy",
     "cat_he": "מעונן",
     "cat_en": "cloudy",
     "cat_he_pl": "מעוננים",
     "cat_en_pl": "cloudy",
-    "clim_pct": 22,
+    "clim_pct": 20,
     "n": 1,
     "points": [
      {
       "he": "תל אביב",
       "en": "Tel Aviv",
-      "cloud": 77,
+      "cloud": 78,
       "cat": "cloudy"
      }
     ],
-    "text_he": "ישראל: מעונן · עננות ממוצעת 77% · בעונה זו כ-22% מהחלונות המקבילים היו מעוננים",
-    "text_en": "Israel: cloudy · mean cloud cover 77% · this season ~22% of comparable 12-hour windows were cloudy",
+    "text_he": "ישראל: מעונן · עננות ממוצעת 78% · בעונה זו כ-20% מהחלונות המקבילים היו מעוננים",
+    "text_en": "Israel: cloudy · mean cloud cover 78% · this season ~20% of comparable 12-hour windows were cloudy",
     "pts_he": "",
     "pts_en": ""
    }
   ],
   "fetched": "2026-11-27T19:43:13+00:00",
-  "age_h": 5.0,
+  "age_h": 6.0,
   "status": "ok",
-  "window_he": "03:00-15:00 (שעון ישראל)",
-  "window_en": "03:00–15:00 (Israel time)",
+  "window_he": "04:00-16:00 (שעון ישראל)",
+  "window_en": "04:00–16:00 (Israel time)",
   "updated_he": "נקרא ב-21:43",
   "updated_en": "read at 21:43",
   "climatology": true
