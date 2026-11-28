@@ -1,18 +1,6 @@
 {
- "generated": "2026-11-28T00:12:57+00:00",
+ "generated": "2026-11-28T00:43:00+00:00",
  "history": [
-  {
-   "t": 1795219986,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
-  {
-   "t": 1795221776,
-   "il": 0,
-   "ir": 0,
-   "deg": 1
-  },
   {
    "t": 1795223546,
    "il": 0,
@@ -2022,6 +2010,12 @@
    "il": 0,
    "ir": 0,
    "deg": 2
+  },
+  {
+   "t": 1795826580,
+   "il": 0,
+   "ir": 0,
+   "deg": 2
   }
  ],
  "indices": [
@@ -2095,8 +2089,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "25 מטוסים אזרחיים באזור",
-     "value_en": "25 civil aircraft in the area",
+     "value": "36 מטוסים אזרחיים באזור",
+     "value_en": "36 civil aircraft in the area",
      "range": "29–73",
      "threshold_now": "פחות מ-17 מטוסים",
      "threshold_now_en": "<17 aircraft",
@@ -2219,8 +2213,8 @@
      "partial_why_en": "",
      "reason": "",
      "reason_en": "",
-     "value": "2.8% מהמטוסים דיווחו על שיבוש GPS ב-2026-11-26 (נגזר מתעופה)",
-     "value_en": "2.8% of aircraft reported degraded GPS on 2026-11-26 (aviation-derived)",
+     "value": "1.1% מהמטוסים דיווחו על שיבוש GPS ב-2026-11-27 (נגזר מתעופה)",
+     "value_en": "1.1% of aircraft reported degraded GPS on 2026-11-27 (aviation-derived)",
      "range": "1.0%–3.7%",
      "threshold_now": "12.0% ומעלה",
      "threshold_now_en": "≥12.0%",
@@ -2560,8 +2554,8 @@
      "partial_why_en": "reduced satellite coverage — running on NOAA20 + NOAA21 only; SNPP (data ends 2026-11-02) dropped as stale. Fewer passes means events can be missed; compared only with days measured by the same satellites",
      "reason": "",
      "reason_en": "",
-     "value": "0 מוקדים תרמיים חדשים ב-2026-11-27 (מתוך 486 זיהויים גולמיים מ-2 לוויינים, כולל שרפות ותעשייה)",
-     "value_en": "0 new thermal hotspots on 2026-11-27 (out of 486 raw detections from 2 satellites, incl. wildfires and industry)",
+     "value": "0 מוקדים תרמיים חדשים ב-2026-11-27 (מתוך 1,042 זיהויים גולמיים מ-2 לוויינים, כולל שרפות ותעשייה)",
+     "value_en": "0 new thermal hotspots on 2026-11-27 (out of 1,042 raw detections from 2 satellites, incl. wildfires and industry)",
      "range": "0–3",
      "threshold_now": "יותר מ-5 מוקדים",
      "threshold_now_en": ">5 hotspots",
@@ -2580,7 +2574,7 @@
      "shared": false,
      "context": true,
      "daily": true,
-     "lit": true,
+     "lit": false,
      "recovering": false,
      "frozen": false,
      "frozen_hours": 0,
@@ -2589,17 +2583,17 @@
      "partial": false,
      "partial_why": "",
      "partial_why_en": "",
-     "reason": "זינוק בשיבוש GPS סביב מצר הורמוז: 15.6% מהמטוסים מדווחים שיבוש מול חציון 5.1% (2026-11-26)",
-     "reason_en": "GPS-interference spike around the Strait of Hormuz: 15.6% of aircraft reporting degraded GPS vs a median of 5.1% (2026-11-26)",
-     "value": "15.6% מהמטוסים דיווחו על שיבוש GPS ב-2026-11-26 (נגזר מתעופה)",
-     "value_en": "15.6% of aircraft reported degraded GPS on 2026-11-26 (aviation-derived)",
-     "range": "2.0%–10.1%",
-     "threshold_now": "13.0% ומעלה",
-     "threshold_now_en": "≥13.0%",
+     "reason": "",
+     "reason_en": "",
+     "value": "9.4% מהמטוסים דיווחו על שיבוש GPS ב-2026-11-27 (נגזר מתעופה)",
+     "value_en": "9.4% of aircraft reported degraded GPS on 2026-11-27 (aviation-derived)",
+     "range": "2.0%–10.5%",
+     "threshold_now": "16.8% ומעלה",
+     "threshold_now_en": "≥16.8%",
      "watch": "",
      "watch_en": "",
-     "anchor": "📈 מצב: 11 מתוך 14 הימים האחרונים מעל העוגן המוצהר (5.0%), 2 מהם ברצף. אינו מצביע. העוגן נמדד בתוך המלחמה.",
-     "anchor_en": "📈 State: 11 of the last 14 days at or above the declared anchor (5.0%), the last 2 of them consecutively. Casts no vote. The anchor was measured inside the war."
+     "anchor": "📈 מצב: 11 מתוך 14 הימים האחרונים מעל העוגן המוצהר (5.0%), 3 מהם ברצף. אינו מצביע. העוגן נמדד בתוך המלחמה.",
+     "anchor_en": "📈 State: 11 of the last 14 days at or above the declared anchor (5.0%), the last 3 of them consecutively. Casts no vote. The anchor was measured inside the war."
     },
     {
      "key": "us_mil_air",
@@ -2853,16 +2847,12 @@
    "measurable_total": 2,
    "lit_count": 0,
    "max_level": 2,
-   "context_lit": 1,
-   "context_lit_names": [
-    "שיבוש GPS — מצר הורמוז"
-   ],
-   "context_lit_names_en": [
-    "GPS interference — Strait of Hormuz"
-   ],
+   "context_lit": 0,
+   "context_lit_names": [],
+   "context_lit_names_en": [],
    "ratchets": [],
-   "standing": "📈 מצב עומד (אינו רמה): 4 משפחות מעוגנות במדד הזה צברו מספיק ימים כדי לדווח, ואחת מהן (שיבוש GPS — מצר הורמוז) חוצה את העוגן המוצהר שלה ביום האחרון שנשמר. הספירה הגבוהה ביותר באוגר: שיבוש GPS — מצר הורמוז · 11 מתוך 14 הימים האחרונים מעל העוגן המוצהר (5.0%), 2 מהם ברצף. אינו מצביע; כל העוגנים נמדדו בתוך המלחמה.",
-   "standing_en": "📈 Standing state (not a level): 4 anchored families on this index have enough stored days to report, and one of them is past its declared anchor on the most recent stored day. Longest-running: GPS interference — Strait of Hormuz · 11 of the last 14 days at or above the declared anchor (5.0%), the last 2 of them consecutively. Casts no vote; every anchor was measured inside the war.",
+   "standing": "📈 מצב עומד (אינו רמה): 4 משפחות מעוגנות במדד הזה צברו מספיק ימים כדי לדווח, ואחת מהן (שיבוש GPS — מצר הורמוז) חוצה את העוגן המוצהר שלה ביום האחרון שנשמר. הספירה הגבוהה ביותר באוגר: שיבוש GPS — מצר הורמוז · 11 מתוך 14 הימים האחרונים מעל העוגן המוצהר (5.0%), 3 מהם ברצף. אינו מצביע; כל העוגנים נמדדו בתוך המלחמה.",
+   "standing_en": "📈 Standing state (not a level): 4 anchored families on this index have enough stored days to report, and one of them is past its declared anchor on the most recent stored day. Longest-running: GPS interference — Strait of Hormuz · 11 of the last 14 days at or above the declared anchor (5.0%), the last 3 of them consecutively. Casts no vote; every anchor was measured inside the war.",
    "standing_risk": "🎲 סיכון יומי עומד: 0.87% ליום. זו הסתברות גלומה מהשוק — כסף אמיתי ב-Polymarket — ולא תחזית של הדף הזה ולא מדידת חיישן. היא נגזרת מחוזה פתוח אחד, ⁦\"Israel x Iran ceasefire continues through December 31?\"⁩, שמוכרע לפי תקיפה אווירית או טילית של צד אחד בשני: מחירו מגלם 26% לתקיפה כזו עד סוף 31.12.2026, ונותרו לו 34 ימים. המספר המתפרסם הוא הקצב היומי ולא מחיר החוזה: מחיר חוזה יורד מעצמו ככל שמועד הפקיעה מתקרב, גם כשדבר לא השתנה, ולכן רק הקצב היומי בר-השוואה משבוע לשבוע. אינו מצביע.",
    "standing_risk_en": "🎲 Standing daily risk: 0.87%/day. This is a MARKET-IMPLIED probability — real money on Polymarket — not a forecast by this page and not a sensor reading. It comes from one open contract, \"Israel x Iran ceasefire continues through December 31?\", which resolves on an air or missile strike by either side against the other: its price implies a 26% chance of such a strike before 2026-12-31, with 34 days left to run. The figure published is the PER-DAY rate, not the contract price: a contract price falls on its own as expiry approaches even when nothing has changed, so only the daily rate is comparable from one week to the next. Casts no vote.",
    "unavailable": [
@@ -2884,19 +2874,19 @@
  "measurable_total": 6,
  "unmeasurable_total": 3,
  "lit_count": 0,
- "context_lit": 1,
+ "context_lit": 0,
  "ratchets": [],
  "anchor_summary": {
   "families_reported": 7,
   "families_on_anchor": 3,
-  "longest_streak_days": 2,
+  "longest_streak_days": 3,
   "window_days": 14,
   "families_anchored": 7,
   "min_days": 5,
   "top_family": "hormuz_gps",
   "top_days": 11,
   "top_window": 14,
-  "top_streak": 2
+  "top_streak": 3
  },
  "degraded": [
   "הודעות NOTAM — מרחב ישראל (הקשר בלבד)",
@@ -2914,7 +2904,7 @@
  ],
  "weather": {
   "voting": false,
-  "generated": "2026-11-28T00:12:57+00:00",
+  "generated": "2026-11-28T00:43:00+00:00",
   "title_he": "☁️ מזג אוויר — הקשר בלבד",
   "title_en": "☁️ Weather — context only",
   "disclaimer_he": "מידע בלבד — לא סמן. בדיקה לאחור של 6 אירועים (2024-2026) לא מצאה קשר בין עננות לתקיפות; בהיר אינו מעיד על סיכון.",
@@ -2998,7 +2988,7 @@
    }
   ],
   "fetched": "2026-11-27T19:43:13+00:00",
-  "age_h": 4.5,
+  "age_h": 5.0,
   "status": "ok",
   "window_he": "03:00-15:00 (שעון ישראל)",
   "window_en": "03:00–15:00 (Israel time)",
